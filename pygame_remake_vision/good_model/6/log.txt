@@ -1,0 +1,8 @@
+layer: 2 [100,25]
+input: 500px, 20 sections
+weight: [0.8, 0.2]
+lr: 0.012
+gamma: 0.5
+rate decay: None
+
+

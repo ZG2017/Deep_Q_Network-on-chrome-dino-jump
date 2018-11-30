@@ -1,0 +1,7 @@
+section = 6
+hidden_layer = 2
+node = [50,10]
+lr = 0.012
+OneHotRate = 0.04
+r_when_done = -5
+coding range: [105:180,0:300]
