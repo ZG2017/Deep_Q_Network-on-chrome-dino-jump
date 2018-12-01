@@ -12,4 +12,4 @@ including:
 ### * some trained models
 ### * all-in-one file with training and test function
 ### * DQN model in tensorflow
-## * lib/res files
+### * lib/res files
