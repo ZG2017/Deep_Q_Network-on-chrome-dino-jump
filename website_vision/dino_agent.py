@@ -10,5 +10,5 @@ class Dino:
         self.web_driver = webdriver
 
     def jump(self):
-        self.web_driver.handler.send_keys(Keys.ARROW_UP)
+        self.web_driver.handler.send_keys(Keys.SPACE)
         time.sleep(0.355)

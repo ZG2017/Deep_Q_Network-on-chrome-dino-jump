@@ -103,6 +103,7 @@ def Model_Test(model,agent,env,max_epoch,model_path):
 def main():
     #OnlineTraining_1(DQN_model,runner,environment,300,70)
     #Image_Test(DQN_model,runner,environment)
-    Model_Test(DQN_model,runner,environment,5,"C:\\Users\\81466\\Desktop\\DQN_Dino\\website_vision\\DQN_GOOD_section_equal_6\\model_9\\My_DQN_Model-129")
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    Model_Test(DQN_model,runner,environment,5,dir_path +"\\DQN_GOOD_section_equal_6\\model_9\\My_DQN_Model-129")
 
 main()

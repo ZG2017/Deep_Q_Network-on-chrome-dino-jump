@@ -7,8 +7,9 @@ import win_unicode_console
 win_unicode_console.enable()
 
 class DeepQNetwork():
-    def __init__(self,lr,epsilon_max,epsilon_increase,gamma,number_of_states,number_of_actions,\
+    def __init__(self,layer_info,lr,epsilon_max,epsilon_increase,gamma,number_of_states,number_of_actions,\
                  weight,replace_steps,memory_size,batch_size):  
+        self.layer_info = layer_info
         self.lr = lr
         self.epsilon_init = 0
         self.epsilon_max = epsilon_max
@@ -29,8 +30,8 @@ class DeepQNetwork():
 
     
     def build_net(self):
-        n_l1 = 100 # 60
-        n_l2 = 25 # 15
+        n_l1 = self.layer_info[0] # 60
+        n_l2 = self.layer_info[1] # 15
         # eval net-------------------------------------------
         self.s = tf.placeholder(tf.float32,[None,self.number_of_states],name = "s")
         self.q_target = tf.placeholder(tf.float32,[None,self.number_of_actions],name = "a")

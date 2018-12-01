@@ -1,5 +1,5 @@
 layer: 2 [80,20]
-input: 500px, 20 sections
+input(width, sections): 400px, 20 sections
 weight: [0.8, 0.2]
 lr: 0.012
 gamma: 0.95

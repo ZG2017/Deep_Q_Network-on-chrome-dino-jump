@@ -6,21 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 # region information base on http://wayou.github.io/t-rex-runner/
-# whole game zone(without dino):[65:265,445:1245]
-
-# just track(without dino):[105:180,0:800]
-# part of the track(without dino):[105:180,0:300]
-
-# updated just track(without dino):[150:180,0:800]
-# updated part of the track(without dino):[150:180,:396]
-
-
-# just score:[0:20,675:770]
-# is over(game over):[45:75,185:475]
-# is over(only letter "g"):[51:68,189:207] (17*18)
-# is over(only letter "m"):[51:68,260:278]
-# is over(only letter "o"):[51:68,350:368]
-# is over(only letter "e"):[51:68,421:439]
+# whole game zone(without dino):[15:215,445:1245]
 
 class WebDriver():
     def __init__(self,Location2driver,URL2Runner,id):
@@ -43,13 +29,13 @@ class Runner_Env():
         init = time.time()
         tmp = self.web_driver.GetByteImage()
         tmp = np.fromstring(tmp,np.uint8)
-        tmp = cv2.imdecode(tmp,cv2.IMREAD_COLOR)[65:265,445:1245]
+        tmp = cv2.imdecode(tmp,cv2.IMREAD_COLOR)[15:215,445:1245]  # whole image
         tmp = cv2.cvtColor(tmp,cv2.COLOR_BGR2GRAY)
         _,tmp = cv2.threshold(tmp,ImageThreshold,255,cv2.THRESH_BINARY)
         return tmp
     
     def IsDone(self,image,ThresholdRate):
-        end_image = image[51:68,189:207]
+        end_image = image[69:86,177:194]   # letter "G"
         return np.count_nonzero(end_image)<306*(1-ThresholdRate)
     
     def FeedbackBinaryCoding(self,Image,OneHotRate):

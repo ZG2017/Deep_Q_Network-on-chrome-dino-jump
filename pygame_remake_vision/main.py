@@ -336,8 +336,13 @@ class T_res():
         scb = Scoreboard()
         highsc = Scoreboard(width*0.78)
         
+        # -----------------------------------------------------------
         # training setting
-        rect = pygame.Rect(100, 110, 500, 25)
+        # change here to change the region of target zone
+        image_pixel_width = 400
+        # -----------------------------------------------------------
+
+        rect = pygame.Rect(100, 110, 100+image_pixel_width, 25)
         target = screen.subsurface(rect)
 
         cacti = pygame.sprite.Group()
@@ -513,7 +518,7 @@ class T_res():
 # env_end-----------------------------------------------------------------------------------------
 
 
-def OnlineTraining(model,max_epoch,max_step,sleep_time,start_learing,save_path):
+def OnlineTraining(model,max_epoch,max_step,sleep_time,start_learning,save_path):
     global s,r,done,lock
     state = None
     state_ = None
@@ -542,7 +547,7 @@ def OnlineTraining(model,max_epoch,max_step,sleep_time,start_learing,save_path):
             if done:
                 print("epoch {0} done!_____step:{1}______current_epsilon:{2}".format(j,i,model.epsilon_init))
                 break
-            if model.memory_counter >= start_learing:
+            if model.memory_counter >= start_learning:
                 model.learning()
             state = state_  
             total_step += 1            
@@ -583,30 +588,32 @@ def Training():
     max_epoch = 250
     max_step = 400
     lr = 0.012 
-    epsilon = 0.80 
+    epsilon = 0.90
     epsilon_incr = 0.002  
-    gamma = 0.95 
-    sections = 20                                      
-    weight = [0.8,0.2]                                      
+    gamma = 0.95
+    sections = 20                                         
+    weight = [0.8,0.2]
+    layer_info = [120,30]                                  
     fps_plus_sleep_time = [60, 0.7] # (60fps, 0.7) (10fps,3.8) (100,0.45)
-    start_learing = 400  
-    save_path = "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model"               
+    start_learning = 400
+    save_path = os.path.dirname(os.path.realpath(__file__))+'\\good_model\\6\\'
 
     env = T_res(fps_plus_sleep_time[0],sections)
-    DQN_model = DeepQNetwork(lr = lr,
+    DQN_model = DeepQNetwork(layer_info = layer_info,
+                             lr = lr,
                              epsilon_max = epsilon,
                              epsilon_increase = epsilon_incr,
-                             gamma = gamma,                    
-                             number_of_states = sections,
+                             gamma = gamma,                     
+                             number_of_states = sections, 
                              number_of_actions= 2,
                              weight = weight,
                              replace_steps = 70,          
-                             memory_size = 1500,
-                             batch_size = 32)
+                             memory_size = 2500,   
+                             batch_size = 128)
     DQN_model.build_net()
-    T1 = threading.Thread(target = OnlineTraining, args=(DQN_model,max_epoch,max_step,fps_plus_sleep_time[1],start_learing,save_path))
+    T1 = threading.Thread(target = OnlineTraining, args=(DQN_model,max_epoch,max_step,fps_plus_sleep_time[1],start_learning,save_path))
     T1.daemon = True
-    T1.start()
+    T1.start()  
     env.GameRun()  
 
 def Test():
@@ -614,27 +621,32 @@ def Test():
     max_epoch = 5
     max_step = 400
     lr = 0.012
-    epsilon = 0.99
+    epsilon = 0.90
     epsilon_incr = 0.002
     gamma = 0.95
     sections = 20                                      
     weight = [0.8,0.2]
+    layer_info = [80,20]
     fps_plus_sleep_time = [60,0.7] # (60fps, 0.7) (10fps,3.8)
 
     env = T_res(fps_plus_sleep_time[0],sections)
-    DQN_model = DeepQNetwork(lr = lr,
+
+    # just for init, number won't matter for testing
+    DQN_model = DeepQNetwork(layer_info = layer_info,
+                             lr = lr,
                              epsilon_max = epsilon,
                              epsilon_increase = epsilon_incr,
-                             gamma = gamma,                    
+                             gamma = gamma,
                              number_of_states = sections,
                              number_of_actions= 2,
                              weight = weight,
                              replace_steps = 70,
-                             memory_size = 1500,
-                             batch_size = 32)
-    DQN_model.build_net()    
+                             memory_size = 2500,
+                             batch_size = 128)
+    DQN_model.build_net()
     DQN_model.epsilon_init = 1.0
-    DQN_model.LoadModel("C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\good_model\\2\\my_model-77")
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    DQN_model.LoadModel(dir_path+"\\good_model\\2\\my_model-77")
     T1 = threading.Thread(target = ModelTest, args=(DQN_model,max_epoch,max_step,fps_plus_sleep_time[1]))
     T1.daemon = True
     T1.start()
@@ -642,5 +654,5 @@ def Test():
 
 
 if __name__ == "__main__":
-    Training() 
-    #Test()
+    #Training() 
+    Test()
