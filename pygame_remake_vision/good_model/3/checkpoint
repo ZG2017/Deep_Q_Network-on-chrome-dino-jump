@@ -1,6 +1,0 @@
-model_checkpoint_path: "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model-111"
-all_model_checkpoint_paths: "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model-102"
-all_model_checkpoint_paths: "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model-104"
-all_model_checkpoint_paths: "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model-107"
-all_model_checkpoint_paths: "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model-109"
-all_model_checkpoint_paths: "C:\\Users\\81466\\Desktop\\DQN_Dino\\pygame_remake_vision\\trained_DQN_model\\my_model-111"

@@ -1,8 +1,0 @@
-layer: 2 [120,30]
-input(width, sections): 300px, 20 sections
-weight: [0.8, 0.2]
-lr: 0.012
-gamma: 0.95
-rate decay: None
-
-

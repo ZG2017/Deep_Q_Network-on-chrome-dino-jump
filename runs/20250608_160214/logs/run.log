@@ -1,0 +1,566 @@
+2025-06-08 16:02:14,598 - INFO - Created run directory: runs/20250608_160214
+2025-06-08 16:02:14,599 - INFO - Parameters saved to: runs/20250608_160214/logs/param.json
+2025-06-08 16:02:14,599 - INFO - Running in train mode with parameters: {'mode': 'train', 'debug': False, 'epochs': 200, 'steps': 2000, 'model_path': None, 'continue_train_epochs': 50, 'continue_train_steps': 4000, 'continue_train_min_memory_count_to_start_training': 0, 'test_epochs': 5, 'lr': 0.01, 'epsilon': 0.99, 'gamma': 0.95, 'jump_duration': 0.5, 'crawl_duration': 0.3, 'epsilon_increase': 0.01, 'net_replace_memory_gap': 200, 'memory_size': 2000, 'batch_size': 32, 'min_memory_count_to_start_training': 100, 'state_grid_rows': 1, 'state_grid_cols': 12, 'state_binary_threshold': 0.05, 'is_done_threshold': 0.5, 'chrome_driver_path': '/home/newton/chrome_driver/chromedriver-linux64/chromedriver', 'game_url': 'http://localhost:8000/', 'number_of_actions': 3, 'window_width': 600, 'window_height': 300, 'window_position': 'center', 'frameless': True, 'ending_i': 90, 'ending_j': 280, 'ending_height': 35, 'ending_width': 40, 'track_i': 100, 'track_j': 70, 'track_height': 45, 'track_width': 300}
+2025-06-08 16:02:15,949 - INFO - Using device: cuda
+2025-06-08 16:02:17,526 - INFO - Starting training with 200 epochs and maximum 2000 steps per epoch
+2025-06-08 16:02:23,522 - INFO - Epoch 0 completed! Steps: 5, Duration: 6.00s, Current epsilon: 0
+2025-06-08 16:02:23,526 - INFO - New best model saved! Duration: 6.00s
+2025-06-08 16:02:29,173 - INFO - Epoch 1 completed! Steps: 2, Duration: 4.65s, Current epsilon: 0
+2025-06-08 16:02:34,844 - INFO - Epoch 2 completed! Steps: 2, Duration: 4.67s, Current epsilon: 0
+2025-06-08 16:02:40,815 - INFO - Epoch 3 completed! Steps: 2, Duration: 4.97s, Current epsilon: 0
+2025-06-08 16:02:48,068 - INFO - Epoch 4 completed! Steps: 6, Duration: 6.25s, Current epsilon: 0
+2025-06-08 16:02:48,072 - INFO - New best model saved! Duration: 6.25s
+2025-06-08 16:02:53,889 - INFO - Epoch 5 completed! Steps: 4, Duration: 4.82s, Current epsilon: 0
+2025-06-08 16:03:00,078 - INFO - Epoch 6 completed! Steps: 2, Duration: 5.19s, Current epsilon: 0
+2025-06-08 16:03:05,749 - INFO - Epoch 7 completed! Steps: 2, Duration: 4.67s, Current epsilon: 0
+2025-06-08 16:03:11,901 - INFO - Epoch 8 completed! Steps: 2, Duration: 5.15s, Current epsilon: 0
+2025-06-08 16:03:21,076 - INFO - Epoch 9 completed! Steps: 12, Duration: 8.17s, Current epsilon: 0
+2025-06-08 16:03:21,078 - INFO - New best model saved! Duration: 8.17s
+2025-06-08 16:03:26,796 - INFO - Epoch 10 completed! Steps: 2, Duration: 4.72s, Current epsilon: 0
+2025-06-08 16:03:32,566 - INFO - Epoch 11 completed! Steps: 2, Duration: 4.77s, Current epsilon: 0
+2025-06-08 16:03:38,386 - INFO - Epoch 12 completed! Steps: 3, Duration: 4.82s, Current epsilon: 0
+2025-06-08 16:03:44,053 - INFO - Epoch 13 completed! Steps: 2, Duration: 4.67s, Current epsilon: 0
+2025-06-08 16:03:50,041 - INFO - Epoch 14 completed! Steps: 3, Duration: 4.99s, Current epsilon: 0
+2025-06-08 16:03:56,212 - INFO - Epoch 15 completed! Steps: 2, Duration: 5.17s, Current epsilon: 0
+2025-06-08 16:04:02,747 - INFO - Epoch 16 completed! Steps: 3, Duration: 5.53s, Current epsilon: 0
+2025-06-08 16:04:08,704 - INFO - Epoch 17 completed! Steps: 2, Duration: 4.96s, Current epsilon: 0
+2025-06-08 16:04:15,910 - INFO - Epoch 18 completed! Steps: 8, Duration: 6.21s, Current epsilon: 0
+2025-06-08 16:04:21,795 - INFO - Epoch 19 completed! Steps: 4, Duration: 4.88s, Current epsilon: 0
+2025-06-08 16:04:27,449 - INFO - Epoch 20 completed! Steps: 2, Duration: 4.65s, Current epsilon: 0
+2025-06-08 16:04:33,103 - INFO - Epoch 21 completed! Steps: 2, Duration: 4.65s, Current epsilon: 0
+2025-06-08 16:04:39,270 - INFO - Epoch 22 completed! Steps: 2, Duration: 5.17s, Current epsilon: 0
+2025-06-08 16:04:44,925 - INFO - Epoch 23 completed! Steps: 2, Duration: 4.65s, Current epsilon: 0
+2025-06-08 16:04:50,679 - INFO - Epoch 24 completed! Steps: 2, Duration: 4.75s, Current epsilon: 0
+2025-06-08 16:04:57,650 - INFO - Epoch 25 completed! Steps: 6, Duration: 5.97s, Current epsilon: 0
+2025-06-08 16:05:04,620 - INFO - Epoch 26 completed! Steps: 6, Duration: 5.97s, Current epsilon: 0
+2025-06-08 16:05:10,373 - INFO - Epoch 27 completed! Steps: 2, Duration: 4.75s, Current epsilon: 0
+2025-06-08 16:05:18,628 - INFO - Epoch 28 completed! Steps: 8, Duration: 7.25s, Current epsilon: 0
+2025-06-08 16:05:18,628 - INFO - Learning step - Memory counter: 102, Epsilon: 0
+2025-06-08 16:05:24,752 - INFO - Epoch 29 completed! Steps: 5, Duration: 4.91s, Current epsilon: 0.01
+2025-06-08 16:05:24,752 - INFO - Learning step - Memory counter: 107, Epsilon: 0.01
+2025-06-08 16:05:30,517 - INFO - Epoch 30 completed! Steps: 2, Duration: 4.76s, Current epsilon: 0.02
+2025-06-08 16:05:30,518 - INFO - Learning step - Memory counter: 109, Epsilon: 0.02
+2025-06-08 16:05:36,687 - INFO - Epoch 31 completed! Steps: 2, Duration: 5.16s, Current epsilon: 0.03
+2025-06-08 16:05:36,687 - INFO - Learning step - Memory counter: 111, Epsilon: 0.03
+2025-06-08 16:05:43,861 - INFO - Epoch 32 completed! Steps: 6, Duration: 6.17s, Current epsilon: 0.04
+2025-06-08 16:05:43,861 - INFO - Learning step - Memory counter: 117, Epsilon: 0.04
+2025-06-08 16:05:49,645 - INFO - Epoch 33 completed! Steps: 3, Duration: 4.78s, Current epsilon: 0.05
+2025-06-08 16:05:49,645 - INFO - Learning step - Memory counter: 120, Epsilon: 0.05
+2025-06-08 16:05:57,805 - INFO - Epoch 34 completed! Steps: 10, Duration: 7.15s, Current epsilon: 0.060000000000000005
+2025-06-08 16:05:57,805 - INFO - Learning step - Memory counter: 130, Epsilon: 0.060000000000000005
+2025-06-08 16:06:03,596 - INFO - Epoch 35 completed! Steps: 2, Duration: 4.78s, Current epsilon: 0.07
+2025-06-08 16:06:03,596 - INFO - Learning step - Memory counter: 132, Epsilon: 0.07
+2025-06-08 16:06:09,232 - INFO - Epoch 36 completed! Steps: 1, Duration: 4.63s, Current epsilon: 0.08
+2025-06-08 16:06:09,233 - INFO - Learning step - Memory counter: 133, Epsilon: 0.08
+2025-06-08 16:06:15,396 - INFO - Epoch 37 completed! Steps: 2, Duration: 5.16s, Current epsilon: 0.09
+2025-06-08 16:06:15,396 - INFO - Learning step - Memory counter: 135, Epsilon: 0.09
+2025-06-08 16:06:25,658 - INFO - Epoch 38 completed! Steps: 15, Duration: 9.26s, Current epsilon: 0.09999999999999999
+2025-06-08 16:06:25,658 - INFO - Learning step - Memory counter: 150, Epsilon: 0.09999999999999999
+2025-06-08 16:06:25,664 - INFO - New best model saved! Duration: 9.26s
+2025-06-08 16:06:31,425 - INFO - Epoch 39 completed! Steps: 2, Duration: 4.76s, Current epsilon: 0.10999999999999999
+2025-06-08 16:06:31,426 - INFO - Learning step - Memory counter: 152, Epsilon: 0.10999999999999999
+2025-06-08 16:06:37,600 - INFO - Epoch 40 completed! Steps: 2, Duration: 5.17s, Current epsilon: 0.11999999999999998
+2025-06-08 16:06:37,600 - INFO - Learning step - Memory counter: 154, Epsilon: 0.11999999999999998
+2025-06-08 16:06:45,332 - INFO - Epoch 41 completed! Steps: 10, Duration: 6.73s, Current epsilon: 0.12999999999999998
+2025-06-08 16:06:45,333 - INFO - Learning step - Memory counter: 164, Epsilon: 0.12999999999999998
+2025-06-08 16:06:53,672 - INFO - Epoch 42 completed! Steps: 8, Duration: 7.33s, Current epsilon: 0.13999999999999999
+2025-06-08 16:06:53,672 - INFO - Learning step - Memory counter: 172, Epsilon: 0.13999999999999999
+2025-06-08 16:06:59,473 - INFO - Epoch 43 completed! Steps: 3, Duration: 4.80s, Current epsilon: 0.15
+2025-06-08 16:06:59,473 - INFO - Learning step - Memory counter: 175, Epsilon: 0.15
+2025-06-08 16:07:05,276 - INFO - Epoch 44 completed! Steps: 3, Duration: 4.80s, Current epsilon: 0.16
+2025-06-08 16:07:05,277 - INFO - Learning step - Memory counter: 178, Epsilon: 0.16
+2025-06-08 16:07:12,247 - INFO - Epoch 45 completed! Steps: 7, Duration: 5.96s, Current epsilon: 0.17
+2025-06-08 16:07:12,247 - INFO - Learning step - Memory counter: 185, Epsilon: 0.17
+2025-06-08 16:07:17,871 - INFO - Epoch 46 completed! Steps: 1, Duration: 4.62s, Current epsilon: 0.18000000000000002
+2025-06-08 16:07:17,871 - INFO - Learning step - Memory counter: 186, Epsilon: 0.18000000000000002
+2025-06-08 16:07:24,724 - INFO - Epoch 47 completed! Steps: 8, Duration: 5.84s, Current epsilon: 0.19000000000000003
+2025-06-08 16:07:24,724 - INFO - Learning step - Memory counter: 194, Epsilon: 0.19000000000000003
+2025-06-08 16:07:31,327 - INFO - Epoch 48 completed! Steps: 5, Duration: 5.60s, Current epsilon: 0.20000000000000004
+2025-06-08 16:07:31,327 - INFO - Learning step - Memory counter: 199, Epsilon: 0.20000000000000004
+2025-06-08 16:07:38,498 - INFO - Epoch 49 completed! Steps: 9, Duration: 6.17s, Current epsilon: 0.21000000000000005
+2025-06-08 16:07:38,498 - INFO - Learning step - Memory counter: 208, Epsilon: 0.21000000000000005
+2025-06-08 16:07:45,607 - INFO - Epoch 50 completed! Steps: 5, Duration: 6.11s, Current epsilon: 0.22000000000000006
+2025-06-08 16:07:45,607 - INFO - Learning step - Memory counter: 213, Epsilon: 0.22000000000000006
+2025-06-08 16:07:52,246 - INFO - Epoch 51 completed! Steps: 5, Duration: 5.63s, Current epsilon: 0.23000000000000007
+2025-06-08 16:07:52,246 - INFO - Learning step - Memory counter: 218, Epsilon: 0.23000000000000007
+2025-06-08 16:07:58,414 - INFO - Epoch 52 completed! Steps: 2, Duration: 5.16s, Current epsilon: 0.24000000000000007
+2025-06-08 16:07:58,414 - INFO - Learning step - Memory counter: 220, Epsilon: 0.24000000000000007
+2025-06-08 16:08:04,982 - INFO - Epoch 53 completed! Steps: 4, Duration: 5.56s, Current epsilon: 0.25000000000000006
+2025-06-08 16:08:04,983 - INFO - Learning step - Memory counter: 224, Epsilon: 0.25000000000000006
+2025-06-08 16:08:11,590 - INFO - Epoch 54 completed! Steps: 5, Duration: 5.60s, Current epsilon: 0.26000000000000006
+2025-06-08 16:08:11,590 - INFO - Learning step - Memory counter: 229, Epsilon: 0.26000000000000006
+2025-06-08 16:08:19,912 - INFO - Epoch 55 completed! Steps: 8, Duration: 7.31s, Current epsilon: 0.2700000000000001
+2025-06-08 16:08:19,912 - INFO - Learning step - Memory counter: 237, Epsilon: 0.2700000000000001
+2025-06-08 16:08:25,828 - INFO - Epoch 56 completed! Steps: 6, Duration: 4.90s, Current epsilon: 0.2800000000000001
+2025-06-08 16:08:25,828 - INFO - Learning step - Memory counter: 243, Epsilon: 0.2800000000000001
+2025-06-08 16:08:31,700 - INFO - Epoch 57 completed! Steps: 5, Duration: 4.87s, Current epsilon: 0.2900000000000001
+2025-06-08 16:08:31,701 - INFO - Learning step - Memory counter: 248, Epsilon: 0.2900000000000001
+2025-06-08 16:08:38,234 - INFO - Epoch 58 completed! Steps: 9, Duration: 5.53s, Current epsilon: 0.3000000000000001
+2025-06-08 16:08:38,234 - INFO - Learning step - Memory counter: 257, Epsilon: 0.3000000000000001
+2025-06-08 16:08:43,893 - INFO - Epoch 59 completed! Steps: 2, Duration: 4.66s, Current epsilon: 0.3100000000000001
+2025-06-08 16:08:43,894 - INFO - Learning step - Memory counter: 259, Epsilon: 0.3100000000000001
+2025-06-08 16:08:49,561 - INFO - Epoch 60 completed! Steps: 2, Duration: 4.66s, Current epsilon: 0.3200000000000001
+2025-06-08 16:08:49,561 - INFO - Learning step - Memory counter: 261, Epsilon: 0.3200000000000001
+2025-06-08 16:08:55,180 - INFO - Epoch 61 completed! Steps: 1, Duration: 4.61s, Current epsilon: 0.3300000000000001
+2025-06-08 16:08:55,180 - INFO - Learning step - Memory counter: 262, Epsilon: 0.3300000000000001
+2025-06-08 16:09:00,766 - INFO - Epoch 62 completed! Steps: 5, Duration: 4.58s, Current epsilon: 0.34000000000000014
+2025-06-08 16:09:00,766 - INFO - Learning step - Memory counter: 267, Epsilon: 0.34000000000000014
+2025-06-08 16:09:06,386 - INFO - Epoch 63 completed! Steps: 1, Duration: 4.62s, Current epsilon: 0.35000000000000014
+2025-06-08 16:09:06,387 - INFO - Learning step - Memory counter: 268, Epsilon: 0.35000000000000014
+2025-06-08 16:09:12,008 - INFO - Epoch 64 completed! Steps: 1, Duration: 4.61s, Current epsilon: 0.36000000000000015
+2025-06-08 16:09:12,008 - INFO - Learning step - Memory counter: 269, Epsilon: 0.36000000000000015
+2025-06-08 16:09:17,642 - INFO - Epoch 65 completed! Steps: 1, Duration: 4.63s, Current epsilon: 0.37000000000000016
+2025-06-08 16:09:17,642 - INFO - Learning step - Memory counter: 270, Epsilon: 0.37000000000000016
+2025-06-08 16:09:24,065 - INFO - Epoch 66 completed! Steps: 5, Duration: 5.42s, Current epsilon: 0.38000000000000017
+2025-06-08 16:09:24,065 - INFO - Learning step - Memory counter: 275, Epsilon: 0.38000000000000017
+2025-06-08 16:09:30,721 - INFO - Epoch 67 completed! Steps: 6, Duration: 5.65s, Current epsilon: 0.3900000000000002
+2025-06-08 16:09:30,721 - INFO - Learning step - Memory counter: 281, Epsilon: 0.3900000000000002
+2025-06-08 16:09:36,341 - INFO - Epoch 68 completed! Steps: 1, Duration: 4.62s, Current epsilon: 0.4000000000000002
+2025-06-08 16:09:36,341 - INFO - Learning step - Memory counter: 282, Epsilon: 0.4000000000000002
+2025-06-08 16:09:42,144 - INFO - Epoch 69 completed! Steps: 3, Duration: 4.80s, Current epsilon: 0.4100000000000002
+2025-06-08 16:09:42,145 - INFO - Learning step - Memory counter: 285, Epsilon: 0.4100000000000002
+2025-06-08 16:09:48,267 - INFO - Epoch 70 completed! Steps: 4, Duration: 5.12s, Current epsilon: 0.4200000000000002
+2025-06-08 16:09:48,268 - INFO - Learning step - Memory counter: 289, Epsilon: 0.4200000000000002
+2025-06-08 16:09:54,149 - INFO - Epoch 71 completed! Steps: 5, Duration: 4.87s, Current epsilon: 0.4300000000000002
+2025-06-08 16:09:54,149 - INFO - Learning step - Memory counter: 294, Epsilon: 0.4300000000000002
+2025-06-08 16:10:00,669 - INFO - Epoch 72 completed! Steps: 3, Duration: 5.52s, Current epsilon: 0.4400000000000002
+2025-06-08 16:10:00,669 - INFO - Learning step - Memory counter: 297, Epsilon: 0.4400000000000002
+2025-06-08 16:10:06,508 - INFO - Epoch 73 completed! Steps: 4, Duration: 4.83s, Current epsilon: 0.45000000000000023
+2025-06-08 16:10:06,508 - INFO - Learning step - Memory counter: 301, Epsilon: 0.45000000000000023
+2025-06-08 16:10:13,594 - INFO - Epoch 74 completed! Steps: 9, Duration: 6.08s, Current epsilon: 0.46000000000000024
+2025-06-08 16:10:13,594 - INFO - Learning step - Memory counter: 310, Epsilon: 0.46000000000000024
+2025-06-08 16:10:19,448 - INFO - Epoch 75 completed! Steps: 5, Duration: 4.85s, Current epsilon: 0.47000000000000025
+2025-06-08 16:10:19,448 - INFO - Learning step - Memory counter: 315, Epsilon: 0.47000000000000025
+2025-06-08 16:10:25,085 - INFO - Epoch 76 completed! Steps: 1, Duration: 4.63s, Current epsilon: 0.48000000000000026
+2025-06-08 16:10:25,085 - INFO - Learning step - Memory counter: 316, Epsilon: 0.48000000000000026
+2025-06-08 16:10:30,672 - INFO - Epoch 77 completed! Steps: 5, Duration: 4.58s, Current epsilon: 0.49000000000000027
+2025-06-08 16:10:30,672 - INFO - Learning step - Memory counter: 321, Epsilon: 0.49000000000000027
+2025-06-08 16:10:38,025 - INFO - Epoch 78 completed! Steps: 24, Duration: 6.35s, Current epsilon: 0.5000000000000002
+2025-06-08 16:10:38,026 - INFO - Learning step - Memory counter: 345, Epsilon: 0.5000000000000002
+2025-06-08 16:10:43,646 - INFO - Epoch 79 completed! Steps: 1, Duration: 4.62s, Current epsilon: 0.5100000000000002
+2025-06-08 16:10:43,646 - INFO - Learning step - Memory counter: 346, Epsilon: 0.5100000000000002
+2025-06-08 16:10:49,218 - INFO - Epoch 80 completed! Steps: 5, Duration: 4.57s, Current epsilon: 0.5200000000000002
+2025-06-08 16:10:49,218 - INFO - Learning step - Memory counter: 351, Epsilon: 0.5200000000000002
+2025-06-08 16:10:55,011 - INFO - Epoch 81 completed! Steps: 3, Duration: 4.79s, Current epsilon: 0.5300000000000002
+2025-06-08 16:10:55,011 - INFO - Learning step - Memory counter: 354, Epsilon: 0.5300000000000002
+2025-06-08 16:11:02,210 - INFO - Epoch 82 completed! Steps: 9, Duration: 6.19s, Current epsilon: 0.5400000000000003
+2025-06-08 16:11:02,210 - INFO - Learning step - Memory counter: 363, Epsilon: 0.5400000000000003
+2025-06-08 16:11:07,979 - INFO - Epoch 83 completed! Steps: 2, Duration: 4.76s, Current epsilon: 0.5500000000000003
+2025-06-08 16:11:07,980 - INFO - Learning step - Memory counter: 365, Epsilon: 0.5500000000000003
+2025-06-08 16:11:13,799 - INFO - Epoch 84 completed! Steps: 9, Duration: 4.81s, Current epsilon: 0.5600000000000003
+2025-06-08 16:11:13,799 - INFO - Learning step - Memory counter: 374, Epsilon: 0.5600000000000003
+2025-06-08 16:11:19,618 - INFO - Epoch 85 completed! Steps: 4, Duration: 4.81s, Current epsilon: 0.5700000000000003
+2025-06-08 16:11:19,618 - INFO - Learning step - Memory counter: 378, Epsilon: 0.5700000000000003
+2025-06-08 16:11:25,177 - INFO - Epoch 86 completed! Steps: 4, Duration: 4.55s, Current epsilon: 0.5800000000000003
+2025-06-08 16:11:25,177 - INFO - Learning step - Memory counter: 382, Epsilon: 0.5800000000000003
+2025-06-08 16:11:30,758 - INFO - Epoch 87 completed! Steps: 4, Duration: 4.58s, Current epsilon: 0.5900000000000003
+2025-06-08 16:11:30,758 - INFO - Learning step - Memory counter: 386, Epsilon: 0.5900000000000003
+2025-06-08 16:11:36,366 - INFO - Epoch 88 completed! Steps: 7, Duration: 4.60s, Current epsilon: 0.6000000000000003
+2025-06-08 16:11:36,366 - INFO - Learning step - Memory counter: 393, Epsilon: 0.6000000000000003
+2025-06-08 16:11:43,742 - INFO - Epoch 89 completed! Steps: 8, Duration: 6.37s, Current epsilon: 0.6100000000000003
+2025-06-08 16:11:43,742 - INFO - Learning step - Memory counter: 401, Epsilon: 0.6100000000000003
+2025-06-08 16:11:50,107 - INFO - Epoch 90 completed! Steps: 4, Duration: 5.36s, Current epsilon: 0.6200000000000003
+2025-06-08 16:11:50,107 - INFO - Learning step - Memory counter: 405, Epsilon: 0.6200000000000003
+2025-06-08 16:11:55,691 - INFO - Epoch 91 completed! Steps: 10, Duration: 4.58s, Current epsilon: 0.6300000000000003
+2025-06-08 16:11:55,691 - INFO - Learning step - Memory counter: 415, Epsilon: 0.6300000000000003
+2025-06-08 16:12:02,299 - INFO - Epoch 92 completed! Steps: 11, Duration: 5.60s, Current epsilon: 0.6400000000000003
+2025-06-08 16:12:02,300 - INFO - Learning step - Memory counter: 426, Epsilon: 0.6400000000000003
+2025-06-08 16:12:09,815 - INFO - Epoch 93 completed! Steps: 11, Duration: 6.51s, Current epsilon: 0.6500000000000004
+2025-06-08 16:12:09,815 - INFO - Learning step - Memory counter: 437, Epsilon: 0.6500000000000004
+2025-06-08 16:12:15,388 - INFO - Epoch 94 completed! Steps: 5, Duration: 4.57s, Current epsilon: 0.6600000000000004
+2025-06-08 16:12:15,388 - INFO - Learning step - Memory counter: 442, Epsilon: 0.6600000000000004
+2025-06-08 16:12:21,059 - INFO - Epoch 95 completed! Steps: 4, Duration: 4.67s, Current epsilon: 0.6700000000000004
+2025-06-08 16:12:21,059 - INFO - Learning step - Memory counter: 446, Epsilon: 0.6700000000000004
+2025-06-08 16:12:27,827 - INFO - Epoch 96 completed! Steps: 6, Duration: 5.76s, Current epsilon: 0.6800000000000004
+2025-06-08 16:12:27,827 - INFO - Learning step - Memory counter: 452, Epsilon: 0.6800000000000004
+2025-06-08 16:12:33,364 - INFO - Epoch 97 completed! Steps: 3, Duration: 4.53s, Current epsilon: 0.6900000000000004
+2025-06-08 16:12:33,364 - INFO - Learning step - Memory counter: 455, Epsilon: 0.6900000000000004
+2025-06-08 16:12:39,935 - INFO - Epoch 98 completed! Steps: 5, Duration: 5.56s, Current epsilon: 0.7000000000000004
+2025-06-08 16:12:39,935 - INFO - Learning step - Memory counter: 460, Epsilon: 0.7000000000000004
+2025-06-08 16:12:46,588 - INFO - Epoch 99 completed! Steps: 6, Duration: 5.64s, Current epsilon: 0.7100000000000004
+2025-06-08 16:12:46,588 - INFO - Learning step - Memory counter: 466, Epsilon: 0.7100000000000004
+2025-06-08 16:12:55,178 - INFO - Epoch 100 completed! Steps: 15, Duration: 7.59s, Current epsilon: 0.7200000000000004
+2025-06-08 16:12:55,179 - INFO - Learning step - Memory counter: 481, Epsilon: 0.7200000000000004
+2025-06-08 16:13:00,814 - INFO - Epoch 101 completed! Steps: 1, Duration: 4.63s, Current epsilon: 0.7300000000000004
+2025-06-08 16:13:00,814 - INFO - Learning step - Memory counter: 482, Epsilon: 0.7300000000000004
+2025-06-08 16:13:07,289 - INFO - Epoch 102 completed! Steps: 9, Duration: 5.47s, Current epsilon: 0.7400000000000004
+2025-06-08 16:13:07,289 - INFO - Learning step - Memory counter: 491, Epsilon: 0.7400000000000004
+2025-06-08 16:13:15,141 - INFO - Epoch 103 completed! Steps: 16, Duration: 6.84s, Current epsilon: 0.7500000000000004
+2025-06-08 16:13:15,141 - INFO - Learning step - Memory counter: 507, Epsilon: 0.7500000000000004
+2025-06-08 16:13:29,899 - INFO - Epoch 104 completed! Steps: 48, Duration: 13.75s, Current epsilon: 0.7600000000000005
+2025-06-08 16:13:29,899 - INFO - Learning step - Memory counter: 555, Epsilon: 0.7600000000000005
+2025-06-08 16:13:29,905 - INFO - New best model saved! Duration: 13.75s
+2025-06-08 16:13:35,542 - INFO - Epoch 105 completed! Steps: 7, Duration: 4.64s, Current epsilon: 0.7700000000000005
+2025-06-08 16:13:35,543 - INFO - Learning step - Memory counter: 562, Epsilon: 0.7700000000000005
+2025-06-08 16:13:41,089 - INFO - Epoch 106 completed! Steps: 4, Duration: 4.54s, Current epsilon: 0.7800000000000005
+2025-06-08 16:13:41,090 - INFO - Learning step - Memory counter: 566, Epsilon: 0.7800000000000005
+2025-06-08 16:13:46,644 - INFO - Epoch 107 completed! Steps: 5, Duration: 4.55s, Current epsilon: 0.7900000000000005
+2025-06-08 16:13:46,644 - INFO - Learning step - Memory counter: 571, Epsilon: 0.7900000000000005
+2025-06-08 16:13:52,212 - INFO - Epoch 108 completed! Steps: 5, Duration: 4.56s, Current epsilon: 0.8000000000000005
+2025-06-08 16:13:52,212 - INFO - Learning step - Memory counter: 576, Epsilon: 0.8000000000000005
+2025-06-08 16:13:57,800 - INFO - Epoch 109 completed! Steps: 6, Duration: 4.58s, Current epsilon: 0.8100000000000005
+2025-06-08 16:13:57,800 - INFO - Learning step - Memory counter: 582, Epsilon: 0.8100000000000005
+2025-06-08 16:14:05,588 - INFO - Epoch 110 completed! Steps: 26, Duration: 6.78s, Current epsilon: 0.8200000000000005
+2025-06-08 16:14:05,588 - INFO - Learning step - Memory counter: 608, Epsilon: 0.8200000000000005
+2025-06-08 16:14:11,976 - INFO - Epoch 111 completed! Steps: 11, Duration: 5.38s, Current epsilon: 0.8300000000000005
+2025-06-08 16:14:11,976 - INFO - Learning step - Memory counter: 619, Epsilon: 0.8300000000000005
+2025-06-08 16:14:19,346 - INFO - Epoch 112 completed! Steps: 25, Duration: 6.36s, Current epsilon: 0.8400000000000005
+2025-06-08 16:14:19,346 - INFO - Learning step - Memory counter: 644, Epsilon: 0.8400000000000005
+2025-06-08 16:14:26,684 - INFO - Epoch 113 completed! Steps: 16, Duration: 6.33s, Current epsilon: 0.8500000000000005
+2025-06-08 16:14:26,684 - INFO - Learning step - Memory counter: 660, Epsilon: 0.8500000000000005
+2025-06-08 16:14:38,462 - INFO - Epoch 114 completed! Steps: 53, Duration: 10.77s, Current epsilon: 0.8600000000000005
+2025-06-08 16:14:38,462 - INFO - Learning step - Memory counter: 713, Epsilon: 0.8600000000000005
+2025-06-08 16:14:44,100 - INFO - Epoch 115 completed! Steps: 1, Duration: 4.63s, Current epsilon: 0.8700000000000006
+2025-06-08 16:14:44,100 - INFO - Learning step - Memory counter: 714, Epsilon: 0.8700000000000006
+2025-06-08 16:14:50,554 - INFO - Epoch 116 completed! Steps: 4, Duration: 5.45s, Current epsilon: 0.8800000000000006
+2025-06-08 16:14:50,554 - INFO - Learning step - Memory counter: 718, Epsilon: 0.8800000000000006
+2025-06-08 16:15:07,212 - INFO - Epoch 117 completed! Steps: 64, Duration: 15.65s, Current epsilon: 0.8900000000000006
+2025-06-08 16:15:07,212 - INFO - Learning step - Memory counter: 782, Epsilon: 0.8900000000000006
+2025-06-08 16:15:07,216 - INFO - New best model saved! Duration: 15.65s
+2025-06-08 16:15:19,933 - INFO - Epoch 118 completed! Steps: 48, Duration: 11.72s, Current epsilon: 0.9000000000000006
+2025-06-08 16:15:19,933 - INFO - Learning step - Memory counter: 830, Epsilon: 0.9000000000000006
+2025-06-08 16:15:30,828 - INFO - Epoch 119 completed! Steps: 52, Duration: 9.89s, Current epsilon: 0.9100000000000006
+2025-06-08 16:15:30,828 - INFO - Learning step - Memory counter: 882, Epsilon: 0.9100000000000006
+2025-06-08 16:15:39,244 - INFO - Epoch 120 completed! Steps: 31, Duration: 7.41s, Current epsilon: 0.9200000000000006
+2025-06-08 16:15:39,245 - INFO - Learning step - Memory counter: 913, Epsilon: 0.9200000000000006
+2025-06-08 16:15:47,199 - INFO - Epoch 121 completed! Steps: 28, Duration: 6.95s, Current epsilon: 0.9300000000000006
+2025-06-08 16:15:47,199 - INFO - Learning step - Memory counter: 941, Epsilon: 0.9300000000000006
+2025-06-08 16:16:10,535 - INFO - Epoch 122 completed! Steps: 210, Duration: 22.33s, Current epsilon: 0.9400000000000006
+2025-06-08 16:16:10,535 - INFO - Learning step - Memory counter: 1151, Epsilon: 0.9400000000000006
+2025-06-08 16:16:10,544 - INFO - New best model saved! Duration: 22.33s
+2025-06-08 16:16:22,622 - INFO - Epoch 123 completed! Steps: 61, Duration: 11.08s, Current epsilon: 0.9500000000000006
+2025-06-08 16:16:22,622 - INFO - Learning step - Memory counter: 1212, Epsilon: 0.9500000000000006
+2025-06-08 16:16:33,131 - INFO - Epoch 124 completed! Steps: 47, Duration: 9.51s, Current epsilon: 0.9600000000000006
+2025-06-08 16:16:33,131 - INFO - Learning step - Memory counter: 1259, Epsilon: 0.9600000000000006
+2025-06-08 16:16:41,984 - INFO - Epoch 125 completed! Steps: 44, Duration: 7.85s, Current epsilon: 0.9700000000000006
+2025-06-08 16:16:41,984 - INFO - Learning step - Memory counter: 1303, Epsilon: 0.9700000000000006
+2025-06-08 16:17:10,553 - INFO - Epoch 126 completed! Steps: 287, Duration: 27.56s, Current epsilon: 0.9800000000000006
+2025-06-08 16:17:10,553 - INFO - Learning step - Memory counter: 1590, Epsilon: 0.9800000000000006
+2025-06-08 16:17:10,566 - INFO - New best model saved! Duration: 27.56s
+2025-06-08 16:17:17,874 - INFO - Epoch 127 completed! Steps: 34, Duration: 6.31s, Current epsilon: 0.9900000000000007
+2025-06-08 16:17:17,875 - INFO - Learning step - Memory counter: 1624, Epsilon: 0.9900000000000007
+2025-06-08 16:18:06,091 - INFO - Epoch 128 completed! Steps: 538, Duration: 47.21s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:06,091 - INFO - Learning step - Memory counter: 2162, Epsilon: 0.9900000000000007
+2025-06-08 16:18:06,097 - INFO - New best model saved! Duration: 47.21s
+2025-06-08 16:18:14,244 - INFO - Epoch 129 completed! Steps: 45, Duration: 7.15s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:14,244 - INFO - Learning step - Memory counter: 2207, Epsilon: 0.9900000000000007
+2025-06-08 16:18:26,667 - INFO - Epoch 130 completed! Steps: 94, Duration: 11.42s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:26,667 - INFO - Learning step - Memory counter: 2301, Epsilon: 0.9900000000000007
+2025-06-08 16:18:32,222 - INFO - Epoch 131 completed! Steps: 13, Duration: 4.55s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:32,222 - INFO - Learning step - Memory counter: 2314, Epsilon: 0.9900000000000007
+2025-06-08 16:18:37,776 - INFO - Epoch 132 completed! Steps: 10, Duration: 4.55s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:37,776 - INFO - Learning step - Memory counter: 2324, Epsilon: 0.9900000000000007
+2025-06-08 16:18:43,279 - INFO - Epoch 133 completed! Steps: 12, Duration: 4.50s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:43,279 - INFO - Learning step - Memory counter: 2336, Epsilon: 0.9900000000000007
+2025-06-08 16:18:48,812 - INFO - Epoch 134 completed! Steps: 13, Duration: 4.52s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:48,812 - INFO - Learning step - Memory counter: 2349, Epsilon: 0.9900000000000007
+2025-06-08 16:18:54,318 - INFO - Epoch 135 completed! Steps: 12, Duration: 4.50s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:54,318 - INFO - Learning step - Memory counter: 2361, Epsilon: 0.9900000000000007
+2025-06-08 16:18:59,822 - INFO - Epoch 136 completed! Steps: 10, Duration: 4.50s, Current epsilon: 0.9900000000000007
+2025-06-08 16:18:59,822 - INFO - Learning step - Memory counter: 2371, Epsilon: 0.9900000000000007
+2025-06-08 16:19:10,048 - INFO - Epoch 137 completed! Steps: 31, Duration: 9.22s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:10,048 - INFO - Learning step - Memory counter: 2402, Epsilon: 0.9900000000000007
+2025-06-08 16:19:17,806 - INFO - Epoch 138 completed! Steps: 15, Duration: 6.75s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:17,807 - INFO - Learning step - Memory counter: 2417, Epsilon: 0.9900000000000007
+2025-06-08 16:19:23,342 - INFO - Epoch 139 completed! Steps: 3, Duration: 4.52s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:23,342 - INFO - Learning step - Memory counter: 2420, Epsilon: 0.9900000000000007
+2025-06-08 16:19:28,876 - INFO - Epoch 140 completed! Steps: 3, Duration: 4.53s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:28,876 - INFO - Learning step - Memory counter: 2423, Epsilon: 0.9900000000000007
+2025-06-08 16:19:34,391 - INFO - Epoch 141 completed! Steps: 3, Duration: 4.51s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:34,391 - INFO - Learning step - Memory counter: 2426, Epsilon: 0.9900000000000007
+2025-06-08 16:19:39,896 - INFO - Epoch 142 completed! Steps: 13, Duration: 4.50s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:39,896 - INFO - Learning step - Memory counter: 2439, Epsilon: 0.9900000000000007
+2025-06-08 16:19:46,833 - INFO - Epoch 143 completed! Steps: 36, Duration: 5.93s, Current epsilon: 0.9900000000000007
+2025-06-08 16:19:46,833 - INFO - Learning step - Memory counter: 2475, Epsilon: 0.9900000000000007
+2025-06-08 16:20:12,601 - INFO - Epoch 144 completed! Steps: 325, Duration: 24.76s, Current epsilon: 0.9900000000000007
+2025-06-08 16:20:12,601 - INFO - Learning step - Memory counter: 2800, Epsilon: 0.9900000000000007
+2025-06-08 16:20:21,140 - INFO - Epoch 145 completed! Steps: 52, Duration: 7.53s, Current epsilon: 0.9900000000000007
+2025-06-08 16:20:21,140 - INFO - Learning step - Memory counter: 2852, Epsilon: 0.9900000000000007
+2025-06-08 16:20:30,282 - INFO - Epoch 146 completed! Steps: 64, Duration: 8.13s, Current epsilon: 0.9900000000000007
+2025-06-08 16:20:30,282 - INFO - Learning step - Memory counter: 2916, Epsilon: 0.9900000000000007
+2025-06-08 16:20:45,637 - INFO - Epoch 147 completed! Steps: 126, Duration: 14.35s, Current epsilon: 0.9900000000000007
+2025-06-08 16:20:45,637 - INFO - Learning step - Memory counter: 3042, Epsilon: 0.9900000000000007
+2025-06-08 16:21:09,084 - INFO - Epoch 148 completed! Steps: 247, Duration: 22.44s, Current epsilon: 0.9900000000000007
+2025-06-08 16:21:09,084 - INFO - Learning step - Memory counter: 3289, Epsilon: 0.9900000000000007
+2025-06-08 16:21:15,572 - INFO - Epoch 149 completed! Steps: 12, Duration: 5.48s, Current epsilon: 0.9900000000000007
+2025-06-08 16:21:15,572 - INFO - Learning step - Memory counter: 3301, Epsilon: 0.9900000000000007
+2025-06-08 16:21:24,843 - INFO - Epoch 150 completed! Steps: 56, Duration: 8.26s, Current epsilon: 0.9900000000000007
+2025-06-08 16:21:24,843 - INFO - Learning step - Memory counter: 3357, Epsilon: 0.9900000000000007
+2025-06-08 16:21:40,855 - INFO - Epoch 151 completed! Steps: 141, Duration: 15.00s, Current epsilon: 0.9900000000000007
+2025-06-08 16:21:40,855 - INFO - Learning step - Memory counter: 3498, Epsilon: 0.9900000000000007
+2025-06-08 16:21:48,140 - INFO - Epoch 152 completed! Steps: 33, Duration: 6.28s, Current epsilon: 0.9900000000000007
+2025-06-08 16:21:48,141 - INFO - Learning step - Memory counter: 3531, Epsilon: 0.9900000000000007
+2025-06-08 16:22:03,323 - INFO - Epoch 153 completed! Steps: 132, Duration: 14.17s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:03,323 - INFO - Learning step - Memory counter: 3663, Epsilon: 0.9900000000000007
+2025-06-08 16:22:12,875 - INFO - Epoch 154 completed! Steps: 69, Duration: 8.55s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:12,875 - INFO - Learning step - Memory counter: 3732, Epsilon: 0.9900000000000007
+2025-06-08 16:22:23,233 - INFO - Epoch 155 completed! Steps: 50, Duration: 9.35s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:23,233 - INFO - Learning step - Memory counter: 3782, Epsilon: 0.9900000000000007
+2025-06-08 16:22:28,766 - INFO - Epoch 156 completed! Steps: 9, Duration: 4.53s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:28,766 - INFO - Learning step - Memory counter: 3791, Epsilon: 0.9900000000000007
+2025-06-08 16:22:35,822 - INFO - Epoch 157 completed! Steps: 26, Duration: 6.05s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:35,822 - INFO - Learning step - Memory counter: 3817, Epsilon: 0.9900000000000007
+2025-06-08 16:22:41,360 - INFO - Epoch 158 completed! Steps: 9, Duration: 4.53s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:41,360 - INFO - Learning step - Memory counter: 3826, Epsilon: 0.9900000000000007
+2025-06-08 16:22:46,893 - INFO - Epoch 159 completed! Steps: 9, Duration: 4.52s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:46,894 - INFO - Learning step - Memory counter: 3835, Epsilon: 0.9900000000000007
+2025-06-08 16:22:52,432 - INFO - Epoch 160 completed! Steps: 9, Duration: 4.52s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:52,432 - INFO - Learning step - Memory counter: 3844, Epsilon: 0.9900000000000007
+2025-06-08 16:22:57,970 - INFO - Epoch 161 completed! Steps: 9, Duration: 4.52s, Current epsilon: 0.9900000000000007
+2025-06-08 16:22:57,970 - INFO - Learning step - Memory counter: 3853, Epsilon: 0.9900000000000007
+2025-06-08 16:23:04,595 - INFO - Epoch 162 completed! Steps: 23, Duration: 5.61s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:04,595 - INFO - Learning step - Memory counter: 3876, Epsilon: 0.9900000000000007
+2025-06-08 16:23:10,130 - INFO - Epoch 163 completed! Steps: 12, Duration: 4.53s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:10,130 - INFO - Learning step - Memory counter: 3888, Epsilon: 0.9900000000000007
+2025-06-08 16:23:15,647 - INFO - Epoch 164 completed! Steps: 13, Duration: 4.51s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:15,647 - INFO - Learning step - Memory counter: 3901, Epsilon: 0.9900000000000007
+2025-06-08 16:23:21,156 - INFO - Epoch 165 completed! Steps: 12, Duration: 4.50s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:21,156 - INFO - Learning step - Memory counter: 3913, Epsilon: 0.9900000000000007
+2025-06-08 16:23:26,690 - INFO - Epoch 166 completed! Steps: 10, Duration: 4.53s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:26,690 - INFO - Learning step - Memory counter: 3923, Epsilon: 0.9900000000000007
+2025-06-08 16:23:32,210 - INFO - Epoch 167 completed! Steps: 9, Duration: 4.52s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:32,211 - INFO - Learning step - Memory counter: 3932, Epsilon: 0.9900000000000007
+2025-06-08 16:23:39,564 - INFO - Epoch 168 completed! Steps: 42, Duration: 6.35s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:39,564 - INFO - Learning step - Memory counter: 3974, Epsilon: 0.9900000000000007
+2025-06-08 16:23:45,084 - INFO - Epoch 169 completed! Steps: 9, Duration: 4.51s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:45,084 - INFO - Learning step - Memory counter: 3983, Epsilon: 0.9900000000000007
+2025-06-08 16:23:52,187 - INFO - Epoch 170 completed! Steps: 17, Duration: 6.09s, Current epsilon: 0.9900000000000007
+2025-06-08 16:23:52,187 - INFO - Learning step - Memory counter: 4000, Epsilon: 0.9900000000000007
+2025-06-08 16:24:04,743 - INFO - Epoch 171 completed! Steps: 109, Duration: 11.55s, Current epsilon: 0.9900000000000007
+2025-06-08 16:24:04,743 - INFO - Learning step - Memory counter: 4109, Epsilon: 0.9900000000000007
+2025-06-08 16:24:20,135 - INFO - Epoch 172 completed! Steps: 80, Duration: 14.39s, Current epsilon: 0.9900000000000007
+2025-06-08 16:24:20,135 - INFO - Learning step - Memory counter: 4189, Epsilon: 0.9900000000000007
+2025-06-08 16:24:26,207 - INFO - Epoch 173 completed! Steps: 6, Duration: 5.07s, Current epsilon: 0.9900000000000007
+2025-06-08 16:24:26,207 - INFO - Learning step - Memory counter: 4195, Epsilon: 0.9900000000000007
+2025-06-08 16:24:42,717 - INFO - Epoch 174 completed! Steps: 105, Duration: 15.50s, Current epsilon: 0.9900000000000007
+2025-06-08 16:24:42,717 - INFO - Learning step - Memory counter: 4300, Epsilon: 0.9900000000000007
+2025-06-08 16:25:11,617 - INFO - Epoch 175 completed! Steps: 315, Duration: 27.89s, Current epsilon: 0.9900000000000007
+2025-06-08 16:25:11,617 - INFO - Learning step - Memory counter: 4615, Epsilon: 0.9900000000000007
+2025-06-08 16:25:25,298 - INFO - Epoch 176 completed! Steps: 39, Duration: 12.67s, Current epsilon: 0.9900000000000007
+2025-06-08 16:25:25,298 - INFO - Learning step - Memory counter: 4654, Epsilon: 0.9900000000000007
+2025-06-08 16:25:33,864 - INFO - Epoch 177 completed! Steps: 11, Duration: 7.56s, Current epsilon: 0.9900000000000007
+2025-06-08 16:25:33,864 - INFO - Learning step - Memory counter: 4665, Epsilon: 0.9900000000000007
+2025-06-08 16:25:45,975 - INFO - Epoch 178 completed! Steps: 23, Duration: 11.11s, Current epsilon: 0.9900000000000007
+2025-06-08 16:25:45,975 - INFO - Learning step - Memory counter: 4688, Epsilon: 0.9900000000000007
+2025-06-08 16:25:55,128 - INFO - Epoch 179 completed! Steps: 11, Duration: 8.14s, Current epsilon: 0.9900000000000007
+2025-06-08 16:25:55,129 - INFO - Learning step - Memory counter: 4699, Epsilon: 0.9900000000000007
+2025-06-08 16:26:04,582 - INFO - Epoch 180 completed! Steps: 21, Duration: 8.44s, Current epsilon: 0.9900000000000007
+2025-06-08 16:26:04,583 - INFO - Learning step - Memory counter: 4720, Epsilon: 0.9900000000000007
+2025-06-08 16:26:20,079 - INFO - Epoch 181 completed! Steps: 66, Duration: 14.49s, Current epsilon: 0.9900000000000007
+2025-06-08 16:26:20,080 - INFO - Learning step - Memory counter: 4786, Epsilon: 0.9900000000000007
+2025-06-08 16:26:41,022 - INFO - Epoch 182 completed! Steps: 76, Duration: 19.94s, Current epsilon: 0.9900000000000007
+2025-06-08 16:26:41,023 - INFO - Learning step - Memory counter: 4862, Epsilon: 0.9900000000000007
+2025-06-08 16:26:54,263 - INFO - Epoch 183 completed! Steps: 101, Duration: 12.24s, Current epsilon: 0.9900000000000007
+2025-06-08 16:26:54,264 - INFO - Learning step - Memory counter: 4963, Epsilon: 0.9900000000000007
+2025-06-08 16:27:20,480 - INFO - Epoch 184 completed! Steps: 285, Duration: 25.21s, Current epsilon: 0.9900000000000007
+2025-06-08 16:27:20,481 - INFO - Learning step - Memory counter: 5248, Epsilon: 0.9900000000000007
+2025-06-08 16:27:29,194 - INFO - Epoch 185 completed! Steps: 27, Duration: 7.71s, Current epsilon: 0.9900000000000007
+2025-06-08 16:27:29,195 - INFO - Learning step - Memory counter: 5275, Epsilon: 0.9900000000000007
+2025-06-08 16:27:39,249 - INFO - Epoch 186 completed! Steps: 47, Duration: 9.05s, Current epsilon: 0.9900000000000007
+2025-06-08 16:27:39,250 - INFO - Learning step - Memory counter: 5322, Epsilon: 0.9900000000000007
+2025-06-08 16:27:54,253 - INFO - Epoch 187 completed! Steps: 107, Duration: 14.00s, Current epsilon: 0.9900000000000007
+2025-06-08 16:27:54,253 - INFO - Learning step - Memory counter: 5429, Epsilon: 0.9900000000000007
+2025-06-08 16:28:35,810 - INFO - Epoch 188 completed! Steps: 506, Duration: 40.55s, Current epsilon: 0.9900000000000007
+2025-06-08 16:28:35,811 - INFO - Learning step - Memory counter: 5935, Epsilon: 0.9900000000000007
+2025-06-08 16:28:53,708 - INFO - Epoch 189 completed! Steps: 160, Duration: 16.89s, Current epsilon: 0.9900000000000007
+2025-06-08 16:28:53,708 - INFO - Learning step - Memory counter: 6095, Epsilon: 0.9900000000000007
+2025-06-08 16:29:00,193 - INFO - Epoch 190 completed! Steps: 21, Duration: 5.48s, Current epsilon: 0.9900000000000007
+2025-06-08 16:29:00,193 - INFO - Learning step - Memory counter: 6116, Epsilon: 0.9900000000000007
+2025-06-08 16:29:14,872 - INFO - Epoch 191 completed! Steps: 134, Duration: 13.67s, Current epsilon: 0.9900000000000007
+2025-06-08 16:29:14,872 - INFO - Learning step - Memory counter: 6250, Epsilon: 0.9900000000000007
+2025-06-08 16:29:24,812 - INFO - Epoch 192 completed! Steps: 57, Duration: 8.93s, Current epsilon: 0.9900000000000007
+2025-06-08 16:29:24,812 - INFO - Learning step - Memory counter: 6307, Epsilon: 0.9900000000000007
+2025-06-08 16:29:30,301 - INFO - Epoch 193 completed! Steps: 8, Duration: 4.48s, Current epsilon: 0.9900000000000007
+2025-06-08 16:29:30,301 - INFO - Learning step - Memory counter: 6315, Epsilon: 0.9900000000000007
+2025-06-08 16:29:36,617 - INFO - Epoch 194 completed! Steps: 19, Duration: 5.31s, Current epsilon: 0.9900000000000007
+2025-06-08 16:29:36,617 - INFO - Learning step - Memory counter: 6334, Epsilon: 0.9900000000000007
+2025-06-08 16:29:52,942 - INFO - Epoch 195 completed! Steps: 133, Duration: 15.32s, Current epsilon: 0.9900000000000007
+2025-06-08 16:29:52,942 - INFO - Learning step - Memory counter: 6467, Epsilon: 0.9900000000000007
+2025-06-08 16:30:46,245 - INFO - Epoch 196 completed! Steps: 679, Duration: 52.30s, Current epsilon: 0.9900000000000007
+2025-06-08 16:30:46,245 - INFO - Learning step - Memory counter: 7146, Epsilon: 0.9900000000000007
+2025-06-08 16:30:46,257 - INFO - New best model saved! Duration: 52.30s
+2025-06-08 16:30:53,898 - INFO - Epoch 197 completed! Steps: 31, Duration: 6.64s, Current epsilon: 0.9900000000000007
+2025-06-08 16:30:53,898 - INFO - Learning step - Memory counter: 7177, Epsilon: 0.9900000000000007
+2025-06-08 16:31:01,093 - INFO - Epoch 198 completed! Steps: 22, Duration: 6.19s, Current epsilon: 0.9900000000000007
+2025-06-08 16:31:01,094 - INFO - Learning step - Memory counter: 7199, Epsilon: 0.9900000000000007
+2025-06-08 16:31:19,311 - INFO - Epoch 199 completed! Steps: 158, Duration: 17.21s, Current epsilon: 0.9900000000000007
+2025-06-08 16:31:19,311 - INFO - Learning step - Memory counter: 7357, Epsilon: 0.9900000000000007
+2025-06-08 16:31:20,315 - INFO - Training completed! Best model achieved 52.30s and saved at runs/20250608_160214/models/best_continue_train_model_at_epoch_196.pt
+2025-06-08 16:31:20,316 - INFO - 
+
+2025-06-08 16:31:20,316 - INFO - --------------------------------
+2025-06-08 16:31:20,316 - INFO - 
+
+2025-06-08 16:31:20,316 - INFO - Starting model test with model from runs/20250608_160214/models/best_continue_train_model_at_epoch_196.pt
+2025-06-08 16:31:20,320 - INFO - Epoch 0 start.
+2025-06-08 16:31:27,269 - INFO - Game ending image saved to: runs/20250608_160214/images/train_test_round_0_ending_image.png
+2025-06-08 16:31:27,269 - INFO - Epoch 0 completed! Steps: 54, Duration: 6.95s
+2025-06-08 16:31:30,273 - INFO - Test epoch 0 completed
+2025-06-08 16:31:30,283 - INFO - ------------------
+2025-06-08 16:31:30,283 - INFO - Epoch 1 start.
+2025-06-08 16:31:51,434 - INFO - Game ending image saved to: runs/20250608_160214/images/train_test_round_1_ending_image.png
+2025-06-08 16:31:51,434 - INFO - Epoch 1 completed! Steps: 246, Duration: 21.15s
+2025-06-08 16:31:54,436 - INFO - Test epoch 1 completed
+2025-06-08 16:31:54,436 - INFO - ------------------
+2025-06-08 16:31:54,437 - INFO - Epoch 2 start.
+2025-06-08 16:32:10,613 - INFO - Game ending image saved to: runs/20250608_160214/images/train_test_round_2_ending_image.png
+2025-06-08 16:32:10,613 - INFO - Epoch 2 completed! Steps: 188, Duration: 16.18s
+2025-06-08 16:32:13,616 - INFO - Test epoch 2 completed
+2025-06-08 16:32:13,617 - INFO - ------------------
+2025-06-08 16:32:13,617 - INFO - Epoch 3 start.
+2025-06-08 16:32:43,869 - INFO - Game ending image saved to: runs/20250608_160214/images/train_test_round_3_ending_image.png
+2025-06-08 16:32:43,869 - INFO - Epoch 3 completed! Steps: 322, Duration: 30.25s
+2025-06-08 16:32:46,872 - INFO - Test epoch 3 completed
+2025-06-08 16:32:46,873 - INFO - ------------------
+2025-06-08 16:32:46,873 - INFO - Epoch 4 start.
+2025-06-08 16:32:53,809 - INFO - Game ending image saved to: runs/20250608_160214/images/train_test_round_4_ending_image.png
+2025-06-08 16:32:53,810 - INFO - Epoch 4 completed! Steps: 64, Duration: 6.94s
+2025-06-08 16:32:56,813 - INFO - Test epoch 4 completed
+2025-06-08 16:32:56,813 - INFO - ------------------
+2025-06-08 16:32:56,813 - INFO - Model testing completed!
+2025-06-08 16:32:56,813 - INFO - 
+
+2025-06-08 16:32:56,813 - INFO - --------------------------------
+2025-06-08 16:32:56,813 - INFO - 
+
+2025-06-08 16:32:56,819 - INFO - Loaded model from runs/20250608_160214/models/best_continue_train_model_at_epoch_196.pt
+2025-06-08 16:32:56,819 - INFO - Starting continue training with 50 epochs and maximum 4000 steps per epoch
+2025-06-08 16:33:12,850 - INFO - Epoch 0 completed! Steps: 130, Duration: 16.03s, Current epsilon: 1
+2025-06-08 16:33:12,850 - INFO - Learning step - Memory counter: 130, Epsilon: 1
+2025-06-08 16:33:12,864 - INFO - New best model saved! Duration: 16.03s
+2025-06-08 16:34:12,454 - INFO - Epoch 1 completed! Steps: 803, Duration: 58.59s, Current epsilon: 1
+2025-06-08 16:34:12,454 - INFO - Learning step - Memory counter: 933, Epsilon: 1
+2025-06-08 16:34:12,463 - INFO - New best model saved! Duration: 58.59s
+2025-06-08 16:34:21,063 - INFO - Epoch 2 completed! Steps: 53, Duration: 7.60s, Current epsilon: 1
+2025-06-08 16:34:21,064 - INFO - Learning step - Memory counter: 986, Epsilon: 1
+2025-06-08 16:34:48,479 - INFO - Epoch 3 completed! Steps: 346, Duration: 26.41s, Current epsilon: 1
+2025-06-08 16:34:48,479 - INFO - Learning step - Memory counter: 1332, Epsilon: 1
+2025-06-08 16:34:53,978 - INFO - Epoch 4 completed! Steps: 9, Duration: 4.49s, Current epsilon: 1
+2025-06-08 16:34:53,978 - INFO - Learning step - Memory counter: 1341, Epsilon: 1
+2025-06-08 16:34:59,519 - INFO - Epoch 5 completed! Steps: 9, Duration: 4.53s, Current epsilon: 1
+2025-06-08 16:34:59,520 - INFO - Learning step - Memory counter: 1350, Epsilon: 1
+2025-06-08 16:35:11,407 - INFO - Epoch 6 completed! Steps: 94, Duration: 10.88s, Current epsilon: 1
+2025-06-08 16:35:11,408 - INFO - Learning step - Memory counter: 1444, Epsilon: 1
+2025-06-08 16:35:24,419 - INFO - Epoch 7 completed! Steps: 85, Duration: 12.01s, Current epsilon: 1
+2025-06-08 16:35:24,420 - INFO - Learning step - Memory counter: 1529, Epsilon: 1
+2025-06-08 16:35:42,929 - INFO - Epoch 8 completed! Steps: 165, Duration: 17.50s, Current epsilon: 1
+2025-06-08 16:35:42,929 - INFO - Learning step - Memory counter: 1694, Epsilon: 1
+2025-06-08 16:36:55,338 - INFO - Epoch 9 completed! Steps: 945, Duration: 71.41s, Current epsilon: 1
+2025-06-08 16:36:55,339 - INFO - Learning step - Memory counter: 2639, Epsilon: 1
+2025-06-08 16:36:55,348 - INFO - New best model saved! Duration: 71.41s
+2025-06-08 16:38:27,458 - INFO - Epoch 10 completed! Steps: 1281, Duration: 91.11s, Current epsilon: 1
+2025-06-08 16:38:27,459 - INFO - Learning step - Memory counter: 3920, Epsilon: 1
+2025-06-08 16:38:27,472 - INFO - New best model saved! Duration: 91.11s
+2025-06-08 16:40:14,745 - INFO - Epoch 11 completed! Steps: 1381, Duration: 106.27s, Current epsilon: 1
+2025-06-08 16:40:14,746 - INFO - Learning step - Memory counter: 5301, Epsilon: 1
+2025-06-08 16:40:14,751 - INFO - New best model saved! Duration: 106.27s
+2025-06-08 16:41:46,216 - INFO - Epoch 12 completed! Steps: 1260, Duration: 90.46s, Current epsilon: 1
+2025-06-08 16:41:46,217 - INFO - Learning step - Memory counter: 6561, Epsilon: 1
+2025-06-08 16:42:22,522 - INFO - Epoch 13 completed! Steps: 466, Duration: 35.30s, Current epsilon: 1
+2025-06-08 16:42:22,522 - INFO - Learning step - Memory counter: 7027, Epsilon: 1
+2025-06-08 16:43:09,685 - INFO - Epoch 14 completed! Steps: 511, Duration: 46.16s, Current epsilon: 1
+2025-06-08 16:43:09,685 - INFO - Learning step - Memory counter: 7538, Epsilon: 1
+2025-06-08 16:43:16,290 - INFO - Epoch 15 completed! Steps: 12, Duration: 5.59s, Current epsilon: 1
+2025-06-08 16:43:16,290 - INFO - Learning step - Memory counter: 7550, Epsilon: 1
+2025-06-08 16:43:45,409 - INFO - Epoch 16 completed! Steps: 317, Duration: 28.10s, Current epsilon: 1
+2025-06-08 16:43:45,409 - INFO - Learning step - Memory counter: 7867, Epsilon: 1
+2025-06-08 16:44:01,645 - INFO - Epoch 17 completed! Steps: 115, Duration: 15.23s, Current epsilon: 1
+2025-06-08 16:44:01,645 - INFO - Learning step - Memory counter: 7982, Epsilon: 1
+2025-06-08 16:45:25,120 - INFO - Epoch 18 completed! Steps: 1046, Duration: 82.46s, Current epsilon: 1
+2025-06-08 16:45:25,120 - INFO - Learning step - Memory counter: 9028, Epsilon: 1
+2025-06-08 16:46:13,314 - INFO - Epoch 19 completed! Steps: 613, Duration: 47.19s, Current epsilon: 1
+2025-06-08 16:46:13,315 - INFO - Learning step - Memory counter: 9641, Epsilon: 1
+2025-06-08 16:47:14,412 - INFO - Epoch 20 completed! Steps: 826, Duration: 60.09s, Current epsilon: 1
+2025-06-08 16:47:14,413 - INFO - Learning step - Memory counter: 10467, Epsilon: 1
+2025-06-08 16:47:36,802 - INFO - Epoch 21 completed! Steps: 233, Duration: 21.38s, Current epsilon: 1
+2025-06-08 16:47:36,802 - INFO - Learning step - Memory counter: 10700, Epsilon: 1
+2025-06-08 16:49:38,727 - INFO - Epoch 22 completed! Steps: 1731, Duration: 120.92s, Current epsilon: 1
+2025-06-08 16:49:38,728 - INFO - Learning step - Memory counter: 12431, Epsilon: 1
+2025-06-08 16:49:38,744 - INFO - New best model saved! Duration: 120.92s
+2025-06-08 16:50:47,954 - INFO - Epoch 23 completed! Steps: 935, Duration: 68.21s, Current epsilon: 1
+2025-06-08 16:50:47,954 - INFO - Learning step - Memory counter: 13366, Epsilon: 1
+2025-06-08 16:51:05,762 - INFO - Epoch 24 completed! Steps: 165, Duration: 16.80s, Current epsilon: 1
+2025-06-08 16:51:05,762 - INFO - Learning step - Memory counter: 13531, Epsilon: 1
+2025-06-08 16:51:17,792 - INFO - Epoch 25 completed! Steps: 88, Duration: 11.02s, Current epsilon: 1
+2025-06-08 16:51:17,792 - INFO - Learning step - Memory counter: 13619, Epsilon: 1
+2025-06-08 16:51:23,293 - INFO - Epoch 26 completed! Steps: 12, Duration: 4.49s, Current epsilon: 1
+2025-06-08 16:51:23,293 - INFO - Learning step - Memory counter: 13631, Epsilon: 1
+2025-06-08 16:51:39,090 - INFO - Epoch 27 completed! Steps: 137, Duration: 14.79s, Current epsilon: 1
+2025-06-08 16:51:39,090 - INFO - Learning step - Memory counter: 13768, Epsilon: 1
+2025-06-08 16:53:26,201 - INFO - Epoch 28 completed! Steps: 1407, Duration: 106.11s, Current epsilon: 1
+2025-06-08 16:53:26,201 - INFO - Learning step - Memory counter: 15175, Epsilon: 1
+2025-06-08 16:53:31,838 - INFO - Epoch 29 completed! Steps: 1, Duration: 4.63s, Current epsilon: 1
+2025-06-08 16:53:31,838 - INFO - Learning step - Memory counter: 15176, Epsilon: 1
+2025-06-08 16:53:37,474 - INFO - Epoch 30 completed! Steps: 1, Duration: 4.63s, Current epsilon: 1
+2025-06-08 16:53:37,474 - INFO - Learning step - Memory counter: 15177, Epsilon: 1
+2025-06-08 16:53:43,111 - INFO - Epoch 31 completed! Steps: 1, Duration: 4.63s, Current epsilon: 1
+2025-06-08 16:53:43,111 - INFO - Learning step - Memory counter: 15178, Epsilon: 1
+2025-06-08 16:53:48,748 - INFO - Epoch 32 completed! Steps: 1, Duration: 4.63s, Current epsilon: 1
+2025-06-08 16:53:48,748 - INFO - Learning step - Memory counter: 15179, Epsilon: 1
+2025-06-08 16:53:54,368 - INFO - Epoch 33 completed! Steps: 1, Duration: 4.61s, Current epsilon: 1
+2025-06-08 16:53:54,368 - INFO - Learning step - Memory counter: 15180, Epsilon: 1
+2025-06-08 16:54:00,007 - INFO - Epoch 34 completed! Steps: 1, Duration: 4.63s, Current epsilon: 1
+2025-06-08 16:54:00,008 - INFO - Learning step - Memory counter: 15181, Epsilon: 1
+2025-06-08 16:54:07,311 - INFO - Epoch 35 completed! Steps: 4, Duration: 6.29s, Current epsilon: 1
+2025-06-08 16:54:07,312 - INFO - Learning step - Memory counter: 15185, Epsilon: 1
+2025-06-08 16:54:15,680 - INFO - Epoch 36 completed! Steps: 6, Duration: 7.36s, Current epsilon: 1
+2025-06-08 16:54:15,680 - INFO - Learning step - Memory counter: 15191, Epsilon: 1
+2025-06-08 16:54:21,323 - INFO - Epoch 37 completed! Steps: 1, Duration: 4.64s, Current epsilon: 1
+2025-06-08 16:54:21,323 - INFO - Learning step - Memory counter: 15192, Epsilon: 1
+2025-06-08 16:54:27,007 - INFO - Epoch 38 completed! Steps: 1, Duration: 4.67s, Current epsilon: 1
+2025-06-08 16:54:27,007 - INFO - Learning step - Memory counter: 15193, Epsilon: 1
+2025-06-08 16:54:35,433 - INFO - Epoch 39 completed! Steps: 7, Duration: 7.42s, Current epsilon: 1
+2025-06-08 16:54:35,434 - INFO - Learning step - Memory counter: 15200, Epsilon: 1
+2025-06-08 16:54:42,871 - INFO - Epoch 40 completed! Steps: 7, Duration: 6.43s, Current epsilon: 1
+2025-06-08 16:54:42,871 - INFO - Learning step - Memory counter: 15207, Epsilon: 1
+2025-06-08 16:54:48,503 - INFO - Epoch 41 completed! Steps: 1, Duration: 4.62s, Current epsilon: 1
+2025-06-08 16:54:48,503 - INFO - Learning step - Memory counter: 15208, Epsilon: 1
+2025-06-08 16:54:55,922 - INFO - Epoch 42 completed! Steps: 7, Duration: 6.41s, Current epsilon: 1
+2025-06-08 16:54:55,923 - INFO - Learning step - Memory counter: 15215, Epsilon: 1
+2025-06-08 16:55:03,196 - INFO - Epoch 43 completed! Steps: 4, Duration: 6.27s, Current epsilon: 1
+2025-06-08 16:55:03,196 - INFO - Learning step - Memory counter: 15219, Epsilon: 1
+2025-06-08 16:55:10,601 - INFO - Epoch 44 completed! Steps: 8, Duration: 6.40s, Current epsilon: 1
+2025-06-08 16:55:10,601 - INFO - Learning step - Memory counter: 15227, Epsilon: 1
+2025-06-08 16:55:17,490 - INFO - Epoch 45 completed! Steps: 6, Duration: 5.88s, Current epsilon: 1
+2025-06-08 16:55:17,490 - INFO - Learning step - Memory counter: 15233, Epsilon: 1
+2025-06-08 16:55:25,909 - INFO - Epoch 46 completed! Steps: 6, Duration: 7.41s, Current epsilon: 1
+2025-06-08 16:55:25,909 - INFO - Learning step - Memory counter: 15239, Epsilon: 1
+2025-06-08 16:55:31,549 - INFO - Epoch 47 completed! Steps: 1, Duration: 4.62s, Current epsilon: 1
+2025-06-08 16:55:31,549 - INFO - Learning step - Memory counter: 15240, Epsilon: 1
+2025-06-08 16:55:38,836 - INFO - Epoch 48 completed! Steps: 4, Duration: 6.27s, Current epsilon: 1
+2025-06-08 16:55:38,836 - INFO - Learning step - Memory counter: 15244, Epsilon: 1
+2025-06-08 16:55:44,472 - INFO - Epoch 49 completed! Steps: 1, Duration: 4.63s, Current epsilon: 1
+2025-06-08 16:55:44,473 - INFO - Learning step - Memory counter: 15245, Epsilon: 1
+2025-06-08 16:55:45,482 - INFO - Training completed! Best model achieved 120.92s and saved at runs/20250608_160214/models/best_model_at_epoch_22.pt
+2025-06-08 16:55:45,483 - INFO - 
+
+2025-06-08 16:55:45,483 - INFO - --------------------------------
+2025-06-08 16:55:45,483 - INFO - 
+
+2025-06-08 16:55:45,483 - INFO - Starting model test with model from runs/20250608_160214/models/best_model_at_epoch_22.pt
+2025-06-08 16:55:45,489 - INFO - Epoch 0 start.
+2025-06-08 16:55:53,825 - INFO - Game ending image saved to: runs/20250608_160214/images/continue_train_test_round_0_ending_image.png
+2025-06-08 16:55:53,825 - INFO - Epoch 0 completed! Steps: 70, Duration: 8.34s
+2025-06-08 16:55:56,828 - INFO - Test epoch 0 completed
+2025-06-08 16:55:56,828 - INFO - ------------------
+2025-06-08 16:55:56,828 - INFO - Epoch 1 start.
+2025-06-08 16:56:04,135 - INFO - Game ending image saved to: runs/20250608_160214/images/continue_train_test_round_1_ending_image.png
+2025-06-08 16:56:04,135 - INFO - Epoch 1 completed! Steps: 56, Duration: 7.31s
+2025-06-08 16:56:07,139 - INFO - Test epoch 1 completed
+2025-06-08 16:56:07,139 - INFO - ------------------
+2025-06-08 16:56:07,139 - INFO - Epoch 2 start.
+2025-06-08 16:56:21,177 - INFO - Game ending image saved to: runs/20250608_160214/images/continue_train_test_round_2_ending_image.png
+2025-06-08 16:56:21,177 - INFO - Epoch 2 completed! Steps: 102, Duration: 14.04s
+2025-06-08 16:56:24,180 - INFO - Test epoch 2 completed
+2025-06-08 16:56:24,180 - INFO - ------------------
+2025-06-08 16:56:24,180 - INFO - Epoch 3 start.
+2025-06-08 16:56:28,716 - INFO - Game ending image saved to: runs/20250608_160214/images/continue_train_test_round_3_ending_image.png
+2025-06-08 16:56:28,717 - INFO - Epoch 3 completed! Steps: 12, Duration: 4.54s
+2025-06-08 16:56:31,720 - INFO - Test epoch 3 completed
+2025-06-08 16:56:31,720 - INFO - ------------------
+2025-06-08 16:56:31,720 - INFO - Epoch 4 start.
+2025-06-08 16:56:38,724 - INFO - Game ending image saved to: runs/20250608_160214/images/continue_train_test_round_4_ending_image.png
+2025-06-08 16:56:38,724 - INFO - Epoch 4 completed! Steps: 25, Duration: 7.00s
+2025-06-08 16:56:41,727 - INFO - Test epoch 4 completed
+2025-06-08 16:56:41,728 - INFO - ------------------
+2025-06-08 16:56:41,728 - INFO - Model testing completed!
