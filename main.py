@@ -15,7 +15,7 @@ from datetime import datetime
 import logging
 import json
 win_unicode_console.enable()
-from DQN import DQN_Trainer, DQNModel_v1
+from DQN import *
 from env import Runner_Env, WebDriver
 from dino_agent import Dino
 
@@ -74,76 +74,80 @@ def save_args_to_json(args, run_dir):
     
     return param_file
 
-def online_training(trainer, agent, env, max_epoch, max_step, run_dir, logger, debug=False, model_path=None, min_memory_count_to_start_training=100):
+def online_training(
+        cur_train_round, 
+        trainer, 
+        agent, 
+        env, 
+        max_epoch, 
+        max_step, 
+        run_dir, 
+        logger, 
+        debug=False, 
+        model_path=None, 
+        min_memory_count_to_start_training=100, 
+        image_wait_time=0.1
+    ):
     max_duration_achieved = 0  # Track the maximum duration time achieved
     best_model_path = None  # Track the path of the best model
-    continue_train = False
+    best_model_screenshot_path = None  # Track the path of the best model screenshot
     if model_path is not None:
-        continue_train = True
         trainer.load_model(model_path)
         trainer.epsilon_init = 1
         logger.info(f"Loaded model from {model_path}")
 
-    if continue_train:
-        logger.info(f"Starting continue training with {max_epoch} epochs and maximum {max_step} steps per epoch")
-    else:
-        logger.info(f"Starting training with {max_epoch} epochs and maximum {max_step} steps per epoch")
+    logger.info(f"Starting training with {max_epoch} epochs and maximum {max_step} steps per epoch")
 
-    save_path = os.path.join(run_dir, 'models')
     for j in range(max_epoch):
         epoch_start_time = time.time()  # Record epoch start time
         env.start()
         env.wait(4)
         init_time = env.get_time()
-        image = env.get_image()
-        s = env.get_states(image)
+        image_1, image_2 = env.get_image(image_wait_time)
+        s_1, s_2 = env.get_states(image_1, image_2)
         r = 0
         if debug:
-            plot_track_image(env, image, run_dir, -1)
+            plot_track_image(env, image_1, run_dir, -1)
         
         current_steps = 0
         for i in range(max_step):
-            a = trainer.choose_action(s)
+            a = trainer.choose_action(s_1, s_2)
             if a == 1:
                 agent.jump()
-            elif a == 2:
-                agent.crawl()
+            # elif a == 2:
+            #     agent.crawl()
             
-            image = env.get_image()
-            done = env.is_done(image)
+            image_1, image_2 = env.get_image(image_wait_time)
+            s_1_, s_2_ = env.get_states(image_1, image_2)
+            done = env.is_done(image_1)
 
             if debug:
-                plot_track_image(env, image, run_dir, i)
+                plot_track_image(env, image_1, run_dir, i)
             if done:
-                s_ = s
                 r = -5
             else:
                 time_diff = env.get_time() - init_time
-                s_ = env.get_states(image)
-                if a == 0:
-                    r = max((max(agent.jump_duration, agent.crawl_duration)) * time_diff, 5)
-                elif a == 1:
-                    r = max(agent.jump_duration * time_diff, 5)
-                else:
-                    r = max(agent.crawl_duration * time_diff, 5)
+                r = max(agent.jump_duration * time_diff, 5)
 
             if debug:
-                logger.info(f"Memory saved: \nState: \t\t{s} \nNext State: \t{s_} \nAction: {a} \nReward: {r}")
+                cur_states = torch.cat([s_1, s_2])
+                next_states = torch.cat([s_1_, s_2_])
+                logger.info(f"Memory saved: \nState: \t\t{cur_states} \nNext State: \t{next_states} \nAction: {a} \nReward: {r}")
 
-            trainer.save_memory(s, s_, a, r)
-            s = s_
+            trainer.save_memory(s_1, s_2, s_1_, s_2_, a, r)
+            s_1, s_2 = s_1_, s_2_
             current_steps = i + 1
             epoch_duration = time.time() - epoch_start_time
 
             if done or i == max_step - 1:
-                logger.info(f"Epoch {j} completed! Steps: {current_steps}, Duration: {epoch_duration:.2f}s, Current epsilon: {trainer.epsilon_init}")
+                logger.info(f"Epoch {j} completed! Steps: {current_steps}, Duration: {epoch_duration:.2f}s, Current epsilon: {trainer.epsilon_init:.3f}")
                 break
 
             if debug:
                 print(f"-------------------------")
 
         if trainer.memory_counter >= min_memory_count_to_start_training:
-            logger.info(f"Learning step - Memory counter: {trainer.memory_counter}, Epsilon: {trainer.epsilon_init}")
+            logger.info(f"Learning step - Memory counter: {trainer.memory_counter}, Epsilon: {trainer.epsilon_init:.3f}")
             trainer.learning()
 
         # Check and save model after epoch completion
@@ -152,13 +156,17 @@ def online_training(trainer, agent, env, max_epoch, max_step, run_dir, logger, d
             # Remove previous best model if it exists
             if best_model_path is not None and os.path.exists(best_model_path):
                 os.remove(best_model_path)
-            # Save new best model
-            if continue_train:
-                best_model_path = os.path.join(save_path, f"best_model_at_epoch_{j}.pt")
-            else:
-                best_model_path = os.path.join(save_path, f"best_continue_train_model_at_epoch_{j}.pt")
+            if best_model_screenshot_path is not None and os.path.exists(best_model_screenshot_path):
+                os.remove(best_model_screenshot_path)
+            # save best model
+            best_model_path = os.path.join(run_dir, 'models', f"best_model_at_train_round_{cur_train_round}_epoch_{j}.pt")
             trainer.save_model(best_model_path)
             logger.info(f"New best model saved! Duration: {max_duration_achieved:.2f}s")
+            # Save screenshot of the game state
+            best_model_screenshot_path = os.path.join(run_dir, 'images', f'best_model_screenshot_at_train_round_{cur_train_round}_epoch_{j}.png')
+            og_image = env.get_game_screenshot()
+            cv2.imwrite(best_model_screenshot_path, og_image)
+            logger.info(f"Game screenshot saved to: {best_model_screenshot_path}")
 
         if debug:
             logger.info("Debug mode: Press Enter to continue...")
@@ -169,33 +177,36 @@ def online_training(trainer, agent, env, max_epoch, max_step, run_dir, logger, d
     logger.info(f"Training completed! Best model achieved {max_duration_achieved:.2f}s and saved at {best_model_path}")
     return best_model_path
 
-def image_test(env, save_dir='./', logger=None):
+def image_test(env, image_wait_time, save_dir='./', logger=None):
     logger.info("Starting image test")
     env.start()
-    env.wait(6.5)
+    env.wait(5)
     
     # Get full screenshot
-    og_image = env.get_game_screenshot()
-    game_screenshot_path = os.path.join(save_dir, 'images', 'game_screenshot.png')
-    cv2.imwrite(game_screenshot_path, og_image)
+    image_1 = env.get_game_screenshot()
+    env.wait(image_wait_time)
+    image_2 = env.get_game_screenshot()
+
+    game_screenshot_path = os.path.join(save_dir, 'images', 'game_screenshot_1.png')
+    cv2.imwrite(game_screenshot_path, image_1)
     logger.info(f"Original game screenshot image saved to: {game_screenshot_path}")
     
-    binary_image = env.get_binary_image(og_image)
-    processed_image_path = os.path.join(save_dir, 'images', 'processed_image.png')
-    cv2.imwrite(processed_image_path, binary_image)
+    binary_image_1 = env.get_binary_image(image_1)
+    processed_image_path = os.path.join(save_dir, 'images', 'processed_image_1.png')
+    cv2.imwrite(processed_image_path, binary_image_1)
     logger.info(f"Processed game screenshot image saved to: {processed_image_path}")
 
-    track_image = env.get_track(binary_image)       
-    track_image_path = os.path.join(save_dir, 'images', 'track_image.png')
+    track_image = env.get_track(binary_image_1)       
+    track_image_path = os.path.join(save_dir, 'images', 'track_image_1.png')
     cv2.imwrite(track_image_path, track_image)
     logger.info(f"track image saved to: {track_image_path}")
 
-    ending_image = env.get_ending(binary_image)       
-    ending_image_path = os.path.join(save_dir, 'images', 'ending_image.png')
+    ending_image = env.get_ending(binary_image_1)       
+    ending_image_path = os.path.join(save_dir, 'images', 'ending_image_1.png')
     cv2.imwrite(ending_image_path, ending_image)
     logger.info(f"ending image saved to: {ending_image_path}")
 
-    is_done = env.is_done(binary_image)
+    is_done = env.is_done(binary_image_1)
     logger.info(f"is_done: {is_done}")
     
     states_grid = env.split_states(track_image)
@@ -211,9 +222,6 @@ def image_test(env, save_dir='./', logger=None):
     between_01_state_value = env.compute_state_value_between_01(states_grid)
     logger.info(f"Between 01 state value shape:\n{between_01_state_value}")
 
-    s = env.get_states(binary_image)
-    logger.info(f"States grid shape: {s.shape}")  
-    logger.info(f"States grid:\n{s}")
     
     # Create a figure to display all states
     # Calculate figure size based on grid dimensions
@@ -231,10 +239,74 @@ def image_test(env, save_dir='./', logger=None):
             between_value = f'{between_01_state_value[i][j]:.2f}'
             plt.title(f'{real_value}, {binary_state_value[i][j]}, {between_value}')
     plt.tight_layout()
-    states_grid_path = os.path.join(save_dir, 'images', 'states_grid.png')
+    states_grid_path = os.path.join(save_dir, 'images', 'states_grid_1.png')
     plt.savefig(states_grid_path)
     plt.close()
     logger.info(f"States grid image saved to: {states_grid_path}")
+
+    logger.info('---------------------')
+    
+    game_screenshot_path = os.path.join(save_dir, 'images', 'game_screenshot_2.png')
+    cv2.imwrite(game_screenshot_path, image_2)
+    logger.info(f"Original game screenshot image saved to: {game_screenshot_path}")
+    
+    binary_image_2 = env.get_binary_image(image_2)
+    processed_image_path = os.path.join(save_dir, 'images', 'processed_image_2.png')
+    cv2.imwrite(processed_image_path, binary_image_2)
+    logger.info(f"Processed game screenshot image saved to: {processed_image_path}")
+
+    track_image = env.get_track(binary_image_2)       
+    track_image_path = os.path.join(save_dir, 'images', 'track_image_2.png')
+    cv2.imwrite(track_image_path, track_image)
+    logger.info(f"track image saved to: {track_image_path}")
+
+    ending_image = env.get_ending(binary_image_2)       
+    ending_image_path = os.path.join(save_dir, 'images', 'ending_image_2.png')
+    cv2.imwrite(ending_image_path, ending_image)
+    logger.info(f"ending image saved to: {ending_image_path}")
+
+    is_done = env.is_done(binary_image_2)
+    logger.info(f"is_done: {is_done}")
+    
+    states_grid = env.split_states(track_image)
+    logger.info(f"States grid shape: {states_grid.shape}")
+
+    real_state_value = env.compute_state_value_real(states_grid)
+    logger.info(f"Real state value shape:\n{real_state_value}")
+
+
+    binary_state_value = env.compute_state_value_binary(states_grid) 
+    logger.info(f"Binary state value shape:\n{binary_state_value}")
+
+    between_01_state_value = env.compute_state_value_between_01(states_grid)
+    logger.info(f"Between 01 state value shape:\n{between_01_state_value}")
+    
+    # Create a figure to display all states
+    # Calculate figure size based on grid dimensions
+    fig_width = states_grid.shape[1] * 2  # 2 inches per column
+    fig_height = states_grid.shape[0] * 2  # 2 inches per row
+    plt.figure(figsize=(fig_width, fig_height))
+    
+    for i in range(states_grid.shape[0]):  # state_layer rows
+        for j in range(states_grid.shape[1]):  # state_size_per_layer columns
+            plt.subplot(states_grid.shape[0], states_grid.shape[1], i * states_grid.shape[1] + j + 1)
+            plt.imshow(states_grid[i][j], cmap='gray')
+            plt.axis('off')
+            # Add state values as title for each image
+            real_value = f'{real_state_value[i][j]:d}'
+            between_value = f'{between_01_state_value[i][j]:.2f}'
+            plt.title(f'{real_value}, {binary_state_value[i][j]}, {between_value}')
+    plt.tight_layout()
+    states_grid_path = os.path.join(save_dir, 'images', 'states_grid_2.png')
+    plt.savefig(states_grid_path)
+    plt.close()
+    logger.info(f"States grid image saved to: {states_grid_path}")
+
+    s_1, s_2 = env.get_states(binary_image_1, binary_image_2)
+    print(s_1.shape, s_2.shape)
+    states = np.vstack([s_1, s_2])
+    logger.info(f"States grid shape: {states.shape}")
+    logger.info(f"States grid:\n{states}")
 
 def plot_track_image(env, binary_image, save_dir='./', idx=0):
     track_image = env.get_track(binary_image)       
@@ -252,19 +324,19 @@ def model_test(save_dir, model, agent, env, max_epoch, model_path, save_tag='tra
         epoch_start_time = time.time()  # Record epoch start time
         env.start()
         env.wait(3.5)
-        image = env.get_image()
-        s = env.get_states(image)
+        image_1, image_2 = env.get_image()
+        s_1, s_2 = env.get_states(image_1, image_2)
         current_steps = 1
         
         while True:
-            a = model.choose_action(s)
+            a = model.choose_action(s_1, s_2)
             if a == 1:
                 agent.jump()
-            elif a == 2:
-                agent.crawl()
-            image = env.get_image()
-            s_ = env.get_states(image)
-            done = env.is_done(image)
+            # elif a == 2:
+            #     agent.crawl()
+            image_1, image_2 = env.get_image()
+            s_1_, s_2_ = env.get_states(image_1, image_2)
+            done = env.is_done(image_1)
             current_steps += 1
             if done: 
                 # save game ending image
@@ -280,7 +352,7 @@ def model_test(save_dir, model, agent, env, max_epoch, model_path, save_tag='tra
                 # input("Press Enter to continue...")
                 time.sleep(2)
                 break
-            s = s_
+            s_1, s_2 = s_1_, s_2_
         
         env.wait(1)
         logger.info(f"Test epoch {j} completed")
@@ -311,6 +383,8 @@ def main():
                       help='Number of steps per epoch for continue training')
     parser.add_argument('--continue_train_min_memory_count_to_start_training', type=int, default=100,
                       help='Minimum memory size required before starting continue training')
+    parser.add_argument('--continue_train_memory_size', type=int, default=1500,
+                      help='Memory size for continue training')
     
     # test parameters
     parser.add_argument('--test_epochs', type=int, default=5,
@@ -325,8 +399,8 @@ def main():
                       help='Discount factor')
     parser.add_argument('--jump_duration', type=float, default=0.355,
                       help='Duration for jump action in seconds')
-    parser.add_argument('--crawl_duration', type=float, default=0.5,
-                      help='Duration for crawl action in seconds')
+    parser.add_argument('--train_rounds', type=int, default=1,
+                      help='Number of training rounds')
     
     # DQN model parameters
     parser.add_argument('--epsilon_increase', type=float, default=0.005,
@@ -353,6 +427,8 @@ def main():
                       help='URL of the game')
     parser.add_argument('--number_of_actions', type=int, default=3,
                       help='Number of possible actions')
+    parser.add_argument('--image_wait_time', type=float, default=0.1,
+                      help='Time to wait for image to be updated')
     
     # Window parameters
     parser.add_argument('--window_width', type=int, default=800,
@@ -420,14 +496,14 @@ def main():
         args.state_binary_threshold,
         args.is_done_threshold
     )
-    runner = Dino(web_driver, args.jump_duration, args.crawl_duration)
+    runner = Dino(web_driver, args.jump_duration)
     
     # Initialize DQN model and trainer
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logger.info(f"Using device: {device}")
     
-    eval_net = DQNModel_v1(args.state_grid_rows * args.state_grid_cols, args.number_of_actions).to(device)
-    target_net = DQNModel_v1(args.state_grid_rows * args.state_grid_cols, args.number_of_actions).to(device)
+    eval_net = DQNModel_v3(args.state_grid_rows * args.state_grid_cols, args.number_of_actions).to(device)
+    target_net = DQNModel_v3(args.state_grid_rows * args.state_grid_cols, args.number_of_actions).to(device)
     
     trainer = DQN_Trainer(
         eval_net=eval_net,
@@ -445,60 +521,31 @@ def main():
     )
     
     if args.mode == 'train':
-        best_model_path = online_training(
-            trainer,  
-            runner, 
-            environment, 
-            args.epochs, 
-            args.steps, 
-            run_dir, 
-            logger,
-            args.debug,
-            args.model_path,
-            args.min_memory_count_to_start_training,
-        )
-        logger.info("\n")
-        logger.info("--------------------------------")
-        logger.info("\n")
-        model_test(
-            run_dir,
-            trainer, 
-            runner, 
-            environment, 
-            args.test_epochs, 
-            best_model_path, 
-            'train',
-            logger
-        )
-        logger.info("\n")
-        logger.info("--------------------------------")
-        logger.info("\n")
-        trainer.reset_trainer(args.epsilon, args.continue_train_min_memory_count_to_start_training)
-        best_continue_train_model_path = online_training(
-            trainer,  
-            runner, 
-            environment, 
-            args.continue_train_epochs, 
-            args.continue_train_steps, 
-            run_dir, 
-            logger,
-            args.debug,
-            best_model_path,
-            args.continue_train_min_memory_count_to_start_training,
-        )
-        logger.info("\n")
-        logger.info("--------------------------------")
-        logger.info("\n")
-        model_test(
-            run_dir,
-            trainer, 
-            runner, 
-            environment, 
-            args.test_epochs, 
-            best_continue_train_model_path, 
-            'continue_train',
-            logger
-        )
+        best_model_path = None
+        for cur_train_round in range(args.train_rounds):
+            logger.info(f"Training round {cur_train_round} start.")
+            if cur_train_round == 0:
+                cur_epoch = args.epochs
+                cur_steps = args.steps
+                cur_min_memory_count_to_start_training = args.min_memory_count_to_start_training
+            else:
+                cur_epoch = args.continue_train_epochs
+                cur_steps = args.continue_train_steps
+                cur_min_memory_count_to_start_training = args.continue_train_min_memory_count_to_start_training
+            best_model_path = online_training(
+                cur_train_round,
+                trainer,  
+                runner, 
+                environment, 
+                cur_epoch, 
+                cur_steps, 
+                run_dir, 
+                logger,
+                args.debug,
+                best_model_path,
+                cur_min_memory_count_to_start_training,
+                args.image_wait_time
+            )
     elif args.mode == 'test':
         if args.model_path is None:
             logger.error("Model path is required for test mode")
@@ -508,12 +555,12 @@ def main():
             trainer, 
             runner, 
             environment, 
-            args.epochs, 
+            args.test_epochs, 
             args.model_path, 
             logger
         )
     elif args.mode == 'image':
-        image_test(environment, run_dir, logger)
+        image_test(environment, args.image_wait_time, run_dir, logger)
 
     environment.env_destroy()
 

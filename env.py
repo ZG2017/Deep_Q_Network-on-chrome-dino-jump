@@ -107,10 +107,13 @@ class Runner_Env():
         )
         return binary_image
     
-    def get_image(self):
-        og_image = self.get_game_screenshot()
-        processed_image = self.get_binary_image(og_image)
-        return processed_image
+    def get_image(self, image_wait_time=0.1):
+        image_1 = self.get_game_screenshot()
+        binary_image_1 = self.get_binary_image(image_1)
+        time.sleep(image_wait_time)
+        image_2 = self.get_game_screenshot()
+        binary_image_2 = self.get_binary_image(image_2)
+        return binary_image_1, binary_image_2
     
     def get_track(self, image):
         # Extract track area using track_bounding_box
@@ -212,13 +215,19 @@ class Runner_Env():
         state_value = np.count_nonzero(state_grid, axis=(2,3), keepdims=False)
         return state_value
     
-    def get_states(self, binary_image):
-        track_image = self.get_track(binary_image)       
-        states_grid = self.split_states(track_image)
-        state_value = self.compute_state_value_binary(states_grid)
+    def get_states(self, binary_image_1, binary_image_2):
+        track_image_1 = self.get_track(binary_image_1)       
+        states_grid_1 = self.split_states(track_image_1)
+        state_value_1 = self.compute_state_value_binary(states_grid_1)
         # state_value = self.compute_state_value_between_01(states_grid)
-        state_value = state_value.T.flatten()
-        return state_value
+        state_value_1 = state_value_1.T.flatten()
+
+        track_image_2 = self.get_track(binary_image_2)       
+        states_grid_2 = self.split_states(track_image_2)
+        state_value_2 = self.compute_state_value_binary(states_grid_2)
+        # state_value = self.compute_state_value_between_01(states_grid)
+        state_value_2 = state_value_2.T.flatten()
+        return state_value_1, state_value_2
     
     def start(self):
         self.web_driver.handler.send_keys(Keys.SPACE)

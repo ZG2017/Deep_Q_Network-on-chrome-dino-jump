@@ -2,21 +2,24 @@
 
 python main.py \
     --mode train \
-    --epochs 200 \
+    --train_rounds 5 \
+    --epochs 150 \
     --steps 2000 \
     --min_memory_count_to_start_training 100 \
-    --continue_train_epochs 50 \
+    --memory_size 1000 \
+    --continue_train_epochs 100 \
     --continue_train_steps 4000 \
     --continue_train_min_memory_count_to_start_training 0 \
+    --continue_train_memory_size 3000 \
     --test_epochs 5 \
     --lr 0.01 \
     --epsilon 0.99 \
     --gamma 0.95 \
     --epsilon_increase 0.01 \
     --net_replace_memory_gap 200 \
-    --memory_size 2000 \
     --batch_size 32 \
-    --number_of_actions 3 \
+    --number_of_actions 2 \
+    --image_wait_time 0.00 \
     --chrome_driver_path "/home/newton/chrome_driver/chromedriver-linux64/chromedriver" \
     --game_url "http://localhost:8000/" \
     --window_width 600 \
@@ -35,5 +38,4 @@ python main.py \
     --state_grid_cols 12 \
     --state_binary_threshold 0.05 \
     --is_done_threshold 0.5 \
-    --jump_duration 0.5 \
-    --crawl_duration 0.3
+    --jump_duration 0.5

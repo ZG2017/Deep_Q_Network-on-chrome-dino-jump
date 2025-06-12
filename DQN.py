@@ -54,7 +54,53 @@ class DQNModel_v3(nn.Module):
         """
         super(DQNModel_v3, self).__init__()
         self.net = nn.Sequential(
-            nn.Linear(states_size*3, 60),
+            nn.Linear(states_size*3, 120),
+            nn.ReLU(),
+            nn.Linear(120, 30),
+            nn.ReLU(),
+            nn.Linear(30, action_size),
+        )
+    
+    def forward(self, state_t, state_t_plus_1):
+        x = torch.cat([state_t, torch.abs(state_t_plus_1 - state_t), state_t_plus_1], dim=1)
+        return self.net(x)
+    
+
+class DQNModel_v3_1(nn.Module):
+    def __init__(self, states_size, action_size):
+        """
+        The DQN model with input dim being 3*states_size to handle speed up in later of the game.
+        Args:
+            states_size: int, the number of states
+            action_size: int, the number of actions 
+        """
+        super(DQNModel_v3_1, self).__init__()
+        self.net = nn.Sequential(
+            nn.Linear(states_size*3, 120),
+            nn.ReLU(),
+            nn.Linear(120, 60),
+            nn.ReLU(),
+            nn.Linear(60, 30),
+            nn.ReLU(),
+            nn.Linear(30, action_size),
+        )
+    
+    def forward(self, state_t, state_t_plus_1):
+        x = torch.cat([state_t, torch.abs(state_t_plus_1 - state_t), state_t_plus_1], dim=1)
+        return self.net(x)
+
+    
+class DQNModel_v4(nn.Module):
+    def __init__(self, states_size, action_size):
+        """
+        The DQN model with input dim being 3*states_size to handle speed up in later of the game.
+        Args:
+            states_size: int, the number of states
+            action_size: int, the number of actions 
+        """
+        super(DQNModel_v4, self).__init__()
+        self.net = nn.Sequential(
+            nn.Linear(states_size*2, 60),
             nn.ReLU(),
             nn.Linear(60, 15),
             nn.ReLU(),
@@ -62,7 +108,27 @@ class DQNModel_v3(nn.Module):
         )
     
     def forward(self, state_t, state_t_plus_1):
-        x = torch.cat([state_t, torch.abs(state_t_plus_1 - state_t), state_t_plus_1], dim=1)
+        x = torch.cat([state_t, state_t_plus_1], dim=1)
+        return self.net(x)
+    
+
+class DQNModel_v5(nn.Module):
+    def __init__(self, states_size, action_size):
+        """
+        The DQN model with input dim being 3*states_size to handle speed up in later of the game.
+        Args:
+            states_size: int, the number of states
+            action_size: int, the number of actions 
+        """
+        super(DQNModel_v5, self).__init__()
+        self.net = nn.Sequential(
+            nn.Linear(states_size, 60),
+            nn.ReLU(),
+            nn.Linear(60, action_size)
+        )
+    
+    def forward(self, state_t, state_t_plus_1):
+        x = torch.abs(state_t-state_t_plus_1)
         return self.net(x)
 
 class DQN_Trainer:
@@ -95,7 +161,7 @@ class DQN_Trainer:
         self.net_replace_memory_gap = net_replace_memory_gap
         self.memory_counter = 0
         self.last_replace_counter = min_memory_count_to_start_training  # Track the last memory counter when we replaced the network
-        self.memory = np.zeros((self.memory_size, 2 * self.number_of_states + 2))
+        self.memory = np.zeros((self.memory_size, 4 * self.number_of_states + 2))
         self.optimizer = torch.optim.Adam(self.eval_net.parameters(), lr=self.lr)
         self.loss_func = nn.MSELoss()
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -103,24 +169,28 @@ class DQN_Trainer:
     def update_target_net(self):
         self.target_net.load_state_dict(self.eval_net.state_dict())
 
-    def reset_trainer(self, init_epsilon, min_memory_count_to_start_training):
+    def reset_trainer(self, init_epsilon, min_memory_count_to_start_training, memory_size):
         self.memory_counter = 0
         self.last_replace_counter = min_memory_count_to_start_training
         self.epsilon_init = init_epsilon
-        self.memory = np.zeros((self.memory_size, 2 * self.number_of_states + 2))
+        self.memory_size = memory_size
+        self.memory = np.zeros((self.memory_size, 4 * self.number_of_states + 2))
 
-    def save_memory(self, s, s_, a, r):
+    def save_memory(self, s_1, s_2, s_1_, s_2_, a, r):
         tmp = self.memory_counter % self.memory_size
-        self.memory[tmp, :self.number_of_states] = s
-        self.memory[tmp, self.number_of_states:2 * self.number_of_states] = s_
-        self.memory[tmp, 2 * self.number_of_states] = a
-        self.memory[tmp, 2 * self.number_of_states + 1] = r
+        self.memory[tmp, 0 * self.number_of_states:1 * self.number_of_states] = s_1
+        self.memory[tmp, 1 * self.number_of_states:2 * self.number_of_states] = s_2
+        self.memory[tmp, 2 * self.number_of_states:3 * self.number_of_states] = s_1_
+        self.memory[tmp, 3 * self.number_of_states:4 * self.number_of_states] = s_2_
+        self.memory[tmp, 4 * self.number_of_states] = a
+        self.memory[tmp, 4 * self.number_of_states + 1] = r
         self.memory_counter += 1
 
-    def choose_action(self, s):
-        s = torch.FloatTensor(s).view(1, -1).to(self.device)
+    def choose_action(self, s_1, s_2):
+        s_1 = torch.FloatTensor(s_1).view(1, -1).to(self.device)
+        s_2 = torch.FloatTensor(s_2).view(1, -1).to(self.device)
         with torch.no_grad():
-            action_base = self.eval_net(s)
+            action_base = self.eval_net(s_1, s_2)
         tmp_a = torch.argmax(action_base)
         if np.random.uniform() < self.epsilon_init:
             a = tmp_a.item()
@@ -153,13 +223,15 @@ class DQN_Trainer:
         # batch_number = np.concatenate([random_number, max_reward])
         batch_number = random_number
         batch_memory = self.memory[batch_number]
-        b_s = torch.FloatTensor(batch_memory[:, :self.number_of_states]).to(self.device)
-        b_s_ = torch.FloatTensor(batch_memory[:, self.number_of_states:2 * self.number_of_states]).to(self.device)
-        b_a = batch_memory[:, 2 * self.number_of_states].astype(int)
-        b_r = torch.FloatTensor(batch_memory[:, 2 * self.number_of_states + 1]).to(self.device)
+        b_s_1 = torch.FloatTensor(batch_memory[:, 0 * self.number_of_states:1 * self.number_of_states]).to(self.device)
+        b_s_2 = torch.FloatTensor(batch_memory[:, 1 * self.number_of_states:2 * self.number_of_states]).to(self.device)
+        b_s_1_ = torch.FloatTensor(batch_memory[:, 2 * self.number_of_states:3 * self.number_of_states]).to(self.device)
+        b_s_2_ = torch.FloatTensor(batch_memory[:, 3 * self.number_of_states:4 * self.number_of_states]).to(self.device)
+        b_a = batch_memory[:, 4 * self.number_of_states].astype(int)
+        b_r = torch.FloatTensor(batch_memory[:, 4 * self.number_of_states + 1]).to(self.device)
 
-        q_eval = self.eval_net(b_s)
-        q_next = self.target_net(b_s_).detach()
+        q_eval = self.eval_net(b_s_1, b_s_2)
+        q_next = self.target_net(b_s_1_, b_s_2_).detach()
         q_target = q_eval.clone().detach().cpu().numpy()
         batch_index = np.arange(self.batch_size, dtype=np.int32)
         q_target[batch_index, b_a] = b_r.cpu().numpy() + self.gamma * np.max(q_next.cpu().numpy(), axis=1)

@@ -28,12 +28,15 @@ Key features:
 └── .gitignore             # Git ignore file
 ```
 
-## Leaderboard
+## Current best model
 
-Current best models and their scores:
+`runs/20250609_034323/models/best_model_at_train_round_4_epoch_89.pt`:
+* Use 2 frames separated by a small time increment to represent the state to detect acceleration.
+* 1 round of zero-shot training + 4 round of fine-tune training.
+* Highest score: 9088
 
-1. `runs/20250608_160214/models/best_continue_train_model_at_epoch_196.pt`: Score: 1735
-![best_score](./imgs/continue_train_test_round_0_ending_image.png)
+![best_score](./imgs/best_model_screenshot_at_train_round_4_epoch_89.png)
+
 
 ## Run the project step-by-step.
 
@@ -74,22 +77,24 @@ bash run_test.sh
 
 
 ## Configuration: Key parameters include:
-
+- `train_rounds`: total training rounds
 - `epochs`: Number of training epochs
 - `steps`: Max steps per epoch
 - `min_memory_count_to_start_training`: Number of memory before starting training
+- `memory_size`: Replay memory size
 - `continue_train_epochs`: Number of training epochs for continue training
 - `continue_train_steps`: Max steps per epoch for continue training
 - `continue_train_min_memory_count_to_start_training`: Number of memory before starting training for continue training
+- `continue_train_memory_size`: Replay memory size for continue training
 - `test_epochs`: Number of epochs for testing
 - `lr`: Learning rate
 - `epsilon`: Maximum exploration rate
 - `gamma`: Reward discount factor
 - `epsilon_increase`: Epsilon_increasment per epoch
 - `net_replace_memory_gap`: Number of memory before repalce eval net with target net
-- `memory_size`: Replay memory size
 - `batch_size`: Training batch size
-- `number_of_actions`: Number_of_actions that agent can do. 3 this in game: 'jump', 'crawl' and 'do nothing'
+- `number_of_actions`: Number_of_actions that agent can do. 2 this in game: 'jump' or 'do nothing'
+- `image_wait_time`: time increment for take 2 frames of game play.
 - `chrome_driver_path`: Path to chrome driver
 - `game_url`: URL to game. Default: "http://localhost:8000/"
 - `window_width/window_height`: To control game window size. This is important when decide the states of the game.
@@ -97,5 +102,4 @@ bash run_test.sh
 - `state_binary_threshold`: To decide where is the obstacle. Check results of 'run_image_test.sh' for more details.
 - `is_done_threshold`: To decide if game is stopped. Check results of 'run_image_test.sh' for more details.
 - `jump_duration`: Sleep time after 'jump'.
-- `crawl_duration`: Sleep time after 'crawl'.
 - `memory_threshold`: Number of memories to save before starting training.

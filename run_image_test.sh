@@ -3,6 +3,7 @@
 # Run the image test script with the specified parameters
 python main.py \
     --mode image \
+    --image_wait_time 0.00 \
     --number_of_actions 3 \
     --chrome_driver_path "/home/newton/chrome_driver/chromedriver-linux64/chromedriver" \
     --game_url "http://localhost:8000/" \
