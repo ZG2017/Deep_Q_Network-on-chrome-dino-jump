@@ -1,7 +1,6 @@
 import time
 import torch
-from selenium import webdriver 
-from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 import cv2
 import matplotlib
 matplotlib.use('Agg')  # Use non-graphical backend
@@ -421,8 +420,6 @@ def main():
                       help='Threshold for binary state value')
     parser.add_argument('--is_done_threshold', type=float, default=0.6,
                       help='Threshold for is_done')
-    parser.add_argument('--chrome_driver_path', type=str, default="/home/newton/chrome_driver/chromedriver-linux64/chromedriver",
-                      help='Path to Chrome driver')
     parser.add_argument('--game_url', type=str, default='http://localhost:8000/',
                       help='URL of the game')
     parser.add_argument('--number_of_actions', type=int, default=3,
@@ -476,7 +473,7 @@ def main():
     
     # Initialize environment
     web_driver = WebDriver(
-        args.chrome_driver_path, 
+        ChromeDriverManager().install(),
         args.game_url, 
         "t", 
         window_width=args.window_width,

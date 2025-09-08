@@ -2,7 +2,7 @@
 
 python main.py \
     --mode train \
-    --train_rounds 5 \
+    --train_rounds 10 \
     --epochs 150 \
     --steps 2000 \
     --min_memory_count_to_start_training 100 \
@@ -20,7 +20,6 @@ python main.py \
     --batch_size 32 \
     --number_of_actions 2 \
     --image_wait_time 0.00 \
-    --chrome_driver_path "/home/newton/chrome_driver/chromedriver-linux64/chromedriver" \
     --game_url "http://localhost:8000/" \
     --window_width 600 \
     --window_height 300 \
