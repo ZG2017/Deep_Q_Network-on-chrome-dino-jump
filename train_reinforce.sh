@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# REINFORCE Training Script
+python main.py \
+    --mode train \
+    --model_type reinforce \
+    --train_rounds 10 \
+    --epochs 150 \
+    --steps 2000 \
+    --min_memory_count_to_start_training 100 \
+    --memory_size 1000 \
+    --continue_train_epochs 100 \
+    --continue_train_steps 4000 \
+    --continue_train_min_memory_count_to_start_training 0 \
+    --continue_train_memory_size 3000 \
+    --test_epochs 5 \
+    --lr 0.01 \
+    --epsilon 0.99 \
+    --gamma 0.95 \
+    --epsilon_increase 0.01 \
+    --net_replace_memory_gap 200 \
+    --batch_size 32 \
+    --number_of_actions 2 \
+    --image_wait_time 0.00 \
+    --game_url "http://localhost:8000/" \
+    --window_width 600 \
+    --window_height 300 \
+    --window_position center \
+    --frameless \
+    --ending_i 90 \
+    --ending_j 280 \
+    --ending_height 35 \
+    --ending_width 40 \
+    --track_i 100 \
+    --track_j 70 \
+    --track_height 45 \
+    --track_width 300 \
+    --state_grid_rows 1 \
+    --state_grid_cols 12 \
+    --state_binary_threshold 0.05 \
+    --is_done_threshold 0.5 \
+    --jump_duration 0.5

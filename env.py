@@ -48,6 +48,22 @@ class WebDriver():
         
         options.add_argument(f'--window-size={window_width},{window_height}')
         options.add_argument(f'--window-position={position_x},{position_y}')
+        
+        # Disable audio to prevent voice/sound during training
+        options.add_argument('--mute-audio')
+        options.add_argument('--disable-audio-output')
+        options.add_argument('--disable-audio-input')
+        options.add_argument('--disable-speech-api')
+        options.add_argument('--disable-speech-synthesis-api')
+        options.add_argument('--disable-features=TranslateUI')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--disable-plugins')
+        options.add_argument('--disable-background-timer-throttling')
+        options.add_argument('--disable-backgrounding-occluded-windows')
+        options.add_argument('--disable-renderer-backgrounding')
+        
         # Add frameless window option
         if frameless:
             options.add_argument('--app=' + runner_url)  # This creates a frameless window

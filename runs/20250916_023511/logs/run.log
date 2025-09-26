@@ -1,0 +1,1887 @@
+2025-09-16 02:35:11,102 - INFO - Created run directory: runs/20250916_023511
+2025-09-16 02:35:11,102 - INFO - Parameters saved to: runs/20250916_023511/logs/param.json
+2025-09-16 02:35:11,102 - INFO - Running in train mode with parameters: {'mode': 'train', 'model_type': 'reinforce', 'debug': False, 'epochs': 150, 'steps': 2000, 'model_path': None, 'continue_train_epochs': 100, 'continue_train_steps': 4000, 'continue_train_min_memory_count_to_start_training': 0, 'continue_train_memory_size': 3000, 'test_epochs': 5, 'lr': 0.01, 'value_lr': 0.01, 'epsilon': 0.99, 'gamma': 0.95, 'jump_duration': 0.5, 'train_rounds': 10, 'epsilon_increase': 0.01, 'net_replace_memory_gap': 200, 'memory_size': 1000, 'batch_size': 32, 'min_memory_count_to_start_training': 100, 'state_grid_rows': 1, 'state_grid_cols': 12, 'state_binary_threshold': 0.05, 'is_done_threshold': 0.5, 'game_url': 'http://localhost:8000/', 'number_of_actions': 2, 'image_wait_time': 0.0, 'ppo_eps_clip': 0.2, 'ppo_value_coef': 0.5, 'ppo_entropy_coef': 0.01, 'ppo_max_grad_norm': 0.5, 'window_width': 600, 'window_height': 300, 'window_position': 'center', 'frameless': True, 'ending_i': 90, 'ending_j': 280, 'ending_height': 35, 'ending_width': 40, 'track_i': 100, 'track_j': 70, 'track_height': 45, 'track_width': 300}
+2025-09-16 02:35:12,222 - INFO - Using device: cuda
+2025-09-16 02:35:13,374 - INFO - Training round 0 start.
+2025-09-16 02:35:13,374 - INFO - Starting REINFORCE Actor-Critic training with 150 epochs, 2000 steps per episode
+2025-09-16 02:35:19,131 - INFO - Episode 1 completed! Steps: 2, Duration: 5.76s, Total Reward: 0.00
+2025-09-16 02:35:19,131 - INFO - Training with 2 experiences from episode 1
+2025-09-16 02:35:19,407 - INFO - Training completed. Policy Loss: -2.1016
+2025-09-16 02:35:19,411 - INFO - New best model saved! Duration: 5.76s
+2025-09-16 02:35:19,428 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_0.png
+2025-09-16 02:35:25,632 - INFO - Episode 2 completed! Steps: 6, Duration: 5.20s, Total Reward: 20.00
+2025-09-16 02:35:25,632 - INFO - Training with 6 experiences from episode 2
+2025-09-16 02:35:25,639 - INFO - Training completed. Policy Loss: 3.4756
+2025-09-16 02:35:32,926 - INFO - Episode 3 completed! Steps: 1, Duration: 6.29s, Total Reward: -5.00
+2025-09-16 02:35:32,927 - INFO - Training with 1 experiences from episode 3
+2025-09-16 02:35:32,946 - INFO - Training completed. Policy Loss: -5.6253
+2025-09-16 02:35:32,948 - INFO - New best model saved! Duration: 6.29s
+2025-09-16 02:35:32,982 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_2.png
+2025-09-16 02:35:38,814 - INFO - Episode 4 completed! Steps: 2, Duration: 4.83s, Total Reward: 0.00
+2025-09-16 02:35:38,814 - INFO - Training with 2 experiences from episode 4
+2025-09-16 02:35:38,819 - INFO - Training completed. Policy Loss: -2.7956
+2025-09-16 02:35:45,284 - INFO - Episode 5 completed! Steps: 8, Duration: 5.46s, Total Reward: 30.00
+2025-09-16 02:35:45,284 - INFO - Training with 8 experiences from episode 5
+2025-09-16 02:35:45,292 - INFO - Training completed. Policy Loss: 5.8719
+2025-09-16 02:35:54,504 - INFO - Episode 6 completed! Steps: 16, Duration: 8.21s, Total Reward: 70.00
+2025-09-16 02:35:54,504 - INFO - Training with 16 experiences from episode 6
+2025-09-16 02:35:54,507 - INFO - Training completed. Policy Loss: 16.1672
+2025-09-16 02:35:54,509 - INFO - New best model saved! Duration: 8.21s
+2025-09-16 02:35:54,542 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_5.png
+2025-09-16 02:36:01,125 - INFO - Episode 7 completed! Steps: 4, Duration: 5.58s, Total Reward: 10.00
+2025-09-16 02:36:01,126 - INFO - Training with 4 experiences from episode 7
+2025-09-16 02:36:01,130 - INFO - Training completed. Policy Loss: 0.1590
+2025-09-16 02:36:08,409 - INFO - Episode 8 completed! Steps: 5, Duration: 6.28s, Total Reward: 15.00
+2025-09-16 02:36:08,409 - INFO - Training with 5 experiences from episode 8
+2025-09-16 02:36:08,415 - INFO - Training completed. Policy Loss: 0.5442
+2025-09-16 02:36:14,100 - INFO - Episode 9 completed! Steps: 5, Duration: 4.68s, Total Reward: 15.00
+2025-09-16 02:36:14,100 - INFO - Training with 5 experiences from episode 9
+2025-09-16 02:36:14,104 - INFO - Training completed. Policy Loss: 0.0991
+2025-09-16 02:36:20,816 - INFO - Episode 10 completed! Steps: 10, Duration: 5.71s, Total Reward: 40.00
+2025-09-16 02:36:20,816 - INFO - Training with 10 experiences from episode 10
+2025-09-16 02:36:20,820 - INFO - Training completed. Policy Loss: 3.9373
+2025-09-16 02:36:27,538 - INFO - Episode 11 completed! Steps: 10, Duration: 5.72s, Total Reward: 40.00
+2025-09-16 02:36:27,538 - INFO - Training with 10 experiences from episode 11
+2025-09-16 02:36:27,541 - INFO - Training completed. Policy Loss: 3.9937
+2025-09-16 02:36:33,257 - INFO - Episode 12 completed! Steps: 6, Duration: 4.72s, Total Reward: 20.00
+2025-09-16 02:36:33,257 - INFO - Training with 6 experiences from episode 12
+2025-09-16 02:36:33,263 - INFO - Training completed. Policy Loss: 0.0123
+2025-09-16 02:36:40,538 - INFO - Episode 13 completed! Steps: 6, Duration: 6.27s, Total Reward: 20.00
+2025-09-16 02:36:40,538 - INFO - Training with 6 experiences from episode 13
+2025-09-16 02:36:40,546 - INFO - Training completed. Policy Loss: 0.1383
+2025-09-16 02:36:46,243 - INFO - Episode 14 completed! Steps: 5, Duration: 4.70s, Total Reward: 15.00
+2025-09-16 02:36:46,244 - INFO - Training with 5 experiences from episode 14
+2025-09-16 02:36:46,247 - INFO - Training completed. Policy Loss: 0.0079
+2025-09-16 02:36:51,966 - INFO - Episode 15 completed! Steps: 6, Duration: 4.72s, Total Reward: 20.00
+2025-09-16 02:36:51,966 - INFO - Training with 6 experiences from episode 15
+2025-09-16 02:36:51,970 - INFO - Training completed. Policy Loss: 0.0168
+2025-09-16 02:36:57,664 - INFO - Episode 16 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-16 02:36:57,664 - INFO - Training with 6 experiences from episode 16
+2025-09-16 02:36:57,667 - INFO - Training completed. Policy Loss: 0.0652
+2025-09-16 02:37:06,519 - INFO - Episode 17 completed! Steps: 22, Duration: 7.85s, Total Reward: 100.00
+2025-09-16 02:37:06,519 - INFO - Training with 22 experiences from episode 17
+2025-09-16 02:37:06,524 - INFO - Training completed. Policy Loss: 7.0469
+2025-09-16 02:37:13,797 - INFO - Episode 18 completed! Steps: 6, Duration: 6.27s, Total Reward: 20.00
+2025-09-16 02:37:13,797 - INFO - Training with 6 experiences from episode 18
+2025-09-16 02:37:13,804 - INFO - Training completed. Policy Loss: -0.0159
+2025-09-16 02:37:21,101 - INFO - Episode 19 completed! Steps: 11, Duration: 6.30s, Total Reward: 45.00
+2025-09-16 02:37:21,101 - INFO - Training with 11 experiences from episode 19
+2025-09-16 02:37:21,106 - INFO - Training completed. Policy Loss: 1.6799
+2025-09-16 02:37:27,821 - INFO - Episode 20 completed! Steps: 10, Duration: 5.71s, Total Reward: 40.00
+2025-09-16 02:37:27,821 - INFO - Training with 10 experiences from episode 20
+2025-09-16 02:37:27,831 - INFO - Training completed. Policy Loss: 1.7126
+2025-09-16 02:37:35,392 - INFO - Episode 21 completed! Steps: 13, Duration: 6.56s, Total Reward: 55.00
+2025-09-16 02:37:35,392 - INFO - Training with 13 experiences from episode 21
+2025-09-16 02:37:35,397 - INFO - Training completed. Policy Loss: 3.6330
+2025-09-16 02:37:43,196 - INFO - Episode 22 completed! Steps: 11, Duration: 6.80s, Total Reward: 45.00
+2025-09-16 02:37:43,196 - INFO - Training with 11 experiences from episode 22
+2025-09-16 02:37:43,204 - INFO - Training completed. Policy Loss: 2.6699
+2025-09-16 02:37:50,483 - INFO - Episode 23 completed! Steps: 6, Duration: 6.28s, Total Reward: 20.00
+2025-09-16 02:37:50,484 - INFO - Training with 6 experiences from episode 23
+2025-09-16 02:37:50,487 - INFO - Training completed. Policy Loss: -0.3035
+2025-09-16 02:37:56,158 - INFO - Episode 24 completed! Steps: 5, Duration: 4.67s, Total Reward: 15.00
+2025-09-16 02:37:56,158 - INFO - Training with 5 experiences from episode 24
+2025-09-16 02:37:56,163 - INFO - Training completed. Policy Loss: -0.5361
+2025-09-16 02:38:03,380 - INFO - Episode 25 completed! Steps: 11, Duration: 6.22s, Total Reward: 45.00
+2025-09-16 02:38:03,381 - INFO - Training with 11 experiences from episode 25
+2025-09-16 02:38:03,385 - INFO - Training completed. Policy Loss: 1.4248
+2025-09-16 02:38:09,079 - INFO - Episode 26 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-16 02:38:09,079 - INFO - Training with 6 experiences from episode 26
+2025-09-16 02:38:09,083 - INFO - Training completed. Policy Loss: -0.4262
+2025-09-16 02:38:15,289 - INFO - Episode 27 completed! Steps: 6, Duration: 5.20s, Total Reward: 20.00
+2025-09-16 02:38:15,289 - INFO - Training with 6 experiences from episode 27
+2025-09-16 02:38:15,292 - INFO - Training completed. Policy Loss: -0.6909
+2025-09-16 02:38:23,505 - INFO - Episode 28 completed! Steps: 9, Duration: 7.21s, Total Reward: 35.00
+2025-09-16 02:38:23,505 - INFO - Training with 9 experiences from episode 28
+2025-09-16 02:38:23,509 - INFO - Training completed. Policy Loss: 0.9975
+2025-09-16 02:38:29,675 - INFO - Episode 29 completed! Steps: 5, Duration: 5.17s, Total Reward: 15.00
+2025-09-16 02:38:29,675 - INFO - Training with 5 experiences from episode 29
+2025-09-16 02:38:29,681 - INFO - Training completed. Policy Loss: -0.8209
+2025-09-16 02:38:35,864 - INFO - Episode 30 completed! Steps: 5, Duration: 5.18s, Total Reward: 15.00
+2025-09-16 02:38:35,864 - INFO - Training with 5 experiences from episode 30
+2025-09-16 02:38:35,867 - INFO - Training completed. Policy Loss: -0.8140
+2025-09-16 02:38:42,071 - INFO - Episode 31 completed! Steps: 6, Duration: 5.20s, Total Reward: 20.00
+2025-09-16 02:38:42,071 - INFO - Training with 6 experiences from episode 31
+2025-09-16 02:38:42,080 - INFO - Training completed. Policy Loss: -0.6594
+2025-09-16 02:38:48,288 - INFO - Episode 32 completed! Steps: 6, Duration: 5.21s, Total Reward: 20.00
+2025-09-16 02:38:48,288 - INFO - Training with 6 experiences from episode 32
+2025-09-16 02:38:48,292 - INFO - Training completed. Policy Loss: -0.6482
+2025-09-16 02:38:56,090 - INFO - Episode 33 completed! Steps: 6, Duration: 6.80s, Total Reward: 20.00
+2025-09-16 02:38:56,090 - INFO - Training with 6 experiences from episode 33
+2025-09-16 02:38:56,094 - INFO - Training completed. Policy Loss: -0.6731
+2025-09-16 02:39:01,763 - INFO - Episode 34 completed! Steps: 5, Duration: 4.67s, Total Reward: 15.00
+2025-09-16 02:39:01,763 - INFO - Training with 5 experiences from episode 34
+2025-09-16 02:39:01,766 - INFO - Training completed. Policy Loss: -0.5958
+2025-09-16 02:39:07,950 - INFO - Episode 35 completed! Steps: 5, Duration: 5.18s, Total Reward: 15.00
+2025-09-16 02:39:07,951 - INFO - Training with 5 experiences from episode 35
+2025-09-16 02:39:07,961 - INFO - Training completed. Policy Loss: -0.7958
+2025-09-16 02:39:13,654 - INFO - Episode 36 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-16 02:39:13,654 - INFO - Training with 6 experiences from episode 36
+2025-09-16 02:39:13,658 - INFO - Training completed. Policy Loss: -0.4294
+2025-09-16 02:39:20,408 - INFO - Episode 37 completed! Steps: 11, Duration: 5.75s, Total Reward: 45.00
+2025-09-16 02:39:20,408 - INFO - Training with 11 experiences from episode 37
+2025-09-16 02:39:20,414 - INFO - Training completed. Policy Loss: 1.4426
+2025-09-16 02:39:26,132 - INFO - Episode 38 completed! Steps: 6, Duration: 4.72s, Total Reward: 20.00
+2025-09-16 02:39:26,132 - INFO - Training with 6 experiences from episode 38
+2025-09-16 02:39:26,136 - INFO - Training completed. Policy Loss: -0.4323
+2025-09-16 02:39:33,420 - INFO - Episode 39 completed! Steps: 6, Duration: 4.71s, Total Reward: 20.00
+2025-09-16 02:39:33,420 - INFO - Training with 6 experiences from episode 39
+2025-09-16 02:39:33,424 - INFO - Training completed. Policy Loss: -0.4290
+2025-09-16 02:39:41,041 - INFO - Episode 40 completed! Steps: 14, Duration: 6.62s, Total Reward: 60.00
+2025-09-16 02:39:41,041 - INFO - Training with 14 experiences from episode 40
+2025-09-16 02:39:41,045 - INFO - Training completed. Policy Loss: 3.1217
+2025-09-16 02:39:47,262 - INFO - Episode 41 completed! Steps: 6, Duration: 5.22s, Total Reward: 20.00
+2025-09-16 02:39:47,262 - INFO - Training with 6 experiences from episode 41
+2025-09-16 02:39:47,266 - INFO - Training completed. Policy Loss: -0.6786
+2025-09-16 02:39:54,835 - INFO - Episode 42 completed! Steps: 14, Duration: 6.57s, Total Reward: 60.00
+2025-09-16 02:39:54,835 - INFO - Training with 14 experiences from episode 42
+2025-09-16 02:39:54,838 - INFO - Training completed. Policy Loss: 7.3769
+2025-09-16 02:40:03,110 - INFO - Episode 43 completed! Steps: 11, Duration: 7.27s, Total Reward: 45.00
+2025-09-16 02:40:03,110 - INFO - Training with 11 experiences from episode 43
+2025-09-16 02:40:03,113 - INFO - Training completed. Policy Loss: 1.3952
+2025-09-16 02:40:08,882 - INFO - Episode 44 completed! Steps: 6, Duration: 4.77s, Total Reward: 20.00
+2025-09-16 02:40:08,882 - INFO - Training with 6 experiences from episode 44
+2025-09-16 02:40:08,887 - INFO - Training completed. Policy Loss: -0.4244
+2025-09-16 02:40:14,551 - INFO - Episode 45 completed! Steps: 5, Duration: 4.66s, Total Reward: 15.00
+2025-09-16 02:40:14,551 - INFO - Training with 5 experiences from episode 45
+2025-09-16 02:40:14,556 - INFO - Training completed. Policy Loss: -0.6523
+2025-09-16 02:40:20,223 - INFO - Episode 46 completed! Steps: 5, Duration: 4.67s, Total Reward: 15.00
+2025-09-16 02:40:20,223 - INFO - Training with 5 experiences from episode 46
+2025-09-16 02:40:20,231 - INFO - Training completed. Policy Loss: -0.6748
+2025-09-16 02:40:25,926 - INFO - Episode 47 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-16 02:40:25,927 - INFO - Training with 6 experiences from episode 47
+2025-09-16 02:40:25,931 - INFO - Training completed. Policy Loss: -0.4601
+2025-09-16 02:40:36,811 - INFO - Episode 48 completed! Steps: 21, Duration: 9.88s, Total Reward: 95.00
+2025-09-16 02:40:36,811 - INFO - Training with 21 experiences from episode 48
+2025-09-16 02:40:36,818 - INFO - Training completed. Policy Loss: 5.4009
+2025-09-16 02:40:36,820 - INFO - New best model saved! Duration: 9.88s
+2025-09-16 02:40:36,853 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_47.png
+2025-09-16 02:40:43,065 - INFO - Episode 49 completed! Steps: 6, Duration: 5.21s, Total Reward: 20.00
+2025-09-16 02:40:43,065 - INFO - Training with 6 experiences from episode 49
+2025-09-16 02:40:43,070 - INFO - Training completed. Policy Loss: -0.5780
+2025-09-16 02:40:48,768 - INFO - Episode 50 completed! Steps: 6, Duration: 4.70s, Total Reward: 20.00
+2025-09-16 02:40:48,768 - INFO - Training with 6 experiences from episode 50
+2025-09-16 02:40:48,772 - INFO - Training completed. Policy Loss: -0.5753
+2025-09-16 02:40:54,490 - INFO - Episode 51 completed! Steps: 6, Duration: 4.72s, Total Reward: 20.00
+2025-09-16 02:40:54,490 - INFO - Training with 6 experiences from episode 51
+2025-09-16 02:40:54,497 - INFO - Training completed. Policy Loss: -0.5983
+2025-09-16 02:41:00,227 - INFO - Episode 52 completed! Steps: 6, Duration: 4.73s, Total Reward: 20.00
+2025-09-16 02:41:00,227 - INFO - Training with 6 experiences from episode 52
+2025-09-16 02:41:00,232 - INFO - Training completed. Policy Loss: -0.5280
+2025-09-16 02:41:05,947 - INFO - Episode 53 completed! Steps: 6, Duration: 4.71s, Total Reward: 20.00
+2025-09-16 02:41:05,947 - INFO - Training with 6 experiences from episode 53
+2025-09-16 02:41:05,950 - INFO - Training completed. Policy Loss: -0.6090
+2025-09-16 02:41:14,236 - INFO - Episode 54 completed! Steps: 11, Duration: 7.28s, Total Reward: 45.00
+2025-09-16 02:41:14,236 - INFO - Training with 11 experiences from episode 54
+2025-09-16 02:41:14,242 - INFO - Training completed. Policy Loss: 0.7070
+2025-09-16 02:41:22,939 - INFO - Episode 55 completed! Steps: 15, Duration: 7.70s, Total Reward: 65.00
+2025-09-16 02:41:22,940 - INFO - Training with 15 experiences from episode 55
+2025-09-16 02:41:22,944 - INFO - Training completed. Policy Loss: 3.6592
+2025-09-16 02:41:29,141 - INFO - Episode 56 completed! Steps: 6, Duration: 5.20s, Total Reward: 20.00
+2025-09-16 02:41:29,142 - INFO - Training with 6 experiences from episode 56
+2025-09-16 02:41:29,146 - INFO - Training completed. Policy Loss: -0.3691
+2025-09-16 02:41:36,183 - INFO - Episode 57 completed! Steps: 9, Duration: 6.04s, Total Reward: 35.00
+2025-09-16 02:41:36,183 - INFO - Training with 9 experiences from episode 57
+2025-09-16 02:41:36,187 - INFO - Training completed. Policy Loss: 0.3273
+2025-09-16 02:41:46,070 - INFO - Episode 58 completed! Steps: 17, Duration: 8.88s, Total Reward: 75.00
+2025-09-16 02:41:46,070 - INFO - Training with 17 experiences from episode 58
+2025-09-16 02:41:46,077 - INFO - Training completed. Policy Loss: 1.7138
+2025-09-16 02:41:55,075 - INFO - Episode 59 completed! Steps: 18, Duration: 8.00s, Total Reward: 80.00
+2025-09-16 02:41:55,075 - INFO - Training with 18 experiences from episode 59
+2025-09-16 02:41:55,080 - INFO - Training completed. Policy Loss: 2.8054
+2025-09-16 02:42:05,732 - INFO - Episode 60 completed! Steps: 24, Duration: 9.65s, Total Reward: 110.00
+2025-09-16 02:42:05,732 - INFO - Training with 24 experiences from episode 60
+2025-09-16 02:42:05,741 - INFO - Training completed. Policy Loss: 3.7572
+2025-09-16 02:42:15,670 - INFO - Episode 61 completed! Steps: 22, Duration: 8.93s, Total Reward: 100.00
+2025-09-16 02:42:15,671 - INFO - Training with 22 experiences from episode 61
+2025-09-16 02:42:15,678 - INFO - Training completed. Policy Loss: 1.3302
+2025-09-16 02:42:23,410 - INFO - Episode 62 completed! Steps: 6, Duration: 5.20s, Total Reward: 20.00
+2025-09-16 02:42:23,410 - INFO - Training with 6 experiences from episode 62
+2025-09-16 02:42:23,414 - INFO - Training completed. Policy Loss: -0.1941
+2025-09-16 02:42:31,749 - INFO - Episode 63 completed! Steps: 19, Duration: 7.33s, Total Reward: 85.00
+2025-09-16 02:42:31,749 - INFO - Training with 19 experiences from episode 63
+2025-09-16 02:42:31,754 - INFO - Training completed. Policy Loss: 10.8170
+2025-09-16 02:42:44,205 - INFO - Episode 64 completed! Steps: 54, Duration: 11.45s, Total Reward: 260.00
+2025-09-16 02:42:44,205 - INFO - Training with 54 experiences from episode 64
+2025-09-16 02:42:44,211 - INFO - Training completed. Policy Loss: 12.5849
+2025-09-16 02:42:44,213 - INFO - New best model saved! Duration: 11.45s
+2025-09-16 02:42:44,248 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_63.png
+2025-09-16 02:42:53,025 - INFO - Episode 65 completed! Steps: 10, Duration: 7.78s, Total Reward: 40.00
+2025-09-16 02:42:53,025 - INFO - Training with 10 experiences from episode 65
+2025-09-16 02:42:53,029 - INFO - Training completed. Policy Loss: 0.0029
+2025-09-16 02:43:07,118 - INFO - Episode 66 completed! Steps: 42, Duration: 13.09s, Total Reward: 200.00
+2025-09-16 02:43:07,118 - INFO - Training with 42 experiences from episode 66
+2025-09-16 02:43:07,124 - INFO - Training completed. Policy Loss: 2.1787
+2025-09-16 02:43:07,126 - INFO - New best model saved! Duration: 13.09s
+2025-09-16 02:43:07,154 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_65.png
+2025-09-16 02:43:13,357 - INFO - Episode 67 completed! Steps: 6, Duration: 5.20s, Total Reward: 20.00
+2025-09-16 02:43:13,357 - INFO - Training with 6 experiences from episode 67
+2025-09-16 02:43:13,361 - INFO - Training completed. Policy Loss: -0.1494
+2025-09-16 02:43:25,896 - INFO - Episode 68 completed! Steps: 28, Duration: 11.53s, Total Reward: 130.00
+2025-09-16 02:43:25,896 - INFO - Training with 28 experiences from episode 68
+2025-09-16 02:43:25,900 - INFO - Training completed. Policy Loss: 0.4026
+2025-09-16 02:43:34,903 - INFO - Episode 69 completed! Steps: 18, Duration: 8.00s, Total Reward: 80.00
+2025-09-16 02:43:34,903 - INFO - Training with 18 experiences from episode 69
+2025-09-16 02:43:34,907 - INFO - Training completed. Policy Loss: 0.0055
+2025-09-16 02:43:50,444 - INFO - Episode 70 completed! Steps: 52, Duration: 14.54s, Total Reward: 250.00
+2025-09-16 02:43:50,444 - INFO - Training with 52 experiences from episode 70
+2025-09-16 02:43:50,449 - INFO - Training completed. Policy Loss: 2.0236
+2025-09-16 02:43:50,451 - INFO - New best model saved! Duration: 14.54s
+2025-09-16 02:43:50,484 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_69.png
+2025-09-16 02:43:59,674 - INFO - Episode 71 completed! Steps: 15, Duration: 8.19s, Total Reward: 65.00
+2025-09-16 02:43:59,674 - INFO - Training with 15 experiences from episode 71
+2025-09-16 02:43:59,679 - INFO - Training completed. Policy Loss: -0.0692
+2025-09-16 02:44:08,445 - INFO - Episode 72 completed! Steps: 16, Duration: 7.77s, Total Reward: 70.00
+2025-09-16 02:44:08,446 - INFO - Training with 16 experiences from episode 72
+2025-09-16 02:44:08,450 - INFO - Training completed. Policy Loss: 0.4509
+2025-09-16 02:44:19,987 - INFO - Episode 73 completed! Steps: 33, Duration: 10.54s, Total Reward: 155.00
+2025-09-16 02:44:19,987 - INFO - Training with 33 experiences from episode 73
+2025-09-16 02:44:19,991 - INFO - Training completed. Policy Loss: 2.2031
+2025-09-16 02:44:36,821 - INFO - Episode 74 completed! Steps: 49, Duration: 15.83s, Total Reward: 236.62
+2025-09-16 02:44:36,821 - INFO - Training with 49 experiences from episode 74
+2025-09-16 02:44:36,826 - INFO - Training completed. Policy Loss: 0.8490
+2025-09-16 02:44:36,828 - INFO - New best model saved! Duration: 15.83s
+2025-09-16 02:44:36,858 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_73.png
+2025-09-16 02:44:45,026 - INFO - Episode 75 completed! Steps: 14, Duration: 7.17s, Total Reward: 60.00
+2025-09-16 02:44:45,026 - INFO - Training with 14 experiences from episode 75
+2025-09-16 02:44:45,032 - INFO - Training completed. Policy Loss: -0.8000
+2025-09-16 02:45:03,788 - INFO - Episode 76 completed! Steps: 153, Duration: 17.75s, Total Reward: 769.52
+2025-09-16 02:45:03,788 - INFO - Training with 153 experiences from episode 76
+2025-09-16 02:45:03,793 - INFO - Training completed. Policy Loss: 3.5434
+2025-09-16 02:45:03,795 - INFO - New best model saved! Duration: 17.75s
+2025-09-16 02:45:03,825 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_75.png
+2025-09-16 02:45:25,301 - INFO - Episode 77 completed! Steps: 68, Duration: 20.47s, Total Reward: 354.20
+2025-09-16 02:45:25,301 - INFO - Training with 68 experiences from episode 77
+2025-09-16 02:45:25,306 - INFO - Training completed. Policy Loss: 0.9722
+2025-09-16 02:45:25,308 - INFO - New best model saved! Duration: 20.47s
+2025-09-16 02:45:25,335 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_76.png
+2025-09-16 02:46:00,707 - INFO - Episode 78 completed! Steps: 217, Duration: 34.37s, Total Reward: 1558.15
+2025-09-16 02:46:00,707 - INFO - Training with 217 experiences from episode 78
+2025-09-16 02:46:00,713 - INFO - Training completed. Policy Loss: 4.6891
+2025-09-16 02:46:00,715 - INFO - New best model saved! Duration: 34.37s
+2025-09-16 02:46:00,744 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_77.png
+2025-09-16 02:46:27,930 - INFO - Episode 79 completed! Steps: 90, Duration: 26.18s, Total Reward: 603.57
+2025-09-16 02:46:27,930 - INFO - Training with 90 experiences from episode 79
+2025-09-16 02:46:27,934 - INFO - Training completed. Policy Loss: 9.2319
+2025-09-16 02:46:44,955 - INFO - Episode 80 completed! Steps: 56, Duration: 16.02s, Total Reward: 274.08
+2025-09-16 02:46:44,956 - INFO - Training with 56 experiences from episode 80
+2025-09-16 02:46:44,962 - INFO - Training completed. Policy Loss: 3.3871
+2025-09-16 02:47:24,666 - INFO - Episode 81 completed! Steps: 152, Duration: 38.70s, Total Reward: 1283.52
+2025-09-16 02:47:24,667 - INFO - Training with 152 experiences from episode 81
+2025-09-16 02:47:24,672 - INFO - Training completed. Policy Loss: 6.7331
+2025-09-16 02:47:24,675 - INFO - New best model saved! Duration: 38.70s
+2025-09-16 02:47:24,704 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_80.png
+2025-09-16 02:48:01,792 - INFO - Episode 82 completed! Steps: 127, Duration: 36.09s, Total Reward: 1054.33
+2025-09-16 02:48:01,792 - INFO - Training with 127 experiences from episode 82
+2025-09-16 02:48:01,800 - INFO - Training completed. Policy Loss: 7.2810
+2025-09-16 02:48:38,221 - INFO - Episode 83 completed! Steps: 126, Duration: 35.42s, Total Reward: 1068.65
+2025-09-16 02:48:38,221 - INFO - Training with 126 experiences from episode 83
+2025-09-16 02:48:38,226 - INFO - Training completed. Policy Loss: 9.7137
+2025-09-16 02:49:15,349 - INFO - Episode 84 completed! Steps: 143, Duration: 36.12s, Total Reward: 1176.69
+2025-09-16 02:49:15,349 - INFO - Training with 143 experiences from episode 84
+2025-09-16 02:49:15,358 - INFO - Training completed. Policy Loss: 9.5043
+2025-09-16 02:49:53,955 - INFO - Episode 85 completed! Steps: 127, Duration: 37.60s, Total Reward: 1082.02
+2025-09-16 02:49:53,955 - INFO - Training with 127 experiences from episode 85
+2025-09-16 02:49:53,960 - INFO - Training completed. Policy Loss: 3.9604
+2025-09-16 02:50:35,762 - INFO - Episode 86 completed! Steps: 156, Duration: 40.80s, Total Reward: 1458.98
+2025-09-16 02:50:35,762 - INFO - Training with 156 experiences from episode 86
+2025-09-16 02:50:35,769 - INFO - Training completed. Policy Loss: 5.6333
+2025-09-16 02:50:35,771 - INFO - New best model saved! Duration: 40.80s
+2025-09-16 02:50:35,797 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_85.png
+2025-09-16 02:51:12,219 - INFO - Episode 87 completed! Steps: 130, Duration: 35.42s, Total Reward: 1142.76
+2025-09-16 02:51:12,219 - INFO - Training with 130 experiences from episode 87
+2025-09-16 02:51:12,223 - INFO - Training completed. Policy Loss: 4.5046
+2025-09-16 02:51:44,231 - INFO - Episode 88 completed! Steps: 121, Duration: 31.01s, Total Reward: 888.60
+2025-09-16 02:51:44,232 - INFO - Training with 121 experiences from episode 88
+2025-09-16 02:51:44,235 - INFO - Training completed. Policy Loss: 5.1080
+2025-09-16 02:52:23,231 - INFO - Episode 89 completed! Steps: 164, Duration: 38.00s, Total Reward: 1574.36
+2025-09-16 02:52:23,232 - INFO - Training with 164 experiences from episode 89
+2025-09-16 02:52:23,237 - INFO - Training completed. Policy Loss: 5.0749
+2025-09-16 02:53:09,771 - INFO - Episode 90 completed! Steps: 208, Duration: 45.53s, Total Reward: 2179.15
+2025-09-16 02:53:09,771 - INFO - Training with 208 experiences from episode 90
+2025-09-16 02:53:09,779 - INFO - Training completed. Policy Loss: 1.5618
+2025-09-16 02:53:09,781 - INFO - New best model saved! Duration: 45.53s
+2025-09-16 02:53:09,809 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_89.png
+2025-09-16 02:53:35,891 - INFO - Episode 91 completed! Steps: 94, Duration: 25.08s, Total Reward: 571.27
+2025-09-16 02:53:35,891 - INFO - Training with 94 experiences from episode 91
+2025-09-16 02:53:35,898 - INFO - Training completed. Policy Loss: 0.0450
+2025-09-16 02:54:14,329 - INFO - Episode 92 completed! Steps: 168, Duration: 37.43s, Total Reward: 1487.64
+2025-09-16 02:54:14,329 - INFO - Training with 168 experiences from episode 92
+2025-09-16 02:54:14,335 - INFO - Training completed. Policy Loss: 0.4689
+2025-09-16 02:54:48,839 - INFO - Episode 93 completed! Steps: 141, Duration: 33.50s, Total Reward: 1145.89
+2025-09-16 02:54:48,839 - INFO - Training with 141 experiences from episode 93
+2025-09-16 02:54:48,844 - INFO - Training completed. Policy Loss: 0.0459
+2025-09-16 02:55:39,817 - INFO - Episode 94 completed! Steps: 228, Duration: 49.97s, Total Reward: 2802.20
+2025-09-16 02:55:39,817 - INFO - Training with 228 experiences from episode 94
+2025-09-16 02:55:39,823 - INFO - Training completed. Policy Loss: 0.0310
+2025-09-16 02:55:39,825 - INFO - New best model saved! Duration: 49.97s
+2025-09-16 02:55:39,853 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_93.png
+2025-09-16 02:56:35,343 - INFO - Episode 95 completed! Steps: 252, Duration: 54.49s, Total Reward: 3362.41
+2025-09-16 02:56:35,343 - INFO - Training with 252 experiences from episode 95
+2025-09-16 02:56:35,352 - INFO - Training completed. Policy Loss: 0.0142
+2025-09-16 02:56:35,353 - INFO - New best model saved! Duration: 54.49s
+2025-09-16 02:56:35,381 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_94.png
+2025-09-16 02:56:43,549 - INFO - Episode 96 completed! Steps: 11, Duration: 7.17s, Total Reward: 45.00
+2025-09-16 02:56:43,549 - INFO - Training with 11 experiences from episode 96
+2025-09-16 02:56:43,555 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 02:56:52,823 - INFO - Episode 97 completed! Steps: 26, Duration: 8.27s, Total Reward: 120.00
+2025-09-16 02:56:52,823 - INFO - Training with 26 experiences from episode 97
+2025-09-16 02:56:52,829 - INFO - Training completed. Policy Loss: 0.0156
+2025-09-16 02:57:53,063 - INFO - Episode 98 completed! Steps: 296, Duration: 59.23s, Total Reward: 4244.13
+2025-09-16 02:57:53,063 - INFO - Training with 296 experiences from episode 98
+2025-09-16 02:57:53,069 - INFO - Training completed. Policy Loss: 0.0034
+2025-09-16 02:57:53,070 - INFO - New best model saved! Duration: 59.23s
+2025-09-16 02:57:53,097 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_0_epoch_97.png
+2025-09-16 02:58:28,263 - INFO - Episode 99 completed! Steps: 139, Duration: 34.17s, Total Reward: 1181.06
+2025-09-16 02:58:28,263 - INFO - Training with 139 experiences from episode 99
+2025-09-16 02:58:28,268 - INFO - Training completed. Policy Loss: 0.1056
+2025-09-16 02:59:10,553 - INFO - Episode 100 completed! Steps: 192, Duration: 41.28s, Total Reward: 1952.42
+2025-09-16 02:59:10,553 - INFO - Training with 192 experiences from episode 100
+2025-09-16 02:59:10,558 - INFO - Training completed. Policy Loss: 0.0169
+2025-09-16 02:59:59,323 - INFO - Episode 101 completed! Steps: 194, Duration: 46.17s, Total Reward: 2120.58
+2025-09-16 02:59:59,323 - INFO - Training with 194 experiences from episode 101
+2025-09-16 02:59:59,332 - INFO - Training completed. Policy Loss: 0.0126
+2025-09-16 03:00:38,082 - INFO - Episode 102 completed! Steps: 167, Duration: 37.75s, Total Reward: 1568.68
+2025-09-16 03:00:38,082 - INFO - Training with 167 experiences from episode 102
+2025-09-16 03:00:38,088 - INFO - Training completed. Policy Loss: 0.0057
+2025-09-16 03:01:16,654 - INFO - Episode 103 completed! Steps: 180, Duration: 37.57s, Total Reward: 1633.49
+2025-09-16 03:01:16,654 - INFO - Training with 180 experiences from episode 103
+2025-09-16 03:01:16,659 - INFO - Training completed. Policy Loss: 0.0025
+2025-09-16 03:01:40,865 - INFO - Episode 104 completed! Steps: 97, Duration: 23.21s, Total Reward: 582.83
+2025-09-16 03:01:40,865 - INFO - Training with 97 experiences from episode 104
+2025-09-16 03:01:40,870 - INFO - Training completed. Policy Loss: 0.0019
+2025-09-16 03:01:57,425 - INFO - Episode 105 completed! Steps: 52, Duration: 15.55s, Total Reward: 251.84
+2025-09-16 03:01:57,425 - INFO - Training with 52 experiences from episode 105
+2025-09-16 03:01:57,429 - INFO - Training completed. Policy Loss: 0.0146
+2025-09-16 03:02:51,733 - INFO - Episode 106 completed! Steps: 222, Duration: 53.30s, Total Reward: 2846.37
+2025-09-16 03:02:51,733 - INFO - Training with 222 experiences from episode 106
+2025-09-16 03:02:51,740 - INFO - Training completed. Policy Loss: 0.0152
+2025-09-16 03:03:06,625 - INFO - Episode 107 completed! Steps: 50, Duration: 13.88s, Total Reward: 240.00
+2025-09-16 03:03:06,625 - INFO - Training with 50 experiences from episode 107
+2025-09-16 03:03:06,630 - INFO - Training completed. Policy Loss: 0.0029
+2025-09-16 03:03:44,542 - INFO - Episode 108 completed! Steps: 152, Duration: 36.91s, Total Reward: 1298.09
+2025-09-16 03:03:44,542 - INFO - Training with 152 experiences from episode 108
+2025-09-16 03:03:44,546 - INFO - Training completed. Policy Loss: 0.0100
+2025-09-16 03:04:22,152 - INFO - Episode 109 completed! Steps: 151, Duration: 36.61s, Total Reward: 1320.14
+2025-09-16 03:04:22,153 - INFO - Training with 151 experiences from episode 109
+2025-09-16 03:04:22,157 - INFO - Training completed. Policy Loss: 0.0030
+2025-09-16 03:05:14,116 - INFO - Episode 110 completed! Steps: 247, Duration: 50.96s, Total Reward: 3127.06
+2025-09-16 03:05:14,116 - INFO - Training with 247 experiences from episode 110
+2025-09-16 03:05:14,119 - INFO - Training completed. Policy Loss: 0.0038
+2025-09-16 03:06:12,143 - INFO - Episode 111 completed! Steps: 275, Duration: 57.02s, Total Reward: 3811.99
+2025-09-16 03:06:12,143 - INFO - Training with 275 experiences from episode 111
+2025-09-16 03:06:12,148 - INFO - Training completed. Policy Loss: 0.1492
+2025-09-16 03:06:57,401 - INFO - Episode 112 completed! Steps: 193, Duration: 44.25s, Total Reward: 2125.30
+2025-09-16 03:06:57,401 - INFO - Training with 193 experiences from episode 112
+2025-09-16 03:06:57,406 - INFO - Training completed. Policy Loss: 0.0040
+2025-09-16 03:07:31,156 - INFO - Episode 113 completed! Steps: 133, Duration: 32.75s, Total Reward: 1129.35
+2025-09-16 03:07:31,156 - INFO - Training with 133 experiences from episode 113
+2025-09-16 03:07:31,160 - INFO - Training completed. Policy Loss: 0.0011
+2025-09-16 03:08:15,498 - INFO - Episode 114 completed! Steps: 195, Duration: 43.34s, Total Reward: 2007.05
+2025-09-16 03:08:15,499 - INFO - Training with 195 experiences from episode 114
+2025-09-16 03:08:15,507 - INFO - Training completed. Policy Loss: 0.0017
+2025-09-16 03:08:54,471 - INFO - Episode 115 completed! Steps: 184, Duration: 37.96s, Total Reward: 1651.97
+2025-09-16 03:08:54,471 - INFO - Training with 184 experiences from episode 115
+2025-09-16 03:08:54,476 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 03:09:32,391 - INFO - Episode 116 completed! Steps: 169, Duration: 36.91s, Total Reward: 1468.56
+2025-09-16 03:09:32,391 - INFO - Training with 169 experiences from episode 116
+2025-09-16 03:09:32,397 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 03:10:24,381 - INFO - Episode 117 completed! Steps: 264, Duration: 50.98s, Total Reward: 3415.00
+2025-09-16 03:10:24,381 - INFO - Training with 264 experiences from episode 117
+2025-09-16 03:10:24,385 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 03:11:10,601 - INFO - Episode 118 completed! Steps: 196, Duration: 45.22s, Total Reward: 2005.21
+2025-09-16 03:11:10,602 - INFO - Training with 196 experiences from episode 118
+2025-09-16 03:11:10,606 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 03:11:44,595 - INFO - Episode 119 completed! Steps: 149, Duration: 32.99s, Total Reward: 1156.56
+2025-09-16 03:11:44,595 - INFO - Training with 149 experiences from episode 119
+2025-09-16 03:11:44,599 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 03:12:23,420 - INFO - Episode 120 completed! Steps: 162, Duration: 37.82s, Total Reward: 1518.25
+2025-09-16 03:12:23,420 - INFO - Training with 162 experiences from episode 120
+2025-09-16 03:12:23,427 - INFO - Training completed. Policy Loss: 0.0006
+2025-09-16 03:13:01,060 - INFO - Episode 121 completed! Steps: 168, Duration: 36.63s, Total Reward: 1535.87
+2025-09-16 03:13:01,060 - INFO - Training with 168 experiences from episode 121
+2025-09-16 03:13:01,067 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:13:41,161 - INFO - Episode 122 completed! Steps: 179, Duration: 39.09s, Total Reward: 1755.13
+2025-09-16 03:13:41,161 - INFO - Training with 179 experiences from episode 122
+2025-09-16 03:13:41,166 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 03:14:06,912 - INFO - Episode 123 completed! Steps: 99, Duration: 24.74s, Total Reward: 633.63
+2025-09-16 03:14:06,912 - INFO - Training with 99 experiences from episode 123
+2025-09-16 03:14:06,920 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:14:50,307 - INFO - Episode 124 completed! Steps: 205, Duration: 42.39s, Total Reward: 2140.30
+2025-09-16 03:14:50,307 - INFO - Training with 205 experiences from episode 124
+2025-09-16 03:14:50,315 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:15:33,359 - INFO - Episode 125 completed! Steps: 197, Duration: 42.04s, Total Reward: 2042.82
+2025-09-16 03:15:33,359 - INFO - Training with 197 experiences from episode 125
+2025-09-16 03:15:33,364 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 03:16:02,406 - INFO - Episode 126 completed! Steps: 117, Duration: 26.46s, Total Reward: 786.56
+2025-09-16 03:16:02,406 - INFO - Training with 117 experiences from episode 126
+2025-09-16 03:16:02,413 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:16:44,165 - INFO - Episode 127 completed! Steps: 173, Duration: 40.75s, Total Reward: 1692.13
+2025-09-16 03:16:44,165 - INFO - Training with 173 experiences from episode 127
+2025-09-16 03:16:44,170 - INFO - Training completed. Policy Loss: 0.0030
+2025-09-16 03:17:28,103 - INFO - Episode 128 completed! Steps: 202, Duration: 42.93s, Total Reward: 2095.70
+2025-09-16 03:17:28,104 - INFO - Training with 202 experiences from episode 128
+2025-09-16 03:17:28,109 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:18:03,896 - INFO - Episode 129 completed! Steps: 158, Duration: 34.79s, Total Reward: 1349.29
+2025-09-16 03:18:03,897 - INFO - Training with 158 experiences from episode 129
+2025-09-16 03:18:03,900 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:18:50,751 - INFO - Episode 130 completed! Steps: 227, Duration: 45.85s, Total Reward: 2573.06
+2025-09-16 03:18:50,751 - INFO - Training with 227 experiences from episode 130
+2025-09-16 03:18:50,755 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:19:17,906 - INFO - Episode 131 completed! Steps: 104, Duration: 26.15s, Total Reward: 720.32
+2025-09-16 03:19:17,907 - INFO - Training with 104 experiences from episode 131
+2025-09-16 03:19:17,911 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 03:19:43,832 - INFO - Episode 132 completed! Steps: 97, Duration: 24.92s, Total Reward: 615.59
+2025-09-16 03:19:43,833 - INFO - Training with 97 experiences from episode 132
+2025-09-16 03:19:43,837 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:20:23,821 - INFO - Episode 133 completed! Steps: 179, Duration: 38.98s, Total Reward: 1710.43
+2025-09-16 03:20:23,821 - INFO - Training with 179 experiences from episode 133
+2025-09-16 03:20:23,828 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 03:21:21,247 - INFO - Episode 134 completed! Steps: 266, Duration: 56.42s, Total Reward: 3570.36
+2025-09-16 03:21:21,247 - INFO - Training with 266 experiences from episode 134
+2025-09-16 03:21:21,252 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:21:38,325 - INFO - Episode 135 completed! Steps: 47, Duration: 16.07s, Total Reward: 227.96
+2025-09-16 03:21:38,325 - INFO - Training with 47 experiences from episode 135
+2025-09-16 03:21:38,332 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 03:22:04,006 - INFO - Episode 136 completed! Steps: 99, Duration: 24.67s, Total Reward: 620.89
+2025-09-16 03:22:04,007 - INFO - Training with 99 experiences from episode 136
+2025-09-16 03:22:04,010 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:22:52,283 - INFO - Episode 137 completed! Steps: 222, Duration: 47.27s, Total Reward: 2637.57
+2025-09-16 03:22:52,283 - INFO - Training with 222 experiences from episode 137
+2025-09-16 03:22:52,287 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:23:36,302 - INFO - Episode 138 completed! Steps: 194, Duration: 43.01s, Total Reward: 1981.35
+2025-09-16 03:23:36,302 - INFO - Training with 194 experiences from episode 138
+2025-09-16 03:23:36,306 - INFO - Training completed. Policy Loss: -0.0052
+2025-09-16 03:24:16,191 - INFO - Episode 139 completed! Steps: 172, Duration: 38.88s, Total Reward: 1569.39
+2025-09-16 03:24:16,191 - INFO - Training with 172 experiences from episode 139
+2025-09-16 03:24:16,196 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:25:09,109 - INFO - Episode 140 completed! Steps: 260, Duration: 51.91s, Total Reward: 3288.64
+2025-09-16 03:25:09,109 - INFO - Training with 260 experiences from episode 140
+2025-09-16 03:25:09,115 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:26:00,265 - INFO - Episode 141 completed! Steps: 229, Duration: 48.52s, Total Reward: 2627.60
+2025-09-16 03:26:00,265 - INFO - Training with 229 experiences from episode 141
+2025-09-16 03:26:00,271 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:26:45,092 - INFO - Episode 142 completed! Steps: 198, Duration: 43.82s, Total Reward: 2099.10
+2025-09-16 03:26:45,092 - INFO - Training with 198 experiences from episode 142
+2025-09-16 03:26:45,096 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:27:22,700 - INFO - Episode 143 completed! Steps: 162, Duration: 36.60s, Total Reward: 1489.61
+2025-09-16 03:27:22,700 - INFO - Training with 162 experiences from episode 143
+2025-09-16 03:27:22,706 - INFO - Training completed. Policy Loss: -0.0066
+2025-09-16 03:28:04,995 - INFO - Episode 144 completed! Steps: 181, Duration: 41.29s, Total Reward: 1677.40
+2025-09-16 03:28:04,995 - INFO - Training with 181 experiences from episode 144
+2025-09-16 03:28:05,000 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:29:00,663 - INFO - Episode 145 completed! Steps: 265, Duration: 54.66s, Total Reward: 3469.01
+2025-09-16 03:29:00,664 - INFO - Training with 265 experiences from episode 145
+2025-09-16 03:29:00,669 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:29:53,395 - INFO - Episode 146 completed! Steps: 255, Duration: 51.73s, Total Reward: 3322.75
+2025-09-16 03:29:53,395 - INFO - Training with 255 experiences from episode 146
+2025-09-16 03:29:53,400 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:30:43,313 - INFO - Episode 147 completed! Steps: 222, Duration: 48.91s, Total Reward: 2726.05
+2025-09-16 03:30:43,313 - INFO - Training with 222 experiences from episode 147
+2025-09-16 03:30:43,317 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 03:31:25,501 - INFO - Episode 148 completed! Steps: 174, Duration: 41.18s, Total Reward: 1694.78
+2025-09-16 03:31:25,502 - INFO - Training with 174 experiences from episode 148
+2025-09-16 03:31:25,507 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:32:08,439 - INFO - Episode 149 completed! Steps: 190, Duration: 41.93s, Total Reward: 1889.01
+2025-09-16 03:32:08,439 - INFO - Training with 190 experiences from episode 149
+2025-09-16 03:32:08,443 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 03:32:46,786 - INFO - Episode 150 completed! Steps: 164, Duration: 37.34s, Total Reward: 1409.91
+2025-09-16 03:32:46,786 - INFO - Training with 164 experiences from episode 150
+2025-09-16 03:32:46,789 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:32:47,790 - INFO - REINFORCE training completed! Best model achieved 59.23s and saved at runs/20250916_023511/models/best_model_at_train_round_0_epoch_97.pt
+2025-09-16 03:32:47,790 - INFO - Training round 1 start.
+2025-09-16 03:32:47,803 - INFO - Loaded model from runs/20250916_023511/models/best_model_at_train_round_0_epoch_97.pt
+2025-09-16 03:32:47,804 - INFO - Starting REINFORCE Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-16 03:33:37,255 - INFO - Episode 1 completed! Steps: 248, Duration: 49.45s, Total Reward: 3115.51
+2025-09-16 03:33:37,255 - INFO - Training with 248 experiences from episode 1
+2025-09-16 03:33:37,261 - INFO - Training completed. Policy Loss: 0.0085
+2025-09-16 03:33:37,263 - INFO - New best model saved! Duration: 49.45s
+2025-09-16 03:33:37,288 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_1_epoch_0.png
+2025-09-16 03:33:56,602 - INFO - Episode 2 completed! Steps: 43, Duration: 18.31s, Total Reward: 208.88
+2025-09-16 03:33:56,602 - INFO - Training with 43 experiences from episode 2
+2025-09-16 03:33:56,606 - INFO - Training completed. Policy Loss: 0.0014
+2025-09-16 03:34:54,920 - INFO - Episode 3 completed! Steps: 282, Duration: 57.31s, Total Reward: 4040.92
+2025-09-16 03:34:54,920 - INFO - Training with 282 experiences from episode 3
+2025-09-16 03:34:54,925 - INFO - Training completed. Policy Loss: 0.0055
+2025-09-16 03:34:54,927 - INFO - New best model saved! Duration: 57.31s
+2025-09-16 03:34:54,955 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_1_epoch_2.png
+2025-09-16 03:35:30,317 - INFO - Episode 4 completed! Steps: 155, Duration: 34.36s, Total Reward: 1276.68
+2025-09-16 03:35:30,318 - INFO - Training with 155 experiences from episode 4
+2025-09-16 03:35:30,322 - INFO - Training completed. Policy Loss: 0.0042
+2025-09-16 03:36:17,517 - INFO - Episode 5 completed! Steps: 211, Duration: 46.19s, Total Reward: 2392.76
+2025-09-16 03:36:17,517 - INFO - Training with 211 experiences from episode 5
+2025-09-16 03:36:17,523 - INFO - Training completed. Policy Loss: 0.0031
+2025-09-16 03:37:08,211 - INFO - Episode 6 completed! Steps: 235, Duration: 49.69s, Total Reward: 2755.43
+2025-09-16 03:37:08,211 - INFO - Training with 235 experiences from episode 6
+2025-09-16 03:37:08,215 - INFO - Training completed. Policy Loss: 0.0039
+2025-09-16 03:37:55,373 - INFO - Episode 7 completed! Steps: 211, Duration: 46.16s, Total Reward: 2386.35
+2025-09-16 03:37:55,373 - INFO - Training with 211 experiences from episode 7
+2025-09-16 03:37:55,378 - INFO - Training completed. Policy Loss: 0.0052
+2025-09-16 03:38:48,737 - INFO - Episode 8 completed! Steps: 240, Duration: 52.36s, Total Reward: 3143.55
+2025-09-16 03:38:48,738 - INFO - Training with 240 experiences from episode 8
+2025-09-16 03:38:48,742 - INFO - Training completed. Policy Loss: 0.1377
+2025-09-16 03:39:31,949 - INFO - Episode 9 completed! Steps: 184, Duration: 42.21s, Total Reward: 1864.86
+2025-09-16 03:39:31,949 - INFO - Training with 184 experiences from episode 9
+2025-09-16 03:39:31,954 - INFO - Training completed. Policy Loss: 0.0116
+2025-09-16 03:40:13,673 - INFO - Episode 10 completed! Steps: 190, Duration: 40.72s, Total Reward: 1882.85
+2025-09-16 03:40:13,673 - INFO - Training with 190 experiences from episode 10
+2025-09-16 03:40:13,677 - INFO - Training completed. Policy Loss: 0.0040
+2025-09-16 03:40:52,310 - INFO - Episode 11 completed! Steps: 159, Duration: 37.62s, Total Reward: 1523.10
+2025-09-16 03:40:52,310 - INFO - Training with 159 experiences from episode 11
+2025-09-16 03:40:52,315 - INFO - Training completed. Policy Loss: 0.0062
+2025-09-16 03:41:50,928 - INFO - Episode 12 completed! Steps: 292, Duration: 57.61s, Total Reward: 4172.35
+2025-09-16 03:41:50,928 - INFO - Training with 292 experiences from episode 12
+2025-09-16 03:41:50,935 - INFO - Training completed. Policy Loss: 0.0040
+2025-09-16 03:41:50,937 - INFO - New best model saved! Duration: 57.61s
+2025-09-16 03:41:50,970 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_1_epoch_11.png
+2025-09-16 03:42:36,618 - INFO - Episode 13 completed! Steps: 214, Duration: 44.65s, Total Reward: 2307.72
+2025-09-16 03:42:36,618 - INFO - Training with 214 experiences from episode 13
+2025-09-16 03:42:36,623 - INFO - Training completed. Policy Loss: 0.0028
+2025-09-16 03:43:32,477 - INFO - Episode 14 completed! Steps: 278, Duration: 54.85s, Total Reward: 3596.89
+2025-09-16 03:43:32,478 - INFO - Training with 278 experiences from episode 14
+2025-09-16 03:43:32,483 - INFO - Training completed. Policy Loss: 0.0029
+2025-09-16 03:44:20,244 - INFO - Episode 15 completed! Steps: 223, Duration: 46.76s, Total Reward: 2588.15
+2025-09-16 03:44:20,244 - INFO - Training with 223 experiences from episode 15
+2025-09-16 03:44:20,249 - INFO - Training completed. Policy Loss: 0.0032
+2025-09-16 03:45:08,793 - INFO - Episode 16 completed! Steps: 204, Duration: 47.54s, Total Reward: 2233.12
+2025-09-16 03:45:08,793 - INFO - Training with 204 experiences from episode 16
+2025-09-16 03:45:08,799 - INFO - Training completed. Policy Loss: 0.0035
+2025-09-16 03:46:00,046 - INFO - Episode 17 completed! Steps: 250, Duration: 50.25s, Total Reward: 3127.37
+2025-09-16 03:46:00,046 - INFO - Training with 250 experiences from episode 17
+2025-09-16 03:46:00,051 - INFO - Training completed. Policy Loss: 0.0027
+2025-09-16 03:46:13,358 - INFO - Episode 18 completed! Steps: 34, Duration: 12.31s, Total Reward: 160.00
+2025-09-16 03:46:13,358 - INFO - Training with 34 experiences from episode 18
+2025-09-16 03:46:13,362 - INFO - Training completed. Policy Loss: 0.0071
+2025-09-16 03:46:53,786 - INFO - Episode 19 completed! Steps: 175, Duration: 39.42s, Total Reward: 1659.77
+2025-09-16 03:46:53,786 - INFO - Training with 175 experiences from episode 19
+2025-09-16 03:46:53,791 - INFO - Training completed. Policy Loss: 0.0020
+2025-09-16 03:47:34,906 - INFO - Episode 20 completed! Steps: 192, Duration: 40.11s, Total Reward: 1868.91
+2025-09-16 03:47:34,907 - INFO - Training with 192 experiences from episode 20
+2025-09-16 03:47:34,911 - INFO - Training completed. Policy Loss: 0.0016
+2025-09-16 03:48:17,077 - INFO - Episode 21 completed! Steps: 193, Duration: 41.16s, Total Reward: 1957.79
+2025-09-16 03:48:17,077 - INFO - Training with 193 experiences from episode 21
+2025-09-16 03:48:17,081 - INFO - Training completed. Policy Loss: 0.0025
+2025-09-16 03:48:59,033 - INFO - Episode 22 completed! Steps: 184, Duration: 40.95s, Total Reward: 1689.00
+2025-09-16 03:48:59,033 - INFO - Training with 184 experiences from episode 22
+2025-09-16 03:48:59,040 - INFO - Training completed. Policy Loss: 0.0014
+2025-09-16 03:49:25,914 - INFO - Episode 23 completed! Steps: 89, Duration: 25.87s, Total Reward: 590.61
+2025-09-16 03:49:25,915 - INFO - Training with 89 experiences from episode 23
+2025-09-16 03:49:25,919 - INFO - Training completed. Policy Loss: 0.0052
+2025-09-16 03:50:22,169 - INFO - Episode 24 completed! Steps: 247, Duration: 53.64s, Total Reward: 3242.35
+2025-09-16 03:50:22,169 - INFO - Training with 247 experiences from episode 24
+2025-09-16 03:50:22,176 - INFO - Training completed. Policy Loss: 0.0282
+2025-09-16 03:51:17,008 - INFO - Episode 25 completed! Steps: 258, Duration: 53.83s, Total Reward: 3408.97
+2025-09-16 03:51:17,008 - INFO - Training with 258 experiences from episode 25
+2025-09-16 03:51:17,013 - INFO - Training completed. Policy Loss: 0.0031
+2025-09-16 03:52:12,195 - INFO - Episode 26 completed! Steps: 259, Duration: 54.18s, Total Reward: 3544.27
+2025-09-16 03:52:12,195 - INFO - Training with 259 experiences from episode 26
+2025-09-16 03:52:12,199 - INFO - Training completed. Policy Loss: 0.0011
+2025-09-16 03:53:05,078 - INFO - Episode 27 completed! Steps: 233, Duration: 51.88s, Total Reward: 2781.66
+2025-09-16 03:53:05,078 - INFO - Training with 233 experiences from episode 27
+2025-09-16 03:53:05,084 - INFO - Training completed. Policy Loss: 0.0020
+2025-09-16 03:53:30,649 - INFO - Episode 28 completed! Steps: 93, Duration: 24.56s, Total Reward: 548.52
+2025-09-16 03:53:30,649 - INFO - Training with 93 experiences from episode 28
+2025-09-16 03:53:30,653 - INFO - Training completed. Policy Loss: 0.0010
+2025-09-16 03:54:01,627 - INFO - Episode 29 completed! Steps: 125, Duration: 29.97s, Total Reward: 876.07
+2025-09-16 03:54:01,627 - INFO - Training with 125 experiences from episode 29
+2025-09-16 03:54:01,635 - INFO - Training completed. Policy Loss: 0.0082
+2025-09-16 03:54:37,474 - INFO - Episode 30 completed! Steps: 165, Duration: 34.84s, Total Reward: 1348.63
+2025-09-16 03:54:37,474 - INFO - Training with 165 experiences from episode 30
+2025-09-16 03:54:37,481 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:54:47,611 - INFO - Episode 31 completed! Steps: 29, Duration: 9.13s, Total Reward: 135.00
+2025-09-16 03:54:47,611 - INFO - Training with 29 experiences from episode 31
+2025-09-16 03:54:47,614 - INFO - Training completed. Policy Loss: 0.0095
+2025-09-16 03:55:22,930 - INFO - Episode 32 completed! Steps: 149, Duration: 34.32s, Total Reward: 1241.51
+2025-09-16 03:55:22,930 - INFO - Training with 149 experiences from episode 32
+2025-09-16 03:55:22,936 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 03:55:55,398 - INFO - Episode 33 completed! Steps: 131, Duration: 31.46s, Total Reward: 1027.08
+2025-09-16 03:55:55,399 - INFO - Training with 131 experiences from episode 33
+2025-09-16 03:55:55,404 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 03:56:42,947 - INFO - Episode 34 completed! Steps: 210, Duration: 46.54s, Total Reward: 2449.01
+2025-09-16 03:56:42,948 - INFO - Training with 210 experiences from episode 34
+2025-09-16 03:56:42,951 - INFO - Training completed. Policy Loss: 0.0008
+2025-09-16 03:57:25,169 - INFO - Episode 35 completed! Steps: 176, Duration: 41.22s, Total Reward: 1683.78
+2025-09-16 03:57:25,169 - INFO - Training with 176 experiences from episode 35
+2025-09-16 03:57:25,172 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 03:58:23,202 - INFO - Episode 36 completed! Steps: 303, Duration: 57.03s, Total Reward: 4254.49
+2025-09-16 03:58:23,202 - INFO - Training with 303 experiences from episode 36
+2025-09-16 03:58:23,209 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 03:58:56,672 - INFO - Episode 37 completed! Steps: 134, Duration: 32.46s, Total Reward: 1042.59
+2025-09-16 03:58:56,672 - INFO - Training with 134 experiences from episode 37
+2025-09-16 03:58:56,677 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 03:59:39,946 - INFO - Episode 38 completed! Steps: 191, Duration: 42.27s, Total Reward: 1887.88
+2025-09-16 03:59:39,946 - INFO - Training with 191 experiences from episode 38
+2025-09-16 03:59:39,951 - INFO - Training completed. Policy Loss: -0.0106
+2025-09-16 04:00:14,142 - INFO - Episode 39 completed! Steps: 159, Duration: 33.19s, Total Reward: 1251.20
+2025-09-16 04:00:14,143 - INFO - Training with 159 experiences from episode 39
+2025-09-16 04:00:14,147 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:00:55,230 - INFO - Episode 40 completed! Steps: 176, Duration: 40.08s, Total Reward: 1692.84
+2025-09-16 04:00:55,230 - INFO - Training with 176 experiences from episode 40
+2025-09-16 04:00:55,234 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:01:34,008 - INFO - Episode 41 completed! Steps: 172, Duration: 37.77s, Total Reward: 1581.78
+2025-09-16 04:01:34,008 - INFO - Training with 172 experiences from episode 41
+2025-09-16 04:01:34,019 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:01:58,675 - INFO - Episode 42 completed! Steps: 93, Duration: 23.66s, Total Reward: 539.89
+2025-09-16 04:01:58,675 - INFO - Training with 93 experiences from episode 42
+2025-09-16 04:01:58,679 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:02:54,816 - INFO - Episode 43 completed! Steps: 273, Duration: 55.14s, Total Reward: 3644.94
+2025-09-16 04:02:54,816 - INFO - Training with 273 experiences from episode 43
+2025-09-16 04:02:54,822 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 04:03:31,653 - INFO - Episode 44 completed! Steps: 165, Duration: 35.83s, Total Reward: 1511.84
+2025-09-16 04:03:31,654 - INFO - Training with 165 experiences from episode 44
+2025-09-16 04:03:31,657 - INFO - Training completed. Policy Loss: 0.0023
+2025-09-16 04:04:20,434 - INFO - Episode 45 completed! Steps: 219, Duration: 47.78s, Total Reward: 2433.07
+2025-09-16 04:04:20,434 - INFO - Training with 219 experiences from episode 45
+2025-09-16 04:04:20,439 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:04:56,237 - INFO - Episode 46 completed! Steps: 159, Duration: 34.80s, Total Reward: 1354.41
+2025-09-16 04:04:56,238 - INFO - Training with 159 experiences from episode 46
+2025-09-16 04:04:56,242 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 04:05:45,377 - INFO - Episode 47 completed! Steps: 224, Duration: 48.13s, Total Reward: 2632.98
+2025-09-16 04:05:45,377 - INFO - Training with 224 experiences from episode 47
+2025-09-16 04:05:45,381 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:05:59,869 - INFO - Episode 48 completed! Steps: 45, Duration: 13.49s, Total Reward: 215.00
+2025-09-16 04:05:59,869 - INFO - Training with 45 experiences from episode 48
+2025-09-16 04:05:59,873 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 04:06:30,342 - INFO - Episode 49 completed! Steps: 127, Duration: 29.47s, Total Reward: 890.67
+2025-09-16 04:06:30,342 - INFO - Training with 127 experiences from episode 49
+2025-09-16 04:06:30,346 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:07:18,679 - INFO - Episode 50 completed! Steps: 228, Duration: 47.33s, Total Reward: 2613.64
+2025-09-16 04:07:18,679 - INFO - Training with 228 experiences from episode 50
+2025-09-16 04:07:18,684 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 04:07:57,835 - INFO - Episode 51 completed! Steps: 171, Duration: 38.15s, Total Reward: 1587.01
+2025-09-16 04:07:57,835 - INFO - Training with 171 experiences from episode 51
+2025-09-16 04:07:57,841 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:09:01,211 - INFO - Episode 52 completed! Steps: 318, Duration: 62.37s, Total Reward: 5062.11
+2025-09-16 04:09:01,211 - INFO - Training with 318 experiences from episode 52
+2025-09-16 04:09:01,215 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:09:01,216 - INFO - New best model saved! Duration: 62.37s
+2025-09-16 04:09:01,244 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_1_epoch_51.png
+2025-09-16 04:09:41,887 - INFO - Episode 53 completed! Steps: 171, Duration: 39.64s, Total Reward: 1704.08
+2025-09-16 04:09:41,887 - INFO - Training with 171 experiences from episode 53
+2025-09-16 04:09:41,893 - INFO - Training completed. Policy Loss: 0.0009
+2025-09-16 04:10:25,825 - INFO - Episode 54 completed! Steps: 187, Duration: 42.93s, Total Reward: 1892.49
+2025-09-16 04:10:25,825 - INFO - Training with 187 experiences from episode 54
+2025-09-16 04:10:25,829 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:11:11,518 - INFO - Episode 55 completed! Steps: 204, Duration: 44.69s, Total Reward: 2151.46
+2025-09-16 04:11:11,518 - INFO - Training with 204 experiences from episode 55
+2025-09-16 04:11:11,522 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:12:10,803 - INFO - Episode 56 completed! Steps: 285, Duration: 58.28s, Total Reward: 4028.70
+2025-09-16 04:12:10,803 - INFO - Training with 285 experiences from episode 56
+2025-09-16 04:12:10,809 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:12:26,796 - INFO - Episode 57 completed! Steps: 57, Duration: 14.99s, Total Reward: 276.47
+2025-09-16 04:12:26,796 - INFO - Training with 57 experiences from episode 57
+2025-09-16 04:12:26,801 - INFO - Training completed. Policy Loss: 0.0006
+2025-09-16 04:13:21,992 - INFO - Episode 58 completed! Steps: 256, Duration: 54.19s, Total Reward: 3452.58
+2025-09-16 04:13:21,992 - INFO - Training with 256 experiences from episode 58
+2025-09-16 04:13:21,997 - INFO - Training completed. Policy Loss: 0.0520
+2025-09-16 04:13:40,472 - INFO - Episode 59 completed! Steps: 72, Duration: 17.47s, Total Reward: 363.33
+2025-09-16 04:13:40,472 - INFO - Training with 72 experiences from episode 59
+2025-09-16 04:13:40,476 - INFO - Training completed. Policy Loss: -0.0534
+2025-09-16 04:14:06,525 - INFO - Episode 60 completed! Steps: 97, Duration: 25.05s, Total Reward: 637.96
+2025-09-16 04:14:06,525 - INFO - Training with 97 experiences from episode 60
+2025-09-16 04:14:06,530 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:14:45,928 - INFO - Episode 61 completed! Steps: 174, Duration: 38.40s, Total Reward: 1666.88
+2025-09-16 04:14:45,928 - INFO - Training with 174 experiences from episode 61
+2025-09-16 04:14:45,934 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:15:23,179 - INFO - Episode 62 completed! Steps: 148, Duration: 36.24s, Total Reward: 1364.43
+2025-09-16 04:15:23,179 - INFO - Training with 148 experiences from episode 62
+2025-09-16 04:15:23,185 - INFO - Training completed. Policy Loss: 0.0020
+2025-09-16 04:16:12,697 - INFO - Episode 63 completed! Steps: 225, Duration: 48.51s, Total Reward: 2644.16
+2025-09-16 04:16:12,697 - INFO - Training with 225 experiences from episode 63
+2025-09-16 04:16:12,702 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:16:47,308 - INFO - Episode 64 completed! Steps: 137, Duration: 33.60s, Total Reward: 1123.39
+2025-09-16 04:16:47,308 - INFO - Training with 137 experiences from episode 64
+2025-09-16 04:16:47,313 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:17:19,879 - INFO - Episode 65 completed! Steps: 142, Duration: 31.57s, Total Reward: 1090.61
+2025-09-16 04:17:19,879 - INFO - Training with 142 experiences from episode 65
+2025-09-16 04:17:19,884 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:18:00,980 - INFO - Episode 66 completed! Steps: 180, Duration: 40.09s, Total Reward: 1757.49
+2025-09-16 04:18:00,980 - INFO - Training with 180 experiences from episode 66
+2025-09-16 04:18:00,987 - INFO - Training completed. Policy Loss: 0.0011
+2025-09-16 04:19:00,567 - INFO - Episode 67 completed! Steps: 294, Duration: 58.58s, Total Reward: 4197.95
+2025-09-16 04:19:00,567 - INFO - Training with 294 experiences from episode 67
+2025-09-16 04:19:00,573 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:19:50,336 - INFO - Episode 68 completed! Steps: 215, Duration: 48.76s, Total Reward: 2539.19
+2025-09-16 04:19:50,336 - INFO - Training with 215 experiences from episode 68
+2025-09-16 04:19:50,341 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:20:25,047 - INFO - Episode 69 completed! Steps: 147, Duration: 33.70s, Total Reward: 1249.84
+2025-09-16 04:20:25,047 - INFO - Training with 147 experiences from episode 69
+2025-09-16 04:20:25,050 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:21:08,246 - INFO - Episode 70 completed! Steps: 185, Duration: 42.19s, Total Reward: 2012.13
+2025-09-16 04:21:08,246 - INFO - Training with 185 experiences from episode 70
+2025-09-16 04:21:08,250 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:21:49,263 - INFO - Episode 71 completed! Steps: 157, Duration: 40.01s, Total Reward: 1443.75
+2025-09-16 04:21:49,263 - INFO - Training with 157 experiences from episode 71
+2025-09-16 04:21:49,270 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:22:08,507 - INFO - Episode 72 completed! Steps: 48, Duration: 18.24s, Total Reward: 241.22
+2025-09-16 04:22:08,507 - INFO - Training with 48 experiences from episode 72
+2025-09-16 04:22:08,512 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 04:22:42,736 - INFO - Episode 73 completed! Steps: 154, Duration: 33.22s, Total Reward: 1290.26
+2025-09-16 04:22:42,736 - INFO - Training with 154 experiences from episode 73
+2025-09-16 04:22:42,741 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:23:01,327 - INFO - Episode 74 completed! Steps: 49, Duration: 17.58s, Total Reward: 244.57
+2025-09-16 04:23:01,327 - INFO - Training with 49 experiences from episode 74
+2025-09-16 04:23:01,331 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 04:23:44,176 - INFO - Episode 75 completed! Steps: 184, Duration: 41.84s, Total Reward: 1870.57
+2025-09-16 04:23:44,176 - INFO - Training with 184 experiences from episode 75
+2025-09-16 04:23:44,182 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:24:39,558 - INFO - Episode 76 completed! Steps: 260, Duration: 54.38s, Total Reward: 3507.79
+2025-09-16 04:24:39,559 - INFO - Training with 260 experiences from episode 76
+2025-09-16 04:24:39,566 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:25:12,653 - INFO - Episode 77 completed! Steps: 132, Duration: 32.09s, Total Reward: 1022.58
+2025-09-16 04:25:12,653 - INFO - Training with 132 experiences from episode 77
+2025-09-16 04:25:12,660 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:25:58,952 - INFO - Episode 78 completed! Steps: 216, Duration: 45.29s, Total Reward: 2304.60
+2025-09-16 04:25:58,952 - INFO - Training with 216 experiences from episode 78
+2025-09-16 04:25:58,957 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:26:37,264 - INFO - Episode 79 completed! Steps: 179, Duration: 37.31s, Total Reward: 1687.77
+2025-09-16 04:26:37,264 - INFO - Training with 179 experiences from episode 79
+2025-09-16 04:26:37,270 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:27:10,367 - INFO - Episode 80 completed! Steps: 142, Duration: 32.10s, Total Reward: 1138.17
+2025-09-16 04:27:10,367 - INFO - Training with 142 experiences from episode 80
+2025-09-16 04:27:10,371 - INFO - Training completed. Policy Loss: -0.0000
+2025-09-16 04:27:43,778 - INFO - Episode 81 completed! Steps: 145, Duration: 32.41s, Total Reward: 1224.79
+2025-09-16 04:27:43,779 - INFO - Training with 145 experiences from episode 81
+2025-09-16 04:27:43,787 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:28:27,290 - INFO - Episode 82 completed! Steps: 189, Duration: 42.50s, Total Reward: 1972.29
+2025-09-16 04:28:27,290 - INFO - Training with 189 experiences from episode 82
+2025-09-16 04:28:27,294 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:29:11,699 - INFO - Episode 83 completed! Steps: 200, Duration: 43.40s, Total Reward: 1947.06
+2025-09-16 04:29:11,699 - INFO - Training with 200 experiences from episode 83
+2025-09-16 04:29:11,704 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:29:26,906 - INFO - Episode 84 completed! Steps: 37, Duration: 14.20s, Total Reward: 175.00
+2025-09-16 04:29:26,907 - INFO - Training with 37 experiences from episode 84
+2025-09-16 04:29:26,911 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 04:29:58,673 - INFO - Episode 85 completed! Steps: 134, Duration: 30.76s, Total Reward: 1055.17
+2025-09-16 04:29:58,673 - INFO - Training with 134 experiences from episode 85
+2025-09-16 04:29:58,677 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 04:30:39,880 - INFO - Episode 86 completed! Steps: 182, Duration: 40.20s, Total Reward: 1794.63
+2025-09-16 04:30:39,880 - INFO - Training with 182 experiences from episode 86
+2025-09-16 04:30:39,885 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:31:27,762 - INFO - Episode 87 completed! Steps: 214, Duration: 46.88s, Total Reward: 2391.13
+2025-09-16 04:31:27,762 - INFO - Training with 214 experiences from episode 87
+2025-09-16 04:31:27,767 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:32:14,548 - INFO - Episode 88 completed! Steps: 205, Duration: 45.78s, Total Reward: 2281.38
+2025-09-16 04:32:14,548 - INFO - Training with 205 experiences from episode 88
+2025-09-16 04:32:14,553 - INFO - Training completed. Policy Loss: 0.0356
+2025-09-16 04:33:10,198 - INFO - Episode 89 completed! Steps: 246, Duration: 54.64s, Total Reward: 3251.47
+2025-09-16 04:33:10,198 - INFO - Training with 246 experiences from episode 89
+2025-09-16 04:33:10,203 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:33:52,706 - INFO - Episode 90 completed! Steps: 193, Duration: 41.50s, Total Reward: 1879.70
+2025-09-16 04:33:52,706 - INFO - Training with 193 experiences from episode 90
+2025-09-16 04:33:52,711 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:34:50,783 - INFO - Episode 91 completed! Steps: 273, Duration: 57.07s, Total Reward: 3734.74
+2025-09-16 04:34:50,783 - INFO - Training with 273 experiences from episode 91
+2025-09-16 04:34:50,789 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:35:39,832 - INFO - Episode 92 completed! Steps: 223, Duration: 48.04s, Total Reward: 2629.25
+2025-09-16 04:35:39,832 - INFO - Training with 223 experiences from episode 92
+2025-09-16 04:35:39,835 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:36:19,288 - INFO - Episode 93 completed! Steps: 179, Duration: 38.45s, Total Reward: 1725.68
+2025-09-16 04:36:19,288 - INFO - Training with 179 experiences from episode 93
+2025-09-16 04:36:19,292 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:37:20,774 - INFO - Episode 94 completed! Steps: 287, Duration: 60.48s, Total Reward: 4279.68
+2025-09-16 04:37:20,774 - INFO - Training with 287 experiences from episode 94
+2025-09-16 04:37:20,780 - INFO - Training completed. Policy Loss: 0.0008
+2025-09-16 04:38:15,195 - INFO - Episode 95 completed! Steps: 249, Duration: 53.41s, Total Reward: 3107.97
+2025-09-16 04:38:15,196 - INFO - Training with 249 experiences from episode 95
+2025-09-16 04:38:15,201 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:38:51,187 - INFO - Episode 96 completed! Steps: 155, Duration: 34.99s, Total Reward: 1301.29
+2025-09-16 04:38:51,187 - INFO - Training with 155 experiences from episode 96
+2025-09-16 04:38:51,194 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:39:38,669 - INFO - Episode 97 completed! Steps: 219, Duration: 46.47s, Total Reward: 2390.79
+2025-09-16 04:39:38,670 - INFO - Training with 219 experiences from episode 97
+2025-09-16 04:39:38,675 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:40:32,892 - INFO - Episode 98 completed! Steps: 252, Duration: 53.22s, Total Reward: 3277.92
+2025-09-16 04:40:32,892 - INFO - Training with 252 experiences from episode 98
+2025-09-16 04:40:32,897 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:41:20,944 - INFO - Episode 99 completed! Steps: 204, Duration: 47.05s, Total Reward: 2350.34
+2025-09-16 04:41:20,944 - INFO - Training with 204 experiences from episode 99
+2025-09-16 04:41:20,949 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:41:58,763 - INFO - Episode 100 completed! Steps: 163, Duration: 36.81s, Total Reward: 1503.34
+2025-09-16 04:41:58,763 - INFO - Training with 163 experiences from episode 100
+2025-09-16 04:41:58,768 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:41:59,769 - INFO - REINFORCE training completed! Best model achieved 62.37s and saved at runs/20250916_023511/models/best_model_at_train_round_1_epoch_51.pt
+2025-09-16 04:41:59,770 - INFO - Training round 2 start.
+2025-09-16 04:41:59,774 - INFO - Loaded model from runs/20250916_023511/models/best_model_at_train_round_1_epoch_51.pt
+2025-09-16 04:41:59,774 - INFO - Starting REINFORCE Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-16 04:42:44,202 - INFO - Episode 1 completed! Steps: 181, Duration: 44.43s, Total Reward: 2008.41
+2025-09-16 04:42:44,202 - INFO - Training with 181 experiences from episode 1
+2025-09-16 04:42:44,208 - INFO - Training completed. Policy Loss: 0.0014
+2025-09-16 04:42:44,210 - INFO - New best model saved! Duration: 44.43s
+2025-09-16 04:42:44,237 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_0.png
+2025-09-16 04:42:55,375 - INFO - Episode 2 completed! Steps: 22, Duration: 10.14s, Total Reward: 100.00
+2025-09-16 04:42:55,375 - INFO - Training with 22 experiences from episode 2
+2025-09-16 04:42:55,382 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 04:43:32,688 - INFO - Episode 3 completed! Steps: 153, Duration: 36.30s, Total Reward: 1370.73
+2025-09-16 04:43:32,688 - INFO - Training with 153 experiences from episode 3
+2025-09-16 04:43:32,694 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:44:01,062 - INFO - Episode 4 completed! Steps: 111, Duration: 27.37s, Total Reward: 770.34
+2025-09-16 04:44:01,062 - INFO - Training with 111 experiences from episode 4
+2025-09-16 04:44:01,066 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:44:43,670 - INFO - Episode 5 completed! Steps: 190, Duration: 41.60s, Total Reward: 1918.14
+2025-09-16 04:44:43,670 - INFO - Training with 190 experiences from episode 5
+2025-09-16 04:44:43,675 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:45:24,065 - INFO - Episode 6 completed! Steps: 179, Duration: 39.39s, Total Reward: 1737.58
+2025-09-16 04:45:24,065 - INFO - Training with 179 experiences from episode 6
+2025-09-16 04:45:24,069 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:46:18,485 - INFO - Episode 7 completed! Steps: 255, Duration: 53.41s, Total Reward: 3326.20
+2025-09-16 04:46:18,485 - INFO - Training with 255 experiences from episode 7
+2025-09-16 04:46:18,488 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:46:18,490 - INFO - New best model saved! Duration: 53.41s
+2025-09-16 04:46:18,520 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_6.png
+2025-09-16 04:47:02,269 - INFO - Episode 8 completed! Steps: 197, Duration: 42.75s, Total Reward: 2064.08
+2025-09-16 04:47:02,269 - INFO - Training with 197 experiences from episode 8
+2025-09-16 04:47:02,275 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:47:45,598 - INFO - Episode 9 completed! Steps: 187, Duration: 42.32s, Total Reward: 1955.64
+2025-09-16 04:47:45,599 - INFO - Training with 187 experiences from episode 9
+2025-09-16 04:47:45,603 - INFO - Training completed. Policy Loss: 0.0006
+2025-09-16 04:48:38,677 - INFO - Episode 10 completed! Steps: 250, Duration: 52.07s, Total Reward: 3059.83
+2025-09-16 04:48:38,677 - INFO - Training with 250 experiences from episode 10
+2025-09-16 04:48:38,682 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 04:49:20,494 - INFO - Episode 11 completed! Steps: 183, Duration: 40.81s, Total Reward: 1853.26
+2025-09-16 04:49:20,494 - INFO - Training with 183 experiences from episode 11
+2025-09-16 04:49:20,505 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:49:56,143 - INFO - Episode 12 completed! Steps: 151, Duration: 34.64s, Total Reward: 1310.92
+2025-09-16 04:49:56,143 - INFO - Training with 151 experiences from episode 12
+2025-09-16 04:49:56,148 - INFO - Training completed. Policy Loss: 0.2710
+2025-09-16 04:50:36,946 - INFO - Episode 13 completed! Steps: 187, Duration: 39.80s, Total Reward: 1876.83
+2025-09-16 04:50:36,946 - INFO - Training with 187 experiences from episode 13
+2025-09-16 04:50:36,951 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:51:19,969 - INFO - Episode 14 completed! Steps: 179, Duration: 42.02s, Total Reward: 1691.91
+2025-09-16 04:51:19,969 - INFO - Training with 179 experiences from episode 14
+2025-09-16 04:51:19,975 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 04:52:05,524 - INFO - Episode 15 completed! Steps: 219, Duration: 44.55s, Total Reward: 2338.35
+2025-09-16 04:52:05,524 - INFO - Training with 219 experiences from episode 15
+2025-09-16 04:52:05,528 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 04:52:45,880 - INFO - Episode 16 completed! Steps: 181, Duration: 39.35s, Total Reward: 1723.69
+2025-09-16 04:52:45,880 - INFO - Training with 181 experiences from episode 16
+2025-09-16 04:52:45,884 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:53:40,318 - INFO - Episode 17 completed! Steps: 243, Duration: 53.43s, Total Reward: 3099.71
+2025-09-16 04:53:40,318 - INFO - Training with 243 experiences from episode 17
+2025-09-16 04:53:40,322 - INFO - Training completed. Policy Loss: 0.0011
+2025-09-16 04:53:40,323 - INFO - New best model saved! Duration: 53.43s
+2025-09-16 04:53:40,355 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_16.png
+2025-09-16 04:54:20,387 - INFO - Episode 18 completed! Steps: 169, Duration: 39.03s, Total Reward: 1603.22
+2025-09-16 04:54:20,388 - INFO - Training with 169 experiences from episode 18
+2025-09-16 04:54:20,393 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:54:53,055 - INFO - Episode 19 completed! Steps: 126, Duration: 31.66s, Total Reward: 1022.54
+2025-09-16 04:54:53,056 - INFO - Training with 126 experiences from episode 19
+2025-09-16 04:54:53,060 - INFO - Training completed. Policy Loss: -0.0001
+2025-09-16 04:55:41,296 - INFO - Episode 20 completed! Steps: 224, Duration: 47.23s, Total Reward: 2567.56
+2025-09-16 04:55:41,296 - INFO - Training with 224 experiences from episode 20
+2025-09-16 04:55:41,301 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:56:38,542 - INFO - Episode 21 completed! Steps: 283, Duration: 56.24s, Total Reward: 3900.79
+2025-09-16 04:56:38,542 - INFO - Training with 283 experiences from episode 21
+2025-09-16 04:56:38,547 - INFO - Training completed. Policy Loss: 0.0042
+2025-09-16 04:56:38,548 - INFO - New best model saved! Duration: 56.24s
+2025-09-16 04:56:38,576 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_20.png
+2025-09-16 04:57:25,634 - INFO - Episode 22 completed! Steps: 219, Duration: 46.06s, Total Reward: 2492.10
+2025-09-16 04:57:25,634 - INFO - Training with 219 experiences from episode 22
+2025-09-16 04:57:25,638 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 04:57:50,413 - INFO - Episode 23 completed! Steps: 80, Duration: 23.77s, Total Reward: 446.32
+2025-09-16 04:57:50,413 - INFO - Training with 80 experiences from episode 23
+2025-09-16 04:57:50,418 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 04:58:48,956 - INFO - Episode 24 completed! Steps: 269, Duration: 57.54s, Total Reward: 3693.45
+2025-09-16 04:58:48,956 - INFO - Training with 269 experiences from episode 24
+2025-09-16 04:58:48,959 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 04:58:48,961 - INFO - New best model saved! Duration: 57.54s
+2025-09-16 04:58:48,989 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_23.png
+2025-09-16 04:59:26,578 - INFO - Episode 25 completed! Steps: 156, Duration: 36.59s, Total Reward: 1377.18
+2025-09-16 04:59:26,578 - INFO - Training with 156 experiences from episode 25
+2025-09-16 04:59:26,582 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:00:29,720 - INFO - Episode 26 completed! Steps: 289, Duration: 62.14s, Total Reward: 4475.11
+2025-09-16 05:00:29,720 - INFO - Training with 289 experiences from episode 26
+2025-09-16 05:00:29,726 - INFO - Training completed. Policy Loss: 0.0021
+2025-09-16 05:00:29,728 - INFO - New best model saved! Duration: 62.14s
+2025-09-16 05:00:29,757 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_25.png
+2025-09-16 05:01:21,946 - INFO - Episode 27 completed! Steps: 255, Duration: 51.19s, Total Reward: 3164.41
+2025-09-16 05:01:21,946 - INFO - Training with 255 experiences from episode 27
+2025-09-16 05:01:21,951 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:02:14,219 - INFO - Episode 28 completed! Steps: 238, Duration: 51.27s, Total Reward: 2851.44
+2025-09-16 05:02:14,219 - INFO - Training with 238 experiences from episode 28
+2025-09-16 05:02:14,224 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:03:19,236 - INFO - Episode 29 completed! Steps: 287, Duration: 64.01s, Total Reward: 4475.48
+2025-09-16 05:03:19,237 - INFO - Training with 287 experiences from episode 29
+2025-09-16 05:03:19,243 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:03:19,245 - INFO - New best model saved! Duration: 64.01s
+2025-09-16 05:03:19,267 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_2_epoch_28.png
+2025-09-16 05:04:07,940 - INFO - Episode 30 completed! Steps: 225, Duration: 47.67s, Total Reward: 2677.09
+2025-09-16 05:04:07,941 - INFO - Training with 225 experiences from episode 30
+2025-09-16 05:04:07,945 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:04:46,614 - INFO - Episode 31 completed! Steps: 167, Duration: 37.67s, Total Reward: 1561.97
+2025-09-16 05:04:46,614 - INFO - Training with 167 experiences from episode 31
+2025-09-16 05:04:46,621 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:05:36,844 - INFO - Episode 32 completed! Steps: 208, Duration: 49.22s, Total Reward: 2340.05
+2025-09-16 05:05:36,844 - INFO - Training with 208 experiences from episode 32
+2025-09-16 05:05:36,848 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:06:20,419 - INFO - Episode 33 completed! Steps: 195, Duration: 42.57s, Total Reward: 2011.94
+2025-09-16 05:06:20,419 - INFO - Training with 195 experiences from episode 33
+2025-09-16 05:06:20,423 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:07:14,144 - INFO - Episode 34 completed! Steps: 241, Duration: 52.72s, Total Reward: 3040.19
+2025-09-16 05:07:14,145 - INFO - Training with 241 experiences from episode 34
+2025-09-16 05:07:14,151 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:07:53,440 - INFO - Episode 35 completed! Steps: 172, Duration: 38.29s, Total Reward: 1612.99
+2025-09-16 05:07:53,440 - INFO - Training with 172 experiences from episode 35
+2025-09-16 05:07:53,444 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:08:43,136 - INFO - Episode 36 completed! Steps: 239, Duration: 48.69s, Total Reward: 2899.56
+2025-09-16 05:08:43,136 - INFO - Training with 239 experiences from episode 36
+2025-09-16 05:08:43,144 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:08:53,155 - INFO - Episode 37 completed! Steps: 12, Duration: 9.01s, Total Reward: 50.00
+2025-09-16 05:08:53,155 - INFO - Training with 12 experiences from episode 37
+2025-09-16 05:08:53,161 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 05:09:47,385 - INFO - Episode 38 completed! Steps: 255, Duration: 53.22s, Total Reward: 3267.46
+2025-09-16 05:09:47,385 - INFO - Training with 255 experiences from episode 38
+2025-09-16 05:09:47,389 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:10:11,644 - INFO - Episode 39 completed! Steps: 95, Duration: 23.25s, Total Reward: 565.98
+2025-09-16 05:10:11,644 - INFO - Training with 95 experiences from episode 39
+2025-09-16 05:10:11,648 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:10:55,714 - INFO - Episode 40 completed! Steps: 210, Duration: 43.07s, Total Reward: 2204.85
+2025-09-16 05:10:55,714 - INFO - Training with 210 experiences from episode 40
+2025-09-16 05:10:55,719 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:11:51,449 - INFO - Episode 41 completed! Steps: 259, Duration: 54.73s, Total Reward: 3580.83
+2025-09-16 05:11:51,449 - INFO - Training with 259 experiences from episode 41
+2025-09-16 05:11:51,454 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:12:04,443 - INFO - Episode 42 completed! Steps: 28, Duration: 11.99s, Total Reward: 130.00
+2025-09-16 05:12:04,443 - INFO - Training with 28 experiences from episode 42
+2025-09-16 05:12:04,447 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 05:12:54,481 - INFO - Episode 43 completed! Steps: 238, Duration: 49.03s, Total Reward: 2811.29
+2025-09-16 05:12:54,481 - INFO - Training with 238 experiences from episode 43
+2025-09-16 05:12:54,486 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:13:35,994 - INFO - Episode 44 completed! Steps: 178, Duration: 40.51s, Total Reward: 1807.46
+2025-09-16 05:13:35,994 - INFO - Training with 178 experiences from episode 44
+2025-09-16 05:13:35,999 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:14:20,175 - INFO - Episode 45 completed! Steps: 209, Duration: 43.18s, Total Reward: 2236.48
+2025-09-16 05:14:20,175 - INFO - Training with 209 experiences from episode 45
+2025-09-16 05:14:20,180 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:15:13,312 - INFO - Episode 46 completed! Steps: 238, Duration: 52.13s, Total Reward: 2996.13
+2025-09-16 05:15:13,313 - INFO - Training with 238 experiences from episode 46
+2025-09-16 05:15:13,318 - INFO - Training completed. Policy Loss: 0.0007
+2025-09-16 05:15:51,014 - INFO - Episode 47 completed! Steps: 159, Duration: 36.70s, Total Reward: 1407.03
+2025-09-16 05:15:51,014 - INFO - Training with 159 experiences from episode 47
+2025-09-16 05:15:51,019 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:16:39,675 - INFO - Episode 48 completed! Steps: 225, Duration: 47.65s, Total Reward: 2551.18
+2025-09-16 05:16:39,675 - INFO - Training with 225 experiences from episode 48
+2025-09-16 05:16:39,679 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:17:36,267 - INFO - Episode 49 completed! Steps: 264, Duration: 55.59s, Total Reward: 3584.57
+2025-09-16 05:17:36,267 - INFO - Training with 264 experiences from episode 49
+2025-09-16 05:17:36,273 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:18:24,842 - INFO - Episode 50 completed! Steps: 202, Duration: 47.57s, Total Reward: 2386.35
+2025-09-16 05:18:24,842 - INFO - Training with 202 experiences from episode 50
+2025-09-16 05:18:24,846 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:19:14,685 - INFO - Episode 51 completed! Steps: 218, Duration: 48.84s, Total Reward: 2404.05
+2025-09-16 05:19:14,685 - INFO - Training with 218 experiences from episode 51
+2025-09-16 05:19:14,690 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:19:50,089 - INFO - Episode 52 completed! Steps: 143, Duration: 34.40s, Total Reward: 1175.95
+2025-09-16 05:19:50,089 - INFO - Training with 143 experiences from episode 52
+2025-09-16 05:19:50,092 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:20:41,337 - INFO - Episode 53 completed! Steps: 245, Duration: 50.24s, Total Reward: 2974.58
+2025-09-16 05:20:41,337 - INFO - Training with 245 experiences from episode 53
+2025-09-16 05:20:41,341 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:21:24,845 - INFO - Episode 54 completed! Steps: 189, Duration: 42.50s, Total Reward: 1817.14
+2025-09-16 05:21:24,845 - INFO - Training with 189 experiences from episode 54
+2025-09-16 05:21:24,852 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:22:25,665 - INFO - Episode 55 completed! Steps: 310, Duration: 59.81s, Total Reward: 4583.08
+2025-09-16 05:22:25,665 - INFO - Training with 310 experiences from episode 55
+2025-09-16 05:22:25,669 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:22:49,438 - INFO - Episode 56 completed! Steps: 85, Duration: 20.93s, Total Reward: 467.34
+2025-09-16 05:22:49,438 - INFO - Training with 85 experiences from episode 56
+2025-09-16 05:22:49,444 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 05:23:25,157 - INFO - Episode 57 completed! Steps: 142, Duration: 34.71s, Total Reward: 1204.41
+2025-09-16 05:23:25,157 - INFO - Training with 142 experiences from episode 57
+2025-09-16 05:23:25,162 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:24:06,105 - INFO - Episode 58 completed! Steps: 177, Duration: 39.94s, Total Reward: 1767.17
+2025-09-16 05:24:06,105 - INFO - Training with 177 experiences from episode 58
+2025-09-16 05:24:06,109 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:25:09,785 - INFO - Episode 59 completed! Steps: 309, Duration: 62.67s, Total Reward: 4614.55
+2025-09-16 05:25:09,785 - INFO - Training with 309 experiences from episode 59
+2025-09-16 05:25:09,791 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:25:43,395 - INFO - Episode 60 completed! Steps: 131, Duration: 32.60s, Total Reward: 1076.07
+2025-09-16 05:25:43,395 - INFO - Training with 131 experiences from episode 60
+2025-09-16 05:25:43,399 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:26:18,693 - INFO - Episode 61 completed! Steps: 157, Duration: 34.29s, Total Reward: 1357.08
+2025-09-16 05:26:18,693 - INFO - Training with 157 experiences from episode 61
+2025-09-16 05:26:18,699 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:26:42,788 - INFO - Episode 62 completed! Steps: 77, Duration: 23.09s, Total Reward: 466.48
+2025-09-16 05:26:42,788 - INFO - Training with 77 experiences from episode 62
+2025-09-16 05:26:42,793 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 05:27:37,284 - INFO - Episode 63 completed! Steps: 252, Duration: 53.49s, Total Reward: 3301.95
+2025-09-16 05:27:37,284 - INFO - Training with 252 experiences from episode 63
+2025-09-16 05:27:37,291 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:28:24,496 - INFO - Episode 64 completed! Steps: 209, Duration: 46.20s, Total Reward: 2375.85
+2025-09-16 05:28:24,496 - INFO - Training with 209 experiences from episode 64
+2025-09-16 05:28:24,500 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:28:50,742 - INFO - Episode 65 completed! Steps: 113, Duration: 25.24s, Total Reward: 709.69
+2025-09-16 05:28:50,743 - INFO - Training with 113 experiences from episode 65
+2025-09-16 05:28:50,747 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:29:36,917 - INFO - Episode 66 completed! Steps: 210, Duration: 45.17s, Total Reward: 2238.97
+2025-09-16 05:29:36,917 - INFO - Training with 210 experiences from episode 66
+2025-09-16 05:29:36,922 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:30:41,114 - INFO - Episode 67 completed! Steps: 305, Duration: 63.19s, Total Reward: 4861.33
+2025-09-16 05:30:41,114 - INFO - Training with 305 experiences from episode 67
+2025-09-16 05:30:41,119 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:31:36,284 - INFO - Episode 68 completed! Steps: 257, Duration: 54.16s, Total Reward: 3417.06
+2025-09-16 05:31:36,284 - INFO - Training with 257 experiences from episode 68
+2025-09-16 05:31:36,289 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:32:27,504 - INFO - Episode 69 completed! Steps: 233, Duration: 50.21s, Total Reward: 2824.96
+2025-09-16 05:32:27,504 - INFO - Training with 233 experiences from episode 69
+2025-09-16 05:32:27,509 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:33:10,165 - INFO - Episode 70 completed! Steps: 184, Duration: 41.65s, Total Reward: 1825.91
+2025-09-16 05:33:10,165 - INFO - Training with 184 experiences from episode 70
+2025-09-16 05:33:10,171 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:33:58,696 - INFO - Episode 71 completed! Steps: 207, Duration: 47.52s, Total Reward: 2148.42
+2025-09-16 05:33:58,697 - INFO - Training with 207 experiences from episode 71
+2025-09-16 05:33:58,703 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:34:45,859 - INFO - Episode 72 completed! Steps: 213, Duration: 46.16s, Total Reward: 2323.87
+2025-09-16 05:34:45,859 - INFO - Training with 213 experiences from episode 72
+2025-09-16 05:34:45,865 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 05:35:25,628 - INFO - Episode 73 completed! Steps: 176, Duration: 38.76s, Total Reward: 1655.49
+2025-09-16 05:35:25,628 - INFO - Training with 176 experiences from episode 73
+2025-09-16 05:35:25,632 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:35:35,511 - INFO - Episode 74 completed! Steps: 10, Duration: 8.88s, Total Reward: 40.00
+2025-09-16 05:35:35,511 - INFO - Training with 10 experiences from episode 74
+2025-09-16 05:35:35,515 - INFO - Training completed. Policy Loss: -0.0000
+2025-09-16 05:36:15,677 - INFO - Episode 75 completed! Steps: 180, Duration: 39.16s, Total Reward: 1663.25
+2025-09-16 05:36:15,677 - INFO - Training with 180 experiences from episode 75
+2025-09-16 05:36:15,682 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:37:19,937 - INFO - Episode 76 completed! Steps: 328, Duration: 63.25s, Total Reward: 5218.51
+2025-09-16 05:37:19,937 - INFO - Training with 328 experiences from episode 76
+2025-09-16 05:37:19,942 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:38:12,798 - INFO - Episode 77 completed! Steps: 252, Duration: 51.86s, Total Reward: 3307.36
+2025-09-16 05:38:12,798 - INFO - Training with 252 experiences from episode 77
+2025-09-16 05:38:12,802 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:39:00,101 - INFO - Episode 78 completed! Steps: 188, Duration: 46.30s, Total Reward: 2055.98
+2025-09-16 05:39:00,101 - INFO - Training with 188 experiences from episode 78
+2025-09-16 05:39:00,105 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:39:22,516 - INFO - Episode 79 completed! Steps: 85, Duration: 21.41s, Total Reward: 485.44
+2025-09-16 05:39:22,516 - INFO - Training with 85 experiences from episode 79
+2025-09-16 05:39:22,522 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 05:40:09,056 - INFO - Episode 80 completed! Steps: 210, Duration: 45.53s, Total Reward: 2260.57
+2025-09-16 05:40:09,056 - INFO - Training with 210 experiences from episode 80
+2025-09-16 05:40:09,060 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:40:52,859 - INFO - Episode 81 completed! Steps: 187, Duration: 42.80s, Total Reward: 1877.20
+2025-09-16 05:40:52,859 - INFO - Training with 187 experiences from episode 81
+2025-09-16 05:40:52,864 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:41:32,304 - INFO - Episode 82 completed! Steps: 169, Duration: 38.44s, Total Reward: 1624.42
+2025-09-16 05:41:32,304 - INFO - Training with 169 experiences from episode 82
+2025-09-16 05:41:32,310 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:42:12,557 - INFO - Episode 83 completed! Steps: 182, Duration: 39.25s, Total Reward: 1750.68
+2025-09-16 05:42:12,557 - INFO - Training with 182 experiences from episode 83
+2025-09-16 05:42:12,562 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:43:05,485 - INFO - Episode 84 completed! Steps: 223, Duration: 51.92s, Total Reward: 2804.04
+2025-09-16 05:43:05,485 - INFO - Training with 223 experiences from episode 84
+2025-09-16 05:43:05,490 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:43:43,923 - INFO - Episode 85 completed! Steps: 163, Duration: 37.43s, Total Reward: 1520.23
+2025-09-16 05:43:43,923 - INFO - Training with 163 experiences from episode 85
+2025-09-16 05:43:43,926 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:44:38,174 - INFO - Episode 86 completed! Steps: 249, Duration: 53.25s, Total Reward: 3292.12
+2025-09-16 05:44:38,174 - INFO - Training with 249 experiences from episode 86
+2025-09-16 05:44:38,180 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:45:26,775 - INFO - Episode 87 completed! Steps: 202, Duration: 47.59s, Total Reward: 2153.26
+2025-09-16 05:45:26,775 - INFO - Training with 202 experiences from episode 87
+2025-09-16 05:45:26,783 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:46:14,449 - INFO - Episode 88 completed! Steps: 217, Duration: 46.67s, Total Reward: 2467.54
+2025-09-16 05:46:14,449 - INFO - Training with 217 experiences from episode 88
+2025-09-16 05:46:14,455 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:46:55,065 - INFO - Episode 89 completed! Steps: 190, Duration: 39.61s, Total Reward: 1904.45
+2025-09-16 05:46:55,065 - INFO - Training with 190 experiences from episode 89
+2025-09-16 05:46:55,069 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:47:29,822 - INFO - Episode 90 completed! Steps: 149, Duration: 33.75s, Total Reward: 1280.51
+2025-09-16 05:47:29,822 - INFO - Training with 149 experiences from episode 90
+2025-09-16 05:47:29,826 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:48:21,475 - INFO - Episode 91 completed! Steps: 217, Duration: 50.65s, Total Reward: 2652.75
+2025-09-16 05:48:21,475 - INFO - Training with 217 experiences from episode 91
+2025-09-16 05:48:21,478 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:48:56,024 - INFO - Episode 92 completed! Steps: 141, Duration: 33.55s, Total Reward: 1148.64
+2025-09-16 05:48:56,024 - INFO - Training with 141 experiences from episode 92
+2025-09-16 05:48:56,028 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:49:44,133 - INFO - Episode 93 completed! Steps: 226, Duration: 47.10s, Total Reward: 2652.60
+2025-09-16 05:49:44,133 - INFO - Training with 226 experiences from episode 93
+2025-09-16 05:49:44,138 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:50:23,452 - INFO - Episode 94 completed! Steps: 165, Duration: 38.31s, Total Reward: 1578.73
+2025-09-16 05:50:23,452 - INFO - Training with 165 experiences from episode 94
+2025-09-16 05:50:23,457 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:51:19,080 - INFO - Episode 95 completed! Steps: 252, Duration: 54.62s, Total Reward: 3165.64
+2025-09-16 05:51:19,080 - INFO - Training with 252 experiences from episode 95
+2025-09-16 05:51:19,085 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:51:44,588 - INFO - Episode 96 completed! Steps: 87, Duration: 24.50s, Total Reward: 532.92
+2025-09-16 05:51:44,588 - INFO - Training with 87 experiences from episode 96
+2025-09-16 05:51:44,595 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 05:52:29,919 - INFO - Episode 97 completed! Steps: 193, Duration: 44.32s, Total Reward: 1960.64
+2025-09-16 05:52:29,919 - INFO - Training with 193 experiences from episode 97
+2025-09-16 05:52:29,923 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:53:27,090 - INFO - Episode 98 completed! Steps: 258, Duration: 56.17s, Total Reward: 3549.89
+2025-09-16 05:53:27,090 - INFO - Training with 258 experiences from episode 98
+2025-09-16 05:53:27,096 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:54:26,479 - INFO - Episode 99 completed! Steps: 281, Duration: 58.38s, Total Reward: 4064.71
+2025-09-16 05:54:26,479 - INFO - Training with 281 experiences from episode 99
+2025-09-16 05:54:26,484 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:55:19,704 - INFO - Episode 100 completed! Steps: 240, Duration: 52.22s, Total Reward: 2998.50
+2025-09-16 05:55:19,704 - INFO - Training with 240 experiences from episode 100
+2025-09-16 05:55:19,709 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 05:55:20,710 - INFO - REINFORCE training completed! Best model achieved 64.01s and saved at runs/20250916_023511/models/best_model_at_train_round_2_epoch_28.pt
+2025-09-16 05:55:20,710 - INFO - Training round 3 start.
+2025-09-16 05:55:20,735 - INFO - Loaded model from runs/20250916_023511/models/best_model_at_train_round_2_epoch_28.pt
+2025-09-16 05:55:20,735 - INFO - Starting REINFORCE Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-16 05:56:07,914 - INFO - Episode 1 completed! Steps: 227, Duration: 47.18s, Total Reward: 2670.02
+2025-09-16 05:56:07,914 - INFO - Training with 227 experiences from episode 1
+2025-09-16 05:56:07,919 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:56:07,920 - INFO - New best model saved! Duration: 47.18s
+2025-09-16 05:56:07,948 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_3_epoch_0.png
+2025-09-16 05:56:48,070 - INFO - Episode 2 completed! Steps: 162, Duration: 39.12s, Total Reward: 1406.47
+2025-09-16 05:56:48,070 - INFO - Training with 162 experiences from episode 2
+2025-09-16 05:56:48,075 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:57:31,615 - INFO - Episode 3 completed! Steps: 197, Duration: 42.54s, Total Reward: 2004.67
+2025-09-16 05:57:31,615 - INFO - Training with 197 experiences from episode 3
+2025-09-16 05:57:31,618 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 05:58:24,364 - INFO - Episode 4 completed! Steps: 236, Duration: 51.75s, Total Reward: 3092.21
+2025-09-16 05:58:24,364 - INFO - Training with 236 experiences from episode 4
+2025-09-16 05:58:24,371 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 05:58:24,373 - INFO - New best model saved! Duration: 51.75s
+2025-09-16 05:58:24,399 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_3_epoch_3.png
+2025-09-16 05:59:15,106 - INFO - Episode 5 completed! Steps: 232, Duration: 49.71s, Total Reward: 2651.55
+2025-09-16 05:59:15,106 - INFO - Training with 232 experiences from episode 5
+2025-09-16 05:59:15,112 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:00:07,673 - INFO - Episode 6 completed! Steps: 239, Duration: 51.56s, Total Reward: 3166.36
+2025-09-16 06:00:07,673 - INFO - Training with 239 experiences from episode 6
+2025-09-16 06:00:07,677 - INFO - Training completed. Policy Loss: 0.0012
+2025-09-16 06:01:05,003 - INFO - Episode 7 completed! Steps: 278, Duration: 56.32s, Total Reward: 3679.19
+2025-09-16 06:01:05,004 - INFO - Training with 278 experiences from episode 7
+2025-09-16 06:01:05,009 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 06:01:05,010 - INFO - New best model saved! Duration: 56.32s
+2025-09-16 06:01:05,039 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_3_epoch_6.png
+2025-09-16 06:01:43,502 - INFO - Episode 8 completed! Steps: 156, Duration: 37.46s, Total Reward: 1458.92
+2025-09-16 06:01:43,503 - INFO - Training with 156 experiences from episode 8
+2025-09-16 06:01:43,507 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:02:20,050 - INFO - Episode 9 completed! Steps: 159, Duration: 35.54s, Total Reward: 1384.37
+2025-09-16 06:02:20,050 - INFO - Training with 159 experiences from episode 9
+2025-09-16 06:02:20,055 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:02:56,231 - INFO - Episode 10 completed! Steps: 147, Duration: 35.18s, Total Reward: 1246.60
+2025-09-16 06:02:56,232 - INFO - Training with 147 experiences from episode 10
+2025-09-16 06:02:56,236 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:03:28,250 - INFO - Episode 11 completed! Steps: 130, Duration: 31.01s, Total Reward: 994.96
+2025-09-16 06:03:28,251 - INFO - Training with 130 experiences from episode 11
+2025-09-16 06:03:28,255 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:03:51,583 - INFO - Episode 12 completed! Steps: 84, Duration: 22.33s, Total Reward: 487.86
+2025-09-16 06:03:51,584 - INFO - Training with 84 experiences from episode 12
+2025-09-16 06:03:51,589 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:04:33,005 - INFO - Episode 13 completed! Steps: 182, Duration: 40.42s, Total Reward: 1819.87
+2025-09-16 06:04:33,005 - INFO - Training with 182 experiences from episode 13
+2025-09-16 06:04:33,010 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:05:15,795 - INFO - Episode 14 completed! Steps: 190, Duration: 41.78s, Total Reward: 1947.49
+2025-09-16 06:05:15,795 - INFO - Training with 190 experiences from episode 14
+2025-09-16 06:05:15,802 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:05:50,768 - INFO - Episode 15 completed! Steps: 146, Duration: 33.97s, Total Reward: 1167.41
+2025-09-16 06:05:50,768 - INFO - Training with 146 experiences from episode 15
+2025-09-16 06:05:50,775 - INFO - Training completed. Policy Loss: 0.0012
+2025-09-16 06:06:32,459 - INFO - Episode 16 completed! Steps: 169, Duration: 40.68s, Total Reward: 1465.21
+2025-09-16 06:06:32,460 - INFO - Training with 169 experiences from episode 16
+2025-09-16 06:06:32,465 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:07:12,523 - INFO - Episode 17 completed! Steps: 172, Duration: 39.06s, Total Reward: 1634.78
+2025-09-16 06:07:12,523 - INFO - Training with 172 experiences from episode 17
+2025-09-16 06:07:12,527 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:07:52,196 - INFO - Episode 18 completed! Steps: 175, Duration: 38.67s, Total Reward: 1641.33
+2025-09-16 06:07:52,196 - INFO - Training with 175 experiences from episode 18
+2025-09-16 06:07:52,203 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:08:28,649 - INFO - Episode 19 completed! Steps: 159, Duration: 35.44s, Total Reward: 1388.88
+2025-09-16 06:08:28,649 - INFO - Training with 159 experiences from episode 19
+2025-09-16 06:08:28,653 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:09:10,972 - INFO - Episode 20 completed! Steps: 186, Duration: 41.32s, Total Reward: 1998.78
+2025-09-16 06:09:10,972 - INFO - Training with 186 experiences from episode 20
+2025-09-16 06:09:10,976 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:09:51,763 - INFO - Episode 21 completed! Steps: 166, Duration: 39.79s, Total Reward: 1694.75
+2025-09-16 06:09:51,763 - INFO - Training with 166 experiences from episode 21
+2025-09-16 06:09:51,768 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 06:10:47,653 - INFO - Episode 22 completed! Steps: 261, Duration: 53.00s, Total Reward: 3444.81
+2025-09-16 06:10:47,653 - INFO - Training with 261 experiences from episode 22
+2025-09-16 06:10:47,658 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 06:11:27,792 - INFO - Episode 23 completed! Steps: 178, Duration: 39.13s, Total Reward: 1765.74
+2025-09-16 06:11:27,792 - INFO - Training with 178 experiences from episode 23
+2025-09-16 06:11:27,796 - INFO - Training completed. Policy Loss: -0.0013
+2025-09-16 06:12:31,159 - INFO - Episode 24 completed! Steps: 311, Duration: 62.36s, Total Reward: 4843.63
+2025-09-16 06:12:31,159 - INFO - Training with 311 experiences from episode 24
+2025-09-16 06:12:31,164 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 06:12:31,165 - INFO - New best model saved! Duration: 62.36s
+2025-09-16 06:12:31,192 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_3_epoch_23.png
+2025-09-16 06:13:21,598 - INFO - Episode 25 completed! Steps: 229, Duration: 49.40s, Total Reward: 2773.11
+2025-09-16 06:13:21,598 - INFO - Training with 229 experiences from episode 25
+2025-09-16 06:13:21,602 - INFO - Training completed. Policy Loss: 0.0004
+2025-09-16 06:14:08,918 - INFO - Episode 26 completed! Steps: 207, Duration: 46.32s, Total Reward: 2331.26
+2025-09-16 06:14:08,918 - INFO - Training with 207 experiences from episode 26
+2025-09-16 06:14:08,924 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:14:46,378 - INFO - Episode 27 completed! Steps: 171, Duration: 36.45s, Total Reward: 1557.93
+2025-09-16 06:14:46,378 - INFO - Training with 171 experiences from episode 27
+2025-09-16 06:14:46,383 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:15:26,681 - INFO - Episode 28 completed! Steps: 183, Duration: 39.30s, Total Reward: 1781.32
+2025-09-16 06:15:26,681 - INFO - Training with 183 experiences from episode 28
+2025-09-16 06:15:26,687 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:16:15,272 - INFO - Episode 29 completed! Steps: 206, Duration: 47.58s, Total Reward: 2308.37
+2025-09-16 06:16:15,272 - INFO - Training with 206 experiences from episode 29
+2025-09-16 06:16:15,277 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:16:54,977 - INFO - Episode 30 completed! Steps: 163, Duration: 38.70s, Total Reward: 1442.67
+2025-09-16 06:16:54,978 - INFO - Training with 163 experiences from episode 30
+2025-09-16 06:16:54,982 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:17:34,443 - INFO - Episode 31 completed! Steps: 177, Duration: 38.46s, Total Reward: 1629.23
+2025-09-16 06:17:34,443 - INFO - Training with 177 experiences from episode 31
+2025-09-16 06:17:34,447 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:17:58,251 - INFO - Episode 32 completed! Steps: 73, Duration: 22.80s, Total Reward: 406.21
+2025-09-16 06:17:58,251 - INFO - Training with 73 experiences from episode 32
+2025-09-16 06:17:58,254 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 06:18:40,178 - INFO - Episode 33 completed! Steps: 176, Duration: 40.92s, Total Reward: 1704.61
+2025-09-16 06:18:40,179 - INFO - Training with 176 experiences from episode 33
+2025-09-16 06:18:40,183 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:19:10,604 - INFO - Episode 34 completed! Steps: 117, Duration: 29.42s, Total Reward: 818.39
+2025-09-16 06:19:10,604 - INFO - Training with 117 experiences from episode 34
+2025-09-16 06:19:10,609 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:19:51,617 - INFO - Episode 35 completed! Steps: 180, Duration: 40.01s, Total Reward: 1698.82
+2025-09-16 06:19:51,617 - INFO - Training with 180 experiences from episode 35
+2025-09-16 06:19:51,621 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:20:26,694 - INFO - Episode 36 completed! Steps: 149, Duration: 34.07s, Total Reward: 1215.55
+2025-09-16 06:20:26,694 - INFO - Training with 149 experiences from episode 36
+2025-09-16 06:20:26,698 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:21:21,146 - INFO - Episode 37 completed! Steps: 253, Duration: 53.45s, Total Reward: 3273.31
+2025-09-16 06:21:21,146 - INFO - Training with 253 experiences from episode 37
+2025-09-16 06:21:21,151 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:22:12,242 - INFO - Episode 38 completed! Steps: 252, Duration: 50.09s, Total Reward: 3049.84
+2025-09-16 06:22:12,242 - INFO - Training with 252 experiences from episode 38
+2025-09-16 06:22:12,247 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:22:51,770 - INFO - Episode 39 completed! Steps: 158, Duration: 38.52s, Total Reward: 1512.63
+2025-09-16 06:22:51,770 - INFO - Training with 158 experiences from episode 39
+2025-09-16 06:22:51,774 - INFO - Training completed. Policy Loss: 0.0005
+2025-09-16 06:23:18,116 - INFO - Episode 40 completed! Steps: 98, Duration: 25.34s, Total Reward: 643.20
+2025-09-16 06:23:18,117 - INFO - Training with 98 experiences from episode 40
+2025-09-16 06:23:18,122 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 06:23:44,192 - INFO - Episode 41 completed! Steps: 75, Duration: 25.07s, Total Reward: 465.72
+2025-09-16 06:23:44,192 - INFO - Training with 75 experiences from episode 41
+2025-09-16 06:23:44,197 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:24:24,415 - INFO - Episode 42 completed! Steps: 173, Duration: 39.22s, Total Reward: 1647.96
+2025-09-16 06:24:24,415 - INFO - Training with 173 experiences from episode 42
+2025-09-16 06:24:24,420 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:25:35,564 - INFO - Episode 43 completed! Steps: 377, Duration: 70.14s, Total Reward: 6589.40
+2025-09-16 06:25:35,564 - INFO - Training with 377 experiences from episode 43
+2025-09-16 06:25:35,570 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 06:25:35,572 - INFO - New best model saved! Duration: 70.14s
+2025-09-16 06:25:35,596 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_3_epoch_42.png
+2025-09-16 06:26:18,929 - INFO - Episode 44 completed! Steps: 189, Duration: 42.33s, Total Reward: 1951.84
+2025-09-16 06:26:18,930 - INFO - Training with 189 experiences from episode 44
+2025-09-16 06:26:18,934 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:27:01,748 - INFO - Episode 45 completed! Steps: 184, Duration: 41.81s, Total Reward: 1947.46
+2025-09-16 06:27:01,748 - INFO - Training with 184 experiences from episode 45
+2025-09-16 06:27:01,753 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:27:27,656 - INFO - Episode 46 completed! Steps: 109, Duration: 22.81s, Total Reward: 638.61
+2025-09-16 06:27:27,656 - INFO - Training with 109 experiences from episode 46
+2025-09-16 06:27:27,661 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 06:28:23,843 - INFO - Episode 47 completed! Steps: 254, Duration: 55.18s, Total Reward: 3464.31
+2025-09-16 06:28:23,843 - INFO - Training with 254 experiences from episode 47
+2025-09-16 06:28:23,848 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:29:11,707 - INFO - Episode 48 completed! Steps: 218, Duration: 46.86s, Total Reward: 2498.20
+2025-09-16 06:29:11,707 - INFO - Training with 218 experiences from episode 48
+2025-09-16 06:29:11,713 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:29:52,113 - INFO - Episode 49 completed! Steps: 175, Duration: 39.40s, Total Reward: 1705.23
+2025-09-16 06:29:52,113 - INFO - Training with 175 experiences from episode 49
+2025-09-16 06:29:52,118 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:30:41,940 - INFO - Episode 50 completed! Steps: 213, Duration: 48.82s, Total Reward: 2413.63
+2025-09-16 06:30:41,940 - INFO - Training with 213 experiences from episode 50
+2025-09-16 06:30:41,946 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:31:24,201 - INFO - Episode 51 completed! Steps: 189, Duration: 41.25s, Total Reward: 1915.74
+2025-09-16 06:31:24,201 - INFO - Training with 189 experiences from episode 51
+2025-09-16 06:31:24,207 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:32:16,850 - INFO - Episode 52 completed! Steps: 235, Duration: 51.64s, Total Reward: 2992.65
+2025-09-16 06:32:16,851 - INFO - Training with 235 experiences from episode 52
+2025-09-16 06:32:16,856 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:32:54,891 - INFO - Episode 53 completed! Steps: 163, Duration: 37.03s, Total Reward: 1431.03
+2025-09-16 06:32:54,891 - INFO - Training with 163 experiences from episode 53
+2025-09-16 06:32:54,895 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:33:36,836 - INFO - Episode 54 completed! Steps: 175, Duration: 40.94s, Total Reward: 1779.76
+2025-09-16 06:33:36,836 - INFO - Training with 175 experiences from episode 54
+2025-09-16 06:33:36,842 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:34:40,761 - INFO - Episode 55 completed! Steps: 293, Duration: 62.92s, Total Reward: 4400.88
+2025-09-16 06:34:40,761 - INFO - Training with 293 experiences from episode 55
+2025-09-16 06:34:40,766 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:35:41,799 - INFO - Episode 56 completed! Steps: 270, Duration: 60.03s, Total Reward: 4013.59
+2025-09-16 06:35:41,799 - INFO - Training with 270 experiences from episode 56
+2025-09-16 06:35:41,805 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:36:22,525 - INFO - Episode 57 completed! Steps: 182, Duration: 39.72s, Total Reward: 1718.15
+2025-09-16 06:36:22,525 - INFO - Training with 182 experiences from episode 57
+2025-09-16 06:36:22,530 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:37:11,416 - INFO - Episode 58 completed! Steps: 233, Duration: 47.88s, Total Reward: 2721.55
+2025-09-16 06:37:11,416 - INFO - Training with 233 experiences from episode 58
+2025-09-16 06:37:11,421 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:37:37,869 - INFO - Episode 59 completed! Steps: 103, Duration: 25.45s, Total Reward: 685.98
+2025-09-16 06:37:37,869 - INFO - Training with 103 experiences from episode 59
+2025-09-16 06:37:37,874 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 06:38:40,820 - INFO - Episode 60 completed! Steps: 319, Duration: 61.94s, Total Reward: 4974.44
+2025-09-16 06:38:40,820 - INFO - Training with 319 experiences from episode 60
+2025-09-16 06:38:40,825 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 06:39:25,249 - INFO - Episode 61 completed! Steps: 195, Duration: 43.42s, Total Reward: 2096.52
+2025-09-16 06:39:25,250 - INFO - Training with 195 experiences from episode 61
+2025-09-16 06:39:25,261 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:40:05,163 - INFO - Episode 62 completed! Steps: 171, Duration: 38.90s, Total Reward: 1662.84
+2025-09-16 06:40:05,164 - INFO - Training with 171 experiences from episode 62
+2025-09-16 06:40:05,168 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:40:50,917 - INFO - Episode 63 completed! Steps: 203, Duration: 44.75s, Total Reward: 2170.37
+2025-09-16 06:40:50,917 - INFO - Training with 203 experiences from episode 63
+2025-09-16 06:40:50,922 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:41:38,062 - INFO - Episode 64 completed! Steps: 222, Duration: 46.14s, Total Reward: 2417.66
+2025-09-16 06:41:38,062 - INFO - Training with 222 experiences from episode 64
+2025-09-16 06:41:38,066 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:42:26,347 - INFO - Episode 65 completed! Steps: 233, Duration: 47.28s, Total Reward: 2755.74
+2025-09-16 06:42:26,347 - INFO - Training with 233 experiences from episode 65
+2025-09-16 06:42:26,351 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:43:21,492 - INFO - Episode 66 completed! Steps: 251, Duration: 54.14s, Total Reward: 3165.86
+2025-09-16 06:43:21,492 - INFO - Training with 251 experiences from episode 66
+2025-09-16 06:43:21,496 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:44:01,263 - INFO - Episode 67 completed! Steps: 153, Duration: 38.77s, Total Reward: 1423.12
+2025-09-16 06:44:01,264 - INFO - Training with 153 experiences from episode 67
+2025-09-16 06:44:01,269 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:44:42,663 - INFO - Episode 68 completed! Steps: 185, Duration: 40.39s, Total Reward: 1852.54
+2025-09-16 06:44:42,663 - INFO - Training with 185 experiences from episode 68
+2025-09-16 06:44:42,668 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:45:31,986 - INFO - Episode 69 completed! Steps: 214, Duration: 48.32s, Total Reward: 2344.75
+2025-09-16 06:45:31,986 - INFO - Training with 214 experiences from episode 69
+2025-09-16 06:45:31,990 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:46:20,296 - INFO - Episode 70 completed! Steps: 212, Duration: 47.30s, Total Reward: 2402.80
+2025-09-16 06:46:20,296 - INFO - Training with 212 experiences from episode 70
+2025-09-16 06:46:20,305 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:47:07,550 - INFO - Episode 71 completed! Steps: 196, Duration: 46.24s, Total Reward: 2136.46
+2025-09-16 06:47:07,550 - INFO - Training with 196 experiences from episode 71
+2025-09-16 06:47:07,554 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:48:15,729 - INFO - Episode 72 completed! Steps: 348, Duration: 67.17s, Total Reward: 5624.52
+2025-09-16 06:48:15,729 - INFO - Training with 348 experiences from episode 72
+2025-09-16 06:48:15,735 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:49:07,644 - INFO - Episode 73 completed! Steps: 244, Duration: 50.91s, Total Reward: 2992.56
+2025-09-16 06:49:07,644 - INFO - Training with 244 experiences from episode 73
+2025-09-16 06:49:07,649 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:49:50,393 - INFO - Episode 74 completed! Steps: 189, Duration: 41.74s, Total Reward: 1962.59
+2025-09-16 06:49:50,393 - INFO - Training with 189 experiences from episode 74
+2025-09-16 06:49:50,398 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:50:39,182 - INFO - Episode 75 completed! Steps: 217, Duration: 47.78s, Total Reward: 2418.97
+2025-09-16 06:50:39,183 - INFO - Training with 217 experiences from episode 75
+2025-09-16 06:50:39,188 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:51:27,176 - INFO - Episode 76 completed! Steps: 231, Duration: 46.99s, Total Reward: 2631.42
+2025-09-16 06:51:27,176 - INFO - Training with 231 experiences from episode 76
+2025-09-16 06:51:27,181 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:52:05,533 - INFO - Episode 77 completed! Steps: 172, Duration: 37.35s, Total Reward: 1679.17
+2025-09-16 06:52:05,533 - INFO - Training with 172 experiences from episode 77
+2025-09-16 06:52:05,539 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 06:53:05,168 - INFO - Episode 78 completed! Steps: 279, Duration: 58.63s, Total Reward: 3968.83
+2025-09-16 06:53:05,168 - INFO - Training with 279 experiences from episode 78
+2025-09-16 06:53:05,173 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:54:00,626 - INFO - Episode 79 completed! Steps: 262, Duration: 54.45s, Total Reward: 3482.89
+2025-09-16 06:54:00,626 - INFO - Training with 262 experiences from episode 79
+2025-09-16 06:54:00,634 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:54:43,863 - INFO - Episode 80 completed! Steps: 192, Duration: 42.23s, Total Reward: 1939.14
+2025-09-16 06:54:43,863 - INFO - Training with 192 experiences from episode 80
+2025-09-16 06:54:43,868 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:55:43,739 - INFO - Episode 81 completed! Steps: 300, Duration: 58.87s, Total Reward: 4233.09
+2025-09-16 06:55:43,739 - INFO - Training with 300 experiences from episode 81
+2025-09-16 06:55:43,748 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:56:35,086 - INFO - Episode 82 completed! Steps: 248, Duration: 50.34s, Total Reward: 3152.68
+2025-09-16 06:56:35,086 - INFO - Training with 248 experiences from episode 82
+2025-09-16 06:56:35,093 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:57:18,621 - INFO - Episode 83 completed! Steps: 196, Duration: 42.53s, Total Reward: 2110.54
+2025-09-16 06:57:18,622 - INFO - Training with 196 experiences from episode 83
+2025-09-16 06:57:18,627 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:58:11,018 - INFO - Episode 84 completed! Steps: 243, Duration: 51.39s, Total Reward: 2835.20
+2025-09-16 06:58:11,018 - INFO - Training with 243 experiences from episode 84
+2025-09-16 06:58:11,023 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:58:46,095 - INFO - Episode 85 completed! Steps: 144, Duration: 34.07s, Total Reward: 1180.26
+2025-09-16 06:58:46,095 - INFO - Training with 144 experiences from episode 85
+2025-09-16 06:58:46,099 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 06:59:09,132 - INFO - Episode 86 completed! Steps: 83, Duration: 22.03s, Total Reward: 453.22
+2025-09-16 06:59:09,133 - INFO - Training with 83 experiences from episode 86
+2025-09-16 06:59:09,138 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 06:59:30,529 - INFO - Episode 87 completed! Steps: 88, Duration: 20.39s, Total Reward: 485.45
+2025-09-16 06:59:30,529 - INFO - Training with 88 experiences from episode 87
+2025-09-16 06:59:30,534 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:00:14,640 - INFO - Episode 88 completed! Steps: 222, Duration: 43.10s, Total Reward: 2211.71
+2025-09-16 07:00:14,640 - INFO - Training with 222 experiences from episode 88
+2025-09-16 07:00:14,646 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:00:47,074 - INFO - Episode 89 completed! Steps: 126, Duration: 31.43s, Total Reward: 929.59
+2025-09-16 07:00:47,074 - INFO - Training with 126 experiences from episode 89
+2025-09-16 07:00:47,078 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:01:25,213 - INFO - Episode 90 completed! Steps: 159, Duration: 37.13s, Total Reward: 1410.16
+2025-09-16 07:01:25,213 - INFO - Training with 159 experiences from episode 90
+2025-09-16 07:01:25,216 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:01:43,391 - INFO - Episode 91 completed! Steps: 71, Duration: 17.17s, Total Reward: 354.85
+2025-09-16 07:01:43,391 - INFO - Training with 71 experiences from episode 91
+2025-09-16 07:01:43,396 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:02:09,340 - INFO - Episode 92 completed! Steps: 97, Duration: 24.94s, Total Reward: 617.86
+2025-09-16 07:02:09,340 - INFO - Training with 97 experiences from episode 92
+2025-09-16 07:02:09,346 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:02:40,975 - INFO - Episode 93 completed! Steps: 130, Duration: 30.63s, Total Reward: 985.61
+2025-09-16 07:02:40,975 - INFO - Training with 130 experiences from episode 93
+2025-09-16 07:02:40,980 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:03:31,964 - INFO - Episode 94 completed! Steps: 248, Duration: 49.98s, Total Reward: 2934.32
+2025-09-16 07:03:31,964 - INFO - Training with 248 experiences from episode 94
+2025-09-16 07:03:31,969 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:04:09,150 - INFO - Episode 95 completed! Steps: 140, Duration: 34.80s, Total Reward: 1152.08
+2025-09-16 07:04:09,150 - INFO - Training with 140 experiences from episode 95
+2025-09-16 07:04:09,157 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:05:00,048 - INFO - Episode 96 completed! Steps: 238, Duration: 49.89s, Total Reward: 2866.85
+2025-09-16 07:05:00,048 - INFO - Training with 238 experiences from episode 96
+2025-09-16 07:05:00,055 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:05:36,402 - INFO - Episode 97 completed! Steps: 147, Duration: 35.35s, Total Reward: 1247.01
+2025-09-16 07:05:36,402 - INFO - Training with 147 experiences from episode 97
+2025-09-16 07:05:36,408 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:06:59,327 - INFO - Episode 98 completed! Steps: 770, Duration: 81.92s, Total Reward: 12314.65
+2025-09-16 07:06:59,327 - INFO - Training with 770 experiences from episode 98
+2025-09-16 07:06:59,335 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 07:06:59,337 - INFO - New best model saved! Duration: 81.92s
+2025-09-16 07:06:59,359 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_3_epoch_97.png
+2025-09-16 07:07:30,331 - INFO - Episode 99 completed! Steps: 134, Duration: 29.97s, Total Reward: 949.96
+2025-09-16 07:07:30,331 - INFO - Training with 134 experiences from episode 99
+2025-09-16 07:07:30,334 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:07:54,296 - INFO - Episode 100 completed! Steps: 95, Duration: 22.96s, Total Reward: 568.23
+2025-09-16 07:07:54,296 - INFO - Training with 95 experiences from episode 100
+2025-09-16 07:07:54,301 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:07:55,302 - INFO - REINFORCE training completed! Best model achieved 81.92s and saved at runs/20250916_023511/models/best_model_at_train_round_3_epoch_97.pt
+2025-09-16 07:07:55,303 - INFO - Training round 4 start.
+2025-09-16 07:07:55,311 - INFO - Loaded model from runs/20250916_023511/models/best_model_at_train_round_3_epoch_97.pt
+2025-09-16 07:07:55,311 - INFO - Starting REINFORCE Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-16 07:08:38,884 - INFO - Episode 1 completed! Steps: 198, Duration: 43.57s, Total Reward: 2009.32
+2025-09-16 07:08:38,884 - INFO - Training with 198 experiences from episode 1
+2025-09-16 07:08:38,889 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:08:38,890 - INFO - New best model saved! Duration: 43.57s
+2025-09-16 07:08:38,919 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_4_epoch_0.png
+2025-09-16 07:09:47,489 - INFO - Episode 2 completed! Steps: 332, Duration: 67.57s, Total Reward: 5372.82
+2025-09-16 07:09:47,489 - INFO - Training with 332 experiences from episode 2
+2025-09-16 07:09:47,494 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:09:47,496 - INFO - New best model saved! Duration: 67.57s
+2025-09-16 07:09:47,524 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_4_epoch_1.png
+2025-09-16 07:10:32,422 - INFO - Episode 3 completed! Steps: 209, Duration: 43.90s, Total Reward: 2233.23
+2025-09-16 07:10:32,423 - INFO - Training with 209 experiences from episode 3
+2025-09-16 07:10:32,428 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:11:18,712 - INFO - Episode 4 completed! Steps: 214, Duration: 45.28s, Total Reward: 2289.66
+2025-09-16 07:11:18,712 - INFO - Training with 214 experiences from episode 4
+2025-09-16 07:11:18,717 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:12:14,429 - INFO - Episode 5 completed! Steps: 262, Duration: 54.71s, Total Reward: 3631.67
+2025-09-16 07:12:14,429 - INFO - Training with 262 experiences from episode 5
+2025-09-16 07:12:14,433 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 07:13:02,034 - INFO - Episode 6 completed! Steps: 211, Duration: 46.60s, Total Reward: 2409.77
+2025-09-16 07:13:02,034 - INFO - Training with 211 experiences from episode 6
+2025-09-16 07:13:02,039 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:13:46,350 - INFO - Episode 7 completed! Steps: 181, Duration: 43.31s, Total Reward: 1808.51
+2025-09-16 07:13:46,350 - INFO - Training with 181 experiences from episode 7
+2025-09-16 07:13:46,356 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:14:28,422 - INFO - Episode 8 completed! Steps: 187, Duration: 41.07s, Total Reward: 1879.30
+2025-09-16 07:14:28,422 - INFO - Training with 187 experiences from episode 8
+2025-09-16 07:14:28,427 - INFO - Training completed. Policy Loss: -0.0013
+2025-09-16 07:15:11,626 - INFO - Episode 9 completed! Steps: 184, Duration: 42.20s, Total Reward: 1927.31
+2025-09-16 07:15:11,626 - INFO - Training with 184 experiences from episode 9
+2025-09-16 07:15:11,631 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:15:52,154 - INFO - Episode 10 completed! Steps: 181, Duration: 39.52s, Total Reward: 1794.04
+2025-09-16 07:15:52,154 - INFO - Training with 181 experiences from episode 10
+2025-09-16 07:15:52,158 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:16:40,935 - INFO - Episode 11 completed! Steps: 199, Duration: 47.78s, Total Reward: 2168.92
+2025-09-16 07:16:40,935 - INFO - Training with 199 experiences from episode 11
+2025-09-16 07:16:40,939 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:17:39,884 - INFO - Episode 12 completed! Steps: 294, Duration: 57.94s, Total Reward: 4239.91
+2025-09-16 07:17:39,884 - INFO - Training with 294 experiences from episode 12
+2025-09-16 07:17:39,890 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:18:41,161 - INFO - Episode 13 completed! Steps: 302, Duration: 60.27s, Total Reward: 4421.38
+2025-09-16 07:18:41,161 - INFO - Training with 302 experiences from episode 13
+2025-09-16 07:18:41,170 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:19:24,112 - INFO - Episode 14 completed! Steps: 197, Duration: 41.94s, Total Reward: 1815.50
+2025-09-16 07:19:24,112 - INFO - Training with 197 experiences from episode 14
+2025-09-16 07:19:24,116 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:20:14,076 - INFO - Episode 15 completed! Steps: 238, Duration: 48.96s, Total Reward: 2730.69
+2025-09-16 07:20:14,076 - INFO - Training with 238 experiences from episode 15
+2025-09-16 07:20:14,088 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:20:54,442 - INFO - Episode 16 completed! Steps: 183, Duration: 39.35s, Total Reward: 1797.96
+2025-09-16 07:20:54,442 - INFO - Training with 183 experiences from episode 16
+2025-09-16 07:20:54,447 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:21:31,295 - INFO - Episode 17 completed! Steps: 149, Duration: 35.85s, Total Reward: 1346.85
+2025-09-16 07:21:31,295 - INFO - Training with 149 experiences from episode 17
+2025-09-16 07:21:31,300 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:22:04,318 - INFO - Episode 18 completed! Steps: 131, Duration: 32.02s, Total Reward: 973.51
+2025-09-16 07:22:04,318 - INFO - Training with 131 experiences from episode 18
+2025-09-16 07:22:04,322 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:22:31,174 - INFO - Episode 19 completed! Steps: 111, Duration: 25.85s, Total Reward: 740.93
+2025-09-16 07:22:31,175 - INFO - Training with 111 experiences from episode 19
+2025-09-16 07:22:31,179 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:23:21,936 - INFO - Episode 20 completed! Steps: 239, Duration: 49.76s, Total Reward: 2960.81
+2025-09-16 07:23:21,936 - INFO - Training with 239 experiences from episode 20
+2025-09-16 07:23:21,940 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:24:01,337 - INFO - Episode 21 completed! Steps: 178, Duration: 38.40s, Total Reward: 1651.18
+2025-09-16 07:24:01,337 - INFO - Training with 178 experiences from episode 21
+2025-09-16 07:24:01,341 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:24:25,301 - INFO - Episode 22 completed! Steps: 85, Duration: 22.96s, Total Reward: 493.26
+2025-09-16 07:24:25,301 - INFO - Training with 85 experiences from episode 22
+2025-09-16 07:24:25,306 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:25:10,217 - INFO - Episode 23 completed! Steps: 199, Duration: 42.13s, Total Reward: 1919.17
+2025-09-16 07:25:10,218 - INFO - Training with 199 experiences from episode 23
+2025-09-16 07:25:10,223 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:25:46,387 - INFO - Episode 24 completed! Steps: 162, Duration: 35.16s, Total Reward: 1392.31
+2025-09-16 07:25:46,387 - INFO - Training with 162 experiences from episode 24
+2025-09-16 07:25:46,391 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:26:30,784 - INFO - Episode 25 completed! Steps: 192, Duration: 43.39s, Total Reward: 2112.27
+2025-09-16 07:26:30,784 - INFO - Training with 192 experiences from episode 25
+2025-09-16 07:26:30,789 - INFO - Training completed. Policy Loss: -0.0017
+2025-09-16 07:27:22,510 - INFO - Episode 26 completed! Steps: 240, Duration: 50.72s, Total Reward: 2984.18
+2025-09-16 07:27:22,510 - INFO - Training with 240 experiences from episode 26
+2025-09-16 07:27:22,515 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:28:04,520 - INFO - Episode 27 completed! Steps: 184, Duration: 41.00s, Total Reward: 1804.75
+2025-09-16 07:28:04,520 - INFO - Training with 184 experiences from episode 27
+2025-09-16 07:28:04,528 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:28:53,478 - INFO - Episode 28 completed! Steps: 233, Duration: 47.95s, Total Reward: 2696.00
+2025-09-16 07:28:53,478 - INFO - Training with 233 experiences from episode 28
+2025-09-16 07:28:53,484 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:29:05,630 - INFO - Episode 29 completed! Steps: 23, Duration: 11.14s, Total Reward: 105.00
+2025-09-16 07:29:05,630 - INFO - Training with 23 experiences from episode 29
+2025-09-16 07:29:05,635 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:29:45,570 - INFO - Episode 30 completed! Steps: 178, Duration: 38.93s, Total Reward: 1661.06
+2025-09-16 07:29:45,570 - INFO - Training with 178 experiences from episode 30
+2025-09-16 07:29:45,575 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:30:25,996 - INFO - Episode 31 completed! Steps: 178, Duration: 39.42s, Total Reward: 1726.11
+2025-09-16 07:30:25,996 - INFO - Training with 178 experiences from episode 31
+2025-09-16 07:30:26,000 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:31:10,922 - INFO - Episode 32 completed! Steps: 198, Duration: 43.92s, Total Reward: 2162.63
+2025-09-16 07:31:10,922 - INFO - Training with 198 experiences from episode 32
+2025-09-16 07:31:10,929 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:31:55,071 - INFO - Episode 33 completed! Steps: 186, Duration: 43.14s, Total Reward: 1801.45
+2025-09-16 07:31:55,071 - INFO - Training with 186 experiences from episode 33
+2025-09-16 07:31:55,075 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:32:31,702 - INFO - Episode 34 completed! Steps: 166, Duration: 35.63s, Total Reward: 1415.90
+2025-09-16 07:32:31,702 - INFO - Training with 166 experiences from episode 34
+2025-09-16 07:32:31,706 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:33:35,098 - INFO - Episode 35 completed! Steps: 290, Duration: 62.39s, Total Reward: 4503.23
+2025-09-16 07:33:35,098 - INFO - Training with 290 experiences from episode 35
+2025-09-16 07:33:35,102 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:34:18,413 - INFO - Episode 36 completed! Steps: 202, Duration: 42.31s, Total Reward: 2062.28
+2025-09-16 07:34:18,413 - INFO - Training with 202 experiences from episode 36
+2025-09-16 07:34:18,418 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:34:59,954 - INFO - Episode 37 completed! Steps: 185, Duration: 40.54s, Total Reward: 1835.97
+2025-09-16 07:34:59,955 - INFO - Training with 185 experiences from episode 37
+2025-09-16 07:34:59,960 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:35:57,656 - INFO - Episode 38 completed! Steps: 268, Duration: 56.69s, Total Reward: 3759.41
+2025-09-16 07:35:57,656 - INFO - Training with 268 experiences from episode 38
+2025-09-16 07:35:57,660 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:36:45,958 - INFO - Episode 39 completed! Steps: 197, Duration: 47.30s, Total Reward: 2245.64
+2025-09-16 07:36:45,959 - INFO - Training with 197 experiences from episode 39
+2025-09-16 07:36:45,962 - INFO - Training completed. Policy Loss: -0.0015
+2025-09-16 07:37:46,906 - INFO - Episode 40 completed! Steps: 289, Duration: 59.94s, Total Reward: 4373.29
+2025-09-16 07:37:46,907 - INFO - Training with 289 experiences from episode 40
+2025-09-16 07:37:46,912 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:38:18,237 - INFO - Episode 41 completed! Steps: 91, Duration: 30.32s, Total Reward: 703.05
+2025-09-16 07:38:18,237 - INFO - Training with 91 experiences from episode 41
+2025-09-16 07:38:18,242 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:38:55,577 - INFO - Episode 42 completed! Steps: 174, Duration: 36.33s, Total Reward: 1573.02
+2025-09-16 07:38:55,577 - INFO - Training with 174 experiences from episode 42
+2025-09-16 07:38:55,582 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:39:45,784 - INFO - Episode 43 completed! Steps: 235, Duration: 49.20s, Total Reward: 2872.36
+2025-09-16 07:39:45,784 - INFO - Training with 235 experiences from episode 43
+2025-09-16 07:39:45,788 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:40:36,507 - INFO - Episode 44 completed! Steps: 232, Duration: 49.72s, Total Reward: 2582.60
+2025-09-16 07:40:36,507 - INFO - Training with 232 experiences from episode 44
+2025-09-16 07:40:36,511 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:41:17,570 - INFO - Episode 45 completed! Steps: 177, Duration: 40.06s, Total Reward: 1764.03
+2025-09-16 07:41:17,570 - INFO - Training with 177 experiences from episode 45
+2025-09-16 07:41:17,575 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:41:49,325 - INFO - Episode 46 completed! Steps: 131, Duration: 30.75s, Total Reward: 1000.11
+2025-09-16 07:41:49,325 - INFO - Training with 131 experiences from episode 46
+2025-09-16 07:41:49,330 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:42:21,419 - INFO - Episode 47 completed! Steps: 124, Duration: 31.09s, Total Reward: 933.05
+2025-09-16 07:42:21,419 - INFO - Training with 124 experiences from episode 47
+2025-09-16 07:42:21,423 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:43:09,834 - INFO - Episode 48 completed! Steps: 224, Duration: 47.41s, Total Reward: 2556.96
+2025-09-16 07:43:09,834 - INFO - Training with 224 experiences from episode 48
+2025-09-16 07:43:09,839 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:43:59,758 - INFO - Episode 49 completed! Steps: 208, Duration: 48.92s, Total Reward: 2406.56
+2025-09-16 07:43:59,758 - INFO - Training with 208 experiences from episode 49
+2025-09-16 07:43:59,763 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:44:53,420 - INFO - Episode 50 completed! Steps: 265, Duration: 52.66s, Total Reward: 3460.39
+2025-09-16 07:44:53,420 - INFO - Training with 265 experiences from episode 50
+2025-09-16 07:44:53,425 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:45:44,087 - INFO - Episode 51 completed! Steps: 221, Duration: 49.66s, Total Reward: 2703.66
+2025-09-16 07:45:44,087 - INFO - Training with 221 experiences from episode 51
+2025-09-16 07:45:44,091 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:46:22,655 - INFO - Episode 52 completed! Steps: 169, Duration: 37.56s, Total Reward: 1560.81
+2025-09-16 07:46:22,655 - INFO - Training with 169 experiences from episode 52
+2025-09-16 07:46:22,661 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:47:27,026 - INFO - Episode 53 completed! Steps: 299, Duration: 63.36s, Total Reward: 4642.44
+2025-09-16 07:47:27,027 - INFO - Training with 299 experiences from episode 53
+2025-09-16 07:47:27,031 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:48:09,722 - INFO - Episode 54 completed! Steps: 187, Duration: 41.69s, Total Reward: 1877.69
+2025-09-16 07:48:09,722 - INFO - Training with 187 experiences from episode 54
+2025-09-16 07:48:09,729 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:48:51,305 - INFO - Episode 55 completed! Steps: 203, Duration: 40.58s, Total Reward: 2079.80
+2025-09-16 07:48:51,305 - INFO - Training with 203 experiences from episode 55
+2025-09-16 07:48:51,309 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:49:45,279 - INFO - Episode 56 completed! Steps: 254, Duration: 52.97s, Total Reward: 3377.25
+2025-09-16 07:49:45,279 - INFO - Training with 254 experiences from episode 56
+2025-09-16 07:49:45,284 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:50:19,714 - INFO - Episode 57 completed! Steps: 153, Duration: 33.43s, Total Reward: 1210.92
+2025-09-16 07:50:19,714 - INFO - Training with 153 experiences from episode 57
+2025-09-16 07:50:19,719 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:51:07,134 - INFO - Episode 58 completed! Steps: 220, Duration: 46.41s, Total Reward: 2499.66
+2025-09-16 07:51:07,134 - INFO - Training with 220 experiences from episode 58
+2025-09-16 07:51:07,137 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:52:02,744 - INFO - Episode 59 completed! Steps: 260, Duration: 54.61s, Total Reward: 3500.72
+2025-09-16 07:52:02,744 - INFO - Training with 260 experiences from episode 59
+2025-09-16 07:52:02,749 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:52:56,779 - INFO - Episode 60 completed! Steps: 255, Duration: 53.03s, Total Reward: 3352.93
+2025-09-16 07:52:56,779 - INFO - Training with 255 experiences from episode 60
+2025-09-16 07:52:56,783 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:53:46,957 - INFO - Episode 61 completed! Steps: 215, Duration: 49.17s, Total Reward: 2422.85
+2025-09-16 07:53:46,957 - INFO - Training with 215 experiences from episode 61
+2025-09-16 07:53:46,965 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:54:28,472 - INFO - Episode 62 completed! Steps: 167, Duration: 40.51s, Total Reward: 1668.72
+2025-09-16 07:54:28,472 - INFO - Training with 167 experiences from episode 62
+2025-09-16 07:54:28,476 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:54:52,143 - INFO - Episode 63 completed! Steps: 75, Duration: 22.67s, Total Reward: 449.55
+2025-09-16 07:54:52,143 - INFO - Training with 75 experiences from episode 63
+2025-09-16 07:54:52,148 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 07:55:31,967 - INFO - Episode 64 completed! Steps: 169, Duration: 38.82s, Total Reward: 1589.09
+2025-09-16 07:55:31,967 - INFO - Training with 169 experiences from episode 64
+2025-09-16 07:55:31,971 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:56:32,294 - INFO - Episode 65 completed! Steps: 259, Duration: 59.32s, Total Reward: 3879.09
+2025-09-16 07:56:32,294 - INFO - Training with 259 experiences from episode 65
+2025-09-16 07:56:32,299 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:57:19,554 - INFO - Episode 66 completed! Steps: 201, Duration: 46.25s, Total Reward: 2217.83
+2025-09-16 07:57:19,555 - INFO - Training with 201 experiences from episode 66
+2025-09-16 07:57:19,558 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:58:01,175 - INFO - Episode 67 completed! Steps: 187, Duration: 40.62s, Total Reward: 1890.78
+2025-09-16 07:58:01,175 - INFO - Training with 187 experiences from episode 67
+2025-09-16 07:58:01,180 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 07:58:41,678 - INFO - Episode 68 completed! Steps: 185, Duration: 39.50s, Total Reward: 1841.00
+2025-09-16 07:58:41,678 - INFO - Training with 185 experiences from episode 68
+2025-09-16 07:58:41,682 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 07:59:44,511 - INFO - Episode 69 completed! Steps: 311, Duration: 61.83s, Total Reward: 4567.30
+2025-09-16 07:59:44,511 - INFO - Training with 311 experiences from episode 69
+2025-09-16 07:59:44,515 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:00:18,490 - INFO - Episode 70 completed! Steps: 142, Duration: 32.97s, Total Reward: 1168.54
+2025-09-16 08:00:18,490 - INFO - Training with 142 experiences from episode 70
+2025-09-16 08:00:18,493 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:01:13,935 - INFO - Episode 71 completed! Steps: 255, Duration: 54.44s, Total Reward: 3344.77
+2025-09-16 08:01:13,936 - INFO - Training with 255 experiences from episode 71
+2025-09-16 08:01:13,941 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:02:12,229 - INFO - Episode 72 completed! Steps: 265, Duration: 57.29s, Total Reward: 3722.74
+2025-09-16 08:02:12,229 - INFO - Training with 265 experiences from episode 72
+2025-09-16 08:02:12,235 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:02:53,883 - INFO - Episode 73 completed! Steps: 194, Duration: 40.65s, Total Reward: 1897.43
+2025-09-16 08:02:53,883 - INFO - Training with 194 experiences from episode 73
+2025-09-16 08:02:53,888 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:03:31,888 - INFO - Episode 74 completed! Steps: 157, Duration: 37.00s, Total Reward: 1433.44
+2025-09-16 08:03:31,888 - INFO - Training with 157 experiences from episode 74
+2025-09-16 08:03:31,893 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:03:59,209 - INFO - Episode 75 completed! Steps: 102, Duration: 26.32s, Total Reward: 648.12
+2025-09-16 08:03:59,209 - INFO - Training with 102 experiences from episode 75
+2025-09-16 08:03:59,214 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:04:37,289 - INFO - Episode 76 completed! Steps: 178, Duration: 37.07s, Total Reward: 1577.10
+2025-09-16 08:04:37,290 - INFO - Training with 178 experiences from episode 76
+2025-09-16 08:04:37,298 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:05:20,319 - INFO - Episode 77 completed! Steps: 192, Duration: 42.02s, Total Reward: 2020.65
+2025-09-16 08:05:20,319 - INFO - Training with 192 experiences from episode 77
+2025-09-16 08:05:20,324 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:06:15,094 - INFO - Episode 78 completed! Steps: 246, Duration: 53.77s, Total Reward: 3255.63
+2025-09-16 08:06:15,094 - INFO - Training with 246 experiences from episode 78
+2025-09-16 08:06:15,098 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:07:02,738 - INFO - Episode 79 completed! Steps: 226, Duration: 46.64s, Total Reward: 2523.05
+2025-09-16 08:07:02,738 - INFO - Training with 226 experiences from episode 79
+2025-09-16 08:07:02,744 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:07:50,452 - INFO - Episode 80 completed! Steps: 221, Duration: 46.71s, Total Reward: 2582.24
+2025-09-16 08:07:50,452 - INFO - Training with 221 experiences from episode 80
+2025-09-16 08:07:50,457 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:08:33,055 - INFO - Episode 81 completed! Steps: 177, Duration: 41.60s, Total Reward: 1682.68
+2025-09-16 08:08:33,055 - INFO - Training with 177 experiences from episode 81
+2025-09-16 08:08:33,059 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:09:13,665 - INFO - Episode 82 completed! Steps: 192, Duration: 39.61s, Total Reward: 1792.18
+2025-09-16 08:09:13,665 - INFO - Training with 192 experiences from episode 82
+2025-09-16 08:09:13,670 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:09:56,187 - INFO - Episode 83 completed! Steps: 198, Duration: 41.52s, Total Reward: 1904.61
+2025-09-16 08:09:56,187 - INFO - Training with 198 experiences from episode 83
+2025-09-16 08:09:56,192 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:10:37,143 - INFO - Episode 84 completed! Steps: 167, Duration: 39.95s, Total Reward: 1571.37
+2025-09-16 08:10:37,144 - INFO - Training with 167 experiences from episode 84
+2025-09-16 08:10:37,148 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:11:21,710 - INFO - Episode 85 completed! Steps: 196, Duration: 43.56s, Total Reward: 2068.47
+2025-09-16 08:11:21,710 - INFO - Training with 196 experiences from episode 85
+2025-09-16 08:11:21,715 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:12:04,713 - INFO - Episode 86 completed! Steps: 201, Duration: 42.00s, Total Reward: 2123.04
+2025-09-16 08:12:04,713 - INFO - Training with 201 experiences from episode 86
+2025-09-16 08:12:04,718 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:12:53,290 - INFO - Episode 87 completed! Steps: 222, Duration: 47.57s, Total Reward: 2382.08
+2025-09-16 08:12:53,290 - INFO - Training with 222 experiences from episode 87
+2025-09-16 08:12:53,295 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:13:45,694 - INFO - Episode 88 completed! Steps: 249, Duration: 51.40s, Total Reward: 3144.86
+2025-09-16 08:13:45,694 - INFO - Training with 249 experiences from episode 88
+2025-09-16 08:13:45,699 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:14:37,527 - INFO - Episode 89 completed! Steps: 234, Duration: 50.83s, Total Reward: 2957.24
+2025-09-16 08:14:37,527 - INFO - Training with 234 experiences from episode 89
+2025-09-16 08:14:37,532 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:15:30,689 - INFO - Episode 90 completed! Steps: 256, Duration: 52.16s, Total Reward: 3257.33
+2025-09-16 08:15:30,689 - INFO - Training with 256 experiences from episode 90
+2025-09-16 08:15:30,693 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:16:28,855 - INFO - Episode 91 completed! Steps: 280, Duration: 57.16s, Total Reward: 3898.82
+2025-09-16 08:16:28,855 - INFO - Training with 280 experiences from episode 91
+2025-09-16 08:16:28,859 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:17:11,840 - INFO - Episode 92 completed! Steps: 195, Duration: 41.98s, Total Reward: 2065.21
+2025-09-16 08:17:11,840 - INFO - Training with 195 experiences from episode 92
+2025-09-16 08:17:11,844 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:17:48,860 - INFO - Episode 93 completed! Steps: 160, Duration: 36.01s, Total Reward: 1426.59
+2025-09-16 08:17:48,860 - INFO - Training with 160 experiences from episode 93
+2025-09-16 08:17:48,866 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:18:37,912 - INFO - Episode 94 completed! Steps: 229, Duration: 48.04s, Total Reward: 2381.92
+2025-09-16 08:18:37,912 - INFO - Training with 229 experiences from episode 94
+2025-09-16 08:18:37,916 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:19:23,807 - INFO - Episode 95 completed! Steps: 216, Duration: 44.89s, Total Reward: 2330.14
+2025-09-16 08:19:23,807 - INFO - Training with 216 experiences from episode 95
+2025-09-16 08:19:23,811 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:20:01,417 - INFO - Episode 96 completed! Steps: 161, Duration: 36.60s, Total Reward: 1510.56
+2025-09-16 08:20:01,417 - INFO - Training with 161 experiences from episode 96
+2025-09-16 08:20:01,421 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:20:55,895 - INFO - Episode 97 completed! Steps: 245, Duration: 53.47s, Total Reward: 3173.73
+2025-09-16 08:20:55,895 - INFO - Training with 245 experiences from episode 97
+2025-09-16 08:20:55,901 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:21:44,196 - INFO - Episode 98 completed! Steps: 223, Duration: 47.29s, Total Reward: 2538.08
+2025-09-16 08:21:44,196 - INFO - Training with 223 experiences from episode 98
+2025-09-16 08:21:44,201 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:22:26,837 - INFO - Episode 99 completed! Steps: 182, Duration: 41.64s, Total Reward: 1967.84
+2025-09-16 08:22:26,837 - INFO - Training with 182 experiences from episode 99
+2025-09-16 08:22:26,842 - INFO - Training completed. Policy Loss: -0.0017
+2025-09-16 08:23:00,051 - INFO - Episode 100 completed! Steps: 128, Duration: 29.98s, Total Reward: 962.77
+2025-09-16 08:23:00,051 - INFO - Training with 128 experiences from episode 100
+2025-09-16 08:23:00,056 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 08:23:01,057 - INFO - REINFORCE training completed! Best model achieved 67.57s and saved at runs/20250916_023511/models/best_model_at_train_round_4_epoch_1.pt
+2025-09-16 08:23:01,058 - INFO - Training round 5 start.
+2025-09-16 08:23:01,069 - INFO - Loaded model from runs/20250916_023511/models/best_model_at_train_round_4_epoch_1.pt
+2025-09-16 08:23:01,069 - INFO - Starting REINFORCE Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-16 08:23:44,375 - INFO - Episode 1 completed! Steps: 179, Duration: 43.31s, Total Reward: 1728.74
+2025-09-16 08:23:44,375 - INFO - Training with 179 experiences from episode 1
+2025-09-16 08:23:44,379 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:23:44,381 - INFO - New best model saved! Duration: 43.31s
+2025-09-16 08:23:44,413 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_5_epoch_0.png
+2025-09-16 08:24:23,023 - INFO - Episode 2 completed! Steps: 173, Duration: 37.61s, Total Reward: 1580.26
+2025-09-16 08:24:23,023 - INFO - Training with 173 experiences from episode 2
+2025-09-16 08:24:23,028 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:25:09,762 - INFO - Episode 3 completed! Steps: 212, Duration: 45.73s, Total Reward: 2330.50
+2025-09-16 08:25:09,762 - INFO - Training with 212 experiences from episode 3
+2025-09-16 08:25:09,765 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:25:09,766 - INFO - New best model saved! Duration: 45.73s
+2025-09-16 08:25:09,797 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_5_epoch_2.png
+2025-09-16 08:25:48,849 - INFO - Episode 4 completed! Steps: 162, Duration: 38.05s, Total Reward: 1523.94
+2025-09-16 08:25:48,849 - INFO - Training with 162 experiences from episode 4
+2025-09-16 08:25:48,854 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 08:26:22,886 - INFO - Episode 5 completed! Steps: 143, Duration: 33.03s, Total Reward: 1063.93
+2025-09-16 08:26:22,887 - INFO - Training with 143 experiences from episode 5
+2025-09-16 08:26:22,891 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:27:00,903 - INFO - Episode 6 completed! Steps: 157, Duration: 37.01s, Total Reward: 1364.69
+2025-09-16 08:27:00,903 - INFO - Training with 157 experiences from episode 6
+2025-09-16 08:27:00,908 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 08:27:52,802 - INFO - Episode 7 completed! Steps: 243, Duration: 50.89s, Total Reward: 2908.94
+2025-09-16 08:27:52,802 - INFO - Training with 243 experiences from episode 7
+2025-09-16 08:27:52,807 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:27:52,809 - INFO - New best model saved! Duration: 50.89s
+2025-09-16 08:27:52,837 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_5_epoch_6.png
+2025-09-16 08:28:35,861 - INFO - Episode 8 completed! Steps: 197, Duration: 42.02s, Total Reward: 2040.60
+2025-09-16 08:28:35,861 - INFO - Training with 197 experiences from episode 8
+2025-09-16 08:28:35,865 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:29:32,062 - INFO - Episode 9 completed! Steps: 256, Duration: 55.20s, Total Reward: 3511.33
+2025-09-16 08:29:32,062 - INFO - Training with 256 experiences from episode 9
+2025-09-16 08:29:32,069 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:29:32,070 - INFO - New best model saved! Duration: 55.20s
+2025-09-16 08:29:32,097 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_5_epoch_8.png
+2025-09-16 08:30:35,477 - INFO - Episode 10 completed! Steps: 285, Duration: 62.38s, Total Reward: 4452.54
+2025-09-16 08:30:35,477 - INFO - Training with 285 experiences from episode 10
+2025-09-16 08:30:35,481 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 08:30:35,482 - INFO - New best model saved! Duration: 62.38s
+2025-09-16 08:30:35,516 - INFO - Game screenshot saved to: runs/20250916_023511/images/best_model_screenshot_at_train_round_5_epoch_9.png
+2025-09-16 08:31:10,681 - INFO - Episode 11 completed! Steps: 154, Duration: 34.16s, Total Reward: 1269.59
+2025-09-16 08:31:10,681 - INFO - Training with 154 experiences from episode 11
+2025-09-16 08:31:10,685 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:31:47,975 - INFO - Episode 12 completed! Steps: 166, Duration: 36.29s, Total Reward: 1433.37
+2025-09-16 08:31:47,975 - INFO - Training with 166 experiences from episode 12
+2025-09-16 08:31:47,979 - INFO - Training completed. Policy Loss: 0.0003
+2025-09-16 08:32:41,245 - INFO - Episode 13 completed! Steps: 262, Duration: 52.26s, Total Reward: 3313.59
+2025-09-16 08:32:41,246 - INFO - Training with 262 experiences from episode 13
+2025-09-16 08:32:41,250 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:33:22,971 - INFO - Episode 14 completed! Steps: 178, Duration: 40.72s, Total Reward: 1570.39
+2025-09-16 08:33:22,971 - INFO - Training with 178 experiences from episode 14
+2025-09-16 08:33:22,976 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:34:18,807 - INFO - Episode 15 completed! Steps: 272, Duration: 54.83s, Total Reward: 3609.51
+2025-09-16 08:34:18,807 - INFO - Training with 272 experiences from episode 15
+2025-09-16 08:34:18,812 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:34:59,345 - INFO - Episode 16 completed! Steps: 180, Duration: 39.53s, Total Reward: 1819.87
+2025-09-16 08:34:59,345 - INFO - Training with 180 experiences from episode 16
+2025-09-16 08:34:59,348 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:35:40,945 - INFO - Episode 17 completed! Steps: 175, Duration: 40.60s, Total Reward: 1563.55
+2025-09-16 08:35:40,945 - INFO - Training with 175 experiences from episode 17
+2025-09-16 08:35:40,949 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:36:26,018 - INFO - Episode 18 completed! Steps: 202, Duration: 44.07s, Total Reward: 2130.97
+2025-09-16 08:36:26,018 - INFO - Training with 202 experiences from episode 18
+2025-09-16 08:36:26,024 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:37:27,776 - INFO - Episode 19 completed! Steps: 286, Duration: 60.75s, Total Reward: 4369.64
+2025-09-16 08:37:27,776 - INFO - Training with 286 experiences from episode 19
+2025-09-16 08:37:27,781 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:38:15,217 - INFO - Episode 20 completed! Steps: 204, Duration: 46.43s, Total Reward: 2347.15
+2025-09-16 08:38:15,217 - INFO - Training with 204 experiences from episode 20
+2025-09-16 08:38:15,222 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:38:55,126 - INFO - Episode 21 completed! Steps: 174, Duration: 38.90s, Total Reward: 1693.84
+2025-09-16 08:38:55,126 - INFO - Training with 174 experiences from episode 21
+2025-09-16 08:38:55,130 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:39:47,129 - INFO - Episode 22 completed! Steps: 224, Duration: 51.00s, Total Reward: 2705.71
+2025-09-16 08:39:47,129 - INFO - Training with 224 experiences from episode 22
+2025-09-16 08:39:47,133 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:40:37,110 - INFO - Episode 23 completed! Steps: 228, Duration: 48.98s, Total Reward: 2775.69
+2025-09-16 08:40:37,111 - INFO - Training with 228 experiences from episode 23
+2025-09-16 08:40:37,118 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:41:35,576 - INFO - Episode 24 completed! Steps: 269, Duration: 57.46s, Total Reward: 3819.91
+2025-09-16 08:41:35,576 - INFO - Training with 269 experiences from episode 24
+2025-09-16 08:41:35,579 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:42:29,474 - INFO - Episode 25 completed! Steps: 257, Duration: 52.89s, Total Reward: 3390.31
+2025-09-16 08:42:29,474 - INFO - Training with 257 experiences from episode 25
+2025-09-16 08:42:29,478 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:43:28,733 - INFO - Episode 26 completed! Steps: 262, Duration: 58.25s, Total Reward: 3511.04
+2025-09-16 08:43:28,733 - INFO - Training with 262 experiences from episode 26
+2025-09-16 08:43:28,737 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:44:27,495 - INFO - Episode 27 completed! Steps: 272, Duration: 57.76s, Total Reward: 4009.01
+2025-09-16 08:44:27,495 - INFO - Training with 272 experiences from episode 27
+2025-09-16 08:44:27,499 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:45:16,187 - INFO - Episode 28 completed! Steps: 211, Duration: 47.69s, Total Reward: 2496.98
+2025-09-16 08:45:16,187 - INFO - Training with 211 experiences from episode 28
+2025-09-16 08:45:16,191 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:45:40,027 - INFO - Episode 29 completed! Steps: 70, Duration: 22.83s, Total Reward: 419.12
+2025-09-16 08:45:40,027 - INFO - Training with 70 experiences from episode 29
+2025-09-16 08:45:40,032 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:46:03,192 - INFO - Episode 30 completed! Steps: 76, Duration: 22.16s, Total Reward: 415.33
+2025-09-16 08:46:03,192 - INFO - Training with 76 experiences from episode 30
+2025-09-16 08:46:03,196 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:46:50,730 - INFO - Episode 31 completed! Steps: 220, Duration: 46.53s, Total Reward: 2468.62
+2025-09-16 08:46:50,731 - INFO - Training with 220 experiences from episode 31
+2025-09-16 08:46:50,737 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:47:45,800 - INFO - Episode 32 completed! Steps: 249, Duration: 54.06s, Total Reward: 3194.83
+2025-09-16 08:47:45,800 - INFO - Training with 249 experiences from episode 32
+2025-09-16 08:47:45,804 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:48:22,715 - INFO - Episode 33 completed! Steps: 156, Duration: 35.91s, Total Reward: 1340.64
+2025-09-16 08:48:22,715 - INFO - Training with 156 experiences from episode 33
+2025-09-16 08:48:22,719 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:49:03,513 - INFO - Episode 34 completed! Steps: 168, Duration: 39.79s, Total Reward: 1617.76
+2025-09-16 08:49:03,513 - INFO - Training with 168 experiences from episode 34
+2025-09-16 08:49:03,519 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:49:48,200 - INFO - Episode 35 completed! Steps: 217, Duration: 43.68s, Total Reward: 2299.48
+2025-09-16 08:49:48,201 - INFO - Training with 217 experiences from episode 35
+2025-09-16 08:49:48,204 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:50:28,413 - INFO - Episode 36 completed! Steps: 173, Duration: 39.21s, Total Reward: 1709.24
+2025-09-16 08:50:28,413 - INFO - Training with 173 experiences from episode 36
+2025-09-16 08:50:28,419 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:51:30,753 - INFO - Episode 37 completed! Steps: 290, Duration: 61.33s, Total Reward: 4034.43
+2025-09-16 08:51:30,753 - INFO - Training with 290 experiences from episode 37
+2025-09-16 08:51:30,758 - INFO - Training completed. Policy Loss: 0.0002
+2025-09-16 08:52:33,406 - INFO - Episode 38 completed! Steps: 290, Duration: 61.65s, Total Reward: 4236.26
+2025-09-16 08:52:33,406 - INFO - Training with 290 experiences from episode 38
+2025-09-16 08:52:33,411 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:53:16,450 - INFO - Episode 39 completed! Steps: 196, Duration: 42.04s, Total Reward: 2034.29
+2025-09-16 08:53:16,450 - INFO - Training with 196 experiences from episode 39
+2025-09-16 08:53:16,457 - INFO - Training completed. Policy Loss: 0.0001
+2025-09-16 08:53:45,004 - INFO - Episode 40 completed! Steps: 107, Duration: 27.55s, Total Reward: 753.81
+2025-09-16 08:53:45,004 - INFO - Training with 107 experiences from episode 40
+2025-09-16 08:53:45,008 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:54:41,434 - INFO - Episode 41 completed! Steps: 250, Duration: 55.43s, Total Reward: 3272.34
+2025-09-16 08:54:41,435 - INFO - Training with 250 experiences from episode 41
+2025-09-16 08:54:41,439 - INFO - Training completed. Policy Loss: -0.0011
+2025-09-16 08:55:11,305 - INFO - Episode 42 completed! Steps: 113, Duration: 28.87s, Total Reward: 744.69
+2025-09-16 08:55:11,305 - INFO - Training with 113 experiences from episode 42
+2025-09-16 08:55:11,313 - INFO - Training completed. Policy Loss: 0.0000
+2025-09-16 08:55:50,167 - INFO - Episode 43 completed! Steps: 172, Duration: 37.85s, Total Reward: 1499.07
+2025-09-16 08:55:50,167 - INFO - Training with 172 experiences from episode 43
+2025-09-16 08:55:50,174 - INFO - Training completed. Policy Loss: 0.0001

@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# Run the image test script with the specified parameters
+# Actor-Critic v2 Test Script
 python main.py \
-    --mode image \
-    --image_wait_time 0.0 \
-    --number_of_actions 2 \
+    --mode test \
+    --model_type actor_critic_v2 \
+    --test_epochs 5 \
+    --model_path "./runs/20250924_001227/models/best_actor_model_v2_at_train_round_0_epoch_102.pt" \
     --game_url "http://localhost:8000/" \
+    --number_of_actions 2 \
+    --image_wait_time 0.0 \
     --window_width 600 \
     --window_height 300 \
     --window_position center \
@@ -17,8 +20,9 @@ python main.py \
     --track_i 100 \
     --track_j 70 \
     --track_height 45 \
-    --track_width 600 \
+    --track_width 300 \
     --state_grid_rows 1 \
-    --state_grid_cols 30 \
+    --state_grid_cols 12 \
     --state_binary_threshold 0.05 \
-    --is_done_threshold 0.5
+    --is_done_threshold 0.5 \
+    --jump_duration 0.3
