@@ -1,0 +1,1461 @@
+2025-09-26 09:09:31,340 - INFO - Created run directory: runs/20250926_090931
+2025-09-26 09:09:31,340 - INFO - Parameters saved to: runs/20250926_090931/logs/param.json
+2025-09-26 09:09:31,340 - INFO - Running in train mode with parameters: {'mode': 'train', 'model_type': 'actor_critic', 'debug': False, 'epochs': 80, 'steps': 2000, 'model_path': None, 'actor_model_path': None, 'critic_model_path': None, 'continue_train_epochs': 100, 'continue_train_steps': 4000, 'continue_train_min_memory_count_to_start_training': 0, 'continue_train_memory_size': 3000, 'test_epochs': 5, 'lr': 0.01, 'value_lr': 0.01, 'max_steps_per_batch': 15000, 'epsilon': 0.99, 'gamma': 0.95, 'lambda_gae': 0.95, 'jump_duration': 0.5, 'train_rounds': 5, 'epsilon_increase': 0.01, 'net_replace_memory_gap': 200, 'memory_size': 1000, 'batch_size': 32, 'min_memory_count_to_start_training': 100, 'state_grid_rows': 1, 'state_grid_cols': 30, 'state_binary_threshold': 0.1, 'is_done_threshold': 0.5, 'game_url': 'http://localhost:8000/', 'number_of_actions': 2, 'image_wait_time': 0.0, 'ppo_eps_clip': 0.2, 'ppo_value_coef': 0.5, 'ppo_entropy_coef': 0.01, 'ppo_max_grad_norm': 0.5, 'window_width': 600, 'window_height': 300, 'window_position': 'center', 'frameless': True, 'ending_i': 90, 'ending_j': 280, 'ending_height': 35, 'ending_width': 40, 'track_i': 100, 'track_j': 70, 'track_height': 45, 'track_width': 300}
+2025-09-26 09:09:32,296 - INFO - Using device: cuda
+2025-09-26 09:09:32,987 - INFO - Training round 0 start.
+2025-09-26 09:09:32,987 - INFO - Starting Actor-Critic training with 80 epochs, 2000 steps per episode
+2025-09-26 09:09:38,810 - INFO - Episode 1 completed! Steps: 4, Duration: 5.82s, Total Reward: 10.00
+2025-09-26 09:09:44,535 - INFO - Episode 2 completed! Steps: 1, Duration: 4.72s, Total Reward: -5.00
+2025-09-26 09:09:50,353 - INFO - Episode 3 completed! Steps: 2, Duration: 4.82s, Total Reward: 0.00
+2025-09-26 09:09:58,542 - INFO - Episode 4 completed! Steps: 1, Duration: 7.19s, Total Reward: -5.00
+2025-09-26 09:10:05,896 - INFO - Episode 5 completed! Steps: 12, Duration: 6.35s, Total Reward: 50.00
+2025-09-26 09:10:11,664 - INFO - Episode 6 completed! Steps: 1, Duration: 4.77s, Total Reward: -5.00
+2025-09-26 09:10:18,086 - INFO - Episode 7 completed! Steps: 3, Duration: 5.42s, Total Reward: 5.00
+2025-09-26 09:10:23,824 - INFO - Episode 8 completed! Steps: 1, Duration: 4.74s, Total Reward: -5.00
+2025-09-26 09:10:31,987 - INFO - Episode 9 completed! Steps: 1, Duration: 7.16s, Total Reward: -5.00
+2025-09-26 09:10:37,708 - INFO - Episode 10 completed! Steps: 1, Duration: 4.72s, Total Reward: -5.00
+2025-09-26 09:10:45,079 - INFO - Episode 11 completed! Steps: 7, Duration: 6.37s, Total Reward: 25.00
+2025-09-26 09:10:50,783 - INFO - Episode 12 completed! Steps: 6, Duration: 4.70s, Total Reward: 20.00
+2025-09-26 09:10:57,921 - INFO - Episode 13 completed! Steps: 5, Duration: 6.14s, Total Reward: 15.00
+2025-09-26 09:11:05,985 - INFO - Episode 14 completed! Steps: 1, Duration: 7.06s, Total Reward: -5.00
+2025-09-26 09:11:11,821 - INFO - Episode 15 completed! Steps: 2, Duration: 4.84s, Total Reward: 0.00
+2025-09-26 09:11:17,609 - INFO - Episode 16 completed! Steps: 2, Duration: 4.79s, Total Reward: 0.00
+2025-09-26 09:11:24,930 - INFO - Episode 17 completed! Steps: 7, Duration: 6.32s, Total Reward: 25.00
+2025-09-26 09:11:31,550 - INFO - Episode 18 completed! Steps: 5, Duration: 5.62s, Total Reward: 15.00
+2025-09-26 09:11:39,811 - INFO - Episode 19 completed! Steps: 6, Duration: 7.26s, Total Reward: 20.00
+2025-09-26 09:11:45,531 - INFO - Episode 20 completed! Steps: 1, Duration: 4.72s, Total Reward: -5.00
+2025-09-26 09:11:54,222 - INFO - Episode 21 completed! Steps: 15, Duration: 7.69s, Total Reward: 65.00
+2025-09-26 09:11:59,957 - INFO - Episode 22 completed! Steps: 1, Duration: 4.73s, Total Reward: -5.00
+2025-09-26 09:12:05,678 - INFO - Episode 23 completed! Steps: 1, Duration: 4.72s, Total Reward: -5.00
+2025-09-26 09:12:16,430 - INFO - Episode 24 completed! Steps: 12, Duration: 9.75s, Total Reward: 50.00
+2025-09-26 09:12:23,067 - INFO - Episode 25 completed! Steps: 5, Duration: 5.64s, Total Reward: 15.00
+2025-09-26 09:12:23,067 - INFO - Training with 103 experiences from replay memory
+2025-09-26 09:12:23,249 - INFO - Training completed. Policy Loss: 1.5468, Value Loss: 24.7286
+2025-09-26 09:12:23,252 - INFO - New best model saved! Duration: 5.64s
+2025-09-26 09:12:23,268 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_24.png
+2025-09-26 09:12:38,661 - INFO - Episode 26 completed! Steps: 27, Duration: 14.39s, Total Reward: 125.00
+2025-09-26 09:12:38,662 - INFO - Training with 130 experiences from replay memory
+2025-09-26 09:12:38,671 - INFO - Training completed. Policy Loss: 0.6229, Value Loss: 24.2891
+2025-09-26 09:12:38,674 - INFO - New best model saved! Duration: 14.39s
+2025-09-26 09:12:38,695 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_25.png
+2025-09-26 09:12:48,429 - INFO - Episode 27 completed! Steps: 11, Duration: 8.73s, Total Reward: 45.00
+2025-09-26 09:12:48,429 - INFO - Training with 141 experiences from replay memory
+2025-09-26 09:12:48,435 - INFO - Training completed. Policy Loss: 1.9494, Value Loss: 24.5218
+2025-09-26 09:12:54,166 - INFO - Episode 28 completed! Steps: 1, Duration: 4.73s, Total Reward: -5.00
+2025-09-26 09:12:54,166 - INFO - Training with 142 experiences from replay memory
+2025-09-26 09:12:54,176 - INFO - Training completed. Policy Loss: 0.6457, Value Loss: 24.3451
+2025-09-26 09:12:59,969 - INFO - Episode 29 completed! Steps: 2, Duration: 4.79s, Total Reward: 0.00
+2025-09-26 09:12:59,969 - INFO - Training with 144 experiences from replay memory
+2025-09-26 09:12:59,974 - INFO - Training completed. Policy Loss: 0.1964, Value Loss: 24.1526
+2025-09-26 09:13:05,789 - INFO - Episode 30 completed! Steps: 2, Duration: 4.81s, Total Reward: 0.00
+2025-09-26 09:13:05,789 - INFO - Training with 146 experiences from replay memory
+2025-09-26 09:13:05,796 - INFO - Training completed. Policy Loss: -0.5975, Value Loss: 24.6911
+2025-09-26 09:13:11,626 - INFO - Episode 31 completed! Steps: 2, Duration: 4.83s, Total Reward: 0.00
+2025-09-26 09:13:11,626 - INFO - Training with 148 experiences from replay memory
+2025-09-26 09:13:11,632 - INFO - Training completed. Policy Loss: 0.8384, Value Loss: 24.8547
+2025-09-26 09:13:18,866 - INFO - Episode 32 completed! Steps: 6, Duration: 6.23s, Total Reward: 20.00
+2025-09-26 09:13:18,866 - INFO - Training with 154 experiences from replay memory
+2025-09-26 09:13:18,871 - INFO - Training completed. Policy Loss: -0.9870, Value Loss: 25.6922
+2025-09-26 09:13:26,687 - INFO - Episode 33 completed! Steps: 2, Duration: 6.81s, Total Reward: 0.00
+2025-09-26 09:13:26,687 - INFO - Training with 156 experiences from replay memory
+2025-09-26 09:13:26,693 - INFO - Training completed. Policy Loss: 0.5454, Value Loss: 24.5883
+2025-09-26 09:13:34,198 - INFO - Episode 34 completed! Steps: 14, Duration: 6.50s, Total Reward: 60.00
+2025-09-26 09:13:34,198 - INFO - Training with 170 experiences from replay memory
+2025-09-26 09:13:34,205 - INFO - Training completed. Policy Loss: 0.5392, Value Loss: 23.5757
+2025-09-26 09:13:40,013 - INFO - Episode 35 completed! Steps: 2, Duration: 4.81s, Total Reward: 0.00
+2025-09-26 09:13:40,013 - INFO - Training with 172 experiences from replay memory
+2025-09-26 09:13:40,018 - INFO - Training completed. Policy Loss: -1.2016, Value Loss: 24.5686
+2025-09-26 09:13:46,534 - INFO - Episode 36 completed! Steps: 9, Duration: 5.52s, Total Reward: 35.00
+2025-09-26 09:13:46,534 - INFO - Training with 181 experiences from replay memory
+2025-09-26 09:13:46,541 - INFO - Training completed. Policy Loss: 1.6724, Value Loss: 21.7722
+2025-09-26 09:13:54,187 - INFO - Episode 37 completed! Steps: 15, Duration: 6.65s, Total Reward: 65.00
+2025-09-26 09:13:54,187 - INFO - Training with 196 experiences from replay memory
+2025-09-26 09:13:54,193 - INFO - Training completed. Policy Loss: -2.2565, Value Loss: 23.9090
+2025-09-26 09:14:07,274 - INFO - Episode 38 completed! Steps: 21, Duration: 9.80s, Total Reward: 95.00
+2025-09-26 09:14:07,274 - INFO - Training with 217 experiences from replay memory
+2025-09-26 09:14:07,282 - INFO - Training completed. Policy Loss: -2.6088, Value Loss: 23.7357
+2025-09-26 09:14:12,981 - INFO - Episode 39 completed! Steps: 6, Duration: 4.70s, Total Reward: 20.00
+2025-09-26 09:14:12,981 - INFO - Training with 223 experiences from replay memory
+2025-09-26 09:14:12,988 - INFO - Training completed. Policy Loss: -1.3413, Value Loss: 22.9086
+2025-09-26 09:14:22,585 - INFO - Episode 40 completed! Steps: 24, Duration: 8.60s, Total Reward: 110.00
+2025-09-26 09:14:22,586 - INFO - Training with 247 experiences from replay memory
+2025-09-26 09:14:22,594 - INFO - Training completed. Policy Loss: -3.6370, Value Loss: 23.2384
+2025-09-26 09:14:28,286 - INFO - Episode 41 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-26 09:14:28,287 - INFO - Training with 253 experiences from replay memory
+2025-09-26 09:14:28,292 - INFO - Training completed. Policy Loss: -4.4351, Value Loss: 28.1982
+2025-09-26 09:14:39,303 - INFO - Episode 42 completed! Steps: 16, Duration: 7.73s, Total Reward: 70.00
+2025-09-26 09:14:39,303 - INFO - Training with 269 experiences from replay memory
+2025-09-26 09:14:39,312 - INFO - Training completed. Policy Loss: -4.3544, Value Loss: 26.6682
+2025-09-26 09:14:49,324 - INFO - Episode 43 completed! Steps: 23, Duration: 9.01s, Total Reward: 105.00
+2025-09-26 09:14:49,325 - INFO - Training with 292 experiences from replay memory
+2025-09-26 09:14:49,331 - INFO - Training completed. Policy Loss: -1.4356, Value Loss: 28.7255
+2025-09-26 09:15:00,268 - INFO - Episode 44 completed! Steps: 27, Duration: 9.94s, Total Reward: 125.00
+2025-09-26 09:15:00,268 - INFO - Training with 319 experiences from replay memory
+2025-09-26 09:15:00,274 - INFO - Training completed. Policy Loss: -3.1839, Value Loss: 28.6050
+2025-09-26 09:15:09,319 - INFO - Episode 45 completed! Steps: 11, Duration: 8.04s, Total Reward: 45.00
+2025-09-26 09:15:09,319 - INFO - Training with 330 experiences from replay memory
+2025-09-26 09:15:09,326 - INFO - Training completed. Policy Loss: -3.3913, Value Loss: 27.7890
+2025-09-26 09:15:20,724 - INFO - Episode 46 completed! Steps: 32, Duration: 10.40s, Total Reward: 150.00
+2025-09-26 09:15:20,724 - INFO - Training with 362 experiences from replay memory
+2025-09-26 09:15:20,732 - INFO - Training completed. Policy Loss: 0.0505, Value Loss: 30.5691
+2025-09-26 09:15:27,896 - INFO - Episode 47 completed! Steps: 10, Duration: 6.16s, Total Reward: 40.00
+2025-09-26 09:15:27,896 - INFO - Training with 372 experiences from replay memory
+2025-09-26 09:15:27,902 - INFO - Training completed. Policy Loss: 2.0109, Value Loss: 26.7716
+2025-09-26 09:15:34,649 - INFO - Episode 48 completed! Steps: 11, Duration: 5.75s, Total Reward: 45.00
+2025-09-26 09:15:34,649 - INFO - Training with 383 experiences from replay memory
+2025-09-26 09:15:34,656 - INFO - Training completed. Policy Loss: -3.7084, Value Loss: 27.5573
+2025-09-26 09:15:42,633 - INFO - Episode 49 completed! Steps: 6, Duration: 6.98s, Total Reward: 20.00
+2025-09-26 09:15:42,633 - INFO - Training with 389 experiences from replay memory
+2025-09-26 09:15:42,638 - INFO - Training completed. Policy Loss: -10.9431, Value Loss: 34.6050
+2025-09-26 09:15:48,336 - INFO - Episode 50 completed! Steps: 6, Duration: 4.70s, Total Reward: 20.00
+2025-09-26 09:15:48,336 - INFO - Training with 395 experiences from replay memory
+2025-09-26 09:15:48,342 - INFO - Training completed. Policy Loss: -9.6863, Value Loss: 35.1374
+2025-09-26 09:15:56,657 - INFO - Episode 51 completed! Steps: 16, Duration: 7.31s, Total Reward: 70.00
+2025-09-26 09:15:56,658 - INFO - Training with 411 experiences from replay memory
+2025-09-26 09:15:56,669 - INFO - Training completed. Policy Loss: -3.5884, Value Loss: 24.2139
+2025-09-26 09:16:04,629 - INFO - Episode 52 completed! Steps: 18, Duration: 6.96s, Total Reward: 80.00
+2025-09-26 09:16:04,629 - INFO - Training with 429 experiences from replay memory
+2025-09-26 09:16:04,635 - INFO - Training completed. Policy Loss: -18.0429, Value Loss: 39.0670
+2025-09-26 09:16:11,351 - INFO - Episode 53 completed! Steps: 11, Duration: 5.72s, Total Reward: 45.00
+2025-09-26 09:16:11,351 - INFO - Training with 440 experiences from replay memory
+2025-09-26 09:16:11,357 - INFO - Training completed. Policy Loss: -6.8816, Value Loss: 34.7885
+2025-09-26 09:16:20,618 - INFO - Episode 54 completed! Steps: 13, Duration: 8.26s, Total Reward: 55.00
+2025-09-26 09:16:20,618 - INFO - Training with 453 experiences from replay memory
+2025-09-26 09:16:20,624 - INFO - Training completed. Policy Loss: -6.9262, Value Loss: 37.0777
+2025-09-26 09:16:30,523 - INFO - Episode 55 completed! Steps: 27, Duration: 8.90s, Total Reward: 125.00
+2025-09-26 09:16:30,524 - INFO - Training with 480 experiences from replay memory
+2025-09-26 09:16:30,530 - INFO - Training completed. Policy Loss: -14.1784, Value Loss: 43.4119
+2025-09-26 09:16:36,227 - INFO - Episode 56 completed! Steps: 6, Duration: 4.70s, Total Reward: 20.00
+2025-09-26 09:16:36,227 - INFO - Training with 486 experiences from replay memory
+2025-09-26 09:16:36,236 - INFO - Training completed. Policy Loss: -8.3638, Value Loss: 30.3167
+2025-09-26 09:16:43,303 - INFO - Episode 57 completed! Steps: 14, Duration: 6.07s, Total Reward: 60.00
+2025-09-26 09:16:43,303 - INFO - Training with 500 experiences from replay memory
+2025-09-26 09:16:43,308 - INFO - Training completed. Policy Loss: 2.6090, Value Loss: 29.5377
+2025-09-26 09:16:54,073 - INFO - Episode 58 completed! Steps: 18, Duration: 9.76s, Total Reward: 80.00
+2025-09-26 09:16:54,073 - INFO - Training with 518 experiences from replay memory
+2025-09-26 09:16:54,086 - INFO - Training completed. Policy Loss: 0.7425, Value Loss: 40.7946
+2025-09-26 09:17:00,826 - INFO - Episode 59 completed! Steps: 11, Duration: 5.74s, Total Reward: 45.00
+2025-09-26 09:17:00,826 - INFO - Training with 529 experiences from replay memory
+2025-09-26 09:17:00,832 - INFO - Training completed. Policy Loss: -1.1456, Value Loss: 25.9672
+2025-09-26 09:17:09,199 - INFO - Episode 60 completed! Steps: 17, Duration: 7.37s, Total Reward: 75.00
+2025-09-26 09:17:09,199 - INFO - Training with 546 experiences from replay memory
+2025-09-26 09:17:09,205 - INFO - Training completed. Policy Loss: -28.6184, Value Loss: 47.0772
+2025-09-26 09:17:14,918 - INFO - Episode 61 completed! Steps: 6, Duration: 4.71s, Total Reward: 20.00
+2025-09-26 09:17:14,918 - INFO - Training with 552 experiences from replay memory
+2025-09-26 09:17:14,927 - INFO - Training completed. Policy Loss: -22.9113, Value Loss: 44.3430
+2025-09-26 09:17:36,781 - INFO - Episode 62 completed! Steps: 77, Duration: 20.85s, Total Reward: 438.63
+2025-09-26 09:17:36,781 - INFO - Training with 629 experiences from replay memory
+2025-09-26 09:17:36,789 - INFO - Training completed. Policy Loss: -3.8595, Value Loss: 33.8215
+2025-09-26 09:17:36,791 - INFO - New best model saved! Duration: 20.85s
+2025-09-26 09:17:36,813 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_61.png
+2025-09-26 09:17:43,450 - INFO - Episode 63 completed! Steps: 10, Duration: 5.64s, Total Reward: 40.00
+2025-09-26 09:17:43,450 - INFO - Training with 639 experiences from replay memory
+2025-09-26 09:17:43,456 - INFO - Training completed. Policy Loss: -26.7608, Value Loss: 73.9202
+2025-09-26 09:18:08,514 - INFO - Episode 64 completed! Steps: 87, Duration: 24.06s, Total Reward: 566.03
+2025-09-26 09:18:08,514 - INFO - Training with 726 experiences from replay memory
+2025-09-26 09:18:08,520 - INFO - Training completed. Policy Loss: -11.7043, Value Loss: 69.8391
+2025-09-26 09:18:08,521 - INFO - New best model saved! Duration: 24.06s
+2025-09-26 09:18:08,547 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_63.png
+2025-09-26 09:18:34,568 - INFO - Episode 65 completed! Steps: 92, Duration: 25.02s, Total Reward: 554.21
+2025-09-26 09:18:34,568 - INFO - Training with 818 experiences from replay memory
+2025-09-26 09:18:34,577 - INFO - Training completed. Policy Loss: -4.0287, Value Loss: 46.6423
+2025-09-26 09:18:34,580 - INFO - New best model saved! Duration: 25.02s
+2025-09-26 09:18:34,601 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_64.png
+2025-09-26 09:18:55,114 - INFO - Episode 66 completed! Steps: 75, Duration: 19.51s, Total Reward: 400.58
+2025-09-26 09:18:55,114 - INFO - Training with 893 experiences from replay memory
+2025-09-26 09:18:55,123 - INFO - Training completed. Policy Loss: -1.2258, Value Loss: 35.6510
+2025-09-26 09:19:21,663 - INFO - Episode 67 completed! Steps: 86, Duration: 25.54s, Total Reward: 547.94
+2025-09-26 09:19:21,663 - INFO - Training with 979 experiences from replay memory
+2025-09-26 09:19:21,668 - INFO - Training completed. Policy Loss: -8.8132, Value Loss: 55.5133
+2025-09-26 09:19:21,670 - INFO - New best model saved! Duration: 25.54s
+2025-09-26 09:19:21,697 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_66.png
+2025-09-26 09:19:46,401 - INFO - Episode 68 completed! Steps: 94, Duration: 23.70s, Total Reward: 573.13
+2025-09-26 09:19:46,402 - INFO - Training with 1073 experiences from replay memory
+2025-09-26 09:19:46,407 - INFO - Training completed. Policy Loss: -4.9087, Value Loss: 93.7755
+2025-09-26 09:20:06,098 - INFO - Episode 69 completed! Steps: 78, Duration: 18.69s, Total Reward: 410.48
+2025-09-26 09:20:06,098 - INFO - Training with 1151 experiences from replay memory
+2025-09-26 09:20:06,106 - INFO - Training completed. Policy Loss: -7.0666, Value Loss: 50.8319
+2025-09-26 09:20:28,780 - INFO - Episode 70 completed! Steps: 76, Duration: 21.67s, Total Reward: 439.02
+2025-09-26 09:20:28,781 - INFO - Training with 1227 experiences from replay memory
+2025-09-26 09:20:28,789 - INFO - Training completed. Policy Loss: -1.2721, Value Loss: 61.3539
+2025-09-26 09:20:56,271 - INFO - Episode 71 completed! Steps: 96, Duration: 26.48s, Total Reward: 626.29
+2025-09-26 09:20:56,272 - INFO - Training with 1323 experiences from replay memory
+2025-09-26 09:20:56,277 - INFO - Training completed. Policy Loss: 0.1676, Value Loss: 44.7756
+2025-09-26 09:20:56,279 - INFO - New best model saved! Duration: 26.48s
+2025-09-26 09:20:56,305 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_0_epoch_70.png
+2025-09-26 09:21:19,569 - INFO - Episode 72 completed! Steps: 66, Duration: 22.26s, Total Reward: 368.82
+2025-09-26 09:21:19,569 - INFO - Training with 1389 experiences from replay memory
+2025-09-26 09:21:19,575 - INFO - Training completed. Policy Loss: 1.4759, Value Loss: 63.8308
+2025-09-26 09:21:33,803 - INFO - Episode 73 completed! Steps: 37, Duration: 13.23s, Total Reward: 175.00
+2025-09-26 09:21:33,803 - INFO - Training with 1426 experiences from replay memory
+2025-09-26 09:21:33,812 - INFO - Training completed. Policy Loss: -0.0196, Value Loss: 73.1656
+2025-09-26 09:21:41,407 - INFO - Episode 74 completed! Steps: 14, Duration: 6.59s, Total Reward: 60.00
+2025-09-26 09:21:41,407 - INFO - Training with 1440 experiences from replay memory
+2025-09-26 09:21:41,413 - INFO - Training completed. Policy Loss: 0.2400, Value Loss: 68.3092
+2025-09-26 09:21:48,363 - INFO - Episode 75 completed! Steps: 13, Duration: 5.95s, Total Reward: 55.00
+2025-09-26 09:21:48,363 - INFO - Training with 1453 experiences from replay memory
+2025-09-26 09:21:48,371 - INFO - Training completed. Policy Loss: 1.6799, Value Loss: 89.7873
+2025-09-26 09:21:55,082 - INFO - Episode 76 completed! Steps: 11, Duration: 5.71s, Total Reward: 45.00
+2025-09-26 09:21:55,082 - INFO - Training with 1464 experiences from replay memory
+2025-09-26 09:21:55,089 - INFO - Training completed. Policy Loss: 4.0772, Value Loss: 117.7773
+2025-09-26 09:22:14,222 - INFO - Episode 77 completed! Steps: 60, Duration: 18.13s, Total Reward: 295.52
+2025-09-26 09:22:14,222 - INFO - Training with 1524 experiences from replay memory
+2025-09-26 09:22:14,228 - INFO - Training completed. Policy Loss: -1.5005, Value Loss: 58.8898
+2025-09-26 09:22:39,736 - INFO - Episode 78 completed! Steps: 81, Duration: 24.51s, Total Reward: 481.27
+2025-09-26 09:22:39,736 - INFO - Training with 1605 experiences from replay memory
+2025-09-26 09:22:39,741 - INFO - Training completed. Policy Loss: 0.1583, Value Loss: 99.3297
+2025-09-26 09:22:54,098 - INFO - Episode 79 completed! Steps: 40, Duration: 13.36s, Total Reward: 190.00
+2025-09-26 09:22:54,098 - INFO - Training with 1645 experiences from replay memory
+2025-09-26 09:22:54,105 - INFO - Training completed. Policy Loss: 0.6450, Value Loss: 68.8528
+2025-09-26 09:23:10,004 - INFO - Episode 80 completed! Steps: 43, Duration: 14.90s, Total Reward: 206.33
+2025-09-26 09:23:10,004 - INFO - Training with 1688 experiences from replay memory
+2025-09-26 09:23:10,013 - INFO - Training completed. Policy Loss: 0.2535, Value Loss: 61.0009
+2025-09-26 09:23:11,014 - INFO - Actor-Critic training completed! Best model achieved 26.48s and saved at runs/20250926_090931/models/best_actor_model_at_train_round_0_epoch_70.pt
+2025-09-26 09:23:11,014 - INFO - Training round 1 start.
+2025-09-26 09:23:11,014 - INFO - Starting Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-26 09:23:29,217 - INFO - Episode 1 completed! Steps: 68, Duration: 18.20s, Total Reward: 353.36
+2025-09-26 09:23:29,217 - INFO - Training with 1756 experiences from replay memory
+2025-09-26 09:23:29,224 - INFO - Training completed. Policy Loss: 0.2670, Value Loss: 76.4497
+2025-09-26 09:23:29,225 - INFO - New best model saved! Duration: 18.20s
+2025-09-26 09:23:29,250 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_1_epoch_0.png
+2025-09-26 09:23:45,975 - INFO - Episode 2 completed! Steps: 46, Duration: 15.72s, Total Reward: 224.03
+2025-09-26 09:23:45,975 - INFO - Training with 1802 experiences from replay memory
+2025-09-26 09:23:45,981 - INFO - Training completed. Policy Loss: 2.8821, Value Loss: 68.3720
+2025-09-26 09:23:53,246 - INFO - Episode 3 completed! Steps: 11, Duration: 6.26s, Total Reward: 45.00
+2025-09-26 09:23:53,246 - INFO - Training with 1813 experiences from replay memory
+2025-09-26 09:23:53,252 - INFO - Training completed. Policy Loss: 0.6445, Value Loss: 52.3325
+2025-09-26 09:24:18,862 - INFO - Episode 4 completed! Steps: 83, Duration: 24.61s, Total Reward: 494.83
+2025-09-26 09:24:18,862 - INFO - Training with 1896 experiences from replay memory
+2025-09-26 09:24:18,868 - INFO - Training completed. Policy Loss: 0.1789, Value Loss: 80.8079
+2025-09-26 09:24:18,871 - INFO - New best model saved! Duration: 24.61s
+2025-09-26 09:24:18,897 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_1_epoch_3.png
+2025-09-26 09:24:37,708 - INFO - Episode 5 completed! Steps: 74, Duration: 17.81s, Total Reward: 381.86
+2025-09-26 09:24:37,708 - INFO - Training with 1970 experiences from replay memory
+2025-09-26 09:24:37,716 - INFO - Training completed. Policy Loss: 0.5482, Value Loss: 80.2867
+2025-09-26 09:25:01,046 - INFO - Episode 6 completed! Steps: 76, Duration: 22.33s, Total Reward: 460.74
+2025-09-26 09:25:01,046 - INFO - Training with 2046 experiences from replay memory
+2025-09-26 09:25:01,056 - INFO - Training completed. Policy Loss: 1.0646, Value Loss: 84.8224
+2025-09-26 09:25:11,027 - INFO - Episode 7 completed! Steps: 28, Duration: 8.97s, Total Reward: 130.00
+2025-09-26 09:25:11,028 - INFO - Training with 2074 experiences from replay memory
+2025-09-26 09:25:11,039 - INFO - Training completed. Policy Loss: 0.4587, Value Loss: 61.8320
+2025-09-26 09:25:28,991 - INFO - Episode 8 completed! Steps: 48, Duration: 16.95s, Total Reward: 237.05
+2025-09-26 09:25:28,991 - INFO - Training with 2122 experiences from replay memory
+2025-09-26 09:25:28,998 - INFO - Training completed. Policy Loss: 0.1127, Value Loss: 52.4108
+2025-09-26 09:25:40,014 - INFO - Episode 9 completed! Steps: 28, Duration: 10.02s, Total Reward: 130.00
+2025-09-26 09:25:40,014 - INFO - Training with 2150 experiences from replay memory
+2025-09-26 09:25:40,031 - INFO - Training completed. Policy Loss: 2.0315, Value Loss: 119.7319
+2025-09-26 09:25:48,137 - INFO - Episode 10 completed! Steps: 11, Duration: 7.11s, Total Reward: 45.00
+2025-09-26 09:25:48,137 - INFO - Training with 2161 experiences from replay memory
+2025-09-26 09:25:48,144 - INFO - Training completed. Policy Loss: -2.1226, Value Loss: 48.9672
+2025-09-26 09:26:10,879 - INFO - Episode 11 completed! Steps: 75, Duration: 21.73s, Total Reward: 433.70
+2025-09-26 09:26:10,879 - INFO - Training with 2236 experiences from replay memory
+2025-09-26 09:26:10,887 - INFO - Training completed. Policy Loss: 0.0503, Value Loss: 63.4573
+2025-09-26 09:26:16,581 - INFO - Episode 12 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-26 09:26:16,582 - INFO - Training with 2242 experiences from replay memory
+2025-09-26 09:26:16,587 - INFO - Training completed. Policy Loss: 0.0753, Value Loss: 141.9128
+2025-09-26 09:26:26,739 - INFO - Episode 13 completed! Steps: 29, Duration: 9.15s, Total Reward: 135.00
+2025-09-26 09:26:26,739 - INFO - Training with 2271 experiences from replay memory
+2025-09-26 09:26:26,747 - INFO - Training completed. Policy Loss: 0.2521, Value Loss: 90.0558
+2025-09-26 09:31:20,576 - INFO - Episode 14 completed! Steps: 4000, Duration: 292.83s, Total Reward: 289368.44
+2025-09-26 09:31:20,576 - INFO - Training with 6271 experiences from replay memory
+2025-09-26 09:31:20,584 - INFO - Training completed. Policy Loss: 0.0013, Value Loss: 15321.0410
+2025-09-26 09:31:20,585 - INFO - New best model saved! Duration: 292.83s
+2025-09-26 09:31:20,607 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_1_epoch_13.png
+2025-09-26 09:31:25,760 - INFO - Episode 15 completed! Steps: 1, Duration: 4.15s, Total Reward: -5.00
+2025-09-26 09:31:25,760 - INFO - Training with 6272 experiences from replay memory
+2025-09-26 09:31:25,771 - INFO - Training completed. Policy Loss: 0.0011, Value Loss: 14287.6777
+2025-09-26 09:31:32,282 - INFO - Episode 16 completed! Steps: 9, Duration: 5.51s, Total Reward: 35.00
+2025-09-26 09:31:32,282 - INFO - Training with 6281 experiences from replay memory
+2025-09-26 09:31:32,288 - INFO - Training completed. Policy Loss: 0.0011, Value Loss: 15470.2188
+2025-09-26 09:31:39,720 - INFO - Episode 17 completed! Steps: 13, Duration: 6.43s, Total Reward: 55.00
+2025-09-26 09:31:39,720 - INFO - Training with 6294 experiences from replay memory
+2025-09-26 09:31:39,731 - INFO - Training completed. Policy Loss: 0.0010, Value Loss: 16214.9238
+2025-09-26 09:31:56,503 - INFO - Episode 18 completed! Steps: 51, Duration: 15.77s, Total Reward: 249.73
+2025-09-26 09:31:56,503 - INFO - Training with 6345 experiences from replay memory
+2025-09-26 09:31:56,508 - INFO - Training completed. Policy Loss: 0.0008, Value Loss: 15071.9375
+2025-09-26 09:32:12,113 - INFO - Episode 19 completed! Steps: 53, Duration: 14.60s, Total Reward: 255.79
+2025-09-26 09:32:12,113 - INFO - Training with 6398 experiences from replay memory
+2025-09-26 09:32:12,119 - INFO - Training completed. Policy Loss: 0.0044, Value Loss: 15131.6729
+2025-09-26 09:32:17,816 - INFO - Episode 20 completed! Steps: 6, Duration: 4.70s, Total Reward: 20.00
+2025-09-26 09:32:17,816 - INFO - Training with 6404 experiences from replay memory
+2025-09-26 09:32:17,823 - INFO - Training completed. Policy Loss: 0.0054, Value Loss: 14689.5234
+2025-09-26 09:32:27,760 - INFO - Episode 21 completed! Steps: 12, Duration: 8.94s, Total Reward: 50.00
+2025-09-26 09:32:27,760 - INFO - Training with 6416 experiences from replay memory
+2025-09-26 09:32:27,768 - INFO - Training completed. Policy Loss: 0.0007, Value Loss: 15571.6143
+2025-09-26 09:32:49,208 - INFO - Episode 22 completed! Steps: 85, Duration: 20.44s, Total Reward: 477.66
+2025-09-26 09:32:49,208 - INFO - Training with 6501 experiences from replay memory
+2025-09-26 09:32:49,216 - INFO - Training completed. Policy Loss: 0.0059, Value Loss: 14130.0596
+2025-09-26 09:32:54,910 - INFO - Episode 23 completed! Steps: 6, Duration: 4.69s, Total Reward: 20.00
+2025-09-26 09:32:54,910 - INFO - Training with 6507 experiences from replay memory
+2025-09-26 09:32:54,916 - INFO - Training completed. Policy Loss: -0.2380, Value Loss: 10585.7725
+2025-09-26 09:33:06,937 - INFO - Episode 24 completed! Steps: 30, Duration: 11.02s, Total Reward: 140.00
+2025-09-26 09:33:06,937 - INFO - Training with 6537 experiences from replay memory
+2025-09-26 09:33:06,944 - INFO - Training completed. Policy Loss: 0.0013, Value Loss: 12329.9219
+2025-09-26 09:33:19,092 - INFO - Episode 25 completed! Steps: 39, Duration: 11.15s, Total Reward: 185.00
+2025-09-26 09:33:19,092 - INFO - Training with 6576 experiences from replay memory
+2025-09-26 09:33:19,099 - INFO - Training completed. Policy Loss: 0.0659, Value Loss: 13044.2578
+2025-09-26 09:33:39,329 - INFO - Episode 26 completed! Steps: 68, Duration: 19.23s, Total Reward: 366.17
+2025-09-26 09:33:39,329 - INFO - Training with 6644 experiences from replay memory
+2025-09-26 09:33:39,337 - INFO - Training completed. Policy Loss: 1.3527, Value Loss: 12403.3359
+2025-09-26 09:33:48,402 - INFO - Episode 27 completed! Steps: 24, Duration: 8.07s, Total Reward: 110.00
+2025-09-26 09:33:48,403 - INFO - Training with 6668 experiences from replay memory
+2025-09-26 09:33:48,410 - INFO - Training completed. Policy Loss: 0.0017, Value Loss: 12385.2412
+2025-09-26 09:34:10,222 - INFO - Episode 28 completed! Steps: 71, Duration: 20.81s, Total Reward: 387.04
+2025-09-26 09:34:10,222 - INFO - Training with 6739 experiences from replay memory
+2025-09-26 09:34:10,227 - INFO - Training completed. Policy Loss: 0.1542, Value Loss: 7109.7153
+2025-09-26 09:34:25,330 - INFO - Episode 29 completed! Steps: 48, Duration: 14.10s, Total Reward: 230.01
+2025-09-26 09:34:25,330 - INFO - Training with 6787 experiences from replay memory
+2025-09-26 09:34:25,336 - INFO - Training completed. Policy Loss: 0.1338, Value Loss: 9869.0098
+2025-09-26 09:34:54,173 - INFO - Episode 30 completed! Steps: 99, Duration: 27.84s, Total Reward: 708.16
+2025-09-26 09:34:54,173 - INFO - Training with 6886 experiences from replay memory
+2025-09-26 09:34:54,179 - INFO - Training completed. Policy Loss: 0.6504, Value Loss: 6496.3970
+2025-09-26 09:35:11,902 - INFO - Episode 31 completed! Steps: 68, Duration: 16.72s, Total Reward: 338.40
+2025-09-26 09:35:11,902 - INFO - Training with 6954 experiences from replay memory
+2025-09-26 09:35:11,909 - INFO - Training completed. Policy Loss: 0.3405, Value Loss: 7099.8730
+2025-09-26 09:35:24,851 - INFO - Episode 32 completed! Steps: 24, Duration: 11.94s, Total Reward: 110.00
+2025-09-26 09:35:24,851 - INFO - Training with 6978 experiences from replay memory
+2025-09-26 09:35:24,856 - INFO - Training completed. Policy Loss: 0.0992, Value Loss: 4180.1504
+2025-09-26 09:35:36,425 - INFO - Episode 33 completed! Steps: 33, Duration: 10.57s, Total Reward: 155.00
+2025-09-26 09:35:36,426 - INFO - Training with 7011 experiences from replay memory
+2025-09-26 09:35:36,433 - INFO - Training completed. Policy Loss: 0.0321, Value Loss: 7188.4888
+2025-09-26 09:35:58,746 - INFO - Episode 34 completed! Steps: 75, Duration: 21.31s, Total Reward: 427.22
+2025-09-26 09:35:58,747 - INFO - Training with 7086 experiences from replay memory
+2025-09-26 09:35:58,752 - INFO - Training completed. Policy Loss: 0.3302, Value Loss: 4197.3765
+2025-09-26 09:36:05,586 - INFO - Episode 35 completed! Steps: 7, Duration: 5.83s, Total Reward: 25.00
+2025-09-26 09:36:05,587 - INFO - Training with 7093 experiences from replay memory
+2025-09-26 09:36:05,594 - INFO - Training completed. Policy Loss: 0.1769, Value Loss: 4395.2500
+2025-09-26 09:36:12,639 - INFO - Episode 36 completed! Steps: 9, Duration: 6.04s, Total Reward: 35.00
+2025-09-26 09:36:12,639 - INFO - Training with 7102 experiences from replay memory
+2025-09-26 09:36:12,645 - INFO - Training completed. Policy Loss: 0.1488, Value Loss: 3235.8301
+2025-09-26 09:36:34,133 - INFO - Episode 37 completed! Steps: 72, Duration: 20.49s, Total Reward: 406.71
+2025-09-26 09:36:34,133 - INFO - Training with 7174 experiences from replay memory
+2025-09-26 09:36:34,144 - INFO - Training completed. Policy Loss: -0.0348, Value Loss: 2146.4294
+2025-09-26 09:36:46,060 - INFO - Episode 38 completed! Steps: 32, Duration: 10.91s, Total Reward: 150.00
+2025-09-26 09:36:46,060 - INFO - Training with 7206 experiences from replay memory
+2025-09-26 09:36:46,066 - INFO - Training completed. Policy Loss: 2.7727, Value Loss: 2116.1680
+2025-09-26 09:37:02,183 - INFO - Episode 39 completed! Steps: 40, Duration: 15.12s, Total Reward: 190.79
+2025-09-26 09:37:02,183 - INFO - Training with 7246 experiences from replay memory
+2025-09-26 09:37:02,193 - INFO - Training completed. Policy Loss: 4.9568, Value Loss: 836.7089
+2025-09-26 09:37:10,337 - INFO - Episode 40 completed! Steps: 15, Duration: 7.14s, Total Reward: 65.00
+2025-09-26 09:37:10,337 - INFO - Training with 7261 experiences from replay memory
+2025-09-26 09:37:10,344 - INFO - Training completed. Policy Loss: 0.3077, Value Loss: 280.4850
+2025-09-26 09:37:27,898 - INFO - Episode 41 completed! Steps: 67, Duration: 16.55s, Total Reward: 333.67
+2025-09-26 09:37:27,898 - INFO - Training with 7328 experiences from replay memory
+2025-09-26 09:37:27,904 - INFO - Training completed. Policy Loss: 0.0640, Value Loss: 172.0743
+2025-09-26 09:37:46,042 - INFO - Episode 42 completed! Steps: 60, Duration: 17.14s, Total Reward: 291.37
+2025-09-26 09:37:46,042 - INFO - Training with 7388 experiences from replay memory
+2025-09-26 09:37:46,048 - INFO - Training completed. Policy Loss: 1.3391, Value Loss: 402.7515
+2025-09-26 09:38:01,996 - INFO - Episode 43 completed! Steps: 51, Duration: 14.95s, Total Reward: 246.36
+2025-09-26 09:38:01,997 - INFO - Training with 7439 experiences from replay memory
+2025-09-26 09:38:02,001 - INFO - Training completed. Policy Loss: 2.9571, Value Loss: 164.7265
+2025-09-26 09:38:15,252 - INFO - Episode 44 completed! Steps: 27, Duration: 12.25s, Total Reward: 125.00
+2025-09-26 09:38:15,252 - INFO - Training with 7466 experiences from replay memory
+2025-09-26 09:38:15,260 - INFO - Training completed. Policy Loss: 0.0609, Value Loss: 139.2090
+2025-09-26 09:38:36,198 - INFO - Episode 45 completed! Steps: 75, Duration: 19.94s, Total Reward: 399.02
+2025-09-26 09:38:36,198 - INFO - Training with 7541 experiences from replay memory
+2025-09-26 09:38:36,206 - INFO - Training completed. Policy Loss: -0.1845, Value Loss: 334.2655
+2025-09-26 09:38:49,805 - INFO - Episode 46 completed! Steps: 31, Duration: 12.60s, Total Reward: 145.00
+2025-09-26 09:38:49,805 - INFO - Training with 7572 experiences from replay memory
+2025-09-26 09:38:49,815 - INFO - Training completed. Policy Loss: 0.0814, Value Loss: 200.8685
+2025-09-26 09:39:14,353 - INFO - Episode 47 completed! Steps: 100, Duration: 23.54s, Total Reward: 624.99
+2025-09-26 09:39:14,353 - INFO - Training with 7672 experiences from replay memory
+2025-09-26 09:39:14,360 - INFO - Training completed. Policy Loss: 0.3232, Value Loss: 166.3380
+2025-09-26 09:39:39,008 - INFO - Episode 48 completed! Steps: 74, Duration: 23.65s, Total Reward: 415.24
+2025-09-26 09:39:39,008 - INFO - Training with 7746 experiences from replay memory
+2025-09-26 09:39:39,017 - INFO - Training completed. Policy Loss: 0.0465, Value Loss: 192.2103
+2025-09-26 09:40:00,836 - INFO - Episode 49 completed! Steps: 71, Duration: 20.82s, Total Reward: 404.44
+2025-09-26 09:40:00,837 - INFO - Training with 7817 experiences from replay memory
+2025-09-26 09:40:00,842 - INFO - Training completed. Policy Loss: 3.1350, Value Loss: 167.6294
+2025-09-26 09:40:22,718 - INFO - Episode 50 completed! Steps: 84, Duration: 20.88s, Total Reward: 469.60
+2025-09-26 09:40:22,718 - INFO - Training with 7901 experiences from replay memory
+2025-09-26 09:40:22,724 - INFO - Training completed. Policy Loss: -0.0000, Value Loss: 242.9506
+2025-09-26 09:40:44,604 - INFO - Episode 51 completed! Steps: 71, Duration: 20.88s, Total Reward: 366.70
+2025-09-26 09:40:44,604 - INFO - Training with 7972 experiences from replay memory
+2025-09-26 09:40:44,611 - INFO - Training completed. Policy Loss: 0.1245, Value Loss: 155.6736
+2025-09-26 09:41:08,296 - INFO - Episode 52 completed! Steps: 83, Duration: 22.68s, Total Reward: 490.20
+2025-09-26 09:41:08,296 - INFO - Training with 8055 experiences from replay memory
+2025-09-26 09:41:08,304 - INFO - Training completed. Policy Loss: 0.0778, Value Loss: 193.1514
+2025-09-26 09:41:22,205 - INFO - Episode 53 completed! Steps: 46, Duration: 12.90s, Total Reward: 220.00
+2025-09-26 09:41:22,205 - INFO - Training with 8101 experiences from replay memory
+2025-09-26 09:41:22,213 - INFO - Training completed. Policy Loss: 0.0965, Value Loss: 142.2846
+2025-09-26 09:41:55,484 - INFO - Episode 54 completed! Steps: 128, Duration: 32.27s, Total Reward: 1045.78
+2025-09-26 09:41:55,484 - INFO - Training with 8229 experiences from replay memory
+2025-09-26 09:41:55,490 - INFO - Training completed. Policy Loss: 0.0805, Value Loss: 116.3966
+2025-09-26 09:42:17,507 - INFO - Episode 55 completed! Steps: 68, Duration: 21.02s, Total Reward: 386.63
+2025-09-26 09:42:17,507 - INFO - Training with 8297 experiences from replay memory
+2025-09-26 09:42:17,513 - INFO - Training completed. Policy Loss: 1.5568, Value Loss: 297.0909
+2025-09-26 09:42:24,344 - INFO - Episode 56 completed! Steps: 7, Duration: 5.83s, Total Reward: 25.00
+2025-09-26 09:42:24,344 - INFO - Training with 8304 experiences from replay memory
+2025-09-26 09:42:24,352 - INFO - Training completed. Policy Loss: 0.0490, Value Loss: 104.3943
+2025-09-26 09:42:48,529 - INFO - Episode 57 completed! Steps: 84, Duration: 23.18s, Total Reward: 482.43
+2025-09-26 09:42:48,530 - INFO - Training with 8388 experiences from replay memory
+2025-09-26 09:42:48,535 - INFO - Training completed. Policy Loss: 0.0006, Value Loss: 83.2780
+2025-09-26 09:43:11,560 - INFO - Episode 58 completed! Steps: 80, Duration: 22.02s, Total Reward: 451.98
+2025-09-26 09:43:11,560 - INFO - Training with 8468 experiences from replay memory
+2025-09-26 09:43:11,567 - INFO - Training completed. Policy Loss: 0.1258, Value Loss: 297.1926
+2025-09-26 09:43:36,203 - INFO - Episode 59 completed! Steps: 79, Duration: 23.63s, Total Reward: 501.28
+2025-09-26 09:43:36,203 - INFO - Training with 8547 experiences from replay memory
+2025-09-26 09:43:36,211 - INFO - Training completed. Policy Loss: -0.0679, Value Loss: 246.4680
+2025-09-26 09:44:06,322 - INFO - Episode 60 completed! Steps: 117, Duration: 29.11s, Total Reward: 842.87
+2025-09-26 09:44:06,322 - INFO - Training with 8664 experiences from replay memory
+2025-09-26 09:44:06,330 - INFO - Training completed. Policy Loss: 0.0145, Value Loss: 209.4206
+2025-09-26 09:44:33,273 - INFO - Episode 61 completed! Steps: 96, Duration: 25.94s, Total Reward: 605.49
+2025-09-26 09:44:33,273 - INFO - Training with 8760 experiences from replay memory
+2025-09-26 09:44:33,282 - INFO - Training completed. Policy Loss: 0.1186, Value Loss: 88.7303
+2025-09-26 09:44:59,355 - INFO - Episode 62 completed! Steps: 110, Duration: 25.07s, Total Reward: 721.30
+2025-09-26 09:44:59,355 - INFO - Training with 8870 experiences from replay memory
+2025-09-26 09:44:59,366 - INFO - Training completed. Policy Loss: -0.2940, Value Loss: 232.7842
+2025-09-26 09:45:20,969 - INFO - Episode 63 completed! Steps: 69, Duration: 20.60s, Total Reward: 350.78
+2025-09-26 09:45:20,970 - INFO - Training with 8939 experiences from replay memory
+2025-09-26 09:45:20,976 - INFO - Training completed. Policy Loss: 0.1343, Value Loss: 147.3111
+2025-09-26 09:45:41,249 - INFO - Episode 64 completed! Steps: 71, Duration: 19.27s, Total Reward: 373.35
+2025-09-26 09:45:41,250 - INFO - Training with 9010 experiences from replay memory
+2025-09-26 09:45:41,258 - INFO - Training completed. Policy Loss: 0.0469, Value Loss: 236.2723
+2025-09-26 09:46:05,631 - INFO - Episode 65 completed! Steps: 98, Duration: 23.37s, Total Reward: 599.50
+2025-09-26 09:46:05,631 - INFO - Training with 9108 experiences from replay memory
+2025-09-26 09:46:05,636 - INFO - Training completed. Policy Loss: 2.7104, Value Loss: 345.8402
+2025-09-26 09:46:28,142 - INFO - Episode 66 completed! Steps: 77, Duration: 21.50s, Total Reward: 440.80
+2025-09-26 09:46:28,142 - INFO - Training with 9185 experiences from replay memory
+2025-09-26 09:46:28,149 - INFO - Training completed. Policy Loss: 0.1269, Value Loss: 378.3298
+2025-09-26 09:46:50,162 - INFO - Episode 67 completed! Steps: 73, Duration: 21.01s, Total Reward: 386.99
+2025-09-26 09:46:50,162 - INFO - Training with 9258 experiences from replay memory
+2025-09-26 09:46:50,169 - INFO - Training completed. Policy Loss: 0.4196, Value Loss: 226.3646
+2025-09-26 09:47:16,528 - INFO - Episode 68 completed! Steps: 103, Duration: 25.36s, Total Reward: 666.06
+2025-09-26 09:47:16,528 - INFO - Training with 9361 experiences from replay memory
+2025-09-26 09:47:16,534 - INFO - Training completed. Policy Loss: 0.2748, Value Loss: 271.0758
+2025-09-26 09:47:43,281 - INFO - Episode 69 completed! Steps: 99, Duration: 25.75s, Total Reward: 606.51
+2025-09-26 09:47:43,281 - INFO - Training with 9460 experiences from replay memory
+2025-09-26 09:47:43,288 - INFO - Training completed. Policy Loss: -3.8519, Value Loss: 234.1564
+2025-09-26 09:48:09,297 - INFO - Episode 70 completed! Steps: 100, Duration: 25.01s, Total Reward: 640.31
+2025-09-26 09:48:09,297 - INFO - Training with 9560 experiences from replay memory
+2025-09-26 09:48:09,302 - INFO - Training completed. Policy Loss: 0.9928, Value Loss: 335.4799
+2025-09-26 09:48:36,888 - INFO - Episode 71 completed! Steps: 91, Duration: 26.59s, Total Reward: 602.04
+2025-09-26 09:48:36,888 - INFO - Training with 9651 experiences from replay memory
+2025-09-26 09:48:36,897 - INFO - Training completed. Policy Loss: -3.5201, Value Loss: 352.5739
+2025-09-26 09:49:15,910 - INFO - Episode 72 completed! Steps: 158, Duration: 38.01s, Total Reward: 1393.08
+2025-09-26 09:49:15,910 - INFO - Training with 9809 experiences from replay memory
+2025-09-26 09:49:15,917 - INFO - Training completed. Policy Loss: 0.4705, Value Loss: 153.4951
+2025-09-26 09:49:46,571 - INFO - Episode 73 completed! Steps: 121, Duration: 29.65s, Total Reward: 862.90
+2025-09-26 09:49:46,571 - INFO - Training with 9930 experiences from replay memory
+2025-09-26 09:49:46,577 - INFO - Training completed. Policy Loss: 0.1915, Value Loss: 107.5729
+2025-09-26 09:50:28,646 - INFO - Episode 74 completed! Steps: 174, Duration: 41.07s, Total Reward: 1681.38
+2025-09-26 09:50:28,646 - INFO - Training with 10104 experiences from replay memory
+2025-09-26 09:50:28,655 - INFO - Training completed. Policy Loss: 13.4011, Value Loss: 476.2542
+2025-09-26 09:51:11,638 - INFO - Episode 75 completed! Steps: 188, Duration: 41.98s, Total Reward: 1969.70
+2025-09-26 09:51:11,638 - INFO - Training with 10292 experiences from replay memory
+2025-09-26 09:51:11,647 - INFO - Training completed. Policy Loss: 2.3036, Value Loss: 443.4598
+2025-09-26 09:52:03,522 - INFO - Episode 76 completed! Steps: 218, Duration: 50.87s, Total Reward: 2553.63
+2025-09-26 09:52:03,522 - INFO - Training with 10510 experiences from replay memory
+2025-09-26 09:52:03,529 - INFO - Training completed. Policy Loss: 0.3612, Value Loss: 467.5018
+2025-09-26 09:52:19,049 - INFO - Episode 77 completed! Steps: 57, Duration: 14.52s, Total Reward: 275.53
+2025-09-26 09:52:19,049 - INFO - Training with 10567 experiences from replay memory
+2025-09-26 09:52:19,059 - INFO - Training completed. Policy Loss: 0.1276, Value Loss: 448.3380
+2025-09-26 09:52:56,069 - INFO - Episode 78 completed! Steps: 144, Duration: 36.01s, Total Reward: 1282.44
+2025-09-26 09:52:56,069 - INFO - Training with 10711 experiences from replay memory
+2025-09-26 09:52:56,076 - INFO - Training completed. Policy Loss: 0.2682, Value Loss: 374.2520
+2025-09-26 09:53:13,241 - INFO - Episode 79 completed! Steps: 49, Duration: 16.16s, Total Reward: 241.81
+2025-09-26 09:53:13,241 - INFO - Training with 10760 experiences from replay memory
+2025-09-26 09:53:13,250 - INFO - Training completed. Policy Loss: 0.1400, Value Loss: 330.0348
+2025-09-26 09:53:47,700 - INFO - Episode 80 completed! Steps: 128, Duration: 33.45s, Total Reward: 998.10
+2025-09-26 09:53:47,700 - INFO - Training with 10888 experiences from replay memory
+2025-09-26 09:53:47,707 - INFO - Training completed. Policy Loss: 0.0740, Value Loss: 324.2548
+2025-09-26 09:54:11,266 - INFO - Episode 81 completed! Steps: 101, Duration: 22.56s, Total Reward: 598.62
+2025-09-26 09:54:11,266 - INFO - Training with 10989 experiences from replay memory
+2025-09-26 09:54:11,271 - INFO - Training completed. Policy Loss: 0.2860, Value Loss: 317.9348
+2025-09-26 09:54:24,470 - INFO - Episode 82 completed! Steps: 30, Duration: 12.20s, Total Reward: 140.00
+2025-09-26 09:54:24,470 - INFO - Training with 11019 experiences from replay memory
+2025-09-26 09:54:24,478 - INFO - Training completed. Policy Loss: 0.0960, Value Loss: 416.4931
+2025-09-26 09:54:48,367 - INFO - Episode 83 completed! Steps: 104, Duration: 22.89s, Total Reward: 620.42
+2025-09-26 09:54:48,367 - INFO - Training with 11123 experiences from replay memory
+2025-09-26 09:54:48,373 - INFO - Training completed. Policy Loss: 5.9395, Value Loss: 440.7565
+2025-09-26 09:55:42,257 - INFO - Episode 84 completed! Steps: 231, Duration: 52.88s, Total Reward: 2668.76
+2025-09-26 09:55:42,257 - INFO - Training with 11354 experiences from replay memory
+2025-09-26 09:55:42,268 - INFO - Training completed. Policy Loss: -1.0215, Value Loss: 326.5771
+2025-09-26 09:56:07,166 - INFO - Episode 85 completed! Steps: 85, Duration: 23.90s, Total Reward: 506.16
+2025-09-26 09:56:07,166 - INFO - Training with 11439 experiences from replay memory
+2025-09-26 09:56:07,171 - INFO - Training completed. Policy Loss: 5.5873, Value Loss: 221.9960
+2025-09-26 09:56:45,050 - INFO - Episode 86 completed! Steps: 163, Duration: 36.88s, Total Reward: 1431.37
+2025-09-26 09:56:45,050 - INFO - Training with 11602 experiences from replay memory
+2025-09-26 09:56:45,057 - INFO - Training completed. Policy Loss: 0.0705, Value Loss: 259.6749
+2025-09-26 09:57:31,438 - INFO - Episode 87 completed! Steps: 201, Duration: 45.38s, Total Reward: 2249.00
+2025-09-26 09:57:31,439 - INFO - Training with 11803 experiences from replay memory
+2025-09-26 09:57:31,446 - INFO - Training completed. Policy Loss: 0.0833, Value Loss: 266.7431
+2025-09-26 09:57:58,563 - INFO - Episode 88 completed! Steps: 107, Duration: 26.12s, Total Reward: 720.84
+2025-09-26 09:57:58,564 - INFO - Training with 11910 experiences from replay memory
+2025-09-26 09:57:58,568 - INFO - Training completed. Policy Loss: 0.1116, Value Loss: 329.4846
+2025-09-26 09:58:05,202 - INFO - Episode 89 completed! Steps: 10, Duration: 5.63s, Total Reward: 40.00
+2025-09-26 09:58:05,202 - INFO - Training with 11920 experiences from replay memory
+2025-09-26 09:58:05,208 - INFO - Training completed. Policy Loss: 0.0561, Value Loss: 111.2017
+2025-09-26 09:58:44,362 - INFO - Episode 90 completed! Steps: 155, Duration: 38.15s, Total Reward: 1485.85
+2025-09-26 09:58:44,362 - INFO - Training with 12075 experiences from replay memory
+2025-09-26 09:58:44,371 - INFO - Training completed. Policy Loss: 6.2509, Value Loss: 452.4236
+2025-09-26 09:59:39,671 - INFO - Episode 91 completed! Steps: 245, Duration: 54.30s, Total Reward: 3318.70
+2025-09-26 09:59:39,671 - INFO - Training with 12320 experiences from replay memory
+2025-09-26 09:59:39,676 - INFO - Training completed. Policy Loss: 0.1404, Value Loss: 407.4554
+2025-09-26 09:59:59,699 - INFO - Episode 92 completed! Steps: 71, Duration: 19.02s, Total Reward: 368.26
+2025-09-26 09:59:59,700 - INFO - Training with 12391 experiences from replay memory
+2025-09-26 09:59:59,708 - INFO - Training completed. Policy Loss: 3.5563, Value Loss: 206.6101
+2025-09-26 10:00:51,463 - INFO - Episode 93 completed! Steps: 210, Duration: 50.75s, Total Reward: 2380.89
+2025-09-26 10:00:51,464 - INFO - Training with 12601 experiences from replay memory
+2025-09-26 10:00:51,469 - INFO - Training completed. Policy Loss: 0.0648, Value Loss: 183.2202
+2025-09-26 10:01:38,368 - INFO - Episode 94 completed! Steps: 207, Duration: 45.90s, Total Reward: 2312.01
+2025-09-26 10:01:38,368 - INFO - Training with 12808 experiences from replay memory
+2025-09-26 10:01:38,373 - INFO - Training completed. Policy Loss: 0.0976, Value Loss: 448.3457
+2025-09-26 10:02:24,273 - INFO - Episode 95 completed! Steps: 186, Duration: 44.90s, Total Reward: 1908.86
+2025-09-26 10:02:24,273 - INFO - Training with 12994 experiences from replay memory
+2025-09-26 10:02:24,280 - INFO - Training completed. Policy Loss: 0.0700, Value Loss: 391.2579
+2025-09-26 10:02:54,958 - INFO - Episode 96 completed! Steps: 121, Duration: 29.68s, Total Reward: 882.01
+2025-09-26 10:02:54,959 - INFO - Training with 13115 experiences from replay memory
+2025-09-26 10:02:54,964 - INFO - Training completed. Policy Loss: 0.1487, Value Loss: 474.5499
+2025-09-26 10:03:39,095 - INFO - Episode 97 completed! Steps: 181, Duration: 43.13s, Total Reward: 1680.85
+2025-09-26 10:03:39,095 - INFO - Training with 13296 experiences from replay memory
+2025-09-26 10:03:39,106 - INFO - Training completed. Policy Loss: 0.1348, Value Loss: 494.5550
+2025-09-26 10:04:08,095 - INFO - Episode 98 completed! Steps: 121, Duration: 27.99s, Total Reward: 811.81
+2025-09-26 10:04:08,095 - INFO - Training with 13417 experiences from replay memory
+2025-09-26 10:04:08,103 - INFO - Training completed. Policy Loss: 0.0732, Value Loss: 430.4766
+2025-09-26 10:04:53,459 - INFO - Episode 99 completed! Steps: 205, Duration: 44.36s, Total Reward: 2168.85
+2025-09-26 10:04:53,459 - INFO - Training with 13622 experiences from replay memory
+2025-09-26 10:04:53,465 - INFO - Training completed. Policy Loss: 0.0049, Value Loss: 455.4470
+2025-09-26 10:05:44,974 - INFO - Episode 100 completed! Steps: 241, Duration: 50.51s, Total Reward: 3054.73
+2025-09-26 10:05:44,974 - INFO - Training with 13863 experiences from replay memory
+2025-09-26 10:05:44,983 - INFO - Training completed. Policy Loss: 0.1690, Value Loss: 356.9037
+2025-09-26 10:05:45,984 - INFO - Actor-Critic training completed! Best model achieved 292.83s and saved at runs/20250926_090931/models/best_actor_model_at_train_round_1_epoch_13.pt
+2025-09-26 10:05:45,984 - INFO - Training round 2 start.
+2025-09-26 10:05:45,984 - INFO - Starting Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-26 10:06:23,585 - INFO - Episode 1 completed! Steps: 149, Duration: 37.60s, Total Reward: 1285.14
+2025-09-26 10:06:23,585 - INFO - Training with 14012 experiences from replay memory
+2025-09-26 10:06:23,593 - INFO - Training completed. Policy Loss: 0.0518, Value Loss: 285.1990
+2025-09-26 10:06:23,596 - INFO - New best model saved! Duration: 37.60s
+2025-09-26 10:06:23,619 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_2_epoch_0.png
+2025-09-26 10:06:51,187 - INFO - Episode 2 completed! Steps: 107, Duration: 24.20s, Total Reward: 668.37
+2025-09-26 10:06:51,187 - INFO - Training with 14119 experiences from replay memory
+2025-09-26 10:06:51,193 - INFO - Training completed. Policy Loss: 0.0339, Value Loss: 247.1189
+2025-09-26 10:07:30,093 - INFO - Episode 3 completed! Steps: 162, Duration: 37.90s, Total Reward: 1564.22
+2025-09-26 10:07:30,093 - INFO - Training with 14281 experiences from replay memory
+2025-09-26 10:07:30,099 - INFO - Training completed. Policy Loss: 0.0658, Value Loss: 535.9745
+2025-09-26 10:07:30,102 - INFO - New best model saved! Duration: 37.90s
+2025-09-26 10:07:30,129 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_2_epoch_2.png
+2025-09-26 10:08:40,853 - INFO - Episode 4 completed! Steps: 340, Duration: 69.72s, Total Reward: 5600.13
+2025-09-26 10:08:40,853 - INFO - Training with 14621 experiences from replay memory
+2025-09-26 10:08:40,861 - INFO - Training completed. Policy Loss: 0.0357, Value Loss: 502.1244
+2025-09-26 10:08:40,862 - INFO - New best model saved! Duration: 69.72s
+2025-09-26 10:08:40,886 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_2_epoch_3.png
+2025-09-26 10:09:27,001 - INFO - Episode 5 completed! Steps: 191, Duration: 45.11s, Total Reward: 1897.88
+2025-09-26 10:09:27,001 - INFO - Training with 14812 experiences from replay memory
+2025-09-26 10:09:27,009 - INFO - Training completed. Policy Loss: 5.2812, Value Loss: 438.4816
+2025-09-26 10:10:21,854 - INFO - Episode 6 completed! Steps: 260, Duration: 53.84s, Total Reward: 3442.13
+2025-09-26 10:10:21,854 - INFO - Training with 15072 experiences from replay memory
+2025-09-26 10:10:21,863 - INFO - Training completed. Policy Loss: -0.2302, Value Loss: 539.1591
+2025-09-26 10:10:50,652 - INFO - Episode 7 completed! Steps: 107, Duration: 27.79s, Total Reward: 686.32
+2025-09-26 10:10:50,652 - INFO - Training with 15179 experiences from replay memory
+2025-09-26 10:10:50,657 - INFO - Training completed. Policy Loss: 0.0493, Value Loss: 539.2190
+2025-09-26 10:11:44,921 - INFO - Episode 8 completed! Steps: 251, Duration: 53.26s, Total Reward: 3169.94
+2025-09-26 10:11:44,922 - INFO - Training with 15430 experiences from replay memory
+2025-09-26 10:11:44,929 - INFO - Training completed. Policy Loss: 0.0910, Value Loss: 850.8162
+2025-09-26 10:12:09,120 - INFO - Episode 9 completed! Steps: 97, Duration: 23.19s, Total Reward: 579.80
+2025-09-26 10:12:09,120 - INFO - Training with 15527 experiences from replay memory
+2025-09-26 10:12:09,126 - INFO - Training completed. Policy Loss: 0.8353, Value Loss: 338.2124
+2025-09-26 10:13:05,512 - INFO - Episode 10 completed! Steps: 248, Duration: 55.39s, Total Reward: 3155.68
+2025-09-26 10:13:05,512 - INFO - Training with 15775 experiences from replay memory
+2025-09-26 10:13:05,519 - INFO - Training completed. Policy Loss: 0.0814, Value Loss: 669.8624
+2025-09-26 10:13:42,988 - INFO - Episode 11 completed! Steps: 168, Duration: 36.47s, Total Reward: 1543.79
+2025-09-26 10:13:42,988 - INFO - Training with 15943 experiences from replay memory
+2025-09-26 10:13:42,997 - INFO - Training completed. Policy Loss: 0.1240, Value Loss: 715.9634
+2025-09-26 10:14:27,017 - INFO - Episode 12 completed! Steps: 197, Duration: 43.02s, Total Reward: 2141.03
+2025-09-26 10:14:27,017 - INFO - Training with 16140 experiences from replay memory
+2025-09-26 10:14:27,022 - INFO - Training completed. Policy Loss: 0.0609, Value Loss: 486.9757
+2025-09-26 10:15:07,669 - INFO - Episode 13 completed! Steps: 159, Duration: 39.65s, Total Reward: 1377.33
+2025-09-26 10:15:07,669 - INFO - Training with 16299 experiences from replay memory
+2025-09-26 10:15:07,679 - INFO - Training completed. Policy Loss: 0.0378, Value Loss: 507.6502
+2025-09-26 10:15:53,392 - INFO - Episode 14 completed! Steps: 198, Duration: 44.71s, Total Reward: 2106.07
+2025-09-26 10:15:53,392 - INFO - Training with 16497 experiences from replay memory
+2025-09-26 10:15:53,399 - INFO - Training completed. Policy Loss: 0.0560, Value Loss: 708.2195
+2025-09-26 10:16:00,644 - INFO - Episode 15 completed! Steps: 16, Duration: 6.24s, Total Reward: 70.00
+2025-09-26 10:16:00,644 - INFO - Training with 16513 experiences from replay memory
+2025-09-26 10:16:00,652 - INFO - Training completed. Policy Loss: 0.0100, Value Loss: 426.3179
+2025-09-26 10:16:17,865 - INFO - Episode 16 completed! Steps: 50, Duration: 16.21s, Total Reward: 247.14
+2025-09-26 10:16:17,865 - INFO - Training with 16563 experiences from replay memory
+2025-09-26 10:16:17,870 - INFO - Training completed. Policy Loss: -0.0281, Value Loss: 476.4808
+2025-09-26 10:16:59,671 - INFO - Episode 17 completed! Steps: 181, Duration: 40.80s, Total Reward: 1712.27
+2025-09-26 10:16:59,671 - INFO - Training with 16744 experiences from replay memory
+2025-09-26 10:16:59,679 - INFO - Training completed. Policy Loss: 0.0263, Value Loss: 287.3391
+2025-09-26 10:17:51,281 - INFO - Episode 18 completed! Steps: 227, Duration: 50.60s, Total Reward: 2894.02
+2025-09-26 10:17:51,281 - INFO - Training with 16971 experiences from replay memory
+2025-09-26 10:17:51,286 - INFO - Training completed. Policy Loss: -0.0406, Value Loss: 1086.7083
+2025-09-26 10:18:36,534 - INFO - Episode 19 completed! Steps: 186, Duration: 44.25s, Total Reward: 1944.23
+2025-09-26 10:18:36,535 - INFO - Training with 17157 experiences from replay memory
+2025-09-26 10:18:36,540 - INFO - Training completed. Policy Loss: 0.0110, Value Loss: 407.4476
+2025-09-26 10:19:15,903 - INFO - Episode 20 completed! Steps: 172, Duration: 38.36s, Total Reward: 1521.79
+2025-09-26 10:19:15,903 - INFO - Training with 17329 experiences from replay memory
+2025-09-26 10:19:15,911 - INFO - Training completed. Policy Loss: 0.0593, Value Loss: 781.8552
+2025-09-26 10:20:05,260 - INFO - Episode 21 completed! Steps: 224, Duration: 48.35s, Total Reward: 2641.23
+2025-09-26 10:20:05,260 - INFO - Training with 17553 experiences from replay memory
+2025-09-26 10:20:05,268 - INFO - Training completed. Policy Loss: 0.0491, Value Loss: 867.1144
+2025-09-26 10:21:02,133 - INFO - Episode 22 completed! Steps: 253, Duration: 55.86s, Total Reward: 3487.31
+2025-09-26 10:21:02,133 - INFO - Training with 17806 experiences from replay memory
+2025-09-26 10:21:02,139 - INFO - Training completed. Policy Loss: 0.0534, Value Loss: 544.5649
+2025-09-26 10:21:38,857 - INFO - Episode 23 completed! Steps: 157, Duration: 35.72s, Total Reward: 1335.73
+2025-09-26 10:21:38,857 - INFO - Training with 17963 experiences from replay memory
+2025-09-26 10:21:38,864 - INFO - Training completed. Policy Loss: 1.0352, Value Loss: 533.1866
+2025-09-26 10:22:16,517 - INFO - Episode 24 completed! Steps: 154, Duration: 36.65s, Total Reward: 1429.13
+2025-09-26 10:22:16,518 - INFO - Training with 18117 experiences from replay memory
+2025-09-26 10:22:16,526 - INFO - Training completed. Policy Loss: -0.3519, Value Loss: 539.9948
+2025-09-26 10:22:41,159 - INFO - Episode 25 completed! Steps: 93, Duration: 23.63s, Total Reward: 542.38
+2025-09-26 10:22:41,159 - INFO - Training with 18210 experiences from replay memory
+2025-09-26 10:22:41,167 - INFO - Training completed. Policy Loss: -0.6405, Value Loss: 382.5831
+2025-09-26 10:23:22,945 - INFO - Episode 26 completed! Steps: 171, Duration: 40.78s, Total Reward: 1674.26
+2025-09-26 10:23:22,945 - INFO - Training with 18381 experiences from replay memory
+2025-09-26 10:23:22,954 - INFO - Training completed. Policy Loss: -0.5210, Value Loss: 497.3708
+2025-09-26 10:24:30,607 - INFO - Episode 27 completed! Steps: 315, Duration: 66.65s, Total Reward: 5185.51
+2025-09-26 10:24:30,607 - INFO - Training with 18696 experiences from replay memory
+2025-09-26 10:24:30,615 - INFO - Training completed. Policy Loss: 0.1891, Value Loss: 692.4880
+2025-09-26 10:25:13,496 - INFO - Episode 28 completed! Steps: 191, Duration: 41.88s, Total Reward: 1934.90
+2025-09-26 10:25:13,497 - INFO - Training with 18887 experiences from replay memory
+2025-09-26 10:25:13,503 - INFO - Training completed. Policy Loss: 0.6527, Value Loss: 274.6318
+2025-09-26 10:25:50,496 - INFO - Episode 29 completed! Steps: 154, Duration: 35.99s, Total Reward: 1448.02
+2025-09-26 10:25:50,496 - INFO - Training with 19041 experiences from replay memory
+2025-09-26 10:25:50,506 - INFO - Training completed. Policy Loss: 0.0284, Value Loss: 484.3483
+2025-09-26 10:26:46,014 - INFO - Episode 30 completed! Steps: 236, Duration: 54.51s, Total Reward: 3101.82
+2025-09-26 10:26:46,014 - INFO - Training with 19277 experiences from replay memory
+2025-09-26 10:26:46,022 - INFO - Training completed. Policy Loss: 0.0395, Value Loss: 1063.6484
+2025-09-26 10:27:44,454 - INFO - Episode 31 completed! Steps: 279, Duration: 57.43s, Total Reward: 3900.81
+2025-09-26 10:27:44,454 - INFO - Training with 19556 experiences from replay memory
+2025-09-26 10:27:44,463 - INFO - Training completed. Policy Loss: 0.0298, Value Loss: 604.1953
+2025-09-26 10:28:47,203 - INFO - Episode 32 completed! Steps: 296, Duration: 61.74s, Total Reward: 4314.23
+2025-09-26 10:28:47,203 - INFO - Training with 19852 experiences from replay memory
+2025-09-26 10:28:47,211 - INFO - Training completed. Policy Loss: 0.0163, Value Loss: 492.9705
+2025-09-26 10:29:49,701 - INFO - Episode 33 completed! Steps: 301, Duration: 61.49s, Total Reward: 4649.63
+2025-09-26 10:29:49,701 - INFO - Training with 20153 experiences from replay memory
+2025-09-26 10:29:49,706 - INFO - Training completed. Policy Loss: 0.0382, Value Loss: 518.0290
+2025-09-26 10:30:58,191 - INFO - Episode 34 completed! Steps: 327, Duration: 67.48s, Total Reward: 5330.18
+2025-09-26 10:30:58,192 - INFO - Training with 20480 experiences from replay memory
+2025-09-26 10:30:58,199 - INFO - Training completed. Policy Loss: 0.0678, Value Loss: 1541.9983
+2025-09-26 10:31:58,087 - INFO - Episode 35 completed! Steps: 296, Duration: 58.89s, Total Reward: 4335.49
+2025-09-26 10:31:58,087 - INFO - Training with 20776 experiences from replay memory
+2025-09-26 10:31:58,092 - INFO - Training completed. Policy Loss: 0.1071, Value Loss: 1442.3098
+2025-09-26 10:32:33,957 - INFO - Episode 36 completed! Steps: 153, Duration: 34.86s, Total Reward: 1300.93
+2025-09-26 10:32:33,957 - INFO - Training with 20929 experiences from replay memory
+2025-09-26 10:32:33,962 - INFO - Training completed. Policy Loss: 0.0268, Value Loss: 699.1824
+2025-09-26 10:33:31,466 - INFO - Episode 37 completed! Steps: 295, Duration: 56.50s, Total Reward: 4148.30
+2025-09-26 10:33:31,466 - INFO - Training with 21224 experiences from replay memory
+2025-09-26 10:33:31,472 - INFO - Training completed. Policy Loss: 0.0336, Value Loss: 718.1510
+2025-09-26 10:34:17,452 - INFO - Episode 38 completed! Steps: 176, Duration: 44.98s, Total Reward: 1668.09
+2025-09-26 10:34:17,452 - INFO - Training with 21400 experiences from replay memory
+2025-09-26 10:34:17,460 - INFO - Training completed. Policy Loss: 0.1362, Value Loss: 843.3744
+2025-09-26 10:35:38,268 - INFO - Episode 39 completed! Steps: 386, Duration: 79.81s, Total Reward: 7451.70
+2025-09-26 10:35:38,268 - INFO - Training with 21786 experiences from replay memory
+2025-09-26 10:35:38,275 - INFO - Training completed. Policy Loss: 0.0331, Value Loss: 1160.6707
+2025-09-26 10:35:38,277 - INFO - New best model saved! Duration: 79.81s
+2025-09-26 10:35:38,302 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_2_epoch_38.png
+2025-09-26 10:36:25,131 - INFO - Episode 40 completed! Steps: 219, Duration: 45.83s, Total Reward: 2523.30
+2025-09-26 10:36:25,131 - INFO - Training with 22005 experiences from replay memory
+2025-09-26 10:36:25,139 - INFO - Training completed. Policy Loss: 0.0833, Value Loss: 979.8859
+2025-09-26 10:37:26,514 - INFO - Episode 41 completed! Steps: 286, Duration: 60.38s, Total Reward: 4077.85
+2025-09-26 10:37:26,514 - INFO - Training with 22291 experiences from replay memory
+2025-09-26 10:37:26,521 - INFO - Training completed. Policy Loss: 0.0356, Value Loss: 1003.5590
+2025-09-26 10:38:18,364 - INFO - Episode 42 completed! Steps: 224, Duration: 50.84s, Total Reward: 2709.43
+2025-09-26 10:38:18,364 - INFO - Training with 22515 experiences from replay memory
+2025-09-26 10:38:18,372 - INFO - Training completed. Policy Loss: 0.0237, Value Loss: 814.2227
+2025-09-26 10:39:13,976 - INFO - Episode 43 completed! Steps: 260, Duration: 54.60s, Total Reward: 3347.81
+2025-09-26 10:39:13,976 - INFO - Training with 22775 experiences from replay memory
+2025-09-26 10:39:13,987 - INFO - Training completed. Policy Loss: 0.0098, Value Loss: 602.5748
+2025-09-26 10:40:05,444 - INFO - Episode 44 completed! Steps: 221, Duration: 50.46s, Total Reward: 2685.31
+2025-09-26 10:40:05,444 - INFO - Training with 22996 experiences from replay memory
+2025-09-26 10:40:05,452 - INFO - Training completed. Policy Loss: 0.0229, Value Loss: 907.9550
+2025-09-26 10:40:53,584 - INFO - Episode 45 completed! Steps: 228, Duration: 47.13s, Total Reward: 2613.45
+2025-09-26 10:40:53,584 - INFO - Training with 23224 experiences from replay memory
+2025-09-26 10:40:53,590 - INFO - Training completed. Policy Loss: -0.0026, Value Loss: 470.1559
+2025-09-26 10:41:54,118 - INFO - Episode 46 completed! Steps: 280, Duration: 59.53s, Total Reward: 4066.52
+2025-09-26 10:41:54,118 - INFO - Training with 23504 experiences from replay memory
+2025-09-26 10:41:54,126 - INFO - Training completed. Policy Loss: 0.0093, Value Loss: 375.7188
+2025-09-26 10:42:53,348 - INFO - Episode 47 completed! Steps: 274, Duration: 58.22s, Total Reward: 3890.82
+2025-09-26 10:42:53,348 - INFO - Training with 23778 experiences from replay memory
+2025-09-26 10:42:53,354 - INFO - Training completed. Policy Loss: 0.0209, Value Loss: 1071.8159
+2025-09-26 10:43:15,762 - INFO - Episode 48 completed! Steps: 90, Duration: 21.41s, Total Reward: 521.33
+2025-09-26 10:43:15,762 - INFO - Training with 23868 experiences from replay memory
+2025-09-26 10:43:15,767 - INFO - Training completed. Policy Loss: 0.0082, Value Loss: 467.4719
+2025-09-26 10:44:20,485 - INFO - Episode 49 completed! Steps: 301, Duration: 63.72s, Total Reward: 4869.31
+2025-09-26 10:44:20,485 - INFO - Training with 24169 experiences from replay memory
+2025-09-26 10:44:20,494 - INFO - Training completed. Policy Loss: 0.0022, Value Loss: 700.8243
+2025-09-26 10:44:54,645 - INFO - Episode 50 completed! Steps: 145, Duration: 33.15s, Total Reward: 1239.58
+2025-09-26 10:44:54,645 - INFO - Training with 24314 experiences from replay memory
+2025-09-26 10:44:54,652 - INFO - Training completed. Policy Loss: 0.0177, Value Loss: 817.9653
+2025-09-26 10:45:57,834 - INFO - Episode 51 completed! Steps: 295, Duration: 62.18s, Total Reward: 4480.53
+2025-09-26 10:45:57,835 - INFO - Training with 24609 experiences from replay memory
+2025-09-26 10:45:57,840 - INFO - Training completed. Policy Loss: 0.0094, Value Loss: 310.6070
+2025-09-26 10:46:49,654 - INFO - Episode 52 completed! Steps: 249, Duration: 50.81s, Total Reward: 3152.71
+2025-09-26 10:46:49,654 - INFO - Training with 24858 experiences from replay memory
+2025-09-26 10:46:49,660 - INFO - Training completed. Policy Loss: -0.4857, Value Loss: 449.7175
+2025-09-26 10:47:40,522 - INFO - Episode 53 completed! Steps: 220, Duration: 49.86s, Total Reward: 2427.28
+2025-09-26 10:47:40,522 - INFO - Training with 25078 experiences from replay memory
+2025-09-26 10:47:40,532 - INFO - Training completed. Policy Loss: -0.0841, Value Loss: 399.2322
+2025-09-26 10:48:51,622 - INFO - Episode 54 completed! Steps: 352, Duration: 70.09s, Total Reward: 6311.36
+2025-09-26 10:48:51,622 - INFO - Training with 25430 experiences from replay memory
+2025-09-26 10:48:51,629 - INFO - Training completed. Policy Loss: 0.0068, Value Loss: 437.5141
+2025-09-26 10:49:45,421 - INFO - Episode 55 completed! Steps: 257, Duration: 52.79s, Total Reward: 3424.17
+2025-09-26 10:49:45,421 - INFO - Training with 25687 experiences from replay memory
+2025-09-26 10:49:45,427 - INFO - Training completed. Policy Loss: 0.0096, Value Loss: 699.2115
+2025-09-26 10:50:38,086 - INFO - Episode 56 completed! Steps: 227, Duration: 51.66s, Total Reward: 2664.46
+2025-09-26 10:50:38,086 - INFO - Training with 25914 experiences from replay memory
+2025-09-26 10:50:38,091 - INFO - Training completed. Policy Loss: 0.0337, Value Loss: 619.3253
+2025-09-26 10:51:18,696 - INFO - Episode 57 completed! Steps: 183, Duration: 39.60s, Total Reward: 1801.17
+2025-09-26 10:51:18,696 - INFO - Training with 26097 experiences from replay memory
+2025-09-26 10:51:18,701 - INFO - Training completed. Policy Loss: 0.0052, Value Loss: 891.3715
+2025-09-26 10:52:05,764 - INFO - Episode 58 completed! Steps: 205, Duration: 46.06s, Total Reward: 2359.40
+2025-09-26 10:52:05,764 - INFO - Training with 26302 experiences from replay memory
+2025-09-26 10:52:05,771 - INFO - Training completed. Policy Loss: 0.0275, Value Loss: 496.5682
+2025-09-26 10:52:49,635 - INFO - Episode 59 completed! Steps: 187, Duration: 40.38s, Total Reward: 1687.65
+2025-09-26 10:52:49,635 - INFO - Training with 26489 experiences from replay memory
+2025-09-26 10:52:49,641 - INFO - Training completed. Policy Loss: 0.0055, Value Loss: 527.3710
+2025-09-26 10:53:38,595 - INFO - Episode 60 completed! Steps: 216, Duration: 47.95s, Total Reward: 2521.96
+2025-09-26 10:53:38,595 - INFO - Training with 26705 experiences from replay memory
+2025-09-26 10:53:38,602 - INFO - Training completed. Policy Loss: -1.1052, Value Loss: 403.0272
+2025-09-26 10:54:16,952 - INFO - Episode 61 completed! Steps: 162, Duration: 37.35s, Total Reward: 1490.87
+2025-09-26 10:54:16,952 - INFO - Training with 26867 experiences from replay memory
+2025-09-26 10:54:16,959 - INFO - Training completed. Policy Loss: 0.0026, Value Loss: 398.3299
+2025-09-26 10:55:21,903 - INFO - Episode 62 completed! Steps: 287, Duration: 63.94s, Total Reward: 4602.95
+2025-09-26 10:55:21,903 - INFO - Training with 27154 experiences from replay memory
+2025-09-26 10:55:21,908 - INFO - Training completed. Policy Loss: 0.1729, Value Loss: 893.3557
+2025-09-26 10:55:45,299 - INFO - Episode 63 completed! Steps: 90, Duration: 22.39s, Total Reward: 548.86
+2025-09-26 10:55:45,299 - INFO - Training with 27244 experiences from replay memory
+2025-09-26 10:55:45,306 - INFO - Training completed. Policy Loss: 0.0252, Value Loss: 597.3662
+2025-09-26 10:56:58,428 - INFO - Episode 64 completed! Steps: 339, Duration: 72.12s, Total Reward: 5777.72
+2025-09-26 10:56:58,428 - INFO - Training with 27583 experiences from replay memory
+2025-09-26 10:56:58,434 - INFO - Training completed. Policy Loss: 0.2480, Value Loss: 564.2397
+2025-09-26 10:57:49,039 - INFO - Episode 65 completed! Steps: 224, Duration: 49.60s, Total Reward: 2674.35
+2025-09-26 10:57:49,039 - INFO - Training with 27807 experiences from replay memory
+2025-09-26 10:57:49,051 - INFO - Training completed. Policy Loss: 0.1809, Value Loss: 478.9247
+2025-09-26 10:58:43,820 - INFO - Episode 66 completed! Steps: 247, Duration: 53.77s, Total Reward: 3112.33
+2025-09-26 10:58:43,820 - INFO - Training with 28054 experiences from replay memory
+2025-09-26 10:58:43,826 - INFO - Training completed. Policy Loss: 0.0086, Value Loss: 1218.0674
+2025-09-26 10:59:33,937 - INFO - Episode 67 completed! Steps: 228, Duration: 49.11s, Total Reward: 2780.27
+2025-09-26 10:59:33,937 - INFO - Training with 28282 experiences from replay memory
+2025-09-26 10:59:33,945 - INFO - Training completed. Policy Loss: 0.1060, Value Loss: 952.6396
+2025-09-26 11:00:28,812 - INFO - Episode 68 completed! Steps: 247, Duration: 53.87s, Total Reward: 3018.92
+2025-09-26 11:00:28,812 - INFO - Training with 28529 experiences from replay memory
+2025-09-26 11:00:28,819 - INFO - Training completed. Policy Loss: 0.1329, Value Loss: 1914.9922
+2025-09-26 11:01:22,267 - INFO - Episode 69 completed! Steps: 258, Duration: 52.45s, Total Reward: 3235.55
+2025-09-26 11:01:22,267 - INFO - Training with 28787 experiences from replay memory
+2025-09-26 11:01:22,275 - INFO - Training completed. Policy Loss: 0.0035, Value Loss: 503.2893
+2025-09-26 11:02:27,964 - INFO - Episode 70 completed! Steps: 321, Duration: 64.69s, Total Reward: 4999.90
+2025-09-26 11:02:27,964 - INFO - Training with 29108 experiences from replay memory
+2025-09-26 11:02:27,969 - INFO - Training completed. Policy Loss: 0.0046, Value Loss: 741.1692
+2025-09-26 11:03:07,751 - INFO - Episode 71 completed! Steps: 164, Duration: 38.78s, Total Reward: 1385.39
+2025-09-26 11:03:07,751 - INFO - Training with 29272 experiences from replay memory
+2025-09-26 11:03:07,757 - INFO - Training completed. Policy Loss: 0.0028, Value Loss: 750.6855
+2025-09-26 11:04:01,024 - INFO - Episode 72 completed! Steps: 244, Duration: 52.27s, Total Reward: 3117.54
+2025-09-26 11:04:01,024 - INFO - Training with 29516 experiences from replay memory
+2025-09-26 11:04:01,030 - INFO - Training completed. Policy Loss: 0.2802, Value Loss: 685.5789
+2025-09-26 11:04:47,144 - INFO - Episode 73 completed! Steps: 203, Duration: 45.11s, Total Reward: 2301.88
+2025-09-26 11:04:47,144 - INFO - Training with 29719 experiences from replay memory
+2025-09-26 11:04:47,151 - INFO - Training completed. Policy Loss: 0.2811, Value Loss: 569.7701
+2025-09-26 11:05:37,121 - INFO - Episode 74 completed! Steps: 214, Duration: 46.56s, Total Reward: 2342.43
+2025-09-26 11:05:37,121 - INFO - Training with 29933 experiences from replay memory
+2025-09-26 11:05:37,129 - INFO - Training completed. Policy Loss: 0.0006, Value Loss: 304.6042
+2025-09-26 11:06:44,463 - INFO - Episode 75 completed! Steps: 306, Duration: 66.33s, Total Reward: 5002.03
+2025-09-26 11:06:44,463 - INFO - Training with 30239 experiences from replay memory
+2025-09-26 11:06:44,470 - INFO - Training completed. Policy Loss: 2.4645, Value Loss: 375.0149
+2025-09-26 11:07:46,363 - INFO - Episode 76 completed! Steps: 289, Duration: 60.89s, Total Reward: 4393.56
+2025-09-26 11:07:46,363 - INFO - Training with 30528 experiences from replay memory
+2025-09-26 11:07:46,369 - INFO - Training completed. Policy Loss: 0.0066, Value Loss: 738.2432
+2025-09-26 11:08:53,098 - INFO - Episode 77 completed! Steps: 310, Duration: 65.73s, Total Reward: 4917.45
+2025-09-26 11:08:53,098 - INFO - Training with 30838 experiences from replay memory
+2025-09-26 11:08:53,106 - INFO - Training completed. Policy Loss: 2.3320, Value Loss: 949.6780
+2025-09-26 11:09:44,588 - INFO - Episode 78 completed! Steps: 228, Duration: 50.48s, Total Reward: 2757.47
+2025-09-26 11:09:44,588 - INFO - Training with 31066 experiences from replay memory
+2025-09-26 11:09:44,593 - INFO - Training completed. Policy Loss: 0.0073, Value Loss: 616.0782
+2025-09-26 11:10:46,206 - INFO - Episode 79 completed! Steps: 271, Duration: 60.61s, Total Reward: 3939.16
+2025-09-26 11:10:46,207 - INFO - Training with 31337 experiences from replay memory
+2025-09-26 11:10:46,215 - INFO - Training completed. Policy Loss: 0.0090, Value Loss: 986.8553
+2025-09-26 11:11:41,679 - INFO - Episode 80 completed! Steps: 260, Duration: 54.46s, Total Reward: 3442.78
+2025-09-26 11:11:41,679 - INFO - Training with 31597 experiences from replay memory
+2025-09-26 11:11:41,688 - INFO - Training completed. Policy Loss: 0.0059, Value Loss: 655.5765
+2025-09-26 11:12:29,907 - INFO - Episode 81 completed! Steps: 198, Duration: 47.22s, Total Reward: 2028.49
+2025-09-26 11:12:29,907 - INFO - Training with 31795 experiences from replay memory
+2025-09-26 11:12:29,915 - INFO - Training completed. Policy Loss: 0.0013, Value Loss: 342.3961
+2025-09-26 11:13:15,938 - INFO - Episode 82 completed! Steps: 205, Duration: 45.02s, Total Reward: 2244.32
+2025-09-26 11:13:15,939 - INFO - Training with 32000 experiences from replay memory
+2025-09-26 11:13:15,946 - INFO - Training completed. Policy Loss: 0.0054, Value Loss: 919.8171
+2025-09-26 11:13:58,172 - INFO - Episode 83 completed! Steps: 178, Duration: 41.22s, Total Reward: 1870.54
+2025-09-26 11:13:58,172 - INFO - Training with 32178 experiences from replay memory
+2025-09-26 11:13:58,181 - INFO - Training completed. Policy Loss: 0.0020, Value Loss: 610.1467
+2025-09-26 11:14:52,717 - INFO - Episode 84 completed! Steps: 254, Duration: 53.53s, Total Reward: 3409.55
+2025-09-26 11:14:52,717 - INFO - Training with 32432 experiences from replay memory
+2025-09-26 11:14:52,721 - INFO - Training completed. Policy Loss: 0.0057, Value Loss: 617.0238
+2025-09-26 11:15:26,598 - INFO - Episode 85 completed! Steps: 146, Duration: 32.88s, Total Reward: 1159.48
+2025-09-26 11:15:26,598 - INFO - Training with 32578 experiences from replay memory
+2025-09-26 11:15:26,604 - INFO - Training completed. Policy Loss: 2.9221, Value Loss: 542.4310
+2025-09-26 11:15:53,676 - INFO - Episode 86 completed! Steps: 100, Duration: 26.07s, Total Reward: 626.61
+2025-09-26 11:15:53,676 - INFO - Training with 32678 experiences from replay memory
+2025-09-26 11:15:53,681 - INFO - Training completed. Policy Loss: -0.0174, Value Loss: 590.6311
+2025-09-26 11:16:52,143 - INFO - Episode 87 completed! Steps: 271, Duration: 57.46s, Total Reward: 3850.65
+2025-09-26 11:16:52,143 - INFO - Training with 32949 experiences from replay memory
+2025-09-26 11:16:52,151 - INFO - Training completed. Policy Loss: 2.5343, Value Loss: 889.7857
+2025-09-26 11:17:59,079 - INFO - Episode 88 completed! Steps: 310, Duration: 65.93s, Total Reward: 5196.91
+2025-09-26 11:17:59,079 - INFO - Training with 33259 experiences from replay memory
+2025-09-26 11:17:59,086 - INFO - Training completed. Policy Loss: 0.6326, Value Loss: 1099.9193
+2025-09-26 11:19:02,170 - INFO - Episode 89 completed! Steps: 281, Duration: 62.08s, Total Reward: 4266.16
+2025-09-26 11:19:02,170 - INFO - Training with 33540 experiences from replay memory
+2025-09-26 11:19:02,177 - INFO - Training completed. Policy Loss: 0.3394, Value Loss: 354.9567
+2025-09-26 11:20:03,613 - INFO - Episode 90 completed! Steps: 284, Duration: 60.44s, Total Reward: 4047.44
+2025-09-26 11:20:03,613 - INFO - Training with 33824 experiences from replay memory
+2025-09-26 11:20:03,626 - INFO - Training completed. Policy Loss: 0.0072, Value Loss: 1058.4003
+2025-09-26 11:20:48,608 - INFO - Episode 91 completed! Steps: 192, Duration: 43.98s, Total Reward: 2059.83
+2025-09-26 11:20:48,608 - INFO - Training with 34016 experiences from replay memory
+2025-09-26 11:20:48,614 - INFO - Training completed. Policy Loss: 0.0123, Value Loss: 1227.0139
+2025-09-26 11:21:56,963 - INFO - Episode 92 completed! Steps: 324, Duration: 67.35s, Total Reward: 5529.02
+2025-09-26 11:21:56,963 - INFO - Training with 34340 experiences from replay memory
+2025-09-26 11:21:56,969 - INFO - Training completed. Policy Loss: 0.0016, Value Loss: 1430.0403
+2025-09-26 11:22:53,406 - INFO - Episode 93 completed! Steps: 246, Duration: 55.44s, Total Reward: 3346.23
+2025-09-26 11:22:53,406 - INFO - Training with 34586 experiences from replay memory
+2025-09-26 11:22:53,414 - INFO - Training completed. Policy Loss: -0.0172, Value Loss: 899.0565
+2025-09-26 11:23:47,150 - INFO - Episode 94 completed! Steps: 243, Duration: 52.74s, Total Reward: 3096.86
+2025-09-26 11:23:47,150 - INFO - Training with 34829 experiences from replay memory
+2025-09-26 11:23:47,156 - INFO - Training completed. Policy Loss: 0.0072, Value Loss: 734.5745
+2025-09-26 11:24:43,057 - INFO - Episode 95 completed! Steps: 247, Duration: 54.90s, Total Reward: 3358.46
+2025-09-26 11:24:43,057 - INFO - Training with 35076 experiences from replay memory
+2025-09-26 11:24:43,065 - INFO - Training completed. Policy Loss: -0.0378, Value Loss: 343.7994
+2025-09-26 11:25:38,919 - INFO - Episode 96 completed! Steps: 290, Duration: 54.85s, Total Reward: 3963.83
+2025-09-26 11:25:38,919 - INFO - Training with 35366 experiences from replay memory
+2025-09-26 11:25:38,927 - INFO - Training completed. Policy Loss: 0.0020, Value Loss: 329.5746
+2025-09-26 11:26:22,047 - INFO - Episode 97 completed! Steps: 172, Duration: 42.12s, Total Reward: 1653.85
+2025-09-26 11:26:22,047 - INFO - Training with 35538 experiences from replay memory
+2025-09-26 11:26:22,054 - INFO - Training completed. Policy Loss: 0.0077, Value Loss: 1092.8461
+2025-09-26 11:27:09,793 - INFO - Episode 98 completed! Steps: 204, Duration: 46.74s, Total Reward: 2204.79
+2025-09-26 11:27:09,793 - INFO - Training with 35742 experiences from replay memory
+2025-09-26 11:27:09,799 - INFO - Training completed. Policy Loss: -0.0663, Value Loss: 1056.8340
+2025-09-26 11:27:53,132 - INFO - Episode 99 completed! Steps: 191, Duration: 42.33s, Total Reward: 2005.84
+2025-09-26 11:27:53,133 - INFO - Training with 35933 experiences from replay memory
+2025-09-26 11:27:53,138 - INFO - Training completed. Policy Loss: 0.0075, Value Loss: 972.0887
+2025-09-26 11:28:37,492 - INFO - Episode 100 completed! Steps: 211, Duration: 43.35s, Total Reward: 2300.53
+2025-09-26 11:28:37,492 - INFO - Training with 36144 experiences from replay memory
+2025-09-26 11:28:37,500 - INFO - Training completed. Policy Loss: 0.0077, Value Loss: 935.6442
+2025-09-26 11:28:38,501 - INFO - Actor-Critic training completed! Best model achieved 79.81s and saved at runs/20250926_090931/models/best_actor_model_at_train_round_2_epoch_38.pt
+2025-09-26 11:28:38,501 - INFO - Training round 3 start.
+2025-09-26 11:28:38,501 - INFO - Starting Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-26 11:29:37,215 - INFO - Episode 1 completed! Steps: 274, Duration: 58.71s, Total Reward: 3792.87
+2025-09-26 11:29:37,215 - INFO - Training with 36418 experiences from replay memory
+2025-09-26 11:29:37,223 - INFO - Training completed. Policy Loss: 0.0611, Value Loss: 634.7854
+2025-09-26 11:29:37,226 - INFO - New best model saved! Duration: 58.71s
+2025-09-26 11:29:37,247 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_3_epoch_0.png
+2025-09-26 11:30:49,213 - INFO - Episode 2 completed! Steps: 342, Duration: 70.96s, Total Reward: 5811.67
+2025-09-26 11:30:49,213 - INFO - Training with 36760 experiences from replay memory
+2025-09-26 11:30:49,221 - INFO - Training completed. Policy Loss: 0.0088, Value Loss: 1382.5604
+2025-09-26 11:30:49,223 - INFO - New best model saved! Duration: 70.96s
+2025-09-26 11:30:49,246 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_3_epoch_1.png
+2025-09-26 11:31:47,982 - INFO - Episode 3 completed! Steps: 270, Duration: 57.73s, Total Reward: 3816.55
+2025-09-26 11:31:47,982 - INFO - Training with 37030 experiences from replay memory
+2025-09-26 11:31:47,991 - INFO - Training completed. Policy Loss: -0.0669, Value Loss: 1047.1970
+2025-09-26 11:32:30,871 - INFO - Episode 4 completed! Steps: 180, Duration: 41.88s, Total Reward: 1885.15
+2025-09-26 11:32:30,872 - INFO - Training with 37210 experiences from replay memory
+2025-09-26 11:32:30,878 - INFO - Training completed. Policy Loss: 0.0023, Value Loss: 297.2035
+2025-09-26 11:33:37,692 - INFO - Episode 5 completed! Steps: 316, Duration: 65.81s, Total Reward: 5367.53
+2025-09-26 11:33:37,692 - INFO - Training with 37526 experiences from replay memory
+2025-09-26 11:33:37,698 - INFO - Training completed. Policy Loss: -0.1878, Value Loss: 1082.5359
+2025-09-26 11:34:21,578 - INFO - Episode 6 completed! Steps: 193, Duration: 42.88s, Total Reward: 2102.43
+2025-09-26 11:34:21,578 - INFO - Training with 37719 experiences from replay memory
+2025-09-26 11:34:21,586 - INFO - Training completed. Policy Loss: 0.4628, Value Loss: 1124.3386
+2025-09-26 11:35:14,194 - INFO - Episode 7 completed! Steps: 247, Duration: 51.61s, Total Reward: 3094.00
+2025-09-26 11:35:14,194 - INFO - Training with 37966 experiences from replay memory
+2025-09-26 11:35:14,202 - INFO - Training completed. Policy Loss: 0.0103, Value Loss: 986.5902
+2025-09-26 11:36:17,982 - INFO - Episode 8 completed! Steps: 310, Duration: 62.78s, Total Reward: 4722.62
+2025-09-26 11:36:17,983 - INFO - Training with 38276 experiences from replay memory
+2025-09-26 11:36:17,988 - INFO - Training completed. Policy Loss: 0.0069, Value Loss: 718.0758
+2025-09-26 11:36:37,793 - INFO - Episode 9 completed! Steps: 52, Duration: 18.80s, Total Reward: 270.09
+2025-09-26 11:36:37,793 - INFO - Training with 38328 experiences from replay memory
+2025-09-26 11:36:37,799 - INFO - Training completed. Policy Loss: 0.0068, Value Loss: 698.4325
+2025-09-26 11:37:33,180 - INFO - Episode 10 completed! Steps: 238, Duration: 54.38s, Total Reward: 3166.60
+2025-09-26 11:37:33,180 - INFO - Training with 38566 experiences from replay memory
+2025-09-26 11:37:33,188 - INFO - Training completed. Policy Loss: -0.0396, Value Loss: 1888.2649
+2025-09-26 11:38:26,388 - INFO - Episode 11 completed! Steps: 247, Duration: 52.20s, Total Reward: 3124.86
+2025-09-26 11:38:26,388 - INFO - Training with 38813 experiences from replay memory
+2025-09-26 11:38:26,395 - INFO - Training completed. Policy Loss: 0.0062, Value Loss: 729.3726
+2025-09-26 11:39:11,847 - INFO - Episode 12 completed! Steps: 185, Duration: 44.45s, Total Reward: 1986.17
+2025-09-26 11:39:11,847 - INFO - Training with 38998 experiences from replay memory
+2025-09-26 11:39:11,858 - INFO - Training completed. Policy Loss: 0.0117, Value Loss: 1365.3152
+2025-09-26 11:40:04,291 - INFO - Episode 13 completed! Steps: 227, Duration: 51.43s, Total Reward: 2804.68
+2025-09-26 11:40:04,291 - INFO - Training with 39225 experiences from replay memory
+2025-09-26 11:40:04,299 - INFO - Training completed. Policy Loss: 0.0206, Value Loss: 928.9000
+2025-09-26 11:41:07,654 - INFO - Episode 14 completed! Steps: 292, Duration: 62.35s, Total Reward: 4504.27
+2025-09-26 11:41:07,654 - INFO - Training with 39517 experiences from replay memory
+2025-09-26 11:41:07,661 - INFO - Training completed. Policy Loss: 0.0111, Value Loss: 1314.0919
+2025-09-26 11:42:07,881 - INFO - Episode 15 completed! Steps: 281, Duration: 59.22s, Total Reward: 3935.39
+2025-09-26 11:42:07,881 - INFO - Training with 39798 experiences from replay memory
+2025-09-26 11:42:07,888 - INFO - Training completed. Policy Loss: 0.0112, Value Loss: 1071.8397
+2025-09-26 11:43:11,237 - INFO - Episode 16 completed! Steps: 310, Duration: 62.35s, Total Reward: 4712.98
+2025-09-26 11:43:11,237 - INFO - Training with 40108 experiences from replay memory
+2025-09-26 11:43:11,245 - INFO - Training completed. Policy Loss: -0.0086, Value Loss: 1422.1504
+2025-09-26 11:44:03,461 - INFO - Episode 17 completed! Steps: 222, Duration: 51.21s, Total Reward: 2600.09
+2025-09-26 11:44:03,461 - INFO - Training with 40330 experiences from replay memory
+2025-09-26 11:44:03,470 - INFO - Training completed. Policy Loss: 0.2418, Value Loss: 1232.3434
+2025-09-26 11:45:23,661 - INFO - Episode 18 completed! Steps: 393, Duration: 79.19s, Total Reward: 7871.36
+2025-09-26 11:45:23,661 - INFO - Training with 40723 experiences from replay memory
+2025-09-26 11:45:23,672 - INFO - Training completed. Policy Loss: 0.0094, Value Loss: 992.3673
+2025-09-26 11:45:23,674 - INFO - New best model saved! Duration: 79.19s
+2025-09-26 11:45:23,693 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_3_epoch_17.png
+2025-09-26 11:46:36,640 - INFO - Episode 19 completed! Steps: 353, Duration: 71.95s, Total Reward: 6377.15
+2025-09-26 11:46:36,640 - INFO - Training with 41076 experiences from replay memory
+2025-09-26 11:46:36,646 - INFO - Training completed. Policy Loss: -0.6091, Value Loss: 548.3046
+2025-09-26 11:47:53,858 - INFO - Episode 20 completed! Steps: 370, Duration: 76.21s, Total Reward: 6427.82
+2025-09-26 11:47:53,858 - INFO - Training with 41446 experiences from replay memory
+2025-09-26 11:47:53,865 - INFO - Training completed. Policy Loss: 0.0144, Value Loss: 1196.1924
+2025-09-26 11:48:24,192 - INFO - Episode 21 completed! Steps: 111, Duration: 29.33s, Total Reward: 817.17
+2025-09-26 11:48:24,192 - INFO - Training with 41557 experiences from replay memory
+2025-09-26 11:48:24,200 - INFO - Training completed. Policy Loss: 0.0151, Value Loss: 1658.9172
+2025-09-26 11:49:13,974 - INFO - Episode 22 completed! Steps: 199, Duration: 48.77s, Total Reward: 2047.98
+2025-09-26 11:49:13,974 - INFO - Training with 41756 experiences from replay memory
+2025-09-26 11:49:13,987 - INFO - Training completed. Policy Loss: -0.0011, Value Loss: 658.5812
+2025-09-26 11:50:16,023 - INFO - Episode 23 completed! Steps: 266, Duration: 61.03s, Total Reward: 3726.15
+2025-09-26 11:50:16,023 - INFO - Training with 42022 experiences from replay memory
+2025-09-26 11:50:16,032 - INFO - Training completed. Policy Loss: 0.0138, Value Loss: 1853.9077
+2025-09-26 11:51:10,998 - INFO - Episode 24 completed! Steps: 259, Duration: 53.96s, Total Reward: 3456.63
+2025-09-26 11:51:10,998 - INFO - Training with 42281 experiences from replay memory
+2025-09-26 11:51:11,004 - INFO - Training completed. Policy Loss: 0.0132, Value Loss: 1304.6284
+2025-09-26 11:52:21,029 - INFO - Episode 25 completed! Steps: 317, Duration: 69.02s, Total Reward: 5503.47
+2025-09-26 11:52:21,029 - INFO - Training with 42598 experiences from replay memory
+2025-09-26 11:52:21,036 - INFO - Training completed. Policy Loss: 0.0991, Value Loss: 719.7478
+2025-09-26 11:53:12,079 - INFO - Episode 26 completed! Steps: 185, Duration: 50.04s, Total Reward: 2204.37
+2025-09-26 11:53:12,079 - INFO - Training with 42783 experiences from replay memory
+2025-09-26 11:53:12,088 - INFO - Training completed. Policy Loss: 0.0403, Value Loss: 1098.2666
+2025-09-26 11:54:01,064 - INFO - Episode 27 completed! Steps: 224, Duration: 47.98s, Total Reward: 2535.90
+2025-09-26 11:54:01,065 - INFO - Training with 43007 experiences from replay memory
+2025-09-26 11:54:01,072 - INFO - Training completed. Policy Loss: 0.0146, Value Loss: 1182.3660
+2025-09-26 11:55:10,471 - INFO - Episode 28 completed! Steps: 305, Duration: 68.40s, Total Reward: 5118.11
+2025-09-26 11:55:10,471 - INFO - Training with 43312 experiences from replay memory
+2025-09-26 11:55:10,477 - INFO - Training completed. Policy Loss: 0.0813, Value Loss: 1003.4320
+2025-09-26 11:55:57,899 - INFO - Episode 29 completed! Steps: 213, Duration: 46.42s, Total Reward: 2468.79
+2025-09-26 11:55:57,899 - INFO - Training with 43525 experiences from replay memory
+2025-09-26 11:55:57,908 - INFO - Training completed. Policy Loss: 0.0064, Value Loss: 823.4612
+2025-09-26 11:56:45,452 - INFO - Episode 30 completed! Steps: 201, Duration: 46.54s, Total Reward: 1964.82
+2025-09-26 11:56:45,452 - INFO - Training with 43726 experiences from replay memory
+2025-09-26 11:56:45,459 - INFO - Training completed. Policy Loss: 0.0110, Value Loss: 1017.2585
+2025-09-26 11:57:33,188 - INFO - Episode 31 completed! Steps: 220, Duration: 46.73s, Total Reward: 2539.51
+2025-09-26 11:57:33,188 - INFO - Training with 43946 experiences from replay memory
+2025-09-26 11:57:33,194 - INFO - Training completed. Policy Loss: 0.0043, Value Loss: 1094.2502
+2025-09-26 11:58:18,761 - INFO - Episode 32 completed! Steps: 199, Duration: 44.57s, Total Reward: 2296.05
+2025-09-26 11:58:18,761 - INFO - Training with 44145 experiences from replay memory
+2025-09-26 11:58:18,768 - INFO - Training completed. Policy Loss: 0.0111, Value Loss: 793.3258
+2025-09-26 11:59:36,792 - INFO - Episode 33 completed! Steps: 361, Duration: 77.02s, Total Reward: 6458.17
+2025-09-26 11:59:36,792 - INFO - Training with 44506 experiences from replay memory
+2025-09-26 11:59:36,801 - INFO - Training completed. Policy Loss: 0.0049, Value Loss: 1058.3688
+2025-09-26 12:00:47,479 - INFO - Episode 34 completed! Steps: 332, Duration: 69.68s, Total Reward: 5686.60
+2025-09-26 12:00:47,480 - INFO - Training with 44838 experiences from replay memory
+2025-09-26 12:00:47,486 - INFO - Training completed. Policy Loss: 0.0040, Value Loss: 705.5555
+2025-09-26 12:01:04,239 - INFO - Episode 35 completed! Steps: 64, Duration: 15.75s, Total Reward: 315.01
+2025-09-26 12:01:04,240 - INFO - Training with 44902 experiences from replay memory
+2025-09-26 12:01:04,248 - INFO - Training completed. Policy Loss: -0.5734, Value Loss: 1328.6339
+2025-09-26 12:02:07,065 - INFO - Episode 36 completed! Steps: 282, Duration: 61.82s, Total Reward: 4282.27
+2025-09-26 12:02:07,065 - INFO - Training with 45184 experiences from replay memory
+2025-09-26 12:02:07,070 - INFO - Training completed. Policy Loss: 0.0181, Value Loss: 599.2272
+2025-09-26 12:03:18,615 - INFO - Episode 37 completed! Steps: 332, Duration: 70.54s, Total Reward: 5786.09
+2025-09-26 12:03:18,615 - INFO - Training with 45516 experiences from replay memory
+2025-09-26 12:03:18,623 - INFO - Training completed. Policy Loss: 0.0073, Value Loss: 993.9922
+2025-09-26 12:04:33,572 - INFO - Episode 38 completed! Steps: 355, Duration: 73.95s, Total Reward: 6486.23
+2025-09-26 12:04:33,572 - INFO - Training with 45871 experiences from replay memory
+2025-09-26 12:04:33,578 - INFO - Training completed. Policy Loss: 0.0100, Value Loss: 514.9542
+2025-09-26 12:05:40,677 - INFO - Episode 39 completed! Steps: 318, Duration: 66.10s, Total Reward: 5218.95
+2025-09-26 12:05:40,677 - INFO - Training with 46189 experiences from replay memory
+2025-09-26 12:05:40,683 - INFO - Training completed. Policy Loss: 0.0082, Value Loss: 1604.2043
+2025-09-26 12:06:28,666 - INFO - Episode 40 completed! Steps: 224, Duration: 46.98s, Total Reward: 2599.83
+2025-09-26 12:06:28,666 - INFO - Training with 46413 experiences from replay memory
+2025-09-26 12:06:28,673 - INFO - Training completed. Policy Loss: 0.0044, Value Loss: 806.7756
+2025-09-26 12:07:45,799 - INFO - Episode 41 completed! Steps: 355, Duration: 76.13s, Total Reward: 6282.10
+2025-09-26 12:07:45,799 - INFO - Training with 46768 experiences from replay memory
+2025-09-26 12:07:45,806 - INFO - Training completed. Policy Loss: 0.0102, Value Loss: 532.8353
+2025-09-26 12:08:54,902 - INFO - Episode 42 completed! Steps: 327, Duration: 68.09s, Total Reward: 5401.98
+2025-09-26 12:08:54,902 - INFO - Training with 47095 experiences from replay memory
+2025-09-26 12:08:54,910 - INFO - Training completed. Policy Loss: 0.0079, Value Loss: 883.9850
+2025-09-26 12:09:18,016 - INFO - Episode 43 completed! Steps: 69, Duration: 22.11s, Total Reward: 391.23
+2025-09-26 12:09:18,016 - INFO - Training with 47164 experiences from replay memory
+2025-09-26 12:09:18,022 - INFO - Training completed. Policy Loss: 0.0054, Value Loss: 435.2760
+2025-09-26 12:10:11,667 - INFO - Episode 44 completed! Steps: 220, Duration: 52.64s, Total Reward: 2819.79
+2025-09-26 12:10:11,667 - INFO - Training with 47384 experiences from replay memory
+2025-09-26 12:10:11,676 - INFO - Training completed. Policy Loss: 0.0097, Value Loss: 1924.0861
+2025-09-26 12:11:13,833 - INFO - Episode 45 completed! Steps: 281, Duration: 61.16s, Total Reward: 4034.39
+2025-09-26 12:11:13,833 - INFO - Training with 47665 experiences from replay memory
+2025-09-26 12:11:13,840 - INFO - Training completed. Policy Loss: 0.0047, Value Loss: 1532.0785
+2025-09-26 12:12:14,641 - INFO - Episode 46 completed! Steps: 304, Duration: 59.80s, Total Reward: 4418.36
+2025-09-26 12:12:14,641 - INFO - Training with 47969 experiences from replay memory
+2025-09-26 12:12:14,650 - INFO - Training completed. Policy Loss: 0.0061, Value Loss: 941.5791
+2025-09-26 12:13:29,663 - INFO - Episode 47 completed! Steps: 382, Duration: 74.01s, Total Reward: 7287.89
+2025-09-26 12:13:29,664 - INFO - Training with 48351 experiences from replay memory
+2025-09-26 12:13:29,670 - INFO - Training completed. Policy Loss: 0.0084, Value Loss: 1122.1855
+2025-09-26 12:14:11,717 - INFO - Episode 48 completed! Steps: 130, Duration: 38.31s, Total Reward: 1119.90
+2025-09-26 12:14:11,718 - INFO - Training with 48481 experiences from replay memory
+2025-09-26 12:14:11,725 - INFO - Training completed. Policy Loss: 0.0045, Value Loss: 717.2106
+2025-09-26 12:14:49,266 - INFO - Episode 49 completed! Steps: 155, Duration: 36.54s, Total Reward: 1357.51
+2025-09-26 12:14:49,267 - INFO - Training with 48636 experiences from replay memory
+2025-09-26 12:14:49,272 - INFO - Training completed. Policy Loss: 0.0053, Value Loss: 951.6171
+2025-09-26 12:16:02,318 - INFO - Episode 50 completed! Steps: 361, Duration: 72.05s, Total Reward: 6628.87
+2025-09-26 12:16:02,318 - INFO - Training with 48997 experiences from replay memory
+2025-09-26 12:16:02,325 - INFO - Training completed. Policy Loss: 0.0029, Value Loss: 907.7639
+2025-09-26 12:17:15,231 - INFO - Episode 51 completed! Steps: 360, Duration: 71.90s, Total Reward: 6145.65
+2025-09-26 12:17:15,231 - INFO - Training with 49357 experiences from replay memory
+2025-09-26 12:17:15,240 - INFO - Training completed. Policy Loss: 0.0040, Value Loss: 819.4510
+2025-09-26 12:18:25,944 - INFO - Episode 52 completed! Steps: 323, Duration: 69.70s, Total Reward: 5530.69
+2025-09-26 12:18:25,944 - INFO - Training with 49680 experiences from replay memory
+2025-09-26 12:18:25,952 - INFO - Training completed. Policy Loss: 0.0071, Value Loss: 1567.6732
+2025-09-26 12:19:35,821 - INFO - Episode 53 completed! Steps: 321, Duration: 68.87s, Total Reward: 5489.43
+2025-09-26 12:19:35,821 - INFO - Training with 50001 experiences from replay memory
+2025-09-26 12:19:35,829 - INFO - Training completed. Policy Loss: 0.0520, Value Loss: 1155.7667
+2025-09-26 12:20:36,338 - INFO - Episode 54 completed! Steps: 276, Duration: 59.51s, Total Reward: 3835.59
+2025-09-26 12:20:36,338 - INFO - Training with 50277 experiences from replay memory
+2025-09-26 12:20:36,345 - INFO - Training completed. Policy Loss: -0.0002, Value Loss: 1164.7567
+2025-09-26 12:21:35,575 - INFO - Episode 55 completed! Steps: 290, Duration: 58.23s, Total Reward: 4276.80
+2025-09-26 12:21:35,575 - INFO - Training with 50567 experiences from replay memory
+2025-09-26 12:21:35,580 - INFO - Training completed. Policy Loss: 0.0064, Value Loss: 880.1813
+2025-09-26 12:22:22,081 - INFO - Episode 56 completed! Steps: 200, Duration: 45.50s, Total Reward: 2005.27
+2025-09-26 12:22:22,081 - INFO - Training with 50767 experiences from replay memory
+2025-09-26 12:22:22,091 - INFO - Training completed. Policy Loss: -0.0069, Value Loss: 683.0984
+2025-09-26 12:23:44,557 - INFO - Episode 57 completed! Steps: 405, Duration: 81.46s, Total Reward: 8090.21
+2025-09-26 12:23:44,557 - INFO - Training with 51172 experiences from replay memory
+2025-09-26 12:23:44,564 - INFO - Training completed. Policy Loss: -0.0010, Value Loss: 618.0034
+2025-09-26 12:23:44,566 - INFO - New best model saved! Duration: 81.46s
+2025-09-26 12:23:44,591 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_3_epoch_56.png
+2025-09-26 12:24:51,631 - INFO - Episode 58 completed! Steps: 318, Duration: 66.04s, Total Reward: 5407.44
+2025-09-26 12:24:51,631 - INFO - Training with 51490 experiences from replay memory
+2025-09-26 12:24:51,639 - INFO - Training completed. Policy Loss: 0.0029, Value Loss: 1068.6383
+2025-09-26 12:25:59,252 - INFO - Episode 59 completed! Steps: 318, Duration: 66.61s, Total Reward: 5157.23
+2025-09-26 12:25:59,252 - INFO - Training with 51808 experiences from replay memory
+2025-09-26 12:25:59,258 - INFO - Training completed. Policy Loss: 0.0031, Value Loss: 698.6481
+2025-09-26 12:27:10,177 - INFO - Episode 60 completed! Steps: 347, Duration: 69.92s, Total Reward: 6035.43
+2025-09-26 12:27:10,178 - INFO - Training with 52155 experiences from replay memory
+2025-09-26 12:27:10,186 - INFO - Training completed. Policy Loss: 0.0032, Value Loss: 748.4067
+2025-09-26 12:28:21,375 - INFO - Episode 61 completed! Steps: 339, Duration: 70.19s, Total Reward: 5815.60
+2025-09-26 12:28:21,375 - INFO - Training with 52494 experiences from replay memory
+2025-09-26 12:28:21,382 - INFO - Training completed. Policy Loss: 0.0318, Value Loss: 1062.4602
+2025-09-26 12:29:19,749 - INFO - Episode 62 completed! Steps: 247, Duration: 57.37s, Total Reward: 3388.50
+2025-09-26 12:29:19,749 - INFO - Training with 52741 experiences from replay memory
+2025-09-26 12:29:19,755 - INFO - Training completed. Policy Loss: 0.0058, Value Loss: 1192.6246
+2025-09-26 12:30:16,295 - INFO - Episode 63 completed! Steps: 261, Duration: 55.54s, Total Reward: 3493.57
+2025-09-26 12:30:16,295 - INFO - Training with 53002 experiences from replay memory
+2025-09-26 12:30:16,303 - INFO - Training completed. Policy Loss: -0.3385, Value Loss: 526.9615
+2025-09-26 12:31:18,342 - INFO - Episode 64 completed! Steps: 309, Duration: 61.04s, Total Reward: 4727.38
+2025-09-26 12:31:18,342 - INFO - Training with 53311 experiences from replay memory
+2025-09-26 12:31:18,349 - INFO - Training completed. Policy Loss: -4.4282, Value Loss: 1470.2010
+2025-09-26 12:32:14,889 - INFO - Episode 65 completed! Steps: 246, Duration: 55.54s, Total Reward: 3326.47
+2025-09-26 12:32:14,889 - INFO - Training with 53557 experiences from replay memory
+2025-09-26 12:32:14,897 - INFO - Training completed. Policy Loss: -0.0247, Value Loss: 741.1171
+2025-09-26 12:33:04,665 - INFO - Episode 66 completed! Steps: 222, Duration: 48.77s, Total Reward: 2591.43
+2025-09-26 12:33:04,666 - INFO - Training with 53779 experiences from replay memory
+2025-09-26 12:33:04,673 - INFO - Training completed. Policy Loss: 0.0049, Value Loss: 1494.3513
+2025-09-26 12:34:18,827 - INFO - Episode 67 completed! Steps: 359, Duration: 73.15s, Total Reward: 6418.47
+2025-09-26 12:34:18,828 - INFO - Training with 54138 experiences from replay memory
+2025-09-26 12:34:18,835 - INFO - Training completed. Policy Loss: -0.0885, Value Loss: 1224.1929
+2025-09-26 12:35:10,136 - INFO - Episode 68 completed! Steps: 212, Duration: 50.30s, Total Reward: 2531.26
+2025-09-26 12:35:10,136 - INFO - Training with 54350 experiences from replay memory
+2025-09-26 12:35:10,144 - INFO - Training completed. Policy Loss: 0.0302, Value Loss: 928.6025
+2025-09-26 12:36:09,869 - INFO - Episode 69 completed! Steps: 298, Duration: 58.72s, Total Reward: 4353.75
+2025-09-26 12:36:09,869 - INFO - Training with 54648 experiences from replay memory
+2025-09-26 12:36:09,879 - INFO - Training completed. Policy Loss: 0.0038, Value Loss: 1514.9695
+2025-09-26 12:36:52,295 - INFO - Episode 70 completed! Steps: 132, Duration: 41.41s, Total Reward: 1115.23
+2025-09-26 12:36:52,295 - INFO - Training with 54780 experiences from replay memory
+2025-09-26 12:36:52,303 - INFO - Training completed. Policy Loss: 0.0012, Value Loss: 759.6732
+2025-09-26 12:37:53,669 - INFO - Episode 71 completed! Steps: 295, Duration: 60.37s, Total Reward: 4352.53
+2025-09-26 12:37:53,669 - INFO - Training with 55075 experiences from replay memory
+2025-09-26 12:37:53,676 - INFO - Training completed. Policy Loss: 0.0045, Value Loss: 1295.4729
+2025-09-26 12:38:22,811 - INFO - Episode 72 completed! Steps: 85, Duration: 28.13s, Total Reward: 626.94
+2025-09-26 12:38:22,811 - INFO - Training with 55160 experiences from replay memory
+2025-09-26 12:38:22,820 - INFO - Training completed. Policy Loss: 0.0030, Value Loss: 654.5442
+2025-09-26 12:39:37,135 - INFO - Episode 73 completed! Steps: 362, Duration: 73.31s, Total Reward: 6529.13
+2025-09-26 12:39:37,135 - INFO - Training with 55522 experiences from replay memory
+2025-09-26 12:39:37,143 - INFO - Training completed. Policy Loss: 0.0022, Value Loss: 827.0917
+2025-09-26 12:40:27,690 - INFO - Episode 74 completed! Steps: 217, Duration: 49.55s, Total Reward: 2589.25
+2025-09-26 12:40:27,690 - INFO - Training with 55739 experiences from replay memory
+2025-09-26 12:40:27,698 - INFO - Training completed. Policy Loss: 0.0018, Value Loss: 975.2091
+2025-09-26 12:41:24,339 - INFO - Episode 75 completed! Steps: 268, Duration: 55.64s, Total Reward: 3565.86
+2025-09-26 12:41:24,339 - INFO - Training with 56007 experiences from replay memory
+2025-09-26 12:41:24,347 - INFO - Training completed. Policy Loss: 0.0026, Value Loss: 1127.1027
+2025-09-26 12:42:11,178 - INFO - Episode 76 completed! Steps: 195, Duration: 45.83s, Total Reward: 2146.74
+2025-09-26 12:42:11,178 - INFO - Training with 56202 experiences from replay memory
+2025-09-26 12:42:11,185 - INFO - Training completed. Policy Loss: 0.0017, Value Loss: 1131.0339
+2025-09-26 12:43:18,595 - INFO - Episode 77 completed! Steps: 315, Duration: 66.41s, Total Reward: 4918.35
+2025-09-26 12:43:18,595 - INFO - Training with 56517 experiences from replay memory
+2025-09-26 12:43:18,603 - INFO - Training completed. Policy Loss: 0.0249, Value Loss: 799.1101
+2025-09-26 12:44:07,732 - INFO - Episode 78 completed! Steps: 213, Duration: 48.13s, Total Reward: 2386.34
+2025-09-26 12:44:07,732 - INFO - Training with 56730 experiences from replay memory
+2025-09-26 12:44:07,740 - INFO - Training completed. Policy Loss: -0.1785, Value Loss: 1333.4061
+2025-09-26 12:44:52,714 - INFO - Episode 79 completed! Steps: 198, Duration: 43.97s, Total Reward: 2200.83
+2025-09-26 12:44:52,714 - INFO - Training with 56928 experiences from replay memory
+2025-09-26 12:44:52,722 - INFO - Training completed. Policy Loss: 0.0098, Value Loss: 713.0242
+2025-09-26 12:46:12,758 - INFO - Episode 80 completed! Steps: 366, Duration: 79.03s, Total Reward: 7008.39
+2025-09-26 12:46:12,758 - INFO - Training with 57294 experiences from replay memory
+2025-09-26 12:46:12,767 - INFO - Training completed. Policy Loss: 0.0130, Value Loss: 669.6611
+2025-09-26 12:47:10,861 - INFO - Episode 81 completed! Steps: 271, Duration: 57.09s, Total Reward: 3838.06
+2025-09-26 12:47:10,862 - INFO - Training with 57565 experiences from replay memory
+2025-09-26 12:47:10,872 - INFO - Training completed. Policy Loss: 0.0030, Value Loss: 938.2366
+2025-09-26 12:48:04,404 - INFO - Episode 82 completed! Steps: 234, Duration: 52.53s, Total Reward: 2914.52
+2025-09-26 12:48:04,404 - INFO - Training with 57799 experiences from replay memory
+2025-09-26 12:48:04,409 - INFO - Training completed. Policy Loss: 0.0035, Value Loss: 1144.0895
+2025-09-26 12:49:00,846 - INFO - Episode 83 completed! Steps: 270, Duration: 55.44s, Total Reward: 3749.04
+2025-09-26 12:49:00,846 - INFO - Training with 58069 experiences from replay memory
+2025-09-26 12:49:00,854 - INFO - Training completed. Policy Loss: 0.0036, Value Loss: 1626.4014
+2025-09-26 12:50:08,888 - INFO - Episode 84 completed! Steps: 321, Duration: 67.03s, Total Reward: 5147.57
+2025-09-26 12:50:08,888 - INFO - Training with 58390 experiences from replay memory
+2025-09-26 12:50:08,895 - INFO - Training completed. Policy Loss: 0.0860, Value Loss: 1657.2599
+2025-09-26 12:51:02,813 - INFO - Episode 85 completed! Steps: 237, Duration: 52.92s, Total Reward: 3161.54
+2025-09-26 12:51:02,813 - INFO - Training with 58627 experiences from replay memory
+2025-09-26 12:51:02,820 - INFO - Training completed. Policy Loss: 0.0025, Value Loss: 823.8817
+2025-09-26 12:52:05,777 - INFO - Episode 86 completed! Steps: 296, Duration: 61.96s, Total Reward: 4360.70
+2025-09-26 12:52:05,778 - INFO - Training with 58923 experiences from replay memory
+2025-09-26 12:52:05,783 - INFO - Training completed. Policy Loss: 0.2306, Value Loss: 1223.1714
+2025-09-26 12:52:22,255 - INFO - Episode 87 completed! Steps: 56, Duration: 15.47s, Total Reward: 273.25
+2025-09-26 12:52:22,255 - INFO - Training with 58979 experiences from replay memory
+2025-09-26 12:52:22,260 - INFO - Training completed. Policy Loss: 0.0032, Value Loss: 1194.8585
+2025-09-26 12:53:08,869 - INFO - Episode 88 completed! Steps: 217, Duration: 45.61s, Total Reward: 2406.04
+2025-09-26 12:53:08,869 - INFO - Training with 59196 experiences from replay memory
+2025-09-26 12:53:08,874 - INFO - Training completed. Policy Loss: 0.0168, Value Loss: 1045.7831
+2025-09-26 12:53:59,123 - INFO - Episode 89 completed! Steps: 256, Duration: 49.25s, Total Reward: 3069.42
+2025-09-26 12:53:59,124 - INFO - Training with 59452 experiences from replay memory
+2025-09-26 12:53:59,131 - INFO - Training completed. Policy Loss: 0.0016, Value Loss: 813.2233
+2025-09-26 12:55:12,619 - INFO - Episode 90 completed! Steps: 378, Duration: 72.49s, Total Reward: 6854.42
+2025-09-26 12:55:12,619 - INFO - Training with 59830 experiences from replay memory
+2025-09-26 12:55:12,627 - INFO - Training completed. Policy Loss: 0.0297, Value Loss: 905.3727
+2025-09-26 12:56:20,007 - INFO - Episode 91 completed! Steps: 327, Duration: 66.38s, Total Reward: 5525.61
+2025-09-26 12:56:20,007 - INFO - Training with 60157 experiences from replay memory
+2025-09-26 12:56:20,015 - INFO - Training completed. Policy Loss: 0.0021, Value Loss: 659.4170
+2025-09-26 12:56:55,047 - INFO - Episode 92 completed! Steps: 120, Duration: 34.03s, Total Reward: 1002.73
+2025-09-26 12:56:55,047 - INFO - Training with 60277 experiences from replay memory
+2025-09-26 12:56:55,054 - INFO - Training completed. Policy Loss: 0.0013, Value Loss: 1454.2970
+2025-09-26 12:58:16,587 - INFO - Episode 93 completed! Steps: 411, Duration: 80.53s, Total Reward: 8126.45
+2025-09-26 12:58:16,587 - INFO - Training with 60688 experiences from replay memory
+2025-09-26 12:58:16,594 - INFO - Training completed. Policy Loss: 0.0077, Value Loss: 1356.1824
+2025-09-26 12:59:30,026 - INFO - Episode 94 completed! Steps: 367, Duration: 72.43s, Total Reward: 6487.52
+2025-09-26 12:59:30,026 - INFO - Training with 61055 experiences from replay memory
+2025-09-26 12:59:30,032 - INFO - Training completed. Policy Loss: 0.0060, Value Loss: 2051.6118
+2025-09-26 13:00:25,471 - INFO - Episode 95 completed! Steps: 249, Duration: 54.44s, Total Reward: 3329.71
+2025-09-26 13:00:25,471 - INFO - Training with 61304 experiences from replay memory
+2025-09-26 13:00:25,480 - INFO - Training completed. Policy Loss: 0.0086, Value Loss: 1516.8640
+2025-09-26 13:01:25,278 - INFO - Episode 96 completed! Steps: 276, Duration: 58.80s, Total Reward: 3879.05
+2025-09-26 13:01:25,278 - INFO - Training with 61580 experiences from replay memory
+2025-09-26 13:01:25,286 - INFO - Training completed. Policy Loss: 0.0029, Value Loss: 1170.7610
+2025-09-26 13:02:15,878 - INFO - Episode 97 completed! Steps: 230, Duration: 49.59s, Total Reward: 2704.26
+2025-09-26 13:02:15,878 - INFO - Training with 61810 experiences from replay memory
+2025-09-26 13:02:15,886 - INFO - Training completed. Policy Loss: 6.7453, Value Loss: 929.8748
+2025-09-26 13:03:02,163 - INFO - Episode 98 completed! Steps: 213, Duration: 45.28s, Total Reward: 2370.33
+2025-09-26 13:03:02,163 - INFO - Training with 62023 experiences from replay memory
+2025-09-26 13:03:02,171 - INFO - Training completed. Policy Loss: -0.5556, Value Loss: 1596.9421
+2025-09-26 13:04:00,424 - INFO - Episode 99 completed! Steps: 277, Duration: 56.43s, Total Reward: 3706.20
+2025-09-26 13:04:00,424 - INFO - Training with 62300 experiences from replay memory
+2025-09-26 13:04:00,431 - INFO - Training completed. Policy Loss: 0.0010, Value Loss: 316.9061
+2025-09-26 13:05:07,125 - INFO - Episode 100 completed! Steps: 344, Duration: 65.69s, Total Reward: 5688.79
+2025-09-26 13:05:07,126 - INFO - Training with 62644 experiences from replay memory
+2025-09-26 13:05:07,133 - INFO - Training completed. Policy Loss: 0.0103, Value Loss: 1658.1694
+2025-09-26 13:05:08,134 - INFO - Actor-Critic training completed! Best model achieved 81.46s and saved at runs/20250926_090931/models/best_actor_model_at_train_round_3_epoch_56.pt
+2025-09-26 13:05:08,134 - INFO - Training round 4 start.
+2025-09-26 13:05:08,134 - INFO - Starting Actor-Critic training with 100 epochs, 4000 steps per episode
+2025-09-26 13:05:57,707 - INFO - Episode 1 completed! Steps: 231, Duration: 49.57s, Total Reward: 2734.55
+2025-09-26 13:05:57,707 - INFO - Training with 62875 experiences from replay memory
+2025-09-26 13:05:57,718 - INFO - Training completed. Policy Loss: -0.0030, Value Loss: 1076.5748
+2025-09-26 13:05:57,720 - INFO - New best model saved! Duration: 49.57s
+2025-09-26 13:05:57,740 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_0.png
+2025-09-26 13:06:47,099 - INFO - Episode 2 completed! Steps: 219, Duration: 48.36s, Total Reward: 2627.45
+2025-09-26 13:06:47,099 - INFO - Training with 63094 experiences from replay memory
+2025-09-26 13:06:47,105 - INFO - Training completed. Policy Loss: 0.0016, Value Loss: 1053.1477
+2025-09-26 13:07:26,370 - INFO - Episode 3 completed! Steps: 180, Duration: 38.26s, Total Reward: 1687.07
+2025-09-26 13:07:26,370 - INFO - Training with 63274 experiences from replay memory
+2025-09-26 13:07:26,376 - INFO - Training completed. Policy Loss: 0.0010, Value Loss: 1308.4196
+2025-09-26 13:08:25,419 - INFO - Episode 4 completed! Steps: 285, Duration: 57.21s, Total Reward: 4106.11
+2025-09-26 13:08:25,419 - INFO - Training with 63559 experiences from replay memory
+2025-09-26 13:08:25,425 - INFO - Training completed. Policy Loss: 0.0020, Value Loss: 1156.8607
+2025-09-26 13:08:25,427 - INFO - New best model saved! Duration: 57.21s
+2025-09-26 13:08:25,451 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_3.png
+2025-09-26 13:09:20,578 - INFO - Episode 5 completed! Steps: 257, Duration: 54.13s, Total Reward: 3367.21
+2025-09-26 13:09:20,578 - INFO - Training with 63816 experiences from replay memory
+2025-09-26 13:09:20,585 - INFO - Training completed. Policy Loss: -0.1410, Value Loss: 1843.0618
+2025-09-26 13:10:17,020 - INFO - Episode 6 completed! Steps: 254, Duration: 55.43s, Total Reward: 3424.15
+2025-09-26 13:10:17,020 - INFO - Training with 64070 experiences from replay memory
+2025-09-26 13:10:17,028 - INFO - Training completed. Policy Loss: 0.0018, Value Loss: 1209.2834
+2025-09-26 13:11:13,380 - INFO - Episode 7 completed! Steps: 272, Duration: 55.35s, Total Reward: 3671.89
+2025-09-26 13:11:13,380 - INFO - Training with 64342 experiences from replay memory
+2025-09-26 13:11:13,389 - INFO - Training completed. Policy Loss: 0.0029, Value Loss: 1250.3435
+2025-09-26 13:12:23,965 - INFO - Episode 8 completed! Steps: 312, Duration: 69.57s, Total Reward: 5279.33
+2025-09-26 13:12:23,965 - INFO - Training with 64654 experiences from replay memory
+2025-09-26 13:12:23,973 - INFO - Training completed. Policy Loss: 0.0042, Value Loss: 2513.1006
+2025-09-26 13:12:23,974 - INFO - New best model saved! Duration: 69.57s
+2025-09-26 13:12:23,998 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_7.png
+2025-09-26 13:13:25,565 - INFO - Episode 9 completed! Steps: 311, Duration: 59.79s, Total Reward: 4552.93
+2025-09-26 13:13:25,565 - INFO - Training with 64965 experiences from replay memory
+2025-09-26 13:13:25,573 - INFO - Training completed. Policy Loss: 1.1664, Value Loss: 1291.1826
+2025-09-26 13:14:31,179 - INFO - Episode 10 completed! Steps: 336, Duration: 64.60s, Total Reward: 5237.40
+2025-09-26 13:14:31,179 - INFO - Training with 65301 experiences from replay memory
+2025-09-26 13:14:31,187 - INFO - Training completed. Policy Loss: 0.0035, Value Loss: 1418.8335
+2025-09-26 13:15:28,251 - INFO - Episode 11 completed! Steps: 283, Duration: 56.06s, Total Reward: 3901.00
+2025-09-26 13:15:28,251 - INFO - Training with 65584 experiences from replay memory
+2025-09-26 13:15:28,257 - INFO - Training completed. Policy Loss: 0.0025, Value Loss: 932.2906
+2025-09-26 13:16:33,925 - INFO - Episode 12 completed! Steps: 340, Duration: 64.67s, Total Reward: 5504.64
+2025-09-26 13:16:33,925 - INFO - Training with 65924 experiences from replay memory
+2025-09-26 13:16:33,936 - INFO - Training completed. Policy Loss: -0.0146, Value Loss: 786.2840
+2025-09-26 13:17:33,632 - INFO - Episode 13 completed! Steps: 297, Duration: 58.69s, Total Reward: 4129.14
+2025-09-26 13:17:33,632 - INFO - Training with 66221 experiences from replay memory
+2025-09-26 13:17:33,640 - INFO - Training completed. Policy Loss: 0.0045, Value Loss: 1178.7217
+2025-09-26 13:18:31,247 - INFO - Episode 14 completed! Steps: 284, Duration: 56.61s, Total Reward: 3863.02
+2025-09-26 13:18:31,248 - INFO - Training with 66505 experiences from replay memory
+2025-09-26 13:18:31,256 - INFO - Training completed. Policy Loss: 0.0018, Value Loss: 1457.1824
+2025-09-26 13:19:35,523 - INFO - Episode 15 completed! Steps: 300, Duration: 63.27s, Total Reward: 4647.42
+2025-09-26 13:19:35,524 - INFO - Training with 66805 experiences from replay memory
+2025-09-26 13:19:35,533 - INFO - Training completed. Policy Loss: 0.0010, Value Loss: 924.5297
+2025-09-26 13:20:22,986 - INFO - Episode 16 completed! Steps: 215, Duration: 46.45s, Total Reward: 2347.45
+2025-09-26 13:20:22,986 - INFO - Training with 67020 experiences from replay memory
+2025-09-26 13:20:22,993 - INFO - Training completed. Policy Loss: 0.0024, Value Loss: 1041.8276
+2025-09-26 13:21:40,452 - INFO - Episode 17 completed! Steps: 379, Duration: 76.46s, Total Reward: 7223.36
+2025-09-26 13:21:40,452 - INFO - Training with 67399 experiences from replay memory
+2025-09-26 13:21:40,461 - INFO - Training completed. Policy Loss: -0.1551, Value Loss: 1853.0878
+2025-09-26 13:21:40,464 - INFO - New best model saved! Duration: 76.46s
+2025-09-26 13:21:40,504 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_16.png
+2025-09-26 13:22:15,622 - INFO - Episode 18 completed! Steps: 122, Duration: 34.12s, Total Reward: 1032.85
+2025-09-26 13:22:15,622 - INFO - Training with 67521 experiences from replay memory
+2025-09-26 13:22:15,630 - INFO - Training completed. Policy Loss: -0.3497, Value Loss: 892.2783
+2025-09-26 13:23:12,326 - INFO - Episode 19 completed! Steps: 280, Duration: 55.70s, Total Reward: 3858.71
+2025-09-26 13:23:12,326 - INFO - Training with 67801 experiences from replay memory
+2025-09-26 13:23:12,339 - INFO - Training completed. Policy Loss: -0.0682, Value Loss: 1159.9658
+2025-09-26 13:24:07,625 - INFO - Episode 20 completed! Steps: 271, Duration: 54.29s, Total Reward: 3556.67
+2025-09-26 13:24:07,625 - INFO - Training with 68072 experiences from replay memory
+2025-09-26 13:24:07,633 - INFO - Training completed. Policy Loss: 0.0016, Value Loss: 374.5677
+2025-09-26 13:24:55,388 - INFO - Episode 21 completed! Steps: 230, Duration: 46.75s, Total Reward: 2587.30
+2025-09-26 13:24:55,388 - INFO - Training with 68302 experiences from replay memory
+2025-09-26 13:24:55,394 - INFO - Training completed. Policy Loss: -1.1326, Value Loss: 772.4506
+2025-09-26 13:26:01,715 - INFO - Episode 22 completed! Steps: 330, Duration: 65.32s, Total Reward: 5226.69
+2025-09-26 13:26:01,715 - INFO - Training with 68632 experiences from replay memory
+2025-09-26 13:26:01,723 - INFO - Training completed. Policy Loss: 0.0048, Value Loss: 920.1545
+2025-09-26 13:26:51,129 - INFO - Episode 23 completed! Steps: 221, Duration: 48.40s, Total Reward: 2494.39
+2025-09-26 13:26:51,129 - INFO - Training with 68853 experiences from replay memory
+2025-09-26 13:26:51,139 - INFO - Training completed. Policy Loss: -1.8858, Value Loss: 921.7795
+2025-09-26 13:27:34,953 - INFO - Episode 24 completed! Steps: 202, Duration: 42.81s, Total Reward: 2037.46
+2025-09-26 13:27:34,953 - INFO - Training with 69055 experiences from replay memory
+2025-09-26 13:27:34,961 - INFO - Training completed. Policy Loss: 0.0049, Value Loss: 742.7084
+2025-09-26 13:28:23,134 - INFO - Episode 25 completed! Steps: 229, Duration: 47.17s, Total Reward: 2568.44
+2025-09-26 13:28:23,134 - INFO - Training with 69284 experiences from replay memory
+2025-09-26 13:28:23,144 - INFO - Training completed. Policy Loss: -0.1129, Value Loss: 1267.3882
+2025-09-26 13:29:15,984 - INFO - Episode 26 completed! Steps: 264, Duration: 51.84s, Total Reward: 3295.40
+2025-09-26 13:29:15,984 - INFO - Training with 69548 experiences from replay memory
+2025-09-26 13:29:15,992 - INFO - Training completed. Policy Loss: 0.0008, Value Loss: 424.1766
+2025-09-26 13:29:56,726 - INFO - Episode 27 completed! Steps: 190, Duration: 39.73s, Total Reward: 1822.54
+2025-09-26 13:29:56,727 - INFO - Training with 69738 experiences from replay memory
+2025-09-26 13:29:56,735 - INFO - Training completed. Policy Loss: 0.7212, Value Loss: 771.2409
+2025-09-26 13:31:18,559 - INFO - Episode 28 completed! Steps: 460, Duration: 80.82s, Total Reward: 9272.46
+2025-09-26 13:31:18,559 - INFO - Training with 70198 experiences from replay memory
+2025-09-26 13:31:18,567 - INFO - Training completed. Policy Loss: 0.2958, Value Loss: 1206.9666
+2025-09-26 13:31:18,569 - INFO - New best model saved! Duration: 80.82s
+2025-09-26 13:31:18,593 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_27.png
+2025-09-26 13:32:15,844 - INFO - Episode 29 completed! Steps: 305, Duration: 56.25s, Total Reward: 4221.89
+2025-09-26 13:32:15,844 - INFO - Training with 70503 experiences from replay memory
+2025-09-26 13:32:15,853 - INFO - Training completed. Policy Loss: 0.0056, Value Loss: 793.4830
+2025-09-26 13:33:23,353 - INFO - Episode 30 completed! Steps: 352, Duration: 66.50s, Total Reward: 5698.75
+2025-09-26 13:33:23,353 - INFO - Training with 70855 experiences from replay memory
+2025-09-26 13:33:23,361 - INFO - Training completed. Policy Loss: 0.0109, Value Loss: 1081.8262
+2025-09-26 13:34:14,422 - INFO - Episode 31 completed! Steps: 247, Duration: 50.06s, Total Reward: 2981.13
+2025-09-26 13:34:14,422 - INFO - Training with 71102 experiences from replay memory
+2025-09-26 13:34:14,428 - INFO - Training completed. Policy Loss: 0.0046, Value Loss: 613.4282
+2025-09-26 13:35:17,123 - INFO - Episode 32 completed! Steps: 310, Duration: 61.69s, Total Reward: 4792.07
+2025-09-26 13:35:17,123 - INFO - Training with 71412 experiences from replay memory
+2025-09-26 13:35:17,131 - INFO - Training completed. Policy Loss: 0.0055, Value Loss: 670.6777
+2025-09-26 13:36:09,005 - INFO - Episode 33 completed! Steps: 254, Duration: 50.87s, Total Reward: 3082.55
+2025-09-26 13:36:09,005 - INFO - Training with 71666 experiences from replay memory
+2025-09-26 13:36:09,013 - INFO - Training completed. Policy Loss: 0.0265, Value Loss: 755.0057
+2025-09-26 13:36:57,087 - INFO - Episode 34 completed! Steps: 249, Duration: 47.07s, Total Reward: 2868.64
+2025-09-26 13:36:57,088 - INFO - Training with 71915 experiences from replay memory
+2025-09-26 13:36:57,095 - INFO - Training completed. Policy Loss: 0.0419, Value Loss: 580.5353
+2025-09-26 13:37:47,067 - INFO - Episode 35 completed! Steps: 242, Duration: 48.97s, Total Reward: 2863.10
+2025-09-26 13:37:47,067 - INFO - Training with 72157 experiences from replay memory
+2025-09-26 13:37:47,075 - INFO - Training completed. Policy Loss: 0.0048, Value Loss: 663.1587
+2025-09-26 13:38:38,048 - INFO - Episode 36 completed! Steps: 237, Duration: 49.97s, Total Reward: 2953.98
+2025-09-26 13:38:38,048 - INFO - Training with 72394 experiences from replay memory
+2025-09-26 13:38:38,054 - INFO - Training completed. Policy Loss: 0.0022, Value Loss: 617.3551
+2025-09-26 13:39:31,897 - INFO - Episode 37 completed! Steps: 266, Duration: 52.84s, Total Reward: 3508.57
+2025-09-26 13:39:31,897 - INFO - Training with 72660 experiences from replay memory
+2025-09-26 13:39:31,903 - INFO - Training completed. Policy Loss: 0.0038, Value Loss: 1394.1245
+2025-09-26 13:40:43,291 - INFO - Episode 38 completed! Steps: 356, Duration: 70.39s, Total Reward: 6214.69
+2025-09-26 13:40:43,292 - INFO - Training with 73016 experiences from replay memory
+2025-09-26 13:40:43,298 - INFO - Training completed. Policy Loss: 0.0097, Value Loss: 1339.9353
+2025-09-26 13:41:47,214 - INFO - Episode 39 completed! Steps: 311, Duration: 62.91s, Total Reward: 4798.21
+2025-09-26 13:41:47,214 - INFO - Training with 73327 experiences from replay memory
+2025-09-26 13:41:47,222 - INFO - Training completed. Policy Loss: 0.0097, Value Loss: 960.6425
+2025-09-26 13:43:03,030 - INFO - Episode 40 completed! Steps: 404, Duration: 74.81s, Total Reward: 7388.60
+2025-09-26 13:43:03,030 - INFO - Training with 73731 experiences from replay memory
+2025-09-26 13:43:03,038 - INFO - Training completed. Policy Loss: 0.0071, Value Loss: 729.7806
+2025-09-26 13:44:10,454 - INFO - Episode 41 completed! Steps: 347, Duration: 66.41s, Total Reward: 5531.11
+2025-09-26 13:44:10,454 - INFO - Training with 74078 experiences from replay memory
+2025-09-26 13:44:10,459 - INFO - Training completed. Policy Loss: 0.0062, Value Loss: 730.9313
+2025-09-26 13:45:06,539 - INFO - Episode 42 completed! Steps: 295, Duration: 55.08s, Total Reward: 4017.61
+2025-09-26 13:45:06,539 - INFO - Training with 74373 experiences from replay memory
+2025-09-26 13:45:06,547 - INFO - Training completed. Policy Loss: 0.0033, Value Loss: 362.0001
+2025-09-26 13:45:44,595 - INFO - Episode 43 completed! Steps: 175, Duration: 37.05s, Total Reward: 1537.92
+2025-09-26 13:45:44,595 - INFO - Training with 74548 experiences from replay memory
+2025-09-26 13:45:44,602 - INFO - Training completed. Policy Loss: 0.0038, Value Loss: 563.2139
+2025-09-26 13:46:48,484 - INFO - Episode 44 completed! Steps: 296, Duration: 62.88s, Total Reward: 4610.36
+2025-09-26 13:46:48,485 - INFO - Training with 74844 experiences from replay memory
+2025-09-26 13:46:48,492 - INFO - Training completed. Policy Loss: 0.0052, Value Loss: 793.3474
+2025-09-26 13:48:16,673 - INFO - Episode 45 completed! Steps: 458, Duration: 87.18s, Total Reward: 9689.84
+2025-09-26 13:48:16,673 - INFO - Training with 75302 experiences from replay memory
+2025-09-26 13:48:16,681 - INFO - Training completed. Policy Loss: 0.0083, Value Loss: 823.8676
+2025-09-26 13:48:16,683 - INFO - New best model saved! Duration: 87.18s
+2025-09-26 13:48:16,705 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_44.png
+2025-09-26 13:49:19,529 - INFO - Episode 46 completed! Steps: 318, Duration: 61.82s, Total Reward: 4736.63
+2025-09-26 13:49:19,529 - INFO - Training with 75620 experiences from replay memory
+2025-09-26 13:49:19,541 - INFO - Training completed. Policy Loss: 0.0101, Value Loss: 1393.7507
+2025-09-26 13:50:28,905 - INFO - Episode 47 completed! Steps: 371, Duration: 68.36s, Total Reward: 6151.52
+2025-09-26 13:50:28,905 - INFO - Training with 75991 experiences from replay memory
+2025-09-26 13:50:28,913 - INFO - Training completed. Policy Loss: 0.0038, Value Loss: 1540.5013
+2025-09-26 13:51:50,156 - INFO - Episode 48 completed! Steps: 423, Duration: 80.24s, Total Reward: 8190.54
+2025-09-26 13:51:50,156 - INFO - Training with 76414 experiences from replay memory
+2025-09-26 13:51:50,163 - INFO - Training completed. Policy Loss: 0.0104, Value Loss: 882.6893
+2025-09-26 13:52:53,927 - INFO - Episode 49 completed! Steps: 336, Duration: 62.76s, Total Reward: 5238.85
+2025-09-26 13:52:53,927 - INFO - Training with 76750 experiences from replay memory
+2025-09-26 13:52:53,936 - INFO - Training completed. Policy Loss: -0.0129, Value Loss: 594.4091
+2025-09-26 13:53:57,334 - INFO - Episode 50 completed! Steps: 303, Duration: 62.40s, Total Reward: 4629.39
+2025-09-26 13:53:57,335 - INFO - Training with 77053 experiences from replay memory
+2025-09-26 13:53:57,343 - INFO - Training completed. Policy Loss: 0.0077, Value Loss: 920.4197
+2025-09-26 13:54:51,901 - INFO - Episode 51 completed! Steps: 265, Duration: 53.56s, Total Reward: 3510.28
+2025-09-26 13:54:51,901 - INFO - Training with 77318 experiences from replay memory
+2025-09-26 13:54:51,909 - INFO - Training completed. Policy Loss: 0.0013, Value Loss: 1033.1694
+2025-09-26 13:55:53,542 - INFO - Episode 52 completed! Steps: 310, Duration: 60.63s, Total Reward: 4711.33
+2025-09-26 13:55:53,542 - INFO - Training with 77628 experiences from replay memory
+2025-09-26 13:55:53,548 - INFO - Training completed. Policy Loss: -0.0021, Value Loss: 394.6699
+2025-09-26 13:57:01,666 - INFO - Episode 53 completed! Steps: 343, Duration: 67.12s, Total Reward: 5661.00
+2025-09-26 13:57:01,666 - INFO - Training with 77971 experiences from replay memory
+2025-09-26 13:57:01,675 - INFO - Training completed. Policy Loss: 0.1513, Value Loss: 856.9662
+2025-09-26 13:57:44,825 - INFO - Episode 54 completed! Steps: 206, Duration: 42.15s, Total Reward: 2110.23
+2025-09-26 13:57:44,825 - INFO - Training with 78177 experiences from replay memory
+2025-09-26 13:57:44,834 - INFO - Training completed. Policy Loss: 0.0044, Value Loss: 738.4162
+2025-09-26 13:58:46,347 - INFO - Episode 55 completed! Steps: 311, Duration: 60.51s, Total Reward: 4751.43
+2025-09-26 13:58:46,347 - INFO - Training with 78488 experiences from replay memory
+2025-09-26 13:58:46,355 - INFO - Training completed. Policy Loss: 0.0049, Value Loss: 1127.6196
+2025-09-26 13:59:35,895 - INFO - Episode 56 completed! Steps: 243, Duration: 48.54s, Total Reward: 2876.15
+2025-09-26 13:59:35,895 - INFO - Training with 78731 experiences from replay memory
+2025-09-26 13:59:35,903 - INFO - Training completed. Policy Loss: -0.7696, Value Loss: 472.7189
+2025-09-26 14:00:42,568 - INFO - Episode 57 completed! Steps: 319, Duration: 65.66s, Total Reward: 5110.81
+2025-09-26 14:00:42,568 - INFO - Training with 79050 experiences from replay memory
+2025-09-26 14:00:42,576 - INFO - Training completed. Policy Loss: 0.0034, Value Loss: 579.3103
+2025-09-26 14:01:44,790 - INFO - Episode 58 completed! Steps: 321, Duration: 61.21s, Total Reward: 4833.28
+2025-09-26 14:01:44,791 - INFO - Training with 79371 experiences from replay memory
+2025-09-26 14:01:44,801 - INFO - Training completed. Policy Loss: 0.0032, Value Loss: 498.6819
+2025-09-26 14:02:58,237 - INFO - Episode 59 completed! Steps: 380, Duration: 72.44s, Total Reward: 6572.53
+2025-09-26 14:02:58,237 - INFO - Training with 79751 experiences from replay memory
+2025-09-26 14:02:58,247 - INFO - Training completed. Policy Loss: 0.0015, Value Loss: 929.9492
+2025-09-26 14:03:56,156 - INFO - Episode 60 completed! Steps: 295, Duration: 56.91s, Total Reward: 4081.94
+2025-09-26 14:03:56,156 - INFO - Training with 80046 experiences from replay memory
+2025-09-26 14:03:56,165 - INFO - Training completed. Policy Loss: 0.0026, Value Loss: 524.5017
+2025-09-26 14:04:46,536 - INFO - Episode 61 completed! Steps: 242, Duration: 49.37s, Total Reward: 2976.28
+2025-09-26 14:04:46,536 - INFO - Training with 80288 experiences from replay memory
+2025-09-26 14:04:46,544 - INFO - Training completed. Policy Loss: 0.0026, Value Loss: 682.0172
+2025-09-26 14:05:50,114 - INFO - Episode 62 completed! Steps: 328, Duration: 62.57s, Total Reward: 5051.33
+2025-09-26 14:05:50,114 - INFO - Training with 80616 experiences from replay memory
+2025-09-26 14:05:50,123 - INFO - Training completed. Policy Loss: 0.0029, Value Loss: 776.1053
+2025-09-26 14:06:49,616 - INFO - Episode 63 completed! Steps: 289, Duration: 58.49s, Total Reward: 4167.18
+2025-09-26 14:06:49,616 - INFO - Training with 80905 experiences from replay memory
+2025-09-26 14:06:49,622 - INFO - Training completed. Policy Loss: 0.0049, Value Loss: 787.3708
+2025-09-26 14:07:28,654 - INFO - Episode 64 completed! Steps: 171, Duration: 38.03s, Total Reward: 1555.37
+2025-09-26 14:07:28,654 - INFO - Training with 81076 experiences from replay memory
+2025-09-26 14:07:28,660 - INFO - Training completed. Policy Loss: -0.6602, Value Loss: 707.6182
+2025-09-26 14:08:26,006 - INFO - Episode 65 completed! Steps: 294, Duration: 56.34s, Total Reward: 4136.29
+2025-09-26 14:08:26,006 - INFO - Training with 81370 experiences from replay memory
+2025-09-26 14:08:26,014 - INFO - Training completed. Policy Loss: 0.0136, Value Loss: 588.0282
+2025-09-26 14:09:34,649 - INFO - Episode 66 completed! Steps: 354, Duration: 67.63s, Total Reward: 6081.34
+2025-09-26 14:09:34,649 - INFO - Training with 81724 experiences from replay memory
+2025-09-26 14:09:34,657 - INFO - Training completed. Policy Loss: 0.0040, Value Loss: 750.0769
+2025-09-26 14:10:14,189 - INFO - Episode 67 completed! Steps: 133, Duration: 38.53s, Total Reward: 1228.32
+2025-09-26 14:10:14,189 - INFO - Training with 81857 experiences from replay memory
+2025-09-26 14:10:14,197 - INFO - Training completed. Policy Loss: 0.0041, Value Loss: 338.9412
+2025-09-26 14:11:18,547 - INFO - Episode 68 completed! Steps: 300, Duration: 63.35s, Total Reward: 4532.29
+2025-09-26 14:11:18,547 - INFO - Training with 82157 experiences from replay memory
+2025-09-26 14:11:18,556 - INFO - Training completed. Policy Loss: -0.0222, Value Loss: 662.9751
+2025-09-26 14:12:08,494 - INFO - Episode 69 completed! Steps: 241, Duration: 48.94s, Total Reward: 2780.18
+2025-09-26 14:12:08,494 - INFO - Training with 82398 experiences from replay memory
+2025-09-26 14:12:08,503 - INFO - Training completed. Policy Loss: 0.0028, Value Loss: 866.9530
+2025-09-26 14:13:04,144 - INFO - Episode 70 completed! Steps: 257, Duration: 54.64s, Total Reward: 3313.13
+2025-09-26 14:13:04,144 - INFO - Training with 82655 experiences from replay memory
+2025-09-26 14:13:04,150 - INFO - Training completed. Policy Loss: 0.0009, Value Loss: 504.9881
+2025-09-26 14:14:05,150 - INFO - Episode 71 completed! Steps: 337, Duration: 60.00s, Total Reward: 5108.01
+2025-09-26 14:14:05,150 - INFO - Training with 82992 experiences from replay memory
+2025-09-26 14:14:05,161 - INFO - Training completed. Policy Loss: 0.0248, Value Loss: 635.8454
+2025-09-26 14:15:06,156 - INFO - Episode 72 completed! Steps: 309, Duration: 59.99s, Total Reward: 4501.78
+2025-09-26 14:15:06,156 - INFO - Training with 83301 experiences from replay memory
+2025-09-26 14:15:06,164 - INFO - Training completed. Policy Loss: 0.0014, Value Loss: 237.7431
+2025-09-26 14:16:07,759 - INFO - Episode 73 completed! Steps: 313, Duration: 60.59s, Total Reward: 4800.06
+2025-09-26 14:16:07,759 - INFO - Training with 83614 experiences from replay memory
+2025-09-26 14:16:07,766 - INFO - Training completed. Policy Loss: -0.0111, Value Loss: 793.6754
+2025-09-26 14:17:03,644 - INFO - Episode 74 completed! Steps: 263, Duration: 54.88s, Total Reward: 3387.84
+2025-09-26 14:17:03,644 - INFO - Training with 83877 experiences from replay memory
+2025-09-26 14:17:03,650 - INFO - Training completed. Policy Loss: -0.0063, Value Loss: 866.4167
+2025-09-26 14:18:01,099 - INFO - Episode 75 completed! Steps: 285, Duration: 56.45s, Total Reward: 4004.46
+2025-09-26 14:18:01,099 - INFO - Training with 84162 experiences from replay memory
+2025-09-26 14:18:01,106 - INFO - Training completed. Policy Loss: 0.0044, Value Loss: 751.5431
+2025-09-26 14:19:05,852 - INFO - Episode 76 completed! Steps: 320, Duration: 63.74s, Total Reward: 4881.74
+2025-09-26 14:19:05,852 - INFO - Training with 84482 experiences from replay memory
+2025-09-26 14:19:05,857 - INFO - Training completed. Policy Loss: 0.0041, Value Loss: 863.8473
+2025-09-26 14:20:03,754 - INFO - Episode 77 completed! Steps: 289, Duration: 56.89s, Total Reward: 4017.43
+2025-09-26 14:20:03,754 - INFO - Training with 84771 experiences from replay memory
+2025-09-26 14:20:03,759 - INFO - Training completed. Policy Loss: -0.3450, Value Loss: 875.4528
+2025-09-26 14:21:22,086 - INFO - Episode 78 completed! Steps: 387, Duration: 77.33s, Total Reward: 7318.71
+2025-09-26 14:21:22,086 - INFO - Training with 85158 experiences from replay memory
+2025-09-26 14:21:22,094 - INFO - Training completed. Policy Loss: 0.0055, Value Loss: 1141.9956
+2025-09-26 14:22:29,483 - INFO - Episode 79 completed! Steps: 320, Duration: 66.39s, Total Reward: 5345.23
+2025-09-26 14:22:29,483 - INFO - Training with 85478 experiences from replay memory
+2025-09-26 14:22:29,489 - INFO - Training completed. Policy Loss: -1.0826, Value Loss: 980.7574
+2025-09-26 14:23:08,654 - INFO - Episode 80 completed! Steps: 160, Duration: 38.16s, Total Reward: 1455.10
+2025-09-26 14:23:08,654 - INFO - Training with 85638 experiences from replay memory
+2025-09-26 14:23:08,665 - INFO - Training completed. Policy Loss: 0.0385, Value Loss: 831.2778
+2025-09-26 14:24:06,472 - INFO - Episode 81 completed! Steps: 288, Duration: 56.81s, Total Reward: 3990.37
+2025-09-26 14:24:06,472 - INFO - Training with 85926 experiences from replay memory
+2025-09-26 14:24:06,481 - INFO - Training completed. Policy Loss: -0.4774, Value Loss: 709.0956
+2025-09-26 14:25:21,685 - INFO - Episode 82 completed! Steps: 376, Duration: 74.20s, Total Reward: 6862.57
+2025-09-26 14:25:21,685 - INFO - Training with 86302 experiences from replay memory
+2025-09-26 14:25:21,692 - INFO - Training completed. Policy Loss: 0.8212, Value Loss: 794.8074
+2025-09-26 14:26:33,780 - INFO - Episode 83 completed! Steps: 356, Duration: 71.09s, Total Reward: 6262.00
+2025-09-26 14:26:33,780 - INFO - Training with 86658 experiences from replay memory
+2025-09-26 14:26:33,788 - INFO - Training completed. Policy Loss: 0.0047, Value Loss: 889.0710
+2025-09-26 14:27:49,029 - INFO - Episode 84 completed! Steps: 374, Duration: 74.24s, Total Reward: 6541.77
+2025-09-26 14:27:49,029 - INFO - Training with 87032 experiences from replay memory
+2025-09-26 14:27:49,037 - INFO - Training completed. Policy Loss: -0.0014, Value Loss: 741.4033
+2025-09-26 14:28:45,194 - INFO - Episode 85 completed! Steps: 288, Duration: 55.16s, Total Reward: 3926.70
+2025-09-26 14:28:45,194 - INFO - Training with 87320 experiences from replay memory
+2025-09-26 14:28:45,202 - INFO - Training completed. Policy Loss: 0.0001, Value Loss: 807.5989
+2025-09-26 14:29:56,889 - INFO - Episode 86 completed! Steps: 373, Duration: 70.69s, Total Reward: 6629.62
+2025-09-26 14:29:56,890 - INFO - Training with 87693 experiences from replay memory
+2025-09-26 14:29:56,897 - INFO - Training completed. Policy Loss: 0.0053, Value Loss: 463.3971
+2025-09-26 14:31:07,465 - INFO - Episode 87 completed! Steps: 366, Duration: 69.57s, Total Reward: 6257.77
+2025-09-26 14:31:07,466 - INFO - Training with 88059 experiences from replay memory
+2025-09-26 14:31:07,474 - INFO - Training completed. Policy Loss: 0.0207, Value Loss: 1510.3683
+2025-09-26 14:32:11,139 - INFO - Episode 88 completed! Steps: 325, Duration: 62.66s, Total Reward: 5004.08
+2025-09-26 14:32:11,139 - INFO - Training with 88384 experiences from replay memory
+2025-09-26 14:32:11,148 - INFO - Training completed. Policy Loss: 0.0166, Value Loss: 1131.6614
+2025-09-26 14:33:25,835 - INFO - Episode 89 completed! Steps: 388, Duration: 73.69s, Total Reward: 7047.05
+2025-09-26 14:33:25,835 - INFO - Training with 88772 experiences from replay memory
+2025-09-26 14:33:25,844 - INFO - Training completed. Policy Loss: 0.0059, Value Loss: 796.0085
+2025-09-26 14:34:03,894 - INFO - Episode 90 completed! Steps: 166, Duration: 37.05s, Total Reward: 1540.78
+2025-09-26 14:34:03,894 - INFO - Training with 88938 experiences from replay memory
+2025-09-26 14:34:03,902 - INFO - Training completed. Policy Loss: -0.0308, Value Loss: 896.5515
+2025-09-26 14:34:55,540 - INFO - Episode 91 completed! Steps: 247, Duration: 50.64s, Total Reward: 3018.98
+2025-09-26 14:34:55,540 - INFO - Training with 89185 experiences from replay memory
+2025-09-26 14:34:55,549 - INFO - Training completed. Policy Loss: -0.0748, Value Loss: 474.0355
+2025-09-26 14:36:18,459 - INFO - Episode 92 completed! Steps: 442, Duration: 81.91s, Total Reward: 9065.40
+2025-09-26 14:36:18,459 - INFO - Training with 89627 experiences from replay memory
+2025-09-26 14:36:18,467 - INFO - Training completed. Policy Loss: 0.8986, Value Loss: 1002.7643
+2025-09-26 14:37:40,342 - INFO - Episode 93 completed! Steps: 428, Duration: 80.87s, Total Reward: 8442.12
+2025-09-26 14:37:40,342 - INFO - Training with 90055 experiences from replay memory
+2025-09-26 14:37:40,351 - INFO - Training completed. Policy Loss: 0.0178, Value Loss: 660.3872
+2025-09-26 14:38:45,965 - INFO - Episode 94 completed! Steps: 334, Duration: 64.61s, Total Reward: 5463.89
+2025-09-26 14:38:45,966 - INFO - Training with 90389 experiences from replay memory
+2025-09-26 14:38:45,971 - INFO - Training completed. Policy Loss: 0.0046, Value Loss: 555.5305
+2025-09-26 14:39:45,519 - INFO - Episode 95 completed! Steps: 300, Duration: 58.55s, Total Reward: 4427.83
+2025-09-26 14:39:45,520 - INFO - Training with 90689 experiences from replay memory
+2025-09-26 14:39:45,527 - INFO - Training completed. Policy Loss: 0.0066, Value Loss: 803.6202
+2025-09-26 14:40:23,830 - INFO - Episode 96 completed! Steps: 143, Duration: 37.30s, Total Reward: 1293.41
+2025-09-26 14:40:23,830 - INFO - Training with 90832 experiences from replay memory
+2025-09-26 14:40:23,836 - INFO - Training completed. Policy Loss: -0.0094, Value Loss: 551.9606
+2025-09-26 14:41:57,834 - INFO - Episode 97 completed! Steps: 489, Duration: 93.00s, Total Reward: 10901.37
+2025-09-26 14:41:57,834 - INFO - Training with 91321 experiences from replay memory
+2025-09-26 14:41:57,844 - INFO - Training completed. Policy Loss: 0.0076, Value Loss: 1247.1904
+2025-09-26 14:41:57,846 - INFO - New best model saved! Duration: 93.00s
+2025-09-26 14:41:57,869 - INFO - Game screenshot saved to: runs/20250926_090931/images/best_model_screenshot_at_train_round_4_epoch_96.png
+2025-09-26 14:42:43,914 - INFO - Episode 98 completed! Steps: 212, Duration: 45.04s, Total Reward: 2285.92
+2025-09-26 14:42:43,914 - INFO - Training with 91533 experiences from replay memory
+2025-09-26 14:42:43,922 - INFO - Training completed. Policy Loss: 2.8916, Value Loss: 1482.7731
+2025-09-26 14:43:54,992 - INFO - Episode 99 completed! Steps: 363, Duration: 70.07s, Total Reward: 6036.96
+2025-09-26 14:43:54,993 - INFO - Training with 91896 experiences from replay memory
+2025-09-26 14:43:55,001 - INFO - Training completed. Policy Loss: 0.0043, Value Loss: 593.9280
+2025-09-26 14:45:07,620 - INFO - Episode 100 completed! Steps: 384, Duration: 71.62s, Total Reward: 6684.45
+2025-09-26 14:45:07,620 - INFO - Training with 92280 experiences from replay memory
+2025-09-26 14:45:07,629 - INFO - Training completed. Policy Loss: -0.0009, Value Loss: 570.7674
+2025-09-26 14:45:08,630 - INFO - Actor-Critic training completed! Best model achieved 93.00s and saved at runs/20250926_090931/models/best_actor_model_at_train_round_4_epoch_96.pt

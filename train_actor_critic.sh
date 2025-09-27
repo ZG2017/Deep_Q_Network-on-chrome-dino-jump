@@ -5,7 +5,7 @@ python main.py \
     --mode train \
     --model_type actor_critic \
     --train_rounds 5 \
-    --epochs 100 \
+    --epochs 80 \
     --steps 2000 \
     --min_memory_count_to_start_training 100 \
     --memory_size 1000 \
